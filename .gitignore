@@ -1,2 +1,6 @@
-.worktrees/
+__pycache__/
+.pytest_cache/
 .superpowers/
+.worktrees/
+*.pyc
+.venv/
