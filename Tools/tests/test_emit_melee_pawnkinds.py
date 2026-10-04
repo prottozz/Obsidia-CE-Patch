@@ -1,7 +1,9 @@
+import re
 from pathlib import Path
 
 from oe_ce.emit_melee import emit_melee_xml
 from oe_ce.emit_pawnkinds import emit_pawnkind_xml
+from oe_ce.load import load_catalog
 from oe_ce.models import Family, Member
 from oe_ce.scan_obsidia import weapon_tags
 
@@ -34,4 +36,31 @@ def test_emit_pawnkind_xml_occ_recruit_loadout():
     xml = emit_pawnkind_xml(CORE, [fam])
     assert "LoadoutPropertiesExtension" in xml
     assert "OCC_Recruit" in xml
+    assert "preferredAmmo" not in xml
+
+
+def test_emit_pawnkind_ap_npc_raid_magazine_bump(tmp_path: Path):
+    (tmp_path / "ballistic.yaml").write_text(
+        "families:\n"
+        "  - id: cerberus\n"
+        "    type: pistol\n"
+        "    class: ballistic\n"
+        "    members:\n"
+        "      - defName: OCC_Revolver\n"
+        "        rung: occ\n"
+        "        ap_npc: true\n",
+        encoding="utf-8",
+    )
+    cat = load_catalog(tmp_path)
+    assert any(m.ap_npc for fam in cat.families for m in fam.members)
+    xml = emit_pawnkind_xml(CORE, cat.families)
+    recruit = re.search(
+        r'<xpath>Defs/PawnKindDef\[defName="OCC_Recruit"\]</xpath>.*?</Operation>',
+        xml,
+        re.DOTALL,
+    )
+    assert recruit is not None
+    block = recruit.group(0)
+    assert "<min>6</min>" in block
+    assert "<max>12</max>" in block
     assert "preferredAmmo" not in xml
