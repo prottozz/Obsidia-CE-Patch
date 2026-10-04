@@ -1,8 +1,10 @@
+import os
 from pathlib import Path
 
+from oe_ce.constants import DEFAULT_OBSIDIA_CORE
 from oe_ce.scan_obsidia import scan_core_ranged
 
-CORE = Path(r"C:\Projects\Assistant\294100\2519492373\1.6\Core")
+CORE = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
 
 
 def test_scan_finds_proto_cerberus():

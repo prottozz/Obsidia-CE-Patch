@@ -9,6 +9,8 @@ members:
   rung: bio_t3
 - defName: EGO_Knife
   rung: bio_t3
+- defName: EGO_Whip
+  rung: bio_t3
 - defName: EGO_Scepter
   rung: bio_t3
 - defName: EGO_Trophy_Dragonbane_A
@@ -117,6 +119,8 @@ members:
   rung: heroic
 - defName: OES_Hammer
   rung: heroic
+- defName: OES_Katana
+  rung: heroic
 - defName: OES_PowerFist
   rung: heroic
 - defName: OES_Rapier
@@ -153,6 +157,8 @@ members:
   rung: omc
 - defName: OMC_Sword_M
   rung: omc_mod
+- defName: OMC_Whip
+  rung: omc
 - defName: OMG_Axe
   rung: omg
 - defName: OMG_BattleAxe
@@ -164,6 +170,10 @@ members:
 - defName: OMG_Scepter
   rung: omg
 - defName: OMG_Trophy_Knife
+  rung: trophy
+- defName: OMG_Trophy_PowerGuitar
+  rung: trophy
+- defName: OTC_Trophy_Cards_I
   rung: trophy
 - defName: OTC_BigAxe_Acid
   rung: otc

@@ -11,3 +11,5 @@ def test_recipes_use_obsidia_bench_and_mats():
     assert "TableMachining" not in xml
     assert "MakeAmmo_OE_cerberus_ballistic_standard_small" in xml
     assert "MakeAmmo_OE_cerberus_ballistic_standard_large" in xml
+    assert "<workAmount>2000</workAmount>" in xml
+    assert "<workAmount>5000</workAmount>" in xml

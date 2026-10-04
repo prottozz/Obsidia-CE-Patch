@@ -16,7 +16,6 @@
       <defaultProjectile>Bullet_OE_behemoth_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.8</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -61,7 +60,6 @@
       <defaultProjectile>Bullet_OE_behemoth_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>74.8</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -116,51 +114,6 @@
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="CAC_Arachna_Minigun"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>OMC_Whip</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <Bulk>7</Bulk>
-      <SwayFactor>1.2</SwayFactor>
-      <ShotSpread>0.08</ShotSpread>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.46</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_ballistic_standard</defaultProjectile>
-      <warmupTime>1</warmupTime>
-      <range>28.6</range>
-      <burstShotCount>6</burstShotCount>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>12</magazineSize>
-      <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_ballistic</ammoSet>
-    </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OMC_Whip"]/tools</xpath>
     <value>
       <tools>
         <li Class="CombatExtended.ToolCE">
@@ -241,7 +194,6 @@
       <defaultProjectile>Bullet_OE_boomshooter_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.8</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -834,27 +786,6 @@
       <ammoSet>AmmoSet_OE_cronus_ballistic</ammoSet>
     </AmmoUser>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OCC_Trophy_Railgun_I"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OE_DarkCrusader_RocketLauncher</defName>
     <statBases>
@@ -871,7 +802,6 @@
       <defaultProjectile>Bullet_OE_dark_giants_bane_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>60.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -1456,7 +1386,6 @@
       <defaultProjectile>Bullet_OE_giants_bane_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>57.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -1501,7 +1430,6 @@
       <defaultProjectile>Bullet_OE_giants_bane_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>74.8</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -1591,34 +1519,12 @@
       <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="ODC_Trophy_BladeLauncher_A"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ODC_Trophy_BladeLauncher_B</defName>
@@ -1636,34 +1542,12 @@
       <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="ODC_Trophy_BladeLauncher_B"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ODC_Trophy_BladeLauncher_C</defName>
@@ -1681,34 +1565,12 @@
       <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="ODC_Trophy_BladeLauncher_C"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ODC_Trophy_BladeLauncher_C_I</defName>
@@ -1726,34 +1588,12 @@
       <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="ODC_Trophy_BladeLauncher_C_I"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OES_ShotgunS</defName>
@@ -2566,51 +2406,6 @@
     </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>OMG_Trophy_PowerGuitar</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <Bulk>7</Bulk>
-      <SwayFactor>1.2</SwayFactor>
-      <ShotSpread>0.08</ShotSpread>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.46</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_neon_echo_ballistic_standard</defaultProjectile>
-      <warmupTime>1</warmupTime>
-      <range>41.25</range>
-      <burstShotCount>6</burstShotCount>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>12</magazineSize>
-      <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_neon_echo_ballistic</ammoSet>
-    </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OMG_Trophy_PowerGuitar"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>EGO_SniperRifle</defName>
     <statBases>
       <Mass>3</Mass>
@@ -2671,7 +2466,6 @@
       <defaultProjectile>Bullet_OE_pride_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>67.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -2716,7 +2510,6 @@
       <defaultProjectile>Bullet_OE_pride_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>49.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -2761,7 +2554,6 @@
       <defaultProjectile>Bullet_OE_pride_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>49.5</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -2771,51 +2563,6 @@
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="OE_Necroframe_Bow"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>EGO_Whip</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <Bulk>7</Bulk>
-      <SwayFactor>1.2</SwayFactor>
-      <ShotSpread>0.08</ShotSpread>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.46</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_proboscis_ballistic_standard</defaultProjectile>
-      <warmupTime>1</warmupTime>
-      <range>37.4</range>
-      <burstShotCount>6</burstShotCount>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>12</magazineSize>
-      <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_proboscis_ballistic</ammoSet>
-    </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="EGO_Whip"]/tools</xpath>
     <value>
       <tools>
         <li Class="CombatExtended.ToolCE">
@@ -2859,27 +2606,6 @@
       <ammoSet>AmmoSet_OE_prototype_sx_01a_ballistic</ammoSet>
     </AmmoUser>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OMC_Trophy_Pistol_I"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ODC_Pistol</defName>
     <statBases>
@@ -2906,96 +2632,6 @@
   </Operation>
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="ODC_Pistol"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>OTC_Trophy_Cards_I</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <Bulk>7</Bulk>
-      <SwayFactor>1.2</SwayFactor>
-      <ShotSpread>0.08</ShotSpread>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.46</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_randys_deck_ballistic_standard</defaultProjectile>
-      <warmupTime>1</warmupTime>
-      <range>41.25</range>
-      <burstShotCount>6</burstShotCount>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>12</magazineSize>
-      <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_randys_deck_ballistic</ammoSet>
-    </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Trophy_Cards_I"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
-  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-    <defName>OES_Katana</defName>
-    <statBases>
-      <Mass>3</Mass>
-      <Bulk>7</Bulk>
-      <SwayFactor>1.2</SwayFactor>
-      <ShotSpread>0.08</ShotSpread>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-    </statBases>
-    <Properties>
-      <recoilAmount>1.46</recoilAmount>
-      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_reaper_ballistic_standard</defaultProjectile>
-      <warmupTime>1</warmupTime>
-      <range>75</range>
-      <burstShotCount>6</burstShotCount>
-    </Properties>
-    <AmmoUser>
-      <magazineSize>25</magazineSize>
-      <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_reaper_ballistic</ammoSet>
-    </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OES_Katana"]/tools</xpath>
     <value>
       <tools>
         <li Class="CombatExtended.ToolCE">
@@ -3751,7 +3387,6 @@
       <defaultProjectile>Bullet_OE_wendigo_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>43.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -3796,7 +3431,6 @@
       <defaultProjectile>Bullet_OE_wendigo_ballistic_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -3931,7 +3565,6 @@
       <defaultProjectile>Bullet_OE_boomshooter_fire_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -4291,7 +3924,6 @@
       <defaultProjectile>Bullet_OE_nimbus_fire_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -4336,7 +3968,6 @@
       <defaultProjectile>Bullet_OE_nimbus_fire_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -4479,27 +4110,6 @@
       <ammoSet>AmmoSet_OE_pulsar_fire</ammoSet>
     </AmmoUser>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Dominator_MultiCannon_Fire"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_MultiCannon_Fire</defName>
     <statBases>
@@ -4613,27 +4223,6 @@
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_quasar_fire</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Arachna_Shotgun_Fire"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_Shotgun_Fire</defName>
@@ -4876,7 +4465,6 @@
       <defaultProjectile>Bullet_OE_boomshooter_emp_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -5236,7 +4824,6 @@
       <defaultProjectile>Bullet_OE_nimbus_emp_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -5281,7 +4868,6 @@
       <defaultProjectile>Bullet_OE_nimbus_emp_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -5424,27 +5010,6 @@
       <ammoSet>AmmoSet_OE_pulsar_emp</ammoSet>
     </AmmoUser>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Dominator_MultiCannon_EMP"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_MultiCannon_EMP</defName>
     <statBases>
@@ -5558,27 +5123,6 @@
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_quasar_emp</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Arachna_Shotgun_EMP"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_Shotgun_EMP</defName>
@@ -5821,7 +5365,6 @@
       <defaultProjectile>Bullet_OE_boomshooter_acid_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -6181,7 +5724,6 @@
       <defaultProjectile>Bullet_OE_nimbus_acid_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -6226,7 +5768,6 @@
       <defaultProjectile>Bullet_OE_nimbus_acid_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -6369,27 +5910,6 @@
       <ammoSet>AmmoSet_OE_pulsar_acid</ammoSet>
     </AmmoUser>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Dominator_MultiCannon_Acid"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_MultiCannon_Acid</defName>
     <statBases>
@@ -6503,27 +6023,6 @@
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_quasar_acid</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Arachna_Shotgun_Acid"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_Shotgun_Acid</defName>
@@ -6766,7 +6265,6 @@
       <defaultProjectile>Bullet_OE_boomshooter_cryo_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -7126,7 +6624,6 @@
       <defaultProjectile>Bullet_OE_nimbus_cryo_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -7171,7 +6668,6 @@
       <defaultProjectile>Bullet_OE_nimbus_cryo_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
-      <burstShotCount>6</burstShotCount>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -7314,27 +6810,6 @@
       <ammoSet>AmmoSet_OE_pulsar_cryo</ammoSet>
     </AmmoUser>
   </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Dominator_MultiCannon_Cryo"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
-  </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_MultiCannon_Cryo</defName>
     <statBases>
@@ -7448,27 +6923,6 @@
       <reloadTime>4</reloadTime>
       <ammoSet>AmmoSet_OE_quasar_cryo</ammoSet>
     </AmmoUser>
-  </Operation>
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="OTC_Arachna_Shotgun_Cryo"]/tools</xpath>
-    <value>
-      <tools>
-        <li Class="CombatExtended.ToolCE">
-          <label>stock</label>
-          <capacities><li>Blunt</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-        <li Class="CombatExtended.ToolCE">
-          <label>barrel</label>
-          <capacities><li>Poke</li></capacities>
-          <power>6</power>
-          <cooldownTime>2</cooldownTime>
-          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
-        </li>
-      </tools>
-    </value>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>OTC_Shotgun_Cryo</defName>

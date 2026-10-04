@@ -1,3 +1,16 @@
+DEFAULT_OBSIDIA_CORE = r"C:\Projects\Assistant\294100\2519492373\1.6\Core"
+
+# Core ThingDefs that have verbs but are melee weapons (catalogued in melee.yaml).
+RANGED_SCAN_EXCLUDE = frozenset(
+    {
+        "OES_Katana",
+        "OMC_Whip",
+        "EGO_Whip",
+        "OMG_Trophy_PowerGuitar",
+        "OTC_Trophy_Cards_I",
+    }
+)
+
 WEAPON_TYPES = (
     "pistol", "smg", "shotgun", "rifle", "sniper",
     "bow", "lmg", "minigun", "launcher", "rocket",

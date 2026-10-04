@@ -13,3 +13,7 @@ def test_cerberus_set_and_emp_weaker_than_dedicated():
     assert f"<amount>{EMP_SIDE_AMOUNT}</amount>" in xml
     assert f"<amount>{EMP_DEDICATED_AMOUNT}</amount>" in xml
     assert "CE_AutoEnableCrafting_TableMachining" not in xml
+    assert "<label>cerberus ballistic standard</label>" in xml
+    assert "AmmoOE_cerberus_ballistic" in xml
+    assert "<thingCategories>" in xml
+    assert "<li>AmmoOE_cerberus_ballistic</li>" in xml

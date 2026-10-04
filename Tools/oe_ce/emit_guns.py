@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from oe_ce.models import Family, Member
 from oe_ce.rungs import gun_stats
+from oe_ce.scan_obsidia import thing_def_has_tools
 
 
 def _xml_num(value: float | int) -> str:
@@ -67,11 +70,12 @@ def _make_gun_op(fam: Family, member: Member) -> str:
   </Operation>"""
 
 
-def emit_gun_patches(families: list[Family]) -> str:
+def emit_gun_patches(families: list[Family], core: Path) -> str:
     blocks: list[str] = []
     for fam in families:
         for member in sorted(fam.members, key=lambda m: m.def_name):
             blocks.append(_make_gun_op(fam, member))
-            blocks.append(_tools_replace(member))
+            if thing_def_has_tools(core, member.def_name):
+                blocks.append(_tools_replace(member))
     inner = "\n".join(blocks)
     return f'<?xml version="1.0" encoding="utf-8"?>\n<Patch>\n{inner}\n</Patch>'

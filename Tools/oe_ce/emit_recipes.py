@@ -33,12 +33,21 @@ def _emit_recipe(fam: Family, cartridge: str, *, large: bool) -> str:
     ammo = fam.ammo_def(cartridge)
     def_name = f"MakeAmmo_OE_{fam.id}_{fam.class_name}_{cartridge}_{suffix}"
     label = f"make OE {fam.id} {fam.class_name} {cartridge} x{product_count}"
+    work_amount = 5000 if large else 2000
+    description = (
+        f"Craft {product_count} rounds of OE {fam.id} {fam.class_name} "
+        f"{cartridge} ammunition."
+    )
+    job_string = f"Making OE {fam.id} {fam.class_name} {cartridge} ammo."
     mats = _ingredients(fam, large=large)
     ing_block = "\n".join(_ingredient_lines(t, c) for t, c in mats)
     filter_lis = "\n".join(f"        <li>{t}</li>" for t, _ in mats)
     return f"""  <RecipeDef>
     <defName>{def_name}</defName>
     <label>{label}</label>
+    <description>{description}</description>
+    <jobString>{job_string}</jobString>
+    <workAmount>{work_amount}</workAmount>
     <recipeUsers>
       <li>OE_WeaponWorkbench</li>
     </recipeUsers>

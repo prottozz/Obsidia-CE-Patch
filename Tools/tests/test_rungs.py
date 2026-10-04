@@ -24,3 +24,9 @@ def test_omg_above_odc_t4():
 def test_member_override_wins():
     s = gun_stats("rifle", Member("OE_Rifle", "proto", range=40.0))
     assert s["range"] == 40.0
+
+
+def test_burst_clamped_to_magazine_for_bow():
+    s = gun_stats("bow", Member("OES_Bow", "heroic"))
+    assert s["magazine"] == 1
+    assert s["burst"] == 1

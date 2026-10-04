@@ -99,4 +99,7 @@ def gun_stats(weapon_type: str, member: Member) -> dict:
     for key, val in mapping.items():
         if val is not None:
             row[key] = val
+    burst = row.get("burst")
+    if burst is not None and burst > row["magazine"]:
+        row["burst"] = row["magazine"]
     return row

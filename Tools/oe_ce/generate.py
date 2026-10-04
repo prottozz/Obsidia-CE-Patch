@@ -11,9 +11,8 @@ from oe_ce.emit_pawnkinds import emit_pawnkind_xml
 from oe_ce.emit_recipes import emit_recipe_xml
 from oe_ce.load import load_catalog
 from oe_ce.scan_obsidia import scan_core_ranged
+from oe_ce.constants import DEFAULT_OBSIDIA_CORE
 from oe_ce.validate import validate_catalog
-
-_DEFAULT_CORE = Path(r"C:\Projects\Assistant\294100\2519492373\1.6\Core")
 
 
 def _write(path: Path, content: str) -> None:
@@ -21,9 +20,19 @@ def _write(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def _require_core_dirs(core: Path) -> None:
+    weapons = core / "Defs" / "ThingDefs_Misc" / "Weapons"
+    pawnkinds = core / "Defs" / "PawnKinds"
+    if not weapons.is_dir():
+        raise FileNotFoundError(f"Obsidia Core weapons dir missing: {weapons}")
+    if not pawnkinds.is_dir():
+        raise FileNotFoundError(f"Obsidia Core PawnKinds dir missing: {pawnkinds}")
+
+
 def generate(root: Path) -> None:
     cat = load_catalog(root / "catalog")
-    core = Path(os.environ.get("OBSIDIA_CORE", _DEFAULT_CORE))
+    core = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
+    _require_core_dirs(core)
     errors = validate_catalog(cat, scan_core_ranged(core))
     if errors and os.environ.get("OE_CE_ALLOW_PARTIAL") != "1":
         for msg in errors:
@@ -37,7 +46,7 @@ def generate(root: Path) -> None:
     )
     _write(
         root / "Patches" / "Weapons" / "OE_Ranged.xml",
-        emit_gun_patches(cat.families),
+        emit_gun_patches(cat.families, core),
     )
     _write(
         root / "Patches" / "Weapons" / "OE_Melee.xml",

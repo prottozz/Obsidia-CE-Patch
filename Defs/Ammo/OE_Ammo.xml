@@ -8,6 +8,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_bloodspiller_acid</defName>
+  <label>bloodspiller acid</label>
   <ammoTypes>
     <Ammo_OE_bloodspiller_acid_standard>Bullet_OE_bloodspiller_acid_standard</Ammo_OE_bloodspiller_acid_standard>
     <Ammo_OE_bloodspiller_acid_ap>Bullet_OE_bloodspiller_acid_ap</Ammo_OE_bloodspiller_acid_ap>
@@ -17,6 +18,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_acid_standard</defName>
+  <label>bloodspiller acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -40,6 +45,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_acid_ap</defName>
+  <label>bloodspiller acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -63,6 +72,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_acid_hp</defName>
+  <label>bloodspiller acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -92,6 +105,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_boomshooter_acid</defName>
+  <label>boomshooter acid</label>
   <ammoTypes>
     <Ammo_OE_boomshooter_acid_standard>Bullet_OE_boomshooter_acid_standard</Ammo_OE_boomshooter_acid_standard>
     <Ammo_OE_boomshooter_acid_ap>Bullet_OE_boomshooter_acid_ap</Ammo_OE_boomshooter_acid_ap>
@@ -101,6 +115,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_acid_standard</defName>
+  <label>boomshooter acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -124,6 +142,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_acid_ap</defName>
+  <label>boomshooter acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -147,6 +169,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_acid_hp</defName>
+  <label>boomshooter acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -176,6 +202,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_celestial_acid</defName>
+  <label>celestial acid</label>
   <ammoTypes>
     <Ammo_OE_celestial_acid_standard>Bullet_OE_celestial_acid_standard</Ammo_OE_celestial_acid_standard>
     <Ammo_OE_celestial_acid_ap>Bullet_OE_celestial_acid_ap</Ammo_OE_celestial_acid_ap>
@@ -185,6 +212,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_acid_standard</defName>
+  <label>celestial acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -208,6 +239,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_acid_ap</defName>
+  <label>celestial acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -231,6 +266,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_acid_hp</defName>
+  <label>celestial acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -260,6 +299,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_conspirator_acid</defName>
+  <label>conspirator acid</label>
   <ammoTypes>
     <Ammo_OE_conspirator_acid_standard>Bullet_OE_conspirator_acid_standard</Ammo_OE_conspirator_acid_standard>
     <Ammo_OE_conspirator_acid_ap>Bullet_OE_conspirator_acid_ap</Ammo_OE_conspirator_acid_ap>
@@ -270,6 +310,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_acid_standard</defName>
+  <label>conspirator acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -293,6 +337,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_acid_ap</defName>
+  <label>conspirator acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -316,6 +364,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_acid_hp</defName>
+  <label>conspirator acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -339,6 +391,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_acid_emp</defName>
+  <label>conspirator acid emp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -375,6 +431,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_equalizer_acid</defName>
+  <label>equalizer acid</label>
   <ammoTypes>
     <Ammo_OE_equalizer_acid_standard>Bullet_OE_equalizer_acid_standard</Ammo_OE_equalizer_acid_standard>
     <Ammo_OE_equalizer_acid_ap>Bullet_OE_equalizer_acid_ap</Ammo_OE_equalizer_acid_ap>
@@ -384,6 +441,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_acid_standard</defName>
+  <label>equalizer acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -407,6 +468,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_acid_ap</defName>
+  <label>equalizer acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -430,6 +495,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_acid_hp</defName>
+  <label>equalizer acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -459,6 +528,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_meteor_acid</defName>
+  <label>meteor acid</label>
   <ammoTypes>
     <Ammo_OE_meteor_acid_standard>Bullet_OE_meteor_acid_standard</Ammo_OE_meteor_acid_standard>
     <Ammo_OE_meteor_acid_ap>Bullet_OE_meteor_acid_ap</Ammo_OE_meteor_acid_ap>
@@ -468,6 +538,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_acid_standard</defName>
+  <label>meteor acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -491,6 +565,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_acid_ap</defName>
+  <label>meteor acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -514,6 +592,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_acid_hp</defName>
+  <label>meteor acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -543,6 +625,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nimbus_acid</defName>
+  <label>nimbus acid</label>
   <ammoTypes>
     <Ammo_OE_nimbus_acid_standard>Bullet_OE_nimbus_acid_standard</Ammo_OE_nimbus_acid_standard>
     <Ammo_OE_nimbus_acid_ap>Bullet_OE_nimbus_acid_ap</Ammo_OE_nimbus_acid_ap>
@@ -553,6 +636,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_acid_standard</defName>
+  <label>nimbus acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -576,6 +663,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_acid_ap</defName>
+  <label>nimbus acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -599,6 +690,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_acid_hp</defName>
+  <label>nimbus acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -622,6 +717,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_acid_emp</defName>
+  <label>nimbus acid emp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -658,6 +757,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nova_acid</defName>
+  <label>nova acid</label>
   <ammoTypes>
     <Ammo_OE_nova_acid_standard>Bullet_OE_nova_acid_standard</Ammo_OE_nova_acid_standard>
     <Ammo_OE_nova_acid_ap>Bullet_OE_nova_acid_ap</Ammo_OE_nova_acid_ap>
@@ -668,6 +768,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_acid_standard</defName>
+  <label>nova acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_nova_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -691,6 +795,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_acid_ap</defName>
+  <label>nova acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_nova_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -714,6 +822,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_acid_hp</defName>
+  <label>nova acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -737,6 +849,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_acid_emp</defName>
+  <label>nova acid emp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -773,6 +889,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_pulsar_acid</defName>
+  <label>pulsar acid</label>
   <ammoTypes>
     <Ammo_OE_pulsar_acid_standard>Bullet_OE_pulsar_acid_standard</Ammo_OE_pulsar_acid_standard>
     <Ammo_OE_pulsar_acid_ap>Bullet_OE_pulsar_acid_ap</Ammo_OE_pulsar_acid_ap>
@@ -782,6 +899,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_acid_standard</defName>
+  <label>pulsar acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -805,6 +926,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_acid_ap</defName>
+  <label>pulsar acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -828,6 +953,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_acid_hp</defName>
+  <label>pulsar acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -857,6 +986,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_quasar_acid</defName>
+  <label>quasar acid</label>
   <ammoTypes>
     <Ammo_OE_quasar_acid_standard>Bullet_OE_quasar_acid_standard</Ammo_OE_quasar_acid_standard>
     <Ammo_OE_quasar_acid_ap>Bullet_OE_quasar_acid_ap</Ammo_OE_quasar_acid_ap>
@@ -867,6 +997,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_acid_standard</defName>
+  <label>quasar acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -890,6 +1024,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_acid_ap</defName>
+  <label>quasar acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -913,6 +1051,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_acid_hp</defName>
+  <label>quasar acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -936,6 +1078,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_acid_emp</defName>
+  <label>quasar acid emp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -972,6 +1118,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_trespasser_acid</defName>
+  <label>trespasser acid</label>
   <ammoTypes>
     <Ammo_OE_trespasser_acid_standard>Bullet_OE_trespasser_acid_standard</Ammo_OE_trespasser_acid_standard>
     <Ammo_OE_trespasser_acid_ap>Bullet_OE_trespasser_acid_ap</Ammo_OE_trespasser_acid_ap>
@@ -981,6 +1128,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_acid_standard</defName>
+  <label>trespasser acid standard</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1004,6 +1155,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_acid_ap</defName>
+  <label>trespasser acid ap</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1027,6 +1182,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_acid_hp</defName>
+  <label>trespasser acid hp</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_acid</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1056,6 +1215,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_behemoth_ballistic</defName>
+  <label>behemoth ballistic</label>
   <ammoTypes>
     <Ammo_OE_behemoth_ballistic_standard>Bullet_OE_behemoth_ballistic_standard</Ammo_OE_behemoth_ballistic_standard>
     <Ammo_OE_behemoth_ballistic_ap>Bullet_OE_behemoth_ballistic_ap</Ammo_OE_behemoth_ballistic_ap>
@@ -1065,6 +1225,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_behemoth_ballistic_standard</defName>
+  <label>behemoth ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_behemoth_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1088,6 +1252,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_behemoth_ballistic_ap</defName>
+  <label>behemoth ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_behemoth_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1111,6 +1279,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_behemoth_ballistic_hp</defName>
+  <label>behemoth ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_behemoth_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1140,6 +1312,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_blackout_ballistic</defName>
+  <label>blackout ballistic</label>
   <ammoTypes>
     <Ammo_OE_blackout_ballistic_standard>Bullet_OE_blackout_ballistic_standard</Ammo_OE_blackout_ballistic_standard>
     <Ammo_OE_blackout_ballistic_ap>Bullet_OE_blackout_ballistic_ap</Ammo_OE_blackout_ballistic_ap>
@@ -1150,6 +1323,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_blackout_ballistic_standard</defName>
+  <label>blackout ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_blackout_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1173,6 +1350,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_blackout_ballistic_ap</defName>
+  <label>blackout ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_blackout_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1196,6 +1377,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_blackout_ballistic_hp</defName>
+  <label>blackout ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_blackout_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1219,6 +1404,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_blackout_ballistic_emp</defName>
+  <label>blackout ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_blackout_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1255,6 +1444,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_bloodspiller_ballistic</defName>
+  <label>bloodspiller ballistic</label>
   <ammoTypes>
     <Ammo_OE_bloodspiller_ballistic_standard>Bullet_OE_bloodspiller_ballistic_standard</Ammo_OE_bloodspiller_ballistic_standard>
     <Ammo_OE_bloodspiller_ballistic_ap>Bullet_OE_bloodspiller_ballistic_ap</Ammo_OE_bloodspiller_ballistic_ap>
@@ -1264,6 +1454,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_ballistic_standard</defName>
+  <label>bloodspiller ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1287,6 +1481,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_ballistic_ap</defName>
+  <label>bloodspiller ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1310,6 +1508,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_ballistic_hp</defName>
+  <label>bloodspiller ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1339,6 +1541,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_boomshooter_ballistic</defName>
+  <label>boomshooter ballistic</label>
   <ammoTypes>
     <Ammo_OE_boomshooter_ballistic_standard>Bullet_OE_boomshooter_ballistic_standard</Ammo_OE_boomshooter_ballistic_standard>
     <Ammo_OE_boomshooter_ballistic_ap>Bullet_OE_boomshooter_ballistic_ap</Ammo_OE_boomshooter_ballistic_ap>
@@ -1348,6 +1551,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_ballistic_standard</defName>
+  <label>boomshooter ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1371,6 +1578,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_ballistic_ap</defName>
+  <label>boomshooter ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1394,6 +1605,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_ballistic_hp</defName>
+  <label>boomshooter ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1423,6 +1638,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_bytecrusher_ballistic</defName>
+  <label>bytecrusher ballistic</label>
   <ammoTypes>
     <Ammo_OE_bytecrusher_ballistic_standard>Bullet_OE_bytecrusher_ballistic_standard</Ammo_OE_bytecrusher_ballistic_standard>
     <Ammo_OE_bytecrusher_ballistic_ap>Bullet_OE_bytecrusher_ballistic_ap</Ammo_OE_bytecrusher_ballistic_ap>
@@ -1433,6 +1649,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bytecrusher_ballistic_standard</defName>
+  <label>bytecrusher ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_bytecrusher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1456,6 +1676,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bytecrusher_ballistic_ap</defName>
+  <label>bytecrusher ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_bytecrusher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1479,6 +1703,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bytecrusher_ballistic_hp</defName>
+  <label>bytecrusher ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_bytecrusher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1502,6 +1730,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bytecrusher_ballistic_emp</defName>
+  <label>bytecrusher ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_bytecrusher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1538,6 +1770,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_cerberus_ballistic</defName>
+  <label>cerberus ballistic</label>
   <ammoTypes>
     <Ammo_OE_cerberus_ballistic_standard>Bullet_OE_cerberus_ballistic_standard</Ammo_OE_cerberus_ballistic_standard>
     <Ammo_OE_cerberus_ballistic_ap>Bullet_OE_cerberus_ballistic_ap</Ammo_OE_cerberus_ballistic_ap>
@@ -1548,6 +1781,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cerberus_ballistic_standard</defName>
+  <label>cerberus ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_cerberus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1571,6 +1808,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cerberus_ballistic_ap</defName>
+  <label>cerberus ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_cerberus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1594,6 +1835,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cerberus_ballistic_hp</defName>
+  <label>cerberus ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_cerberus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1617,6 +1862,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cerberus_ballistic_emp</defName>
+  <label>cerberus ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_cerberus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1653,6 +1902,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_chimera_ballistic</defName>
+  <label>chimera ballistic</label>
   <ammoTypes>
     <Ammo_OE_chimera_ballistic_standard>Bullet_OE_chimera_ballistic_standard</Ammo_OE_chimera_ballistic_standard>
     <Ammo_OE_chimera_ballistic_ap>Bullet_OE_chimera_ballistic_ap</Ammo_OE_chimera_ballistic_ap>
@@ -1662,6 +1912,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_chimera_ballistic_standard</defName>
+  <label>chimera ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_chimera_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1685,6 +1939,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_chimera_ballistic_ap</defName>
+  <label>chimera ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_chimera_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1708,6 +1966,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_chimera_ballistic_hp</defName>
+  <label>chimera ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_chimera_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1737,6 +1999,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_conspirator_ballistic</defName>
+  <label>conspirator ballistic</label>
   <ammoTypes>
     <Ammo_OE_conspirator_ballistic_standard>Bullet_OE_conspirator_ballistic_standard</Ammo_OE_conspirator_ballistic_standard>
     <Ammo_OE_conspirator_ballistic_ap>Bullet_OE_conspirator_ballistic_ap</Ammo_OE_conspirator_ballistic_ap>
@@ -1747,6 +2010,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_ballistic_standard</defName>
+  <label>conspirator ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1770,6 +2037,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_ballistic_ap</defName>
+  <label>conspirator ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1793,6 +2064,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_ballistic_hp</defName>
+  <label>conspirator ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1816,6 +2091,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_ballistic_emp</defName>
+  <label>conspirator ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1852,6 +2131,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_corrupter_ballistic</defName>
+  <label>corrupter ballistic</label>
   <ammoTypes>
     <Ammo_OE_corrupter_ballistic_standard>Bullet_OE_corrupter_ballistic_standard</Ammo_OE_corrupter_ballistic_standard>
     <Ammo_OE_corrupter_ballistic_ap>Bullet_OE_corrupter_ballistic_ap</Ammo_OE_corrupter_ballistic_ap>
@@ -1862,6 +2142,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_corrupter_ballistic_standard</defName>
+  <label>corrupter ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_corrupter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1885,6 +2169,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_corrupter_ballistic_ap</defName>
+  <label>corrupter ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_corrupter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1908,6 +2196,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_corrupter_ballistic_hp</defName>
+  <label>corrupter ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_corrupter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1931,6 +2223,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_corrupter_ballistic_emp</defName>
+  <label>corrupter ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_corrupter_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -1967,6 +2263,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_cronus_ballistic</defName>
+  <label>cronus ballistic</label>
   <ammoTypes>
     <Ammo_OE_cronus_ballistic_standard>Bullet_OE_cronus_ballistic_standard</Ammo_OE_cronus_ballistic_standard>
     <Ammo_OE_cronus_ballistic_ap>Bullet_OE_cronus_ballistic_ap</Ammo_OE_cronus_ballistic_ap>
@@ -1977,6 +2274,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cronus_ballistic_standard</defName>
+  <label>cronus ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_cronus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2000,6 +2301,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cronus_ballistic_ap</defName>
+  <label>cronus ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_cronus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2023,6 +2328,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cronus_ballistic_hp</defName>
+  <label>cronus ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_cronus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2046,6 +2355,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_cronus_ballistic_emp</defName>
+  <label>cronus ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_cronus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2082,6 +2395,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_dark_giants_bane_ballistic</defName>
+  <label>dark_giants_bane ballistic</label>
   <ammoTypes>
     <Ammo_OE_dark_giants_bane_ballistic_standard>Bullet_OE_dark_giants_bane_ballistic_standard</Ammo_OE_dark_giants_bane_ballistic_standard>
     <Ammo_OE_dark_giants_bane_ballistic_ap>Bullet_OE_dark_giants_bane_ballistic_ap</Ammo_OE_dark_giants_bane_ballistic_ap>
@@ -2091,6 +2405,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_giants_bane_ballistic_standard</defName>
+  <label>dark_giants_bane ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_dark_giants_bane_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2114,6 +2432,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_giants_bane_ballistic_ap</defName>
+  <label>dark_giants_bane ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_dark_giants_bane_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2137,6 +2459,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_giants_bane_ballistic_hp</defName>
+  <label>dark_giants_bane ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_dark_giants_bane_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2166,6 +2492,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_dark_hydra_ballistic</defName>
+  <label>dark_hydra ballistic</label>
   <ammoTypes>
     <Ammo_OE_dark_hydra_ballistic_standard>Bullet_OE_dark_hydra_ballistic_standard</Ammo_OE_dark_hydra_ballistic_standard>
     <Ammo_OE_dark_hydra_ballistic_ap>Bullet_OE_dark_hydra_ballistic_ap</Ammo_OE_dark_hydra_ballistic_ap>
@@ -2176,6 +2503,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_hydra_ballistic_standard</defName>
+  <label>dark_hydra ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_dark_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2199,6 +2530,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_hydra_ballistic_ap</defName>
+  <label>dark_hydra ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_dark_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2222,6 +2557,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_hydra_ballistic_hp</defName>
+  <label>dark_hydra ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_dark_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2245,6 +2584,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_hydra_ballistic_emp</defName>
+  <label>dark_hydra ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_dark_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2281,6 +2624,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_dark_judgement_ballistic</defName>
+  <label>dark_judgement ballistic</label>
   <ammoTypes>
     <Ammo_OE_dark_judgement_ballistic_standard>Bullet_OE_dark_judgement_ballistic_standard</Ammo_OE_dark_judgement_ballistic_standard>
     <Ammo_OE_dark_judgement_ballistic_ap>Bullet_OE_dark_judgement_ballistic_ap</Ammo_OE_dark_judgement_ballistic_ap>
@@ -2291,6 +2635,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_judgement_ballistic_standard</defName>
+  <label>dark_judgement ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_dark_judgement_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2314,6 +2662,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_judgement_ballistic_ap</defName>
+  <label>dark_judgement ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_dark_judgement_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2337,6 +2689,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_judgement_ballistic_hp</defName>
+  <label>dark_judgement ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_dark_judgement_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2360,6 +2716,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_dark_judgement_ballistic_emp</defName>
+  <label>dark_judgement ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_dark_judgement_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2396,6 +2756,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_datashot_ballistic</defName>
+  <label>datashot ballistic</label>
   <ammoTypes>
     <Ammo_OE_datashot_ballistic_standard>Bullet_OE_datashot_ballistic_standard</Ammo_OE_datashot_ballistic_standard>
     <Ammo_OE_datashot_ballistic_ap>Bullet_OE_datashot_ballistic_ap</Ammo_OE_datashot_ballistic_ap>
@@ -2405,6 +2766,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_datashot_ballistic_standard</defName>
+  <label>datashot ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_datashot_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2428,6 +2793,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_datashot_ballistic_ap</defName>
+  <label>datashot ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_datashot_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2451,6 +2820,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_datashot_ballistic_hp</defName>
+  <label>datashot ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_datashot_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2480,6 +2853,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_doom_ballistic</defName>
+  <label>doom ballistic</label>
   <ammoTypes>
     <Ammo_OE_doom_ballistic_standard>Bullet_OE_doom_ballistic_standard</Ammo_OE_doom_ballistic_standard>
     <Ammo_OE_doom_ballistic_ap>Bullet_OE_doom_ballistic_ap</Ammo_OE_doom_ballistic_ap>
@@ -2490,6 +2864,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_doom_ballistic_standard</defName>
+  <label>doom ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_doom_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2513,6 +2891,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_doom_ballistic_ap</defName>
+  <label>doom ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_doom_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2536,6 +2918,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_doom_ballistic_hp</defName>
+  <label>doom ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_doom_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2559,6 +2945,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_doom_ballistic_emp</defName>
+  <label>doom ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_doom_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2595,6 +2985,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_equalizer_ballistic</defName>
+  <label>equalizer ballistic</label>
   <ammoTypes>
     <Ammo_OE_equalizer_ballistic_standard>Bullet_OE_equalizer_ballistic_standard</Ammo_OE_equalizer_ballistic_standard>
     <Ammo_OE_equalizer_ballistic_ap>Bullet_OE_equalizer_ballistic_ap</Ammo_OE_equalizer_ballistic_ap>
@@ -2604,6 +2995,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_ballistic_standard</defName>
+  <label>equalizer ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2627,6 +3022,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_ballistic_ap</defName>
+  <label>equalizer ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2650,6 +3049,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_ballistic_hp</defName>
+  <label>equalizer ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2679,6 +3082,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_etherstrike_ballistic</defName>
+  <label>etherstrike ballistic</label>
   <ammoTypes>
     <Ammo_OE_etherstrike_ballistic_standard>Bullet_OE_etherstrike_ballistic_standard</Ammo_OE_etherstrike_ballistic_standard>
     <Ammo_OE_etherstrike_ballistic_ap>Bullet_OE_etherstrike_ballistic_ap</Ammo_OE_etherstrike_ballistic_ap>
@@ -2689,6 +3093,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_etherstrike_ballistic_standard</defName>
+  <label>etherstrike ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_etherstrike_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2712,6 +3120,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_etherstrike_ballistic_ap</defName>
+  <label>etherstrike ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_etherstrike_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2735,6 +3147,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_etherstrike_ballistic_hp</defName>
+  <label>etherstrike ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_etherstrike_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2758,6 +3174,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_etherstrike_ballistic_emp</defName>
+  <label>etherstrike ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_etherstrike_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2794,6 +3214,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_giants_bane_ballistic</defName>
+  <label>giants_bane ballistic</label>
   <ammoTypes>
     <Ammo_OE_giants_bane_ballistic_standard>Bullet_OE_giants_bane_ballistic_standard</Ammo_OE_giants_bane_ballistic_standard>
     <Ammo_OE_giants_bane_ballistic_ap>Bullet_OE_giants_bane_ballistic_ap</Ammo_OE_giants_bane_ballistic_ap>
@@ -2803,6 +3224,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_giants_bane_ballistic_standard</defName>
+  <label>giants_bane ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_giants_bane_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2826,6 +3251,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_giants_bane_ballistic_ap</defName>
+  <label>giants_bane ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_giants_bane_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2849,6 +3278,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_giants_bane_ballistic_hp</defName>
+  <label>giants_bane ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_giants_bane_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2878,6 +3311,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_harvest_ballistic</defName>
+  <label>harvest ballistic</label>
   <ammoTypes>
     <Ammo_OE_harvest_ballistic_standard>Bullet_OE_harvest_ballistic_standard</Ammo_OE_harvest_ballistic_standard>
     <Ammo_OE_harvest_ballistic_ap>Bullet_OE_harvest_ballistic_ap</Ammo_OE_harvest_ballistic_ap>
@@ -2887,6 +3321,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_harvest_ballistic_standard</defName>
+  <label>harvest ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_harvest_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2910,6 +3348,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_harvest_ballistic_ap</defName>
+  <label>harvest ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_harvest_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2933,6 +3375,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_harvest_ballistic_hp</defName>
+  <label>harvest ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_harvest_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2962,6 +3408,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_hellscream_ballistic</defName>
+  <label>hellscream ballistic</label>
   <ammoTypes>
     <Ammo_OE_hellscream_ballistic_standard>Bullet_OE_hellscream_ballistic_standard</Ammo_OE_hellscream_ballistic_standard>
     <Ammo_OE_hellscream_ballistic_ap>Bullet_OE_hellscream_ballistic_ap</Ammo_OE_hellscream_ballistic_ap>
@@ -2972,6 +3419,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hellscream_ballistic_standard</defName>
+  <label>hellscream ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_hellscream_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -2995,6 +3446,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hellscream_ballistic_ap</defName>
+  <label>hellscream ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_hellscream_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3018,6 +3473,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hellscream_ballistic_hp</defName>
+  <label>hellscream ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_hellscream_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3041,6 +3500,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hellscream_ballistic_emp</defName>
+  <label>hellscream ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_hellscream_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3077,6 +3540,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_hornet_ballistic</defName>
+  <label>hornet ballistic</label>
   <ammoTypes>
     <Ammo_OE_hornet_ballistic_standard>Bullet_OE_hornet_ballistic_standard</Ammo_OE_hornet_ballistic_standard>
     <Ammo_OE_hornet_ballistic_ap>Bullet_OE_hornet_ballistic_ap</Ammo_OE_hornet_ballistic_ap>
@@ -3086,6 +3550,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hornet_ballistic_standard</defName>
+  <label>hornet ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_hornet_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3109,6 +3577,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hornet_ballistic_ap</defName>
+  <label>hornet ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_hornet_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3132,6 +3604,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hornet_ballistic_hp</defName>
+  <label>hornet ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_hornet_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3161,6 +3637,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_humunculus_ballistic</defName>
+  <label>humunculus ballistic</label>
   <ammoTypes>
     <Ammo_OE_humunculus_ballistic_standard>Bullet_OE_humunculus_ballistic_standard</Ammo_OE_humunculus_ballistic_standard>
     <Ammo_OE_humunculus_ballistic_ap>Bullet_OE_humunculus_ballistic_ap</Ammo_OE_humunculus_ballistic_ap>
@@ -3170,6 +3647,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_humunculus_ballistic_standard</defName>
+  <label>humunculus ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_humunculus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3193,6 +3674,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_humunculus_ballistic_ap</defName>
+  <label>humunculus ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_humunculus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3216,6 +3701,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_humunculus_ballistic_hp</defName>
+  <label>humunculus ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_humunculus_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3245,6 +3734,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_hydra_ballistic</defName>
+  <label>hydra ballistic</label>
   <ammoTypes>
     <Ammo_OE_hydra_ballistic_standard>Bullet_OE_hydra_ballistic_standard</Ammo_OE_hydra_ballistic_standard>
     <Ammo_OE_hydra_ballistic_ap>Bullet_OE_hydra_ballistic_ap</Ammo_OE_hydra_ballistic_ap>
@@ -3255,6 +3745,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hydra_ballistic_standard</defName>
+  <label>hydra ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3278,6 +3772,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hydra_ballistic_ap</defName>
+  <label>hydra ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3301,6 +3799,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hydra_ballistic_hp</defName>
+  <label>hydra ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3324,6 +3826,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_hydra_ballistic_emp</defName>
+  <label>hydra ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_hydra_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3360,6 +3866,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_impaler_ballistic</defName>
+  <label>impaler ballistic</label>
   <ammoTypes>
     <Ammo_OE_impaler_ballistic_standard>Bullet_OE_impaler_ballistic_standard</Ammo_OE_impaler_ballistic_standard>
     <Ammo_OE_impaler_ballistic_ap>Bullet_OE_impaler_ballistic_ap</Ammo_OE_impaler_ballistic_ap>
@@ -3369,6 +3876,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_impaler_ballistic_standard</defName>
+  <label>impaler ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_impaler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3392,6 +3903,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_impaler_ballistic_ap</defName>
+  <label>impaler ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_impaler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3415,6 +3930,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_impaler_ballistic_hp</defName>
+  <label>impaler ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_impaler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3444,6 +3963,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_inheritance_ballistic</defName>
+  <label>inheritance ballistic</label>
   <ammoTypes>
     <Ammo_OE_inheritance_ballistic_standard>Bullet_OE_inheritance_ballistic_standard</Ammo_OE_inheritance_ballistic_standard>
     <Ammo_OE_inheritance_ballistic_ap>Bullet_OE_inheritance_ballistic_ap</Ammo_OE_inheritance_ballistic_ap>
@@ -3454,6 +3974,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_inheritance_ballistic_standard</defName>
+  <label>inheritance ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_inheritance_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3477,6 +4001,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_inheritance_ballistic_ap</defName>
+  <label>inheritance ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_inheritance_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3500,6 +4028,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_inheritance_ballistic_hp</defName>
+  <label>inheritance ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_inheritance_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3523,6 +4055,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_inheritance_ballistic_emp</defName>
+  <label>inheritance ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_inheritance_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3559,6 +4095,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_merciless_ballistic</defName>
+  <label>merciless ballistic</label>
   <ammoTypes>
     <Ammo_OE_merciless_ballistic_standard>Bullet_OE_merciless_ballistic_standard</Ammo_OE_merciless_ballistic_standard>
     <Ammo_OE_merciless_ballistic_ap>Bullet_OE_merciless_ballistic_ap</Ammo_OE_merciless_ballistic_ap>
@@ -3568,6 +4105,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_merciless_ballistic_standard</defName>
+  <label>merciless ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_merciless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3591,6 +4132,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_merciless_ballistic_ap</defName>
+  <label>merciless ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_merciless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3614,6 +4159,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_merciless_ballistic_hp</defName>
+  <label>merciless ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_merciless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3643,6 +4192,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_misfit_ballistic</defName>
+  <label>misfit ballistic</label>
   <ammoTypes>
     <Ammo_OE_misfit_ballistic_standard>Bullet_OE_misfit_ballistic_standard</Ammo_OE_misfit_ballistic_standard>
     <Ammo_OE_misfit_ballistic_ap>Bullet_OE_misfit_ballistic_ap</Ammo_OE_misfit_ballistic_ap>
@@ -3652,6 +4202,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_misfit_ballistic_standard</defName>
+  <label>misfit ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_misfit_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3675,6 +4229,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_misfit_ballistic_ap</defName>
+  <label>misfit ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_misfit_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3698,6 +4256,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_misfit_ballistic_hp</defName>
+  <label>misfit ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_misfit_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3727,6 +4289,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nanofire_ballistic</defName>
+  <label>nanofire ballistic</label>
   <ammoTypes>
     <Ammo_OE_nanofire_ballistic_standard>Bullet_OE_nanofire_ballistic_standard</Ammo_OE_nanofire_ballistic_standard>
     <Ammo_OE_nanofire_ballistic_ap>Bullet_OE_nanofire_ballistic_ap</Ammo_OE_nanofire_ballistic_ap>
@@ -3736,6 +4299,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nanofire_ballistic_standard</defName>
+  <label>nanofire ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_nanofire_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3759,6 +4326,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nanofire_ballistic_ap</defName>
+  <label>nanofire ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_nanofire_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3782,6 +4353,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nanofire_ballistic_hp</defName>
+  <label>nanofire ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_nanofire_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3804,90 +4379,6 @@
 </ThingDef>
 
 <ThingCategoryDef>
-  <defName>AmmoOE_neon_echo_ballistic</defName>
-  <label>OE neon_echo ballistic</label>
-  <parent>AmmoAdvanced</parent>
-</ThingCategoryDef>
-
-<CombatExtended.AmmoSetDef>
-  <defName>AmmoSet_OE_neon_echo_ballistic</defName>
-  <ammoTypes>
-    <Ammo_OE_neon_echo_ballistic_standard>Bullet_OE_neon_echo_ballistic_standard</Ammo_OE_neon_echo_ballistic_standard>
-    <Ammo_OE_neon_echo_ballistic_ap>Bullet_OE_neon_echo_ballistic_ap</Ammo_OE_neon_echo_ballistic_ap>
-    <Ammo_OE_neon_echo_ballistic_hp>Bullet_OE_neon_echo_ballistic_hp</Ammo_OE_neon_echo_ballistic_hp>
-  </ammoTypes>
-</CombatExtended.AmmoSetDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_neon_echo_ballistic_standard</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>FMJ</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_neon_echo_ballistic_standard</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_neon_echo_ballistic_ap</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>ArmorPiercing</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_neon_echo_ballistic_ap</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_neon_echo_ballistic_hp</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>HollowPoint</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_neon_echo_ballistic_hp</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingCategoryDef>
   <defName>AmmoOE_patagius_ballistic</defName>
   <label>OE patagius ballistic</label>
   <parent>AmmoAdvanced</parent>
@@ -3895,6 +4386,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_patagius_ballistic</defName>
+  <label>patagius ballistic</label>
   <ammoTypes>
     <Ammo_OE_patagius_ballistic_standard>Bullet_OE_patagius_ballistic_standard</Ammo_OE_patagius_ballistic_standard>
     <Ammo_OE_patagius_ballistic_ap>Bullet_OE_patagius_ballistic_ap</Ammo_OE_patagius_ballistic_ap>
@@ -3905,6 +4397,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_patagius_ballistic_standard</defName>
+  <label>patagius ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_patagius_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3928,6 +4424,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_patagius_ballistic_ap</defName>
+  <label>patagius ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_patagius_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3951,6 +4451,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_patagius_ballistic_hp</defName>
+  <label>patagius ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_patagius_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -3974,6 +4478,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_patagius_ballistic_emp</defName>
+  <label>patagius ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_patagius_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4010,6 +4518,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_pride_ballistic</defName>
+  <label>pride ballistic</label>
   <ammoTypes>
     <Ammo_OE_pride_ballistic_standard>Bullet_OE_pride_ballistic_standard</Ammo_OE_pride_ballistic_standard>
     <Ammo_OE_pride_ballistic_ap>Bullet_OE_pride_ballistic_ap</Ammo_OE_pride_ballistic_ap>
@@ -4020,6 +4529,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pride_ballistic_standard</defName>
+  <label>pride ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_pride_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4043,6 +4556,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pride_ballistic_ap</defName>
+  <label>pride ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_pride_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4066,6 +4583,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pride_ballistic_hp</defName>
+  <label>pride ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_pride_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4089,6 +4610,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pride_ballistic_emp</defName>
+  <label>pride ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_pride_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4118,90 +4643,6 @@
 </ThingDef>
 
 <ThingCategoryDef>
-  <defName>AmmoOE_proboscis_ballistic</defName>
-  <label>OE proboscis ballistic</label>
-  <parent>AmmoAdvanced</parent>
-</ThingCategoryDef>
-
-<CombatExtended.AmmoSetDef>
-  <defName>AmmoSet_OE_proboscis_ballistic</defName>
-  <ammoTypes>
-    <Ammo_OE_proboscis_ballistic_standard>Bullet_OE_proboscis_ballistic_standard</Ammo_OE_proboscis_ballistic_standard>
-    <Ammo_OE_proboscis_ballistic_ap>Bullet_OE_proboscis_ballistic_ap</Ammo_OE_proboscis_ballistic_ap>
-    <Ammo_OE_proboscis_ballistic_hp>Bullet_OE_proboscis_ballistic_hp</Ammo_OE_proboscis_ballistic_hp>
-  </ammoTypes>
-</CombatExtended.AmmoSetDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_proboscis_ballistic_standard</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>FMJ</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_proboscis_ballistic_standard</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_proboscis_ballistic_ap</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>ArmorPiercing</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_proboscis_ballistic_ap</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_proboscis_ballistic_hp</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>HollowPoint</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_proboscis_ballistic_hp</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingCategoryDef>
   <defName>AmmoOE_prototype_sx_01a_ballistic</defName>
   <label>OE prototype_sx_01a ballistic</label>
   <parent>AmmoAdvanced</parent>
@@ -4209,6 +4650,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_prototype_sx_01a_ballistic</defName>
+  <label>prototype_sx_01a ballistic</label>
   <ammoTypes>
     <Ammo_OE_prototype_sx_01a_ballistic_standard>Bullet_OE_prototype_sx_01a_ballistic_standard</Ammo_OE_prototype_sx_01a_ballistic_standard>
     <Ammo_OE_prototype_sx_01a_ballistic_ap>Bullet_OE_prototype_sx_01a_ballistic_ap</Ammo_OE_prototype_sx_01a_ballistic_ap>
@@ -4218,6 +4660,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_prototype_sx_01a_ballistic_standard</defName>
+  <label>prototype_sx_01a ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_prototype_sx_01a_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4241,6 +4687,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_prototype_sx_01a_ballistic_ap</defName>
+  <label>prototype_sx_01a ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_prototype_sx_01a_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4264,6 +4714,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_prototype_sx_01a_ballistic_hp</defName>
+  <label>prototype_sx_01a ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_prototype_sx_01a_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4293,6 +4747,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_purpose_ballistic</defName>
+  <label>purpose ballistic</label>
   <ammoTypes>
     <Ammo_OE_purpose_ballistic_standard>Bullet_OE_purpose_ballistic_standard</Ammo_OE_purpose_ballistic_standard>
     <Ammo_OE_purpose_ballistic_ap>Bullet_OE_purpose_ballistic_ap</Ammo_OE_purpose_ballistic_ap>
@@ -4302,6 +4757,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_purpose_ballistic_standard</defName>
+  <label>purpose ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_purpose_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4325,6 +4784,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_purpose_ballistic_ap</defName>
+  <label>purpose ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_purpose_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4348,6 +4811,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_purpose_ballistic_hp</defName>
+  <label>purpose ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_purpose_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4370,205 +4837,6 @@
 </ThingDef>
 
 <ThingCategoryDef>
-  <defName>AmmoOE_randys_deck_ballistic</defName>
-  <label>OE randys_deck ballistic</label>
-  <parent>AmmoAdvanced</parent>
-</ThingCategoryDef>
-
-<CombatExtended.AmmoSetDef>
-  <defName>AmmoSet_OE_randys_deck_ballistic</defName>
-  <ammoTypes>
-    <Ammo_OE_randys_deck_ballistic_standard>Bullet_OE_randys_deck_ballistic_standard</Ammo_OE_randys_deck_ballistic_standard>
-    <Ammo_OE_randys_deck_ballistic_ap>Bullet_OE_randys_deck_ballistic_ap</Ammo_OE_randys_deck_ballistic_ap>
-    <Ammo_OE_randys_deck_ballistic_hp>Bullet_OE_randys_deck_ballistic_hp</Ammo_OE_randys_deck_ballistic_hp>
-  </ammoTypes>
-</CombatExtended.AmmoSetDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_randys_deck_ballistic_standard</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>FMJ</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_randys_deck_ballistic_standard</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_randys_deck_ballistic_ap</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>ArmorPiercing</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_randys_deck_ballistic_ap</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_randys_deck_ballistic_hp</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>HollowPoint</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_randys_deck_ballistic_hp</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingCategoryDef>
-  <defName>AmmoOE_reaper_ballistic</defName>
-  <label>OE reaper ballistic</label>
-  <parent>AmmoAdvanced</parent>
-</ThingCategoryDef>
-
-<CombatExtended.AmmoSetDef>
-  <defName>AmmoSet_OE_reaper_ballistic</defName>
-  <ammoTypes>
-    <Ammo_OE_reaper_ballistic_standard>Bullet_OE_reaper_ballistic_standard</Ammo_OE_reaper_ballistic_standard>
-    <Ammo_OE_reaper_ballistic_ap>Bullet_OE_reaper_ballistic_ap</Ammo_OE_reaper_ballistic_ap>
-    <Ammo_OE_reaper_ballistic_hp>Bullet_OE_reaper_ballistic_hp</Ammo_OE_reaper_ballistic_hp>
-    <Ammo_OE_reaper_ballistic_emp>Bullet_OE_reaper_ballistic_emp</Ammo_OE_reaper_ballistic_emp>
-  </ammoTypes>
-</CombatExtended.AmmoSetDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_reaper_ballistic_standard</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>FMJ</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_reaper_ballistic_standard</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_reaper_ballistic_ap</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>ArmorPiercing</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_reaper_ballistic_ap</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_reaper_ballistic_hp</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>HollowPoint</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_reaper_ballistic_hp</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-  </projectile>
-</ThingDef>
-
-<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
-  <defName>Ammo_OE_reaper_ballistic_emp</defName>
-  <graphicData>
-    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
-    <graphicClass>Graphic_StackCount</graphicClass>
-  </graphicData>
-  <ammoClass>Ionized</ammoClass>
-  <tradeTags>
-    <li>CE_AutoEnableTrade</li>
-    <li>OEGear</li>
-  </tradeTags>
-</ThingDef>
-
-<ThingDef ParentName="BaseBulletCE">
-  <defName>Bullet_OE_reaper_ballistic_emp</defName>
-  <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <secondaryDamage>
-      <li>
-        <def>EMP</def>
-        <amount>6</amount>
-      </li>
-    </secondaryDamage>
-    <empShieldBreakChance>0.15</empShieldBreakChance>
-  </projectile>
-</ThingDef>
-
-<ThingCategoryDef>
   <defName>AmmoOE_scylla_ballistic</defName>
   <label>OE scylla ballistic</label>
   <parent>AmmoAdvanced</parent>
@@ -4576,6 +4844,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_scylla_ballistic</defName>
+  <label>scylla ballistic</label>
   <ammoTypes>
     <Ammo_OE_scylla_ballistic_standard>Bullet_OE_scylla_ballistic_standard</Ammo_OE_scylla_ballistic_standard>
     <Ammo_OE_scylla_ballistic_ap>Bullet_OE_scylla_ballistic_ap</Ammo_OE_scylla_ballistic_ap>
@@ -4586,6 +4855,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_scylla_ballistic_standard</defName>
+  <label>scylla ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_scylla_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4609,6 +4882,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_scylla_ballistic_ap</defName>
+  <label>scylla ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_scylla_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4632,6 +4909,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_scylla_ballistic_hp</defName>
+  <label>scylla ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_scylla_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4655,6 +4936,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_scylla_ballistic_emp</defName>
+  <label>scylla ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_scylla_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4691,6 +4976,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_skullmasher_ballistic</defName>
+  <label>skullmasher ballistic</label>
   <ammoTypes>
     <Ammo_OE_skullmasher_ballistic_standard>Bullet_OE_skullmasher_ballistic_standard</Ammo_OE_skullmasher_ballistic_standard>
     <Ammo_OE_skullmasher_ballistic_ap>Bullet_OE_skullmasher_ballistic_ap</Ammo_OE_skullmasher_ballistic_ap>
@@ -4701,6 +4987,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_skullmasher_ballistic_standard</defName>
+  <label>skullmasher ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_skullmasher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4724,6 +5014,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_skullmasher_ballistic_ap</defName>
+  <label>skullmasher ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_skullmasher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4747,6 +5041,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_skullmasher_ballistic_hp</defName>
+  <label>skullmasher ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_skullmasher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4770,6 +5068,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_skullmasher_ballistic_emp</defName>
+  <label>skullmasher ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_skullmasher_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4806,6 +5108,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_smuggler_ballistic</defName>
+  <label>smuggler ballistic</label>
   <ammoTypes>
     <Ammo_OE_smuggler_ballistic_standard>Bullet_OE_smuggler_ballistic_standard</Ammo_OE_smuggler_ballistic_standard>
     <Ammo_OE_smuggler_ballistic_ap>Bullet_OE_smuggler_ballistic_ap</Ammo_OE_smuggler_ballistic_ap>
@@ -4816,6 +5119,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_smuggler_ballistic_standard</defName>
+  <label>smuggler ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_smuggler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4839,6 +5146,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_smuggler_ballistic_ap</defName>
+  <label>smuggler ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_smuggler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4862,6 +5173,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_smuggler_ballistic_hp</defName>
+  <label>smuggler ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_smuggler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4885,6 +5200,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_smuggler_ballistic_emp</defName>
+  <label>smuggler ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_smuggler_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4921,6 +5240,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_striker_ballistic</defName>
+  <label>striker ballistic</label>
   <ammoTypes>
     <Ammo_OE_striker_ballistic_standard>Bullet_OE_striker_ballistic_standard</Ammo_OE_striker_ballistic_standard>
     <Ammo_OE_striker_ballistic_ap>Bullet_OE_striker_ballistic_ap</Ammo_OE_striker_ballistic_ap>
@@ -4931,6 +5251,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_striker_ballistic_standard</defName>
+  <label>striker ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_striker_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4954,6 +5278,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_striker_ballistic_ap</defName>
+  <label>striker ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_striker_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -4977,6 +5305,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_striker_ballistic_hp</defName>
+  <label>striker ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_striker_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5000,6 +5332,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_striker_ballistic_emp</defName>
+  <label>striker ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_striker_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5036,6 +5372,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_thoughtless_ballistic</defName>
+  <label>thoughtless ballistic</label>
   <ammoTypes>
     <Ammo_OE_thoughtless_ballistic_standard>Bullet_OE_thoughtless_ballistic_standard</Ammo_OE_thoughtless_ballistic_standard>
     <Ammo_OE_thoughtless_ballistic_ap>Bullet_OE_thoughtless_ballistic_ap</Ammo_OE_thoughtless_ballistic_ap>
@@ -5046,6 +5383,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_thoughtless_ballistic_standard</defName>
+  <label>thoughtless ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_thoughtless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5069,6 +5410,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_thoughtless_ballistic_ap</defName>
+  <label>thoughtless ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_thoughtless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5092,6 +5437,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_thoughtless_ballistic_hp</defName>
+  <label>thoughtless ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_thoughtless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5115,6 +5464,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_thoughtless_ballistic_emp</defName>
+  <label>thoughtless ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_thoughtless_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5151,6 +5504,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_toxocyst_ballistic</defName>
+  <label>toxocyst ballistic</label>
   <ammoTypes>
     <Ammo_OE_toxocyst_ballistic_standard>Bullet_OE_toxocyst_ballistic_standard</Ammo_OE_toxocyst_ballistic_standard>
     <Ammo_OE_toxocyst_ballistic_ap>Bullet_OE_toxocyst_ballistic_ap</Ammo_OE_toxocyst_ballistic_ap>
@@ -5160,6 +5514,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_toxocyst_ballistic_standard</defName>
+  <label>toxocyst ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_toxocyst_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5183,6 +5541,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_toxocyst_ballistic_ap</defName>
+  <label>toxocyst ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_toxocyst_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5206,6 +5568,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_toxocyst_ballistic_hp</defName>
+  <label>toxocyst ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_toxocyst_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5235,6 +5601,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_trespasser_ballistic</defName>
+  <label>trespasser ballistic</label>
   <ammoTypes>
     <Ammo_OE_trespasser_ballistic_standard>Bullet_OE_trespasser_ballistic_standard</Ammo_OE_trespasser_ballistic_standard>
     <Ammo_OE_trespasser_ballistic_ap>Bullet_OE_trespasser_ballistic_ap</Ammo_OE_trespasser_ballistic_ap>
@@ -5244,6 +5611,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_ballistic_standard</defName>
+  <label>trespasser ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5267,6 +5638,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_ballistic_ap</defName>
+  <label>trespasser ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5290,6 +5665,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_ballistic_hp</defName>
+  <label>trespasser ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5319,6 +5698,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_unchained_ballistic</defName>
+  <label>unchained ballistic</label>
   <ammoTypes>
     <Ammo_OE_unchained_ballistic_standard>Bullet_OE_unchained_ballistic_standard</Ammo_OE_unchained_ballistic_standard>
     <Ammo_OE_unchained_ballistic_ap>Bullet_OE_unchained_ballistic_ap</Ammo_OE_unchained_ballistic_ap>
@@ -5329,6 +5709,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_unchained_ballistic_standard</defName>
+  <label>unchained ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_unchained_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5352,6 +5736,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_unchained_ballistic_ap</defName>
+  <label>unchained ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_unchained_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5375,6 +5763,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_unchained_ballistic_hp</defName>
+  <label>unchained ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_unchained_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5398,6 +5790,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_unchained_ballistic_emp</defName>
+  <label>unchained ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_unchained_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5434,6 +5830,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_void_shredder_ballistic</defName>
+  <label>void_shredder ballistic</label>
   <ammoTypes>
     <Ammo_OE_void_shredder_ballistic_standard>Bullet_OE_void_shredder_ballistic_standard</Ammo_OE_void_shredder_ballistic_standard>
     <Ammo_OE_void_shredder_ballistic_ap>Bullet_OE_void_shredder_ballistic_ap</Ammo_OE_void_shredder_ballistic_ap>
@@ -5444,6 +5841,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_void_shredder_ballistic_standard</defName>
+  <label>void_shredder ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_void_shredder_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5467,6 +5868,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_void_shredder_ballistic_ap</defName>
+  <label>void_shredder ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_void_shredder_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5490,6 +5895,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_void_shredder_ballistic_hp</defName>
+  <label>void_shredder ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_void_shredder_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5513,6 +5922,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_void_shredder_ballistic_emp</defName>
+  <label>void_shredder ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_void_shredder_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5549,6 +5962,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_wendigo_ballistic</defName>
+  <label>wendigo ballistic</label>
   <ammoTypes>
     <Ammo_OE_wendigo_ballistic_standard>Bullet_OE_wendigo_ballistic_standard</Ammo_OE_wendigo_ballistic_standard>
     <Ammo_OE_wendigo_ballistic_ap>Bullet_OE_wendigo_ballistic_ap</Ammo_OE_wendigo_ballistic_ap>
@@ -5559,6 +5973,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_wendigo_ballistic_standard</defName>
+  <label>wendigo ballistic standard</label>
+  <thingCategories>
+    <li>AmmoOE_wendigo_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5582,6 +6000,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_wendigo_ballistic_ap</defName>
+  <label>wendigo ballistic ap</label>
+  <thingCategories>
+    <li>AmmoOE_wendigo_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5605,6 +6027,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_wendigo_ballistic_hp</defName>
+  <label>wendigo ballistic hp</label>
+  <thingCategories>
+    <li>AmmoOE_wendigo_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5628,6 +6054,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_wendigo_ballistic_emp</defName>
+  <label>wendigo ballistic emp</label>
+  <thingCategories>
+    <li>AmmoOE_wendigo_ballistic</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5664,6 +6094,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_bloodspiller_cryo</defName>
+  <label>bloodspiller cryo</label>
   <ammoTypes>
     <Ammo_OE_bloodspiller_cryo_standard>Bullet_OE_bloodspiller_cryo_standard</Ammo_OE_bloodspiller_cryo_standard>
     <Ammo_OE_bloodspiller_cryo_ap>Bullet_OE_bloodspiller_cryo_ap</Ammo_OE_bloodspiller_cryo_ap>
@@ -5673,6 +6104,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_cryo_standard</defName>
+  <label>bloodspiller cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5696,6 +6131,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_cryo_ap</defName>
+  <label>bloodspiller cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5719,6 +6158,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_cryo_hp</defName>
+  <label>bloodspiller cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5748,6 +6191,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_boomshooter_cryo</defName>
+  <label>boomshooter cryo</label>
   <ammoTypes>
     <Ammo_OE_boomshooter_cryo_standard>Bullet_OE_boomshooter_cryo_standard</Ammo_OE_boomshooter_cryo_standard>
     <Ammo_OE_boomshooter_cryo_ap>Bullet_OE_boomshooter_cryo_ap</Ammo_OE_boomshooter_cryo_ap>
@@ -5757,6 +6201,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_cryo_standard</defName>
+  <label>boomshooter cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5780,6 +6228,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_cryo_ap</defName>
+  <label>boomshooter cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5803,6 +6255,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_cryo_hp</defName>
+  <label>boomshooter cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5832,6 +6288,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_celestial_cryo</defName>
+  <label>celestial cryo</label>
   <ammoTypes>
     <Ammo_OE_celestial_cryo_standard>Bullet_OE_celestial_cryo_standard</Ammo_OE_celestial_cryo_standard>
     <Ammo_OE_celestial_cryo_ap>Bullet_OE_celestial_cryo_ap</Ammo_OE_celestial_cryo_ap>
@@ -5841,6 +6298,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_cryo_standard</defName>
+  <label>celestial cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5864,6 +6325,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_cryo_ap</defName>
+  <label>celestial cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5887,6 +6352,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_cryo_hp</defName>
+  <label>celestial cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5916,6 +6385,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_conspirator_cryo</defName>
+  <label>conspirator cryo</label>
   <ammoTypes>
     <Ammo_OE_conspirator_cryo_standard>Bullet_OE_conspirator_cryo_standard</Ammo_OE_conspirator_cryo_standard>
     <Ammo_OE_conspirator_cryo_ap>Bullet_OE_conspirator_cryo_ap</Ammo_OE_conspirator_cryo_ap>
@@ -5926,6 +6396,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_cryo_standard</defName>
+  <label>conspirator cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5949,6 +6423,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_cryo_ap</defName>
+  <label>conspirator cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5972,6 +6450,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_cryo_hp</defName>
+  <label>conspirator cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -5995,6 +6477,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_cryo_emp</defName>
+  <label>conspirator cryo emp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6031,6 +6517,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_equalizer_cryo</defName>
+  <label>equalizer cryo</label>
   <ammoTypes>
     <Ammo_OE_equalizer_cryo_standard>Bullet_OE_equalizer_cryo_standard</Ammo_OE_equalizer_cryo_standard>
     <Ammo_OE_equalizer_cryo_ap>Bullet_OE_equalizer_cryo_ap</Ammo_OE_equalizer_cryo_ap>
@@ -6040,6 +6527,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_cryo_standard</defName>
+  <label>equalizer cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6063,6 +6554,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_cryo_ap</defName>
+  <label>equalizer cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6086,6 +6581,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_cryo_hp</defName>
+  <label>equalizer cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6115,6 +6614,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_meteor_cryo</defName>
+  <label>meteor cryo</label>
   <ammoTypes>
     <Ammo_OE_meteor_cryo_standard>Bullet_OE_meteor_cryo_standard</Ammo_OE_meteor_cryo_standard>
     <Ammo_OE_meteor_cryo_ap>Bullet_OE_meteor_cryo_ap</Ammo_OE_meteor_cryo_ap>
@@ -6124,6 +6624,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_cryo_standard</defName>
+  <label>meteor cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6147,6 +6651,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_cryo_ap</defName>
+  <label>meteor cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6170,6 +6678,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_cryo_hp</defName>
+  <label>meteor cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6199,6 +6711,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nimbus_cryo</defName>
+  <label>nimbus cryo</label>
   <ammoTypes>
     <Ammo_OE_nimbus_cryo_standard>Bullet_OE_nimbus_cryo_standard</Ammo_OE_nimbus_cryo_standard>
     <Ammo_OE_nimbus_cryo_ap>Bullet_OE_nimbus_cryo_ap</Ammo_OE_nimbus_cryo_ap>
@@ -6209,6 +6722,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_cryo_standard</defName>
+  <label>nimbus cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6232,6 +6749,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_cryo_ap</defName>
+  <label>nimbus cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6255,6 +6776,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_cryo_hp</defName>
+  <label>nimbus cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6278,6 +6803,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_cryo_emp</defName>
+  <label>nimbus cryo emp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6314,6 +6843,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nova_cryo</defName>
+  <label>nova cryo</label>
   <ammoTypes>
     <Ammo_OE_nova_cryo_standard>Bullet_OE_nova_cryo_standard</Ammo_OE_nova_cryo_standard>
     <Ammo_OE_nova_cryo_ap>Bullet_OE_nova_cryo_ap</Ammo_OE_nova_cryo_ap>
@@ -6324,6 +6854,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_cryo_standard</defName>
+  <label>nova cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_nova_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6347,6 +6881,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_cryo_ap</defName>
+  <label>nova cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_nova_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6370,6 +6908,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_cryo_hp</defName>
+  <label>nova cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6393,6 +6935,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_cryo_emp</defName>
+  <label>nova cryo emp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6429,6 +6975,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_pulsar_cryo</defName>
+  <label>pulsar cryo</label>
   <ammoTypes>
     <Ammo_OE_pulsar_cryo_standard>Bullet_OE_pulsar_cryo_standard</Ammo_OE_pulsar_cryo_standard>
     <Ammo_OE_pulsar_cryo_ap>Bullet_OE_pulsar_cryo_ap</Ammo_OE_pulsar_cryo_ap>
@@ -6438,6 +6985,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_cryo_standard</defName>
+  <label>pulsar cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6461,6 +7012,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_cryo_ap</defName>
+  <label>pulsar cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6484,6 +7039,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_cryo_hp</defName>
+  <label>pulsar cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6513,6 +7072,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_quasar_cryo</defName>
+  <label>quasar cryo</label>
   <ammoTypes>
     <Ammo_OE_quasar_cryo_standard>Bullet_OE_quasar_cryo_standard</Ammo_OE_quasar_cryo_standard>
     <Ammo_OE_quasar_cryo_ap>Bullet_OE_quasar_cryo_ap</Ammo_OE_quasar_cryo_ap>
@@ -6523,6 +7083,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_cryo_standard</defName>
+  <label>quasar cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6546,6 +7110,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_cryo_ap</defName>
+  <label>quasar cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6569,6 +7137,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_cryo_hp</defName>
+  <label>quasar cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6592,6 +7164,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_cryo_emp</defName>
+  <label>quasar cryo emp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6628,6 +7204,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_trespasser_cryo</defName>
+  <label>trespasser cryo</label>
   <ammoTypes>
     <Ammo_OE_trespasser_cryo_standard>Bullet_OE_trespasser_cryo_standard</Ammo_OE_trespasser_cryo_standard>
     <Ammo_OE_trespasser_cryo_ap>Bullet_OE_trespasser_cryo_ap</Ammo_OE_trespasser_cryo_ap>
@@ -6637,6 +7214,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_cryo_standard</defName>
+  <label>trespasser cryo standard</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6660,6 +7241,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_cryo_ap</defName>
+  <label>trespasser cryo ap</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6683,6 +7268,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_cryo_hp</defName>
+  <label>trespasser cryo hp</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_cryo</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6712,6 +7301,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_bloodspiller_emp</defName>
+  <label>bloodspiller emp</label>
   <ammoTypes>
     <Ammo_OE_bloodspiller_emp_standard>Bullet_OE_bloodspiller_emp_standard</Ammo_OE_bloodspiller_emp_standard>
     <Ammo_OE_bloodspiller_emp_ap>Bullet_OE_bloodspiller_emp_ap</Ammo_OE_bloodspiller_emp_ap>
@@ -6721,6 +7311,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_emp_standard</defName>
+  <label>bloodspiller emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6751,6 +7345,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_emp_ap</defName>
+  <label>bloodspiller emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6781,6 +7379,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_emp_hp</defName>
+  <label>bloodspiller emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6817,6 +7419,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_boomshooter_emp</defName>
+  <label>boomshooter emp</label>
   <ammoTypes>
     <Ammo_OE_boomshooter_emp_standard>Bullet_OE_boomshooter_emp_standard</Ammo_OE_boomshooter_emp_standard>
     <Ammo_OE_boomshooter_emp_ap>Bullet_OE_boomshooter_emp_ap</Ammo_OE_boomshooter_emp_ap>
@@ -6826,6 +7429,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_emp_standard</defName>
+  <label>boomshooter emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6856,6 +7463,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_emp_ap</defName>
+  <label>boomshooter emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6886,6 +7497,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_emp_hp</defName>
+  <label>boomshooter emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6922,6 +7537,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_celestial_emp</defName>
+  <label>celestial emp</label>
   <ammoTypes>
     <Ammo_OE_celestial_emp_standard>Bullet_OE_celestial_emp_standard</Ammo_OE_celestial_emp_standard>
     <Ammo_OE_celestial_emp_ap>Bullet_OE_celestial_emp_ap</Ammo_OE_celestial_emp_ap>
@@ -6931,6 +7547,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_emp_standard</defName>
+  <label>celestial emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6961,6 +7581,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_emp_ap</defName>
+  <label>celestial emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -6991,6 +7615,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_emp_hp</defName>
+  <label>celestial emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7027,6 +7655,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_conspirator_emp</defName>
+  <label>conspirator emp</label>
   <ammoTypes>
     <Ammo_OE_conspirator_emp_standard>Bullet_OE_conspirator_emp_standard</Ammo_OE_conspirator_emp_standard>
     <Ammo_OE_conspirator_emp_ap>Bullet_OE_conspirator_emp_ap</Ammo_OE_conspirator_emp_ap>
@@ -7036,6 +7665,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_emp_standard</defName>
+  <label>conspirator emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7066,6 +7699,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_emp_ap</defName>
+  <label>conspirator emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7096,6 +7733,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_emp_hp</defName>
+  <label>conspirator emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7132,6 +7773,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_equalizer_emp</defName>
+  <label>equalizer emp</label>
   <ammoTypes>
     <Ammo_OE_equalizer_emp_standard>Bullet_OE_equalizer_emp_standard</Ammo_OE_equalizer_emp_standard>
     <Ammo_OE_equalizer_emp_ap>Bullet_OE_equalizer_emp_ap</Ammo_OE_equalizer_emp_ap>
@@ -7141,6 +7783,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_emp_standard</defName>
+  <label>equalizer emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7171,6 +7817,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_emp_ap</defName>
+  <label>equalizer emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7201,6 +7851,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_emp_hp</defName>
+  <label>equalizer emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7237,6 +7891,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_meteor_emp</defName>
+  <label>meteor emp</label>
   <ammoTypes>
     <Ammo_OE_meteor_emp_standard>Bullet_OE_meteor_emp_standard</Ammo_OE_meteor_emp_standard>
     <Ammo_OE_meteor_emp_ap>Bullet_OE_meteor_emp_ap</Ammo_OE_meteor_emp_ap>
@@ -7246,6 +7901,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_emp_standard</defName>
+  <label>meteor emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7276,6 +7935,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_emp_ap</defName>
+  <label>meteor emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7306,6 +7969,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_emp_hp</defName>
+  <label>meteor emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7342,6 +8009,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nimbus_emp</defName>
+  <label>nimbus emp</label>
   <ammoTypes>
     <Ammo_OE_nimbus_emp_standard>Bullet_OE_nimbus_emp_standard</Ammo_OE_nimbus_emp_standard>
     <Ammo_OE_nimbus_emp_ap>Bullet_OE_nimbus_emp_ap</Ammo_OE_nimbus_emp_ap>
@@ -7351,6 +8019,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_emp_standard</defName>
+  <label>nimbus emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7381,6 +8053,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_emp_ap</defName>
+  <label>nimbus emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7411,6 +8087,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_emp_hp</defName>
+  <label>nimbus emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7447,6 +8127,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nova_emp</defName>
+  <label>nova emp</label>
   <ammoTypes>
     <Ammo_OE_nova_emp_standard>Bullet_OE_nova_emp_standard</Ammo_OE_nova_emp_standard>
     <Ammo_OE_nova_emp_ap>Bullet_OE_nova_emp_ap</Ammo_OE_nova_emp_ap>
@@ -7456,6 +8137,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_emp_standard</defName>
+  <label>nova emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_nova_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7486,6 +8171,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_emp_ap</defName>
+  <label>nova emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_nova_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7516,6 +8205,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_emp_hp</defName>
+  <label>nova emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7552,6 +8245,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_pulsar_emp</defName>
+  <label>pulsar emp</label>
   <ammoTypes>
     <Ammo_OE_pulsar_emp_standard>Bullet_OE_pulsar_emp_standard</Ammo_OE_pulsar_emp_standard>
     <Ammo_OE_pulsar_emp_ap>Bullet_OE_pulsar_emp_ap</Ammo_OE_pulsar_emp_ap>
@@ -7561,6 +8255,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_emp_standard</defName>
+  <label>pulsar emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7591,6 +8289,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_emp_ap</defName>
+  <label>pulsar emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7621,6 +8323,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_emp_hp</defName>
+  <label>pulsar emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7657,6 +8363,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_quasar_emp</defName>
+  <label>quasar emp</label>
   <ammoTypes>
     <Ammo_OE_quasar_emp_standard>Bullet_OE_quasar_emp_standard</Ammo_OE_quasar_emp_standard>
     <Ammo_OE_quasar_emp_ap>Bullet_OE_quasar_emp_ap</Ammo_OE_quasar_emp_ap>
@@ -7666,6 +8373,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_emp_standard</defName>
+  <label>quasar emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7696,6 +8407,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_emp_ap</defName>
+  <label>quasar emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7726,6 +8441,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_emp_hp</defName>
+  <label>quasar emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7762,6 +8481,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_trespasser_emp</defName>
+  <label>trespasser emp</label>
   <ammoTypes>
     <Ammo_OE_trespasser_emp_standard>Bullet_OE_trespasser_emp_standard</Ammo_OE_trespasser_emp_standard>
     <Ammo_OE_trespasser_emp_ap>Bullet_OE_trespasser_emp_ap</Ammo_OE_trespasser_emp_ap>
@@ -7771,6 +8491,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_emp_standard</defName>
+  <label>trespasser emp standard</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7801,6 +8525,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_emp_ap</defName>
+  <label>trespasser emp ap</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7831,6 +8559,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_emp_hp</defName>
+  <label>trespasser emp hp</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_emp</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7867,6 +8599,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_bloodspiller_fire</defName>
+  <label>bloodspiller fire</label>
   <ammoTypes>
     <Ammo_OE_bloodspiller_fire_standard>Bullet_OE_bloodspiller_fire_standard</Ammo_OE_bloodspiller_fire_standard>
     <Ammo_OE_bloodspiller_fire_ap>Bullet_OE_bloodspiller_fire_ap</Ammo_OE_bloodspiller_fire_ap>
@@ -7876,6 +8609,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_fire_standard</defName>
+  <label>bloodspiller fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7899,6 +8636,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_fire_ap</defName>
+  <label>bloodspiller fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7922,6 +8663,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_bloodspiller_fire_hp</defName>
+  <label>bloodspiller fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_bloodspiller_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7951,6 +8696,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_boomshooter_fire</defName>
+  <label>boomshooter fire</label>
   <ammoTypes>
     <Ammo_OE_boomshooter_fire_standard>Bullet_OE_boomshooter_fire_standard</Ammo_OE_boomshooter_fire_standard>
     <Ammo_OE_boomshooter_fire_ap>Bullet_OE_boomshooter_fire_ap</Ammo_OE_boomshooter_fire_ap>
@@ -7960,6 +8706,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_fire_standard</defName>
+  <label>boomshooter fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -7983,6 +8733,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_fire_ap</defName>
+  <label>boomshooter fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8006,6 +8760,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_boomshooter_fire_hp</defName>
+  <label>boomshooter fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_boomshooter_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8035,6 +8793,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_celestial_fire</defName>
+  <label>celestial fire</label>
   <ammoTypes>
     <Ammo_OE_celestial_fire_standard>Bullet_OE_celestial_fire_standard</Ammo_OE_celestial_fire_standard>
     <Ammo_OE_celestial_fire_ap>Bullet_OE_celestial_fire_ap</Ammo_OE_celestial_fire_ap>
@@ -8044,6 +8803,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_fire_standard</defName>
+  <label>celestial fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8067,6 +8830,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_fire_ap</defName>
+  <label>celestial fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8090,6 +8857,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_celestial_fire_hp</defName>
+  <label>celestial fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_celestial_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8119,6 +8890,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_conspirator_fire</defName>
+  <label>conspirator fire</label>
   <ammoTypes>
     <Ammo_OE_conspirator_fire_standard>Bullet_OE_conspirator_fire_standard</Ammo_OE_conspirator_fire_standard>
     <Ammo_OE_conspirator_fire_ap>Bullet_OE_conspirator_fire_ap</Ammo_OE_conspirator_fire_ap>
@@ -8129,6 +8901,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_fire_standard</defName>
+  <label>conspirator fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8152,6 +8928,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_fire_ap</defName>
+  <label>conspirator fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8175,6 +8955,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_fire_hp</defName>
+  <label>conspirator fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8198,6 +8982,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_conspirator_fire_emp</defName>
+  <label>conspirator fire emp</label>
+  <thingCategories>
+    <li>AmmoOE_conspirator_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8234,6 +9022,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_equalizer_fire</defName>
+  <label>equalizer fire</label>
   <ammoTypes>
     <Ammo_OE_equalizer_fire_standard>Bullet_OE_equalizer_fire_standard</Ammo_OE_equalizer_fire_standard>
     <Ammo_OE_equalizer_fire_ap>Bullet_OE_equalizer_fire_ap</Ammo_OE_equalizer_fire_ap>
@@ -8243,6 +9032,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_fire_standard</defName>
+  <label>equalizer fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8266,6 +9059,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_fire_ap</defName>
+  <label>equalizer fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8289,6 +9086,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_equalizer_fire_hp</defName>
+  <label>equalizer fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_equalizer_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8318,6 +9119,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_meteor_fire</defName>
+  <label>meteor fire</label>
   <ammoTypes>
     <Ammo_OE_meteor_fire_standard>Bullet_OE_meteor_fire_standard</Ammo_OE_meteor_fire_standard>
     <Ammo_OE_meteor_fire_ap>Bullet_OE_meteor_fire_ap</Ammo_OE_meteor_fire_ap>
@@ -8327,6 +9129,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_fire_standard</defName>
+  <label>meteor fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8350,6 +9156,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_fire_ap</defName>
+  <label>meteor fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8373,6 +9183,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_meteor_fire_hp</defName>
+  <label>meteor fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_meteor_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8402,6 +9216,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nimbus_fire</defName>
+  <label>nimbus fire</label>
   <ammoTypes>
     <Ammo_OE_nimbus_fire_standard>Bullet_OE_nimbus_fire_standard</Ammo_OE_nimbus_fire_standard>
     <Ammo_OE_nimbus_fire_ap>Bullet_OE_nimbus_fire_ap</Ammo_OE_nimbus_fire_ap>
@@ -8412,6 +9227,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_fire_standard</defName>
+  <label>nimbus fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8435,6 +9254,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_fire_ap</defName>
+  <label>nimbus fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8458,6 +9281,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_fire_hp</defName>
+  <label>nimbus fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8481,6 +9308,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nimbus_fire_emp</defName>
+  <label>nimbus fire emp</label>
+  <thingCategories>
+    <li>AmmoOE_nimbus_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8517,6 +9348,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_nova_fire</defName>
+  <label>nova fire</label>
   <ammoTypes>
     <Ammo_OE_nova_fire_standard>Bullet_OE_nova_fire_standard</Ammo_OE_nova_fire_standard>
     <Ammo_OE_nova_fire_ap>Bullet_OE_nova_fire_ap</Ammo_OE_nova_fire_ap>
@@ -8527,6 +9359,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_fire_standard</defName>
+  <label>nova fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_nova_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8550,6 +9386,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_fire_ap</defName>
+  <label>nova fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_nova_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8573,6 +9413,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_fire_hp</defName>
+  <label>nova fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8596,6 +9440,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_nova_fire_emp</defName>
+  <label>nova fire emp</label>
+  <thingCategories>
+    <li>AmmoOE_nova_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8632,6 +9480,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_pulsar_fire</defName>
+  <label>pulsar fire</label>
   <ammoTypes>
     <Ammo_OE_pulsar_fire_standard>Bullet_OE_pulsar_fire_standard</Ammo_OE_pulsar_fire_standard>
     <Ammo_OE_pulsar_fire_ap>Bullet_OE_pulsar_fire_ap</Ammo_OE_pulsar_fire_ap>
@@ -8641,6 +9490,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_fire_standard</defName>
+  <label>pulsar fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8664,6 +9517,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_fire_ap</defName>
+  <label>pulsar fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8687,6 +9544,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_pulsar_fire_hp</defName>
+  <label>pulsar fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_pulsar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8716,6 +9577,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_quasar_fire</defName>
+  <label>quasar fire</label>
   <ammoTypes>
     <Ammo_OE_quasar_fire_standard>Bullet_OE_quasar_fire_standard</Ammo_OE_quasar_fire_standard>
     <Ammo_OE_quasar_fire_ap>Bullet_OE_quasar_fire_ap</Ammo_OE_quasar_fire_ap>
@@ -8726,6 +9588,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_fire_standard</defName>
+  <label>quasar fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8749,6 +9615,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_fire_ap</defName>
+  <label>quasar fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8772,6 +9642,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_fire_hp</defName>
+  <label>quasar fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8795,6 +9669,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_quasar_fire_emp</defName>
+  <label>quasar fire emp</label>
+  <thingCategories>
+    <li>AmmoOE_quasar_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8831,6 +9709,7 @@
 
 <CombatExtended.AmmoSetDef>
   <defName>AmmoSet_OE_trespasser_fire</defName>
+  <label>trespasser fire</label>
   <ammoTypes>
     <Ammo_OE_trespasser_fire_standard>Bullet_OE_trespasser_fire_standard</Ammo_OE_trespasser_fire_standard>
     <Ammo_OE_trespasser_fire_ap>Bullet_OE_trespasser_fire_ap</Ammo_OE_trespasser_fire_ap>
@@ -8840,6 +9719,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_fire_standard</defName>
+  <label>trespasser fire standard</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8863,6 +9746,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_fire_ap</defName>
+  <label>trespasser fire ap</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
@@ -8886,6 +9773,10 @@
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>Ammo_OE_trespasser_fire_hp</defName>
+  <label>trespasser fire hp</label>
+  <thingCategories>
+    <li>AmmoOE_trespasser_fire</li>
+  </thingCategories>
   <graphicData>
     <texPath>Things/Ammo/Charged/MediumRegular</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>

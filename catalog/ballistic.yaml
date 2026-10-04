@@ -14,8 +14,6 @@ families:
 - id: bloodspiller
   type: pistol
   members:
-  - defName: OMC_Whip
-    rung: omc
   - defName: OMC_Whip_M
     rung: omc_mod
 - id: boomshooter
@@ -201,12 +199,6 @@ families:
   members:
   - defName: OMG_Pistol
     rung: omg
-- id: neon_echo
-  type: pistol
-  members:
-  - defName: OMG_Trophy_PowerGuitar
-    rung: trophy
-  experimental: true
 - id: patagius
   type: sniper
   members:
@@ -221,11 +213,6 @@ families:
     rung: proto
   - defName: OE_Necroframe_Bow
     rung: proto
-- id: proboscis
-  type: pistol
-  members:
-  - defName: EGO_Whip
-    rung: bio_t3
 - id: prototype_sx_01a
   type: pistol
   members:
@@ -237,17 +224,6 @@ families:
   members:
   - defName: ODC_Pistol
     rung: odc_t1
-- id: randys_deck
-  type: pistol
-  members:
-  - defName: OTC_Trophy_Cards_I
-    rung: trophy
-  experimental: true
-- id: reaper
-  type: rifle
-  members:
-  - defName: OES_Katana
-    rung: heroic
 - id: scylla
   type: rifle
   members:

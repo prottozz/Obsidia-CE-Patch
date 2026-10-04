@@ -30,6 +30,14 @@ def _category_label(fam: Family) -> str:
     return f"OE {fam.id} {fam.class_name}"
 
 
+def _ammo_label(fam: Family, cartridge: str) -> str:
+    return f"{fam.id} {fam.class_name} {cartridge}"
+
+
+def _ammo_set_label(fam: Family) -> str:
+    return f"{fam.id} {fam.class_name}"
+
+
 def _emit_thing_category(fam: Family) -> str:
     return f"""<ThingCategoryDef>
   <defName>{_category_def_name(fam)}</defName>
@@ -49,13 +57,19 @@ def _emit_ammo_set(fam: Family) -> str:
     inner = "\n".join(lines)
     return f"""<CombatExtended.AmmoSetDef>
   <defName>{fam.ammo_set_def()}</defName>
+  <label>{_ammo_set_label(fam)}</label>
 {inner}
 </CombatExtended.AmmoSetDef>"""
 
 
 def _emit_ammo_def(fam: Family, cartridge: str) -> str:
+    category = _category_def_name(fam)
     return f"""<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
   <defName>{fam.ammo_def(cartridge)}</defName>
+  <label>{_ammo_label(fam, cartridge)}</label>
+  <thingCategories>
+    <li>{category}</li>
+  </thingCategories>
   <graphicData>
     <texPath>{_TEX_PATH}</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>

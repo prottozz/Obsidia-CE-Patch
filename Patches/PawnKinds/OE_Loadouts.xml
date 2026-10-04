@@ -177,29 +177,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/PawnKindDef[defName="OES_Eidolon_Melee"]</xpath>
-    <value>
-      <li Class="CombatExtended.LoadoutPropertiesExtension">
-        <primaryMagazineCount>
-          <min>4</min>
-          <max>8</max>
-        </primaryMagazineCount>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/PawnKindDef[defName="OES_Eidolon_Ranged"]</xpath>
-    <value>
-      <li Class="CombatExtended.LoadoutPropertiesExtension">
-        <primaryMagazineCount>
-          <min>4</min>
-          <max>8</max>
-        </primaryMagazineCount>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/PawnKindDef[defName="OES_Special_A_Melee"]</xpath>
     <value>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
         <primaryMagazineCount>
@@ -221,29 +199,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/PawnKindDef[defName="OES_Special_B_Melee"]</xpath>
-    <value>
-      <li Class="CombatExtended.LoadoutPropertiesExtension">
-        <primaryMagazineCount>
-          <min>4</min>
-          <max>8</max>
-        </primaryMagazineCount>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/PawnKindDef[defName="OES_Special_B_Ranged"]</xpath>
-    <value>
-      <li Class="CombatExtended.LoadoutPropertiesExtension">
-        <primaryMagazineCount>
-          <min>4</min>
-          <max>8</max>
-        </primaryMagazineCount>
-      </li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/PawnKindDef[defName="OES_Undying_Melee"]</xpath>
     <value>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
         <primaryMagazineCount>
