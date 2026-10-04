@@ -231,6 +231,7 @@ families:
   members:
   - defName: OMC_Trophy_Pistol_I
     rung: trophy
+  experimental: true
 - id: purpose
   type: pistol
   members:
