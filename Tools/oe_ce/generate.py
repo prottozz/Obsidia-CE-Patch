@@ -39,7 +39,7 @@ def generate(root: Path) -> None:
             print(msg, file=sys.stderr)
         sys.exit(1)
 
-    _write(root / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families))
+    _write(root / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families, core))
     _write(
         root / "Defs" / "RecipeDefs" / "OE_AmmoRecipes.xml",
         emit_recipe_xml(cat.families),

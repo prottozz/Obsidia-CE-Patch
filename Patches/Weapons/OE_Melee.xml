@@ -416,6 +416,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -436,6 +442,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -456,6 +468,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -476,6 +494,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -516,6 +540,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -536,6 +566,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -556,6 +592,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -576,6 +618,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -716,6 +764,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -736,6 +790,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -756,6 +816,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -776,6 +842,12 @@
           <capacities><li>Cut</li></capacities>
           <power>10</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1756,6 +1828,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1776,6 +1854,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1796,6 +1880,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1816,6 +1906,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1836,6 +1932,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1856,6 +1958,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1876,6 +1984,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1896,6 +2010,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1916,6 +2036,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1936,6 +2062,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1956,6 +2088,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1976,6 +2114,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -1996,6 +2140,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2016,6 +2166,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2036,6 +2192,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2056,6 +2218,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2076,6 +2244,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2096,6 +2270,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2116,6 +2296,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2136,6 +2322,12 @@
           <capacities><li>Cut</li></capacities>
           <power>9</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2156,6 +2348,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2176,6 +2374,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2196,6 +2400,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>
@@ -2216,6 +2426,12 @@
           <capacities><li>Cut</li></capacities>
           <power>14</power>
           <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
         </li>
       </tools>
     </value>

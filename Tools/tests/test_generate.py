@@ -43,7 +43,8 @@ def test_generate_cerberus_files(tmp_path, monkeypatch):
     generate(tmp_path)
     ammo = (tmp_path / "Defs" / "Ammo" / "OE_Ammo.xml").read_text(encoding="utf-8")
     guns = (tmp_path / "Patches" / "Weapons" / "OE_Ranged.xml").read_text(encoding="utf-8")
-    assert "AmmoSet_OE_cerberus_ballistic" in ammo
+    assert "Ammo_OE_rifle_ballistic_standard" in ammo
+    assert "AmmoSet_OE_OE_Rifle" in ammo
     assert "OE_Rifle" in guns
     assert "OCC_Rifle" in guns
 

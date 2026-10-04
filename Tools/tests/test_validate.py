@@ -40,6 +40,22 @@ def test_rifle_missing_emp_is_error():
     assert any("emp" in e.lower() for e in errs)
 
 
+def test_fire_rifle_is_not_required_to_have_emp():
+    cat = Catalog(families=[
+        Family("nova", "sniper", "fire", members=[Member("OTC_SniperRifle_Fire", "otc")]),
+    ])
+    errs = validate_catalog(cat, core_ranged={"OTC_SniperRifle_Fire"})
+    assert errs == []
+
+
+def test_emp_pistol_may_use_emp_cartridge():
+    cat = Catalog(families=[
+        Family("celestial", "pistol", "emp", members=[Member("OTC_Pistol_EMP", "otc")]),
+    ])
+    errs = validate_catalog(cat, core_ranged={"OTC_Pistol_EMP"})
+    assert errs == []
+
+
 def test_load_yaml_class_field(tmp_path: Path):
     (tmp_path / "ballistic.yaml").write_text(
         "families:\n"

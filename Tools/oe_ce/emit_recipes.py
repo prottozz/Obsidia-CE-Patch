@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from oe_ce.models import Family
+from oe_ce.models import Family, unique_ammo_families
 
 _SYNTHERIUS_CLASSES = frozenset({"energy", "fire", "acid", "cryo", "emp", "bio"})
 _MOONCLOTH_CLASSES = frozenset({"fire", "bio"})
@@ -31,23 +31,28 @@ def _emit_recipe(fam: Family, cartridge: str, *, large: bool) -> str:
     suffix = "large" if large else "small"
     product_count = 500 if large else 200
     ammo = fam.ammo_def(cartridge)
-    def_name = f"MakeAmmo_OE_{fam.id}_{fam.class_name}_{cartridge}_{suffix}"
-    label = f"make OE {fam.id} {fam.class_name} {cartridge} x{product_count}"
+    caliber = fam.caliber()
+    shown = fam.display_label()
+    def_name = f"MakeAmmo_OE_{caliber}_{fam.class_name}_{cartridge}_{suffix}"
+    label = f"make OE {shown} {fam.class_name} {cartridge} x{product_count}"
     work_amount = 5000 if large else 2000
     description = (
-        f"Craft {product_count} rounds of OE {fam.id} {fam.class_name} "
+        f"Craft {product_count} rounds of OE {shown} {fam.class_name} "
         f"{cartridge} ammunition."
     )
-    job_string = f"Making OE {fam.id} {fam.class_name} {cartridge} ammo."
+    job_string = f"Making OE {shown} {fam.class_name} {cartridge} ammo."
     mats = _ingredients(fam, large=large)
     ing_block = "\n".join(_ingredient_lines(t, c) for t, c in mats)
     filter_lis = "\n".join(f"        <li>{t}</li>" for t, _ in mats)
-    return f"""  <RecipeDef>
+    return f"""  <RecipeDef ParentName="AmmoRecipeBase">
     <defName>{def_name}</defName>
     <label>{label}</label>
     <description>{description}</description>
     <jobString>{job_string}</jobString>
     <workAmount>{work_amount}</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
     <recipeUsers>
       <li>OE_WeaponWorkbench</li>
     </recipeUsers>
@@ -66,7 +71,7 @@ def _emit_recipe(fam: Family, cartridge: str, *, large: bool) -> str:
 
 
 def emit_recipe_xml(families: list[Family]) -> str:
-    sorted_families = sorted(families, key=lambda f: (f.class_name, f.id))
+    sorted_families = unique_ammo_families(families)
     blocks: list[str] = []
     for fam in sorted_families:
         for cart in fam.resolved_cartridges():

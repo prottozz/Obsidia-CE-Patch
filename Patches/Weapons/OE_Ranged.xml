@@ -13,14 +13,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_behemoth_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.8</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_behemoth_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_RocketLauncher</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -57,14 +57,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_behemoth_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_RocketLauncher_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>74.8</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_behemoth_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_RocketLauncher_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -101,7 +101,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_blackout_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_CAC_Arachna_Minigun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>36.4</range>
       <burstShotCount>6</burstShotCount>
@@ -109,7 +109,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_blackout_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_CAC_Arachna_Minigun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -146,7 +146,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -154,7 +154,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -191,14 +191,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_boomshooter_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.8</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_boomshooter_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_RocketLauncher</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -235,7 +235,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bytecrusher_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Dominator_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -243,7 +243,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bytecrusher_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Dominator_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -280,7 +280,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bytecrusher_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>31.2</range>
       <burstShotCount>6</burstShotCount>
@@ -288,7 +288,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bytecrusher_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -325,7 +325,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Arachna_Rifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52</range>
       <burstShotCount>6</burstShotCount>
@@ -333,7 +333,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Arachna_Rifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -370,7 +370,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Rifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>48</range>
       <burstShotCount>6</burstShotCount>
@@ -378,7 +378,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Rifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -415,7 +415,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Rifle_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68</range>
       <burstShotCount>6</burstShotCount>
@@ -423,7 +423,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Rifle_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -460,7 +460,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OES_Rifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>75</range>
       <burstShotCount>6</burstShotCount>
@@ -468,7 +468,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OES_Rifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -505,7 +505,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Necroframe_Rifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>55</range>
       <burstShotCount>6</burstShotCount>
@@ -513,7 +513,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Necroframe_Rifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -550,7 +550,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Rifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>55</range>
       <burstShotCount>6</burstShotCount>
@@ -558,7 +558,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Rifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -595,7 +595,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_chimera_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_MultiCannon_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>38.4</range>
       <burstShotCount>6</burstShotCount>
@@ -603,7 +603,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_chimera_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_MultiCannon</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -640,7 +640,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_chimera_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_MultiCannon_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -648,7 +648,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_chimera_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_MultiCannon_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -685,7 +685,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_conspirator_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>19.2</range>
       <burstShotCount>6</burstShotCount>
@@ -693,7 +693,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_conspirator_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -730,7 +730,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_corrupter_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_EGO_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -738,7 +738,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_corrupter_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_EGO_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -775,7 +775,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_cronus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Trophy_Railgun_I_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>93.75</range>
       <burstShotCount>6</burstShotCount>
@@ -783,7 +783,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_cronus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Trophy_Railgun_I</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -799,14 +799,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_dark_giants_bane_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_DarkCrusader_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>60.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_dark_giants_bane_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_DarkCrusader_RocketLauncher</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -843,7 +843,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_dark_hydra_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_DarkCrusader_Minigun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>38.5</range>
       <burstShotCount>6</burstShotCount>
@@ -851,7 +851,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_dark_hydra_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_DarkCrusader_Minigun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -888,7 +888,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_dark_judgement_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_DarkCrusader_SniperRifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.75</range>
       <burstShotCount>6</burstShotCount>
@@ -896,7 +896,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_dark_judgement_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_DarkCrusader_SniperRifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -933,7 +933,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_datashot_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Revolver_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>42.9</range>
       <burstShotCount>6</burstShotCount>
@@ -941,7 +941,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_datashot_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Revolver</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -978,7 +978,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_doom_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Necroframe_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>22</range>
       <burstShotCount>6</burstShotCount>
@@ -986,7 +986,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_doom_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Necroframe_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1023,7 +1023,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_doom_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>22</range>
       <burstShotCount>6</burstShotCount>
@@ -1031,7 +1031,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_doom_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1068,7 +1068,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_doom_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Dominator_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -1076,7 +1076,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_doom_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Dominator_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1113,7 +1113,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_doom_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Shotgun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -1121,7 +1121,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_doom_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Shotgun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1158,7 +1158,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_doom_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Shotgun_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -1166,7 +1166,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_doom_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Shotgun_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1203,7 +1203,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Necroframe_SMG_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>35.75</range>
       <burstShotCount>6</burstShotCount>
@@ -1211,7 +1211,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Necroframe_SMG</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1248,7 +1248,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_SMG_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>35.75</range>
       <burstShotCount>6</burstShotCount>
@@ -1256,7 +1256,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_SMG</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1293,7 +1293,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_etherstrike_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Dominator_SniperRifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>65</range>
       <burstShotCount>6</burstShotCount>
@@ -1301,7 +1301,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_etherstrike_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Dominator_SniperRifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1338,7 +1338,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_etherstrike_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_SniperRifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>97.5</range>
       <burstShotCount>6</burstShotCount>
@@ -1346,7 +1346,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_etherstrike_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_SniperRifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1383,14 +1383,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_giants_bane_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>57.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_giants_bane_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_RocketLauncher</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1427,14 +1427,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_giants_bane_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_RocketLauncher_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>74.8</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_giants_bane_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_RocketLauncher_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1471,7 +1471,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Dominator_BladeLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>57.2</range>
       <burstShotCount>6</burstShotCount>
@@ -1479,7 +1479,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Dominator_BladeLauncher</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1516,14 +1516,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Trophy_BladeLauncher_A_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Trophy_BladeLauncher_A</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -1539,14 +1539,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Trophy_BladeLauncher_B_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Trophy_BladeLauncher_B</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -1562,14 +1562,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Trophy_BladeLauncher_C_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Trophy_BladeLauncher_C</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -1585,14 +1585,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_harvest_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Trophy_BladeLauncher_C_I_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>82.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_harvest_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Trophy_BladeLauncher_C_I</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -1608,7 +1608,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hellscream_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OES_ShotgunS_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>30</range>
       <burstShotCount>6</burstShotCount>
@@ -1616,7 +1616,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hellscream_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OES_ShotgunS</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1653,7 +1653,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hellscream_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_ShotgunS_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -1661,7 +1661,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hellscream_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_ShotgunS</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1698,7 +1698,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hellscream_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_ShotgunS_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -1706,7 +1706,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hellscream_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_ShotgunS_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1743,7 +1743,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hornet_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Revolver_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>26.4</range>
       <burstShotCount>6</burstShotCount>
@@ -1751,7 +1751,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hornet_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Revolver</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1788,7 +1788,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hornet_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Revolver_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -1796,7 +1796,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hornet_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Revolver_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1833,7 +1833,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_humunculus_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_EGO_Pistol_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -1841,7 +1841,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_humunculus_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_EGO_Pistol</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1878,7 +1878,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hydra_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Minigun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>33.6</range>
       <burstShotCount>6</burstShotCount>
@@ -1886,7 +1886,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hydra_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Minigun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1923,7 +1923,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_hydra_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Minigun_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>47.6</range>
       <burstShotCount>6</burstShotCount>
@@ -1931,7 +1931,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_hydra_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Minigun_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -1968,7 +1968,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_impaler_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Necroframe_Pistol_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>30.25</range>
       <burstShotCount>6</burstShotCount>
@@ -1976,7 +1976,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_impaler_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Necroframe_Pistol</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2013,7 +2013,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_impaler_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Pistol_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>30.25</range>
       <burstShotCount>6</burstShotCount>
@@ -2021,7 +2021,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_impaler_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Pistol</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2058,7 +2058,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_impaler_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Pistol_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>28.6</range>
       <burstShotCount>6</burstShotCount>
@@ -2066,7 +2066,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_impaler_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Pistol</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2103,7 +2103,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_impaler_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Pistol_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -2111,7 +2111,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_impaler_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Pistol_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2148,7 +2148,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_inheritance_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Rifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>48</range>
       <burstShotCount>6</burstShotCount>
@@ -2156,7 +2156,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_inheritance_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Rifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2193,7 +2193,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_merciless_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Revolver_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>28.6</range>
       <burstShotCount>6</burstShotCount>
@@ -2201,7 +2201,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_merciless_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Revolver</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2238,7 +2238,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_merciless_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Revolver_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -2246,7 +2246,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_merciless_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Revolver_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2283,7 +2283,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_misfit_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_SMG_A_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>31.2</range>
       <burstShotCount>6</burstShotCount>
@@ -2291,7 +2291,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_misfit_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_SMG_A</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2328,7 +2328,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_misfit_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_SMG_B_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40.3</range>
       <burstShotCount>6</burstShotCount>
@@ -2336,7 +2336,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_misfit_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_SMG_B</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2373,7 +2373,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nanofire_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Pistol_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>42.9</range>
       <burstShotCount>6</burstShotCount>
@@ -2381,7 +2381,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nanofire_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Pistol</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2418,7 +2418,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_patagius_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_EGO_SniperRifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>85</range>
       <burstShotCount>6</burstShotCount>
@@ -2426,7 +2426,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_patagius_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_EGO_SniperRifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2463,14 +2463,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pride_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OES_Bow_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>67.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_pride_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OES_Bow</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2507,14 +2507,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pride_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Bow_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>49.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_pride_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Bow</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2551,14 +2551,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pride_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OE_Necroframe_Bow_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>49.5</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_pride_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OE_Necroframe_Bow</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2595,7 +2595,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_prototype_sx_01a_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Trophy_Pistol_I_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>41.25</range>
       <burstShotCount>6</burstShotCount>
@@ -2603,7 +2603,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_prototype_sx_01a_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Trophy_Pistol_I</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -2619,7 +2619,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_purpose_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Pistol_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>26.4</range>
       <burstShotCount>6</burstShotCount>
@@ -2627,7 +2627,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_purpose_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Pistol</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2664,7 +2664,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_scylla_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_AR_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>48</range>
       <burstShotCount>6</burstShotCount>
@@ -2672,7 +2672,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_scylla_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_AR</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2709,7 +2709,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_scylla_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_AR_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68</range>
       <burstShotCount>6</burstShotCount>
@@ -2717,7 +2717,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_scylla_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_AR_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2754,7 +2754,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_skullmasher_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_SniperRifle_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>65</range>
       <burstShotCount>6</burstShotCount>
@@ -2762,7 +2762,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_skullmasher_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_SniperRifle</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2799,7 +2799,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_skullmasher_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_SniperRifle_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>85</range>
       <burstShotCount>6</burstShotCount>
@@ -2807,7 +2807,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_skullmasher_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_SniperRifle_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2844,7 +2844,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_smuggler_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_SniperRifle_A_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>60</range>
       <burstShotCount>6</burstShotCount>
@@ -2852,7 +2852,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_smuggler_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_SniperRifle_A</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2889,7 +2889,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_smuggler_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_SniperRifle_B_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>77.5</range>
       <burstShotCount>6</burstShotCount>
@@ -2897,7 +2897,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_smuggler_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_SniperRifle_B</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2934,7 +2934,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_striker_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_AR_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52</range>
       <burstShotCount>6</burstShotCount>
@@ -2942,7 +2942,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_striker_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_AR</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -2979,7 +2979,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_striker_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_AR_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68</range>
       <burstShotCount>6</burstShotCount>
@@ -2987,7 +2987,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_striker_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_AR_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3024,7 +3024,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_striker_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Arachna_AR_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52</range>
       <burstShotCount>6</burstShotCount>
@@ -3032,7 +3032,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_striker_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Arachna_AR</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3069,7 +3069,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_thoughtless_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_AssaultRifle_A_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>48</range>
       <burstShotCount>6</burstShotCount>
@@ -3077,7 +3077,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_thoughtless_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_AssaultRifle_A</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3114,7 +3114,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_thoughtless_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_AssaultRifle_B_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>62</range>
       <burstShotCount>6</burstShotCount>
@@ -3122,7 +3122,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_thoughtless_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_AssaultRifle_B</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3159,7 +3159,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_toxocyst_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_EGO_SMG_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>44.2</range>
       <burstShotCount>6</burstShotCount>
@@ -3167,7 +3167,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_toxocyst_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_EGO_SMG</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3204,7 +3204,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_trespasser_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Revolver_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>26.4</range>
       <burstShotCount>6</burstShotCount>
@@ -3212,7 +3212,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_trespasser_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Revolver</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3249,7 +3249,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_unchained_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OES_Minigun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.5</range>
       <burstShotCount>6</burstShotCount>
@@ -3257,7 +3257,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_unchained_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OES_Minigun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3294,7 +3294,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_void_shredder_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Dominator_Minigun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>36.4</range>
       <burstShotCount>6</burstShotCount>
@@ -3302,7 +3302,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_void_shredder_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Dominator_Minigun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3339,7 +3339,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_void_shredder_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMG_Minigun_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.6</range>
       <burstShotCount>6</burstShotCount>
@@ -3347,7 +3347,7 @@
     <AmmoUser>
       <magazineSize>80</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_void_shredder_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OMG_Minigun</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3384,14 +3384,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_wendigo_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Bow_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>43.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_wendigo_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Bow</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3428,14 +3428,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_wendigo_ballistic_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OCC_Bow_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_wendigo_ballistic</ammoSet>
+      <ammoSet>AmmoSet_OE_OCC_Bow_M</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3472,7 +3472,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>28.6</range>
       <burstShotCount>6</burstShotCount>
@@ -3480,7 +3480,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3517,7 +3517,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -3525,7 +3525,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3562,14 +3562,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_boomshooter_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_RocketLauncher_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_boomshooter_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_RocketLauncher_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3606,7 +3606,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.5</range>
       <burstShotCount>6</burstShotCount>
@@ -3614,7 +3614,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3651,7 +3651,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -3659,7 +3659,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3696,7 +3696,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_conspirator_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Shotgun_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>24.8</range>
       <burstShotCount>6</burstShotCount>
@@ -3704,7 +3704,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_conspirator_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Shotgun_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3741,7 +3741,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>32.5</range>
       <burstShotCount>6</burstShotCount>
@@ -3749,7 +3749,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3786,7 +3786,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>44.2</range>
       <burstShotCount>6</burstShotCount>
@@ -3794,7 +3794,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3831,7 +3831,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -3839,7 +3839,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3876,7 +3876,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -3884,7 +3884,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3921,14 +3921,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -3965,14 +3965,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4009,7 +4009,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>62.5</range>
       <burstShotCount>6</burstShotCount>
@@ -4017,7 +4017,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4054,7 +4054,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>85</range>
       <burstShotCount>6</burstShotCount>
@@ -4062,7 +4062,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4099,7 +4099,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Dominator_MultiCannon_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>41.6</range>
       <burstShotCount>6</burstShotCount>
@@ -4107,7 +4107,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Dominator_MultiCannon_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -4123,7 +4123,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -4131,7 +4131,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4168,7 +4168,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -4176,7 +4176,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4213,7 +4213,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Arachna_Shotgun_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -4221,7 +4221,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Arachna_Shotgun_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -4237,7 +4237,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20</range>
       <burstShotCount>6</burstShotCount>
@@ -4245,7 +4245,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4282,7 +4282,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_M_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -4290,7 +4290,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_M_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4327,7 +4327,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_trespasser_fire_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Revolver_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>34.1</range>
       <burstShotCount>6</burstShotCount>
@@ -4335,7 +4335,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_trespasser_fire</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Revolver_Fire</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4372,7 +4372,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>28.6</range>
       <burstShotCount>6</burstShotCount>
@@ -4380,7 +4380,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4417,7 +4417,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -4425,7 +4425,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4462,14 +4462,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_boomshooter_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_RocketLauncher_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_boomshooter_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_RocketLauncher_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4506,7 +4506,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.5</range>
       <burstShotCount>6</burstShotCount>
@@ -4514,7 +4514,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4551,7 +4551,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -4559,7 +4559,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4596,7 +4596,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_conspirator_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Shotgun_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>24.8</range>
       <burstShotCount>6</burstShotCount>
@@ -4604,7 +4604,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_conspirator_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Shotgun_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4641,7 +4641,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>32.5</range>
       <burstShotCount>6</burstShotCount>
@@ -4649,7 +4649,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4686,7 +4686,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>44.2</range>
       <burstShotCount>6</burstShotCount>
@@ -4694,7 +4694,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4731,7 +4731,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -4739,7 +4739,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4776,7 +4776,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -4784,7 +4784,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4821,14 +4821,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4865,14 +4865,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4909,7 +4909,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>62.5</range>
       <burstShotCount>6</burstShotCount>
@@ -4917,7 +4917,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4954,7 +4954,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>85</range>
       <burstShotCount>6</burstShotCount>
@@ -4962,7 +4962,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -4999,7 +4999,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Dominator_MultiCannon_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>41.6</range>
       <burstShotCount>6</burstShotCount>
@@ -5007,7 +5007,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Dominator_MultiCannon_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -5023,7 +5023,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -5031,7 +5031,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5068,7 +5068,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -5076,7 +5076,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5113,7 +5113,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Arachna_Shotgun_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -5121,7 +5121,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Arachna_Shotgun_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -5137,7 +5137,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20</range>
       <burstShotCount>6</burstShotCount>
@@ -5145,7 +5145,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5182,7 +5182,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_M_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -5190,7 +5190,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_M_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5227,7 +5227,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_trespasser_emp_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Revolver_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>34.1</range>
       <burstShotCount>6</burstShotCount>
@@ -5235,7 +5235,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_trespasser_emp</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Revolver_EMP</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5272,7 +5272,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>28.6</range>
       <burstShotCount>6</burstShotCount>
@@ -5280,7 +5280,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5317,7 +5317,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -5325,7 +5325,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5362,14 +5362,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_boomshooter_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_RocketLauncher_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_boomshooter_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_RocketLauncher_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5406,7 +5406,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.5</range>
       <burstShotCount>6</burstShotCount>
@@ -5414,7 +5414,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5451,7 +5451,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -5459,7 +5459,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5496,7 +5496,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_conspirator_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Shotgun_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>24.8</range>
       <burstShotCount>6</burstShotCount>
@@ -5504,7 +5504,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_conspirator_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Shotgun_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5541,7 +5541,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>32.5</range>
       <burstShotCount>6</burstShotCount>
@@ -5549,7 +5549,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5586,7 +5586,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>44.2</range>
       <burstShotCount>6</burstShotCount>
@@ -5594,7 +5594,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5631,7 +5631,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -5639,7 +5639,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5676,7 +5676,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -5684,7 +5684,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5721,14 +5721,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5765,14 +5765,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5809,7 +5809,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>62.5</range>
       <burstShotCount>6</burstShotCount>
@@ -5817,7 +5817,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5854,7 +5854,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>85</range>
       <burstShotCount>6</burstShotCount>
@@ -5862,7 +5862,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5899,7 +5899,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Dominator_MultiCannon_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>41.6</range>
       <burstShotCount>6</burstShotCount>
@@ -5907,7 +5907,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Dominator_MultiCannon_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -5923,7 +5923,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -5931,7 +5931,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -5968,7 +5968,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -5976,7 +5976,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6013,7 +6013,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Arachna_Shotgun_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -6021,7 +6021,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Arachna_Shotgun_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -6037,7 +6037,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20</range>
       <burstShotCount>6</burstShotCount>
@@ -6045,7 +6045,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6082,7 +6082,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_M_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -6090,7 +6090,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_M_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6127,7 +6127,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_trespasser_acid_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Revolver_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>34.1</range>
       <burstShotCount>6</burstShotCount>
@@ -6135,7 +6135,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_trespasser_acid</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Revolver_Acid</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6172,7 +6172,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>28.6</range>
       <burstShotCount>6</burstShotCount>
@@ -6180,7 +6180,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6217,7 +6217,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_bloodspiller_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OMC_Whip_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -6225,7 +6225,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_bloodspiller_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OMC_Whip_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6262,14 +6262,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_boomshooter_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_RocketLauncher_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_boomshooter_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_RocketLauncher_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6306,7 +6306,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.5</range>
       <burstShotCount>6</burstShotCount>
@@ -6314,7 +6314,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6351,7 +6351,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_celestial_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Pistol_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>37.4</range>
       <burstShotCount>6</burstShotCount>
@@ -6359,7 +6359,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_celestial_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Pistol_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6396,7 +6396,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_conspirator_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Shotgun_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>24.8</range>
       <burstShotCount>6</burstShotCount>
@@ -6404,7 +6404,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_conspirator_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Shotgun_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6441,7 +6441,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>32.5</range>
       <burstShotCount>6</burstShotCount>
@@ -6449,7 +6449,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6486,7 +6486,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_equalizer_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SMG_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>44.2</range>
       <burstShotCount>6</burstShotCount>
@@ -6494,7 +6494,7 @@
     <AmmoUser>
       <magazineSize>25</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_equalizer_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SMG_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6531,7 +6531,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -6539,7 +6539,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6576,7 +6576,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_meteor_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_GrenadeLauncher_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -6584,7 +6584,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_meteor_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_GrenadeLauncher_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6621,14 +6621,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>45</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6665,14 +6665,14 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nimbus_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Bow_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
       <reloadTime>3.5</reloadTime>
-      <ammoSet>AmmoSet_OE_nimbus_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Bow_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6709,7 +6709,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>62.5</range>
       <burstShotCount>6</burstShotCount>
@@ -6717,7 +6717,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6754,7 +6754,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_nova_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_SniperRifle_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>85</range>
       <burstShotCount>6</burstShotCount>
@@ -6762,7 +6762,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_nova_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_SniperRifle_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6799,7 +6799,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Dominator_MultiCannon_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>41.6</range>
       <burstShotCount>6</burstShotCount>
@@ -6807,7 +6807,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Dominator_MultiCannon_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -6823,7 +6823,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
@@ -6831,7 +6831,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6868,7 +6868,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_pulsar_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_MultiCannon_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
@@ -6876,7 +6876,7 @@
     <AmmoUser>
       <magazineSize>6</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_pulsar_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_MultiCannon_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6913,7 +6913,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Arachna_Shotgun_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20.8</range>
       <burstShotCount>6</burstShotCount>
@@ -6921,7 +6921,7 @@
     <AmmoUser>
       <magazineSize>40</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Arachna_Shotgun_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -6937,7 +6937,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>20</range>
       <burstShotCount>6</burstShotCount>
@@ -6945,7 +6945,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -6982,7 +6982,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_quasar_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_OTC_Shotgun_M_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>27.2</range>
       <burstShotCount>6</burstShotCount>
@@ -6990,7 +6990,7 @@
     <AmmoUser>
       <magazineSize>8</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_quasar_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_OTC_Shotgun_M_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">
@@ -7027,7 +7027,7 @@
       <recoilAmount>1.46</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_OE_trespasser_cryo_standard</defaultProjectile>
+      <defaultProjectile>Bullet_OE_ODC_Revolver_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>34.1</range>
       <burstShotCount>6</burstShotCount>
@@ -7035,7 +7035,7 @@
     <AmmoUser>
       <magazineSize>12</magazineSize>
       <reloadTime>4</reloadTime>
-      <ammoSet>AmmoSet_OE_trespasser_cryo</ammoSet>
+      <ammoSet>AmmoSet_OE_ODC_Revolver_Cryo</ammoSet>
     </AmmoUser>
   </Operation>
   <Operation Class="PatchOperationReplace">

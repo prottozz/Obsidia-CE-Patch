@@ -61,7 +61,7 @@ def emit_pawnkind_xml(core: Path, families: list[Family]) -> str:
         for tag in hit:
             members.extend(tag_members[tag])
         ap_npc = any(m.ap_npc for m in members)
-        min_mag, max_mag = (6, 12) if ap_npc else (4, 8)
+        min_mag, max_mag = (10, 20) if ap_npc else (8, 16)
         blocks.append(_loadout_op(def_name, min_mag, max_mag))
 
     inner = "\n".join(blocks)

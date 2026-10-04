@@ -15,8 +15,25 @@ WEAPON_TYPES = (
     "pistol", "smg", "shotgun", "rifle", "sniper",
     "bow", "lmg", "minigun", "launcher", "rocket",
 )
+# Shared CE-style calibers: rifle ammo also fits sniper / LMG / HMG, pistol ammo
+# also fits SMGs. Damage class still splits (fire rifle ≠ emp rifle).
+CALIBER_BY_TYPE = {
+    "pistol": "pistol",
+    "smg": "pistol",
+    "shotgun": "shotgun",
+    "rifle": "rifle",
+    "sniper": "rifle",
+    "lmg": "rifle",
+    "minigun": "rifle",
+    "bow": "bow",
+    "launcher": "launcher",
+    "rocket": "rocket",
+}
 DAMAGE_CLASSES = (
     "ballistic", "energy", "fire", "emp", "acid", "cryo", "bio",
+)
+ELEMENTAL_CLASSES = frozenset(
+    {"energy", "fire", "emp", "acid", "cryo", "bio"}
 )
 EMP_SIDE_TYPES = frozenset(
     ("shotgun", "rifle", "sniper", "lmg", "minigun", "bow")

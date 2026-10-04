@@ -35,9 +35,31 @@ MELEE_POWER_BY_RUNG["mech"] = MELEE_POWER_BY_RUNG["omc"]
 
 assert set(MELEE_POWER_BY_RUNG) == set(RUNGS)
 
+_MELEE_EXTRA = (
+    ("Fire", "Flame", 8),
+    ("Acid", "OTCAcid", 8),
+    ("Cryo", "OTCCryo", 8),
+    ("EMP", "EMP", 12),
+)
+
+
+def _extra_melee_xml(def_name: str) -> str:
+    for suffix, damage_def, amount in _MELEE_EXTRA:
+        if def_name.endswith(suffix):
+            return (
+                "\n          <extraMeleeDamages>\n"
+                "            <li>\n"
+                f"              <def>{damage_def}</def>\n"
+                f"              <amount>{amount}</amount>\n"
+                "            </li>\n"
+                "          </extraMeleeDamages>"
+            )
+    return ""
+
 
 def _tools_replace(member: Member) -> str:
     power = MELEE_POWER_BY_RUNG[member.rung]
+    extra = _extra_melee_xml(member.def_name)
     return f"""  <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="{member.def_name}"]/tools</xpath>
     <value>
@@ -53,7 +75,7 @@ def _tools_replace(member: Member) -> str:
           <label>blade</label>
           <capacities><li>Cut</li></capacities>
           <power>{power}</power>
-          <cooldownTime>1.18</cooldownTime>
+          <cooldownTime>1.18</cooldownTime>{extra}
         </li>
       </tools>
     </value>

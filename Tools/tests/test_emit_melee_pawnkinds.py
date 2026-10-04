@@ -23,6 +23,14 @@ def test_emit_melee_xml_includes_toolce():
     assert "<power>8</power>" in xml
 
 
+def test_elemental_melee_keeps_extra_damage():
+    xml = emit_melee_xml([Member("OCC_PowerFist_Fire", "occ")])
+    assert "<extraMeleeDamages>" in xml
+    assert "<def>Flame</def>" in xml
+    acid = emit_melee_xml([Member("OCC_PowerFist_Acid", "occ")])
+    assert "<def>OTCAcid</def>" in acid
+
+
 def test_emit_pawnkind_xml_occ_recruit_loadout():
     fam = Family(
         "cerberus",
@@ -61,6 +69,25 @@ def test_emit_pawnkind_ap_npc_raid_magazine_bump(tmp_path: Path):
     )
     assert recruit is not None
     block = recruit.group(0)
-    assert "<min>6</min>" in block
-    assert "<max>12</max>" in block
+    assert "<min>10</min>" in block
+    assert "<max>20</max>" in block
     assert "preferredAmmo" not in xml
+
+
+def test_raiders_get_multiple_spare_magazines():
+    fam = Family(
+        "impaler",
+        "pistol",
+        "ballistic",
+        members=[Member("OCC_Revolver", "occ")],
+    )
+    xml = emit_pawnkind_xml(CORE, [fam])
+    recruit = re.search(
+        r'<xpath>Defs/PawnKindDef\[defName="OCC_Recruit"\]</xpath>.*?</Operation>',
+        xml,
+        re.DOTALL,
+    )
+    assert recruit is not None
+    block = recruit.group(0)
+    assert "<min>8</min>" in block
+    assert "<max>16</max>" in block

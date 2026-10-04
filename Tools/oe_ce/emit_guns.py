@@ -58,14 +58,14 @@ def _make_gun_op(fam: Family, member: Member) -> str:
       <recoilAmount>{_xml_num(stats["recoil"])}</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>{fam.bullet_def("standard")}</defaultProjectile>
+      <defaultProjectile>{fam.member_bullet_def(member, fam.default_cartridge())}</defaultProjectile>
       <warmupTime>{_xml_num(stats["warmup"])}</warmupTime>
       <range>{_xml_num(stats["range"])}</range>{burst_line}
     </Properties>
     <AmmoUser>
       <magazineSize>{_xml_num(stats["magazine"])}</magazineSize>
       <reloadTime>{_xml_num(stats["reload"])}</reloadTime>
-      <ammoSet>{fam.ammo_set_def()}</ammoSet>
+      <ammoSet>{fam.member_ammo_set_def(member)}</ammoSet>
     </AmmoUser>
   </Operation>"""
 
