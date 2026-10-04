@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Obsidia Expansion - Combat Extended Patch</name>
+  <author>prottozz</author>
+  <packageId>prottozz.ObsidiaCEPatch</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>CETeam.CombatExtended</packageId>
+      <displayName>Combat Extended</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2890901044</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>ObsidiaExpansion.Core</packageId>
+      <displayName>Obsidia Expansion</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2519492373</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>CETeam.CombatExtended</li>
+    <li>ObsidiaExpansion.Core</li>
+  </loadAfter>
+  <description>Combat Extended compatibility for Obsidia Expansion Core weapons, ammo, and raid magazines.</description>
+</ModMetaData>

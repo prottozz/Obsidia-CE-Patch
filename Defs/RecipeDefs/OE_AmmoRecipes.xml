@@ -1,0 +1,3776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_acid_acid_small</defName>
+    <label>make OE bow acid acid x200</label>
+    <description>Craft 200 rounds of OE bow acid acid ammunition.</description>
+    <jobString>Making OE bow acid acid ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_acid_acid>200</Ammo_OE_bow_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_acid_acid_large</defName>
+    <label>make OE bow acid acid x500</label>
+    <description>Craft 500 rounds of OE bow acid acid ammunition.</description>
+    <jobString>Making OE bow acid acid ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_acid_acid>500</Ammo_OE_bow_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_standard_small</defName>
+    <label>make OE bow ballistic standard x200</label>
+    <description>Craft 200 rounds of OE bow ballistic standard ammunition.</description>
+    <jobString>Making OE bow ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_standard>200</Ammo_OE_bow_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_standard_large</defName>
+    <label>make OE bow ballistic standard x500</label>
+    <description>Craft 500 rounds of OE bow ballistic standard ammunition.</description>
+    <jobString>Making OE bow ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_standard>500</Ammo_OE_bow_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_ap_small</defName>
+    <label>make OE bow ballistic ap x200</label>
+    <description>Craft 200 rounds of OE bow ballistic ap ammunition.</description>
+    <jobString>Making OE bow ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_ap>200</Ammo_OE_bow_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_ap_large</defName>
+    <label>make OE bow ballistic ap x500</label>
+    <description>Craft 500 rounds of OE bow ballistic ap ammunition.</description>
+    <jobString>Making OE bow ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_ap>500</Ammo_OE_bow_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_hp_small</defName>
+    <label>make OE bow ballistic hp x200</label>
+    <description>Craft 200 rounds of OE bow ballistic hp ammunition.</description>
+    <jobString>Making OE bow ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_hp>200</Ammo_OE_bow_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_hp_large</defName>
+    <label>make OE bow ballistic hp x500</label>
+    <description>Craft 500 rounds of OE bow ballistic hp ammunition.</description>
+    <jobString>Making OE bow ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_hp>500</Ammo_OE_bow_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_emp_small</defName>
+    <label>make OE bow ballistic emp x200</label>
+    <description>Craft 200 rounds of OE bow ballistic emp ammunition.</description>
+    <jobString>Making OE bow ballistic emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_emp>200</Ammo_OE_bow_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_ballistic_emp_large</defName>
+    <label>make OE bow ballistic emp x500</label>
+    <description>Craft 500 rounds of OE bow ballistic emp ammunition.</description>
+    <jobString>Making OE bow ballistic emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_ballistic_emp>500</Ammo_OE_bow_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_cryo_cryo_small</defName>
+    <label>make OE bow cryo cryo x200</label>
+    <description>Craft 200 rounds of OE bow cryo cryo ammunition.</description>
+    <jobString>Making OE bow cryo cryo ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_cryo_cryo>200</Ammo_OE_bow_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_cryo_cryo_large</defName>
+    <label>make OE bow cryo cryo x500</label>
+    <description>Craft 500 rounds of OE bow cryo cryo ammunition.</description>
+    <jobString>Making OE bow cryo cryo ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_cryo_cryo>500</Ammo_OE_bow_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_emp_emp_small</defName>
+    <label>make OE bow emp emp x200</label>
+    <description>Craft 200 rounds of OE bow emp emp ammunition.</description>
+    <jobString>Making OE bow emp emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_emp_emp>200</Ammo_OE_bow_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_emp_emp_large</defName>
+    <label>make OE bow emp emp x500</label>
+    <description>Craft 500 rounds of OE bow emp emp ammunition.</description>
+    <jobString>Making OE bow emp emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_emp_emp>500</Ammo_OE_bow_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_fire_fire_small</defName>
+    <label>make OE bow fire fire x200</label>
+    <description>Craft 200 rounds of OE bow fire fire ammunition.</description>
+    <jobString>Making OE bow fire fire ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_fire_fire>200</Ammo_OE_bow_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_bow_fire_fire_large</defName>
+    <label>make OE bow fire fire x500</label>
+    <description>Craft 500 rounds of OE bow fire fire ammunition.</description>
+    <jobString>Making OE bow fire fire ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_bow_fire_fire>500</Ammo_OE_bow_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_standard_small</defName>
+    <label>make OE cronus ballistic standard x200</label>
+    <description>Craft 200 rounds of OE cronus ballistic standard ammunition.</description>
+    <jobString>Making OE cronus ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_standard>200</Ammo_OE_exp_cronus_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_standard_large</defName>
+    <label>make OE cronus ballistic standard x500</label>
+    <description>Craft 500 rounds of OE cronus ballistic standard ammunition.</description>
+    <jobString>Making OE cronus ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_standard>500</Ammo_OE_exp_cronus_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_ap_small</defName>
+    <label>make OE cronus ballistic ap x200</label>
+    <description>Craft 200 rounds of OE cronus ballistic ap ammunition.</description>
+    <jobString>Making OE cronus ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_ap>200</Ammo_OE_exp_cronus_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_ap_large</defName>
+    <label>make OE cronus ballistic ap x500</label>
+    <description>Craft 500 rounds of OE cronus ballistic ap ammunition.</description>
+    <jobString>Making OE cronus ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_ap>500</Ammo_OE_exp_cronus_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_hp_small</defName>
+    <label>make OE cronus ballistic hp x200</label>
+    <description>Craft 200 rounds of OE cronus ballistic hp ammunition.</description>
+    <jobString>Making OE cronus ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_hp>200</Ammo_OE_exp_cronus_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_hp_large</defName>
+    <label>make OE cronus ballistic hp x500</label>
+    <description>Craft 500 rounds of OE cronus ballistic hp ammunition.</description>
+    <jobString>Making OE cronus ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_hp>500</Ammo_OE_exp_cronus_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_emp_small</defName>
+    <label>make OE cronus ballistic emp x200</label>
+    <description>Craft 200 rounds of OE cronus ballistic emp ammunition.</description>
+    <jobString>Making OE cronus ballistic emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_emp>200</Ammo_OE_exp_cronus_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_cronus_ballistic_emp_large</defName>
+    <label>make OE cronus ballistic emp x500</label>
+    <description>Craft 500 rounds of OE cronus ballistic emp ammunition.</description>
+    <jobString>Making OE cronus ballistic emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_cronus_ballistic_emp>500</Ammo_OE_exp_cronus_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_giants_bane_ballistic_standard_small</defName>
+    <label>make OE dark giants bane ballistic standard x200</label>
+    <description>Craft 200 rounds of OE dark giants bane ballistic standard ammunition.</description>
+    <jobString>Making OE dark giants bane ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_giants_bane_ballistic_standard>200</Ammo_OE_exp_dark_giants_bane_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_giants_bane_ballistic_standard_large</defName>
+    <label>make OE dark giants bane ballistic standard x500</label>
+    <description>Craft 500 rounds of OE dark giants bane ballistic standard ammunition.</description>
+    <jobString>Making OE dark giants bane ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_giants_bane_ballistic_standard>500</Ammo_OE_exp_dark_giants_bane_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_giants_bane_ballistic_ap_small</defName>
+    <label>make OE dark giants bane ballistic ap x200</label>
+    <description>Craft 200 rounds of OE dark giants bane ballistic ap ammunition.</description>
+    <jobString>Making OE dark giants bane ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_giants_bane_ballistic_ap>200</Ammo_OE_exp_dark_giants_bane_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_giants_bane_ballistic_ap_large</defName>
+    <label>make OE dark giants bane ballistic ap x500</label>
+    <description>Craft 500 rounds of OE dark giants bane ballistic ap ammunition.</description>
+    <jobString>Making OE dark giants bane ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_giants_bane_ballistic_ap>500</Ammo_OE_exp_dark_giants_bane_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_giants_bane_ballistic_hp_small</defName>
+    <label>make OE dark giants bane ballistic hp x200</label>
+    <description>Craft 200 rounds of OE dark giants bane ballistic hp ammunition.</description>
+    <jobString>Making OE dark giants bane ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_giants_bane_ballistic_hp>200</Ammo_OE_exp_dark_giants_bane_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_giants_bane_ballistic_hp_large</defName>
+    <label>make OE dark giants bane ballistic hp x500</label>
+    <description>Craft 500 rounds of OE dark giants bane ballistic hp ammunition.</description>
+    <jobString>Making OE dark giants bane ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_giants_bane_ballistic_hp>500</Ammo_OE_exp_dark_giants_bane_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_standard_small</defName>
+    <label>make OE dark hydra ballistic standard x200</label>
+    <description>Craft 200 rounds of OE dark hydra ballistic standard ammunition.</description>
+    <jobString>Making OE dark hydra ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_standard>200</Ammo_OE_exp_dark_hydra_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_standard_large</defName>
+    <label>make OE dark hydra ballistic standard x500</label>
+    <description>Craft 500 rounds of OE dark hydra ballistic standard ammunition.</description>
+    <jobString>Making OE dark hydra ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_standard>500</Ammo_OE_exp_dark_hydra_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_ap_small</defName>
+    <label>make OE dark hydra ballistic ap x200</label>
+    <description>Craft 200 rounds of OE dark hydra ballistic ap ammunition.</description>
+    <jobString>Making OE dark hydra ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_ap>200</Ammo_OE_exp_dark_hydra_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_ap_large</defName>
+    <label>make OE dark hydra ballistic ap x500</label>
+    <description>Craft 500 rounds of OE dark hydra ballistic ap ammunition.</description>
+    <jobString>Making OE dark hydra ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_ap>500</Ammo_OE_exp_dark_hydra_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_hp_small</defName>
+    <label>make OE dark hydra ballistic hp x200</label>
+    <description>Craft 200 rounds of OE dark hydra ballistic hp ammunition.</description>
+    <jobString>Making OE dark hydra ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_hp>200</Ammo_OE_exp_dark_hydra_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_hp_large</defName>
+    <label>make OE dark hydra ballistic hp x500</label>
+    <description>Craft 500 rounds of OE dark hydra ballistic hp ammunition.</description>
+    <jobString>Making OE dark hydra ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_hp>500</Ammo_OE_exp_dark_hydra_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_emp_small</defName>
+    <label>make OE dark hydra ballistic emp x200</label>
+    <description>Craft 200 rounds of OE dark hydra ballistic emp ammunition.</description>
+    <jobString>Making OE dark hydra ballistic emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_emp>200</Ammo_OE_exp_dark_hydra_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_hydra_ballistic_emp_large</defName>
+    <label>make OE dark hydra ballistic emp x500</label>
+    <description>Craft 500 rounds of OE dark hydra ballistic emp ammunition.</description>
+    <jobString>Making OE dark hydra ballistic emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_hydra_ballistic_emp>500</Ammo_OE_exp_dark_hydra_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_standard_small</defName>
+    <label>make OE dark judgement ballistic standard x200</label>
+    <description>Craft 200 rounds of OE dark judgement ballistic standard ammunition.</description>
+    <jobString>Making OE dark judgement ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_standard>200</Ammo_OE_exp_dark_judgement_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_standard_large</defName>
+    <label>make OE dark judgement ballistic standard x500</label>
+    <description>Craft 500 rounds of OE dark judgement ballistic standard ammunition.</description>
+    <jobString>Making OE dark judgement ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_standard>500</Ammo_OE_exp_dark_judgement_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_ap_small</defName>
+    <label>make OE dark judgement ballistic ap x200</label>
+    <description>Craft 200 rounds of OE dark judgement ballistic ap ammunition.</description>
+    <jobString>Making OE dark judgement ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_ap>200</Ammo_OE_exp_dark_judgement_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_ap_large</defName>
+    <label>make OE dark judgement ballistic ap x500</label>
+    <description>Craft 500 rounds of OE dark judgement ballistic ap ammunition.</description>
+    <jobString>Making OE dark judgement ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_ap>500</Ammo_OE_exp_dark_judgement_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_hp_small</defName>
+    <label>make OE dark judgement ballistic hp x200</label>
+    <description>Craft 200 rounds of OE dark judgement ballistic hp ammunition.</description>
+    <jobString>Making OE dark judgement ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_hp>200</Ammo_OE_exp_dark_judgement_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_hp_large</defName>
+    <label>make OE dark judgement ballistic hp x500</label>
+    <description>Craft 500 rounds of OE dark judgement ballistic hp ammunition.</description>
+    <jobString>Making OE dark judgement ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_hp>500</Ammo_OE_exp_dark_judgement_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_emp_small</defName>
+    <label>make OE dark judgement ballistic emp x200</label>
+    <description>Craft 200 rounds of OE dark judgement ballistic emp ammunition.</description>
+    <jobString>Making OE dark judgement ballistic emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_emp>200</Ammo_OE_exp_dark_judgement_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_dark_judgement_ballistic_emp_large</defName>
+    <label>make OE dark judgement ballistic emp x500</label>
+    <description>Craft 500 rounds of OE dark judgement ballistic emp ammunition.</description>
+    <jobString>Making OE dark judgement ballistic emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_dark_judgement_ballistic_emp>500</Ammo_OE_exp_dark_judgement_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_prototype_sx_01a_ballistic_standard_small</defName>
+    <label>make OE prototype sx 01a ballistic standard x200</label>
+    <description>Craft 200 rounds of OE prototype sx 01a ballistic standard ammunition.</description>
+    <jobString>Making OE prototype sx 01a ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_prototype_sx_01a_ballistic_standard>200</Ammo_OE_exp_prototype_sx_01a_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_prototype_sx_01a_ballistic_standard_large</defName>
+    <label>make OE prototype sx 01a ballistic standard x500</label>
+    <description>Craft 500 rounds of OE prototype sx 01a ballistic standard ammunition.</description>
+    <jobString>Making OE prototype sx 01a ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_prototype_sx_01a_ballistic_standard>500</Ammo_OE_exp_prototype_sx_01a_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_prototype_sx_01a_ballistic_ap_small</defName>
+    <label>make OE prototype sx 01a ballistic ap x200</label>
+    <description>Craft 200 rounds of OE prototype sx 01a ballistic ap ammunition.</description>
+    <jobString>Making OE prototype sx 01a ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_prototype_sx_01a_ballistic_ap>200</Ammo_OE_exp_prototype_sx_01a_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_prototype_sx_01a_ballistic_ap_large</defName>
+    <label>make OE prototype sx 01a ballistic ap x500</label>
+    <description>Craft 500 rounds of OE prototype sx 01a ballistic ap ammunition.</description>
+    <jobString>Making OE prototype sx 01a ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_prototype_sx_01a_ballistic_ap>500</Ammo_OE_exp_prototype_sx_01a_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_prototype_sx_01a_ballistic_hp_small</defName>
+    <label>make OE prototype sx 01a ballistic hp x200</label>
+    <description>Craft 200 rounds of OE prototype sx 01a ballistic hp ammunition.</description>
+    <jobString>Making OE prototype sx 01a ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_prototype_sx_01a_ballistic_hp>200</Ammo_OE_exp_prototype_sx_01a_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_exp_prototype_sx_01a_ballistic_hp_large</defName>
+    <label>make OE prototype sx 01a ballistic hp x500</label>
+    <description>Craft 500 rounds of OE prototype sx 01a ballistic hp ammunition.</description>
+    <jobString>Making OE prototype sx 01a ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_exp_prototype_sx_01a_ballistic_hp>500</Ammo_OE_exp_prototype_sx_01a_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_acid_acid_small</defName>
+    <label>make OE launcher acid acid x200</label>
+    <description>Craft 200 rounds of OE launcher acid acid ammunition.</description>
+    <jobString>Making OE launcher acid acid ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_acid_acid>200</Ammo_OE_launcher_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_acid_acid_large</defName>
+    <label>make OE launcher acid acid x500</label>
+    <description>Craft 500 rounds of OE launcher acid acid ammunition.</description>
+    <jobString>Making OE launcher acid acid ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_acid_acid>500</Ammo_OE_launcher_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_ballistic_standard_small</defName>
+    <label>make OE launcher ballistic standard x200</label>
+    <description>Craft 200 rounds of OE launcher ballistic standard ammunition.</description>
+    <jobString>Making OE launcher ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_ballistic_standard>200</Ammo_OE_launcher_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_ballistic_standard_large</defName>
+    <label>make OE launcher ballistic standard x500</label>
+    <description>Craft 500 rounds of OE launcher ballistic standard ammunition.</description>
+    <jobString>Making OE launcher ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_ballistic_standard>500</Ammo_OE_launcher_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_ballistic_ap_small</defName>
+    <label>make OE launcher ballistic ap x200</label>
+    <description>Craft 200 rounds of OE launcher ballistic ap ammunition.</description>
+    <jobString>Making OE launcher ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_ballistic_ap>200</Ammo_OE_launcher_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_ballistic_ap_large</defName>
+    <label>make OE launcher ballistic ap x500</label>
+    <description>Craft 500 rounds of OE launcher ballistic ap ammunition.</description>
+    <jobString>Making OE launcher ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_ballistic_ap>500</Ammo_OE_launcher_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_ballistic_hp_small</defName>
+    <label>make OE launcher ballistic hp x200</label>
+    <description>Craft 200 rounds of OE launcher ballistic hp ammunition.</description>
+    <jobString>Making OE launcher ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_ballistic_hp>200</Ammo_OE_launcher_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_ballistic_hp_large</defName>
+    <label>make OE launcher ballistic hp x500</label>
+    <description>Craft 500 rounds of OE launcher ballistic hp ammunition.</description>
+    <jobString>Making OE launcher ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_ballistic_hp>500</Ammo_OE_launcher_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_cryo_cryo_small</defName>
+    <label>make OE launcher cryo cryo x200</label>
+    <description>Craft 200 rounds of OE launcher cryo cryo ammunition.</description>
+    <jobString>Making OE launcher cryo cryo ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_cryo_cryo>200</Ammo_OE_launcher_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_cryo_cryo_large</defName>
+    <label>make OE launcher cryo cryo x500</label>
+    <description>Craft 500 rounds of OE launcher cryo cryo ammunition.</description>
+    <jobString>Making OE launcher cryo cryo ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_cryo_cryo>500</Ammo_OE_launcher_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_emp_emp_small</defName>
+    <label>make OE launcher emp emp x200</label>
+    <description>Craft 200 rounds of OE launcher emp emp ammunition.</description>
+    <jobString>Making OE launcher emp emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_emp_emp>200</Ammo_OE_launcher_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_emp_emp_large</defName>
+    <label>make OE launcher emp emp x500</label>
+    <description>Craft 500 rounds of OE launcher emp emp ammunition.</description>
+    <jobString>Making OE launcher emp emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_emp_emp>500</Ammo_OE_launcher_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_fire_fire_small</defName>
+    <label>make OE launcher fire fire x200</label>
+    <description>Craft 200 rounds of OE launcher fire fire ammunition.</description>
+    <jobString>Making OE launcher fire fire ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_fire_fire>200</Ammo_OE_launcher_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_launcher_fire_fire_large</defName>
+    <label>make OE launcher fire fire x500</label>
+    <description>Craft 500 rounds of OE launcher fire fire ammunition.</description>
+    <jobString>Making OE launcher fire fire ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_launcher_fire_fire>500</Ammo_OE_launcher_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_acid_acid_small</defName>
+    <label>make OE pistol acid acid x200</label>
+    <description>Craft 200 rounds of OE pistol acid acid ammunition.</description>
+    <jobString>Making OE pistol acid acid ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_acid_acid>200</Ammo_OE_pistol_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_acid_acid_large</defName>
+    <label>make OE pistol acid acid x500</label>
+    <description>Craft 500 rounds of OE pistol acid acid ammunition.</description>
+    <jobString>Making OE pistol acid acid ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_acid_acid>500</Ammo_OE_pistol_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_ballistic_standard_small</defName>
+    <label>make OE pistol ballistic standard x200</label>
+    <description>Craft 200 rounds of OE pistol ballistic standard ammunition.</description>
+    <jobString>Making OE pistol ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_ballistic_standard>200</Ammo_OE_pistol_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_ballistic_standard_large</defName>
+    <label>make OE pistol ballistic standard x500</label>
+    <description>Craft 500 rounds of OE pistol ballistic standard ammunition.</description>
+    <jobString>Making OE pistol ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_ballistic_standard>500</Ammo_OE_pistol_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_ballistic_ap_small</defName>
+    <label>make OE pistol ballistic ap x200</label>
+    <description>Craft 200 rounds of OE pistol ballistic ap ammunition.</description>
+    <jobString>Making OE pistol ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_ballistic_ap>200</Ammo_OE_pistol_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_ballistic_ap_large</defName>
+    <label>make OE pistol ballistic ap x500</label>
+    <description>Craft 500 rounds of OE pistol ballistic ap ammunition.</description>
+    <jobString>Making OE pistol ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_ballistic_ap>500</Ammo_OE_pistol_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_ballistic_hp_small</defName>
+    <label>make OE pistol ballistic hp x200</label>
+    <description>Craft 200 rounds of OE pistol ballistic hp ammunition.</description>
+    <jobString>Making OE pistol ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_ballistic_hp>200</Ammo_OE_pistol_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_ballistic_hp_large</defName>
+    <label>make OE pistol ballistic hp x500</label>
+    <description>Craft 500 rounds of OE pistol ballistic hp ammunition.</description>
+    <jobString>Making OE pistol ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_ballistic_hp>500</Ammo_OE_pistol_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_cryo_cryo_small</defName>
+    <label>make OE pistol cryo cryo x200</label>
+    <description>Craft 200 rounds of OE pistol cryo cryo ammunition.</description>
+    <jobString>Making OE pistol cryo cryo ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_cryo_cryo>200</Ammo_OE_pistol_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_cryo_cryo_large</defName>
+    <label>make OE pistol cryo cryo x500</label>
+    <description>Craft 500 rounds of OE pistol cryo cryo ammunition.</description>
+    <jobString>Making OE pistol cryo cryo ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_cryo_cryo>500</Ammo_OE_pistol_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_emp_emp_small</defName>
+    <label>make OE pistol emp emp x200</label>
+    <description>Craft 200 rounds of OE pistol emp emp ammunition.</description>
+    <jobString>Making OE pistol emp emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_emp_emp>200</Ammo_OE_pistol_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_emp_emp_large</defName>
+    <label>make OE pistol emp emp x500</label>
+    <description>Craft 500 rounds of OE pistol emp emp ammunition.</description>
+    <jobString>Making OE pistol emp emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_emp_emp>500</Ammo_OE_pistol_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_fire_fire_small</defName>
+    <label>make OE pistol fire fire x200</label>
+    <description>Craft 200 rounds of OE pistol fire fire ammunition.</description>
+    <jobString>Making OE pistol fire fire ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_fire_fire>200</Ammo_OE_pistol_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_pistol_fire_fire_large</defName>
+    <label>make OE pistol fire fire x500</label>
+    <description>Craft 500 rounds of OE pistol fire fire ammunition.</description>
+    <jobString>Making OE pistol fire fire ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_pistol_fire_fire>500</Ammo_OE_pistol_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_acid_acid_small</defName>
+    <label>make OE rifle acid acid x200</label>
+    <description>Craft 200 rounds of OE rifle acid acid ammunition.</description>
+    <jobString>Making OE rifle acid acid ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_acid_acid>200</Ammo_OE_rifle_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_acid_acid_large</defName>
+    <label>make OE rifle acid acid x500</label>
+    <description>Craft 500 rounds of OE rifle acid acid ammunition.</description>
+    <jobString>Making OE rifle acid acid ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_acid_acid>500</Ammo_OE_rifle_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_standard_small</defName>
+    <label>make OE rifle ballistic standard x200</label>
+    <description>Craft 200 rounds of OE rifle ballistic standard ammunition.</description>
+    <jobString>Making OE rifle ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_standard>200</Ammo_OE_rifle_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_standard_large</defName>
+    <label>make OE rifle ballistic standard x500</label>
+    <description>Craft 500 rounds of OE rifle ballistic standard ammunition.</description>
+    <jobString>Making OE rifle ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_standard>500</Ammo_OE_rifle_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_ap_small</defName>
+    <label>make OE rifle ballistic ap x200</label>
+    <description>Craft 200 rounds of OE rifle ballistic ap ammunition.</description>
+    <jobString>Making OE rifle ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_ap>200</Ammo_OE_rifle_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_ap_large</defName>
+    <label>make OE rifle ballistic ap x500</label>
+    <description>Craft 500 rounds of OE rifle ballistic ap ammunition.</description>
+    <jobString>Making OE rifle ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_ap>500</Ammo_OE_rifle_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_hp_small</defName>
+    <label>make OE rifle ballistic hp x200</label>
+    <description>Craft 200 rounds of OE rifle ballistic hp ammunition.</description>
+    <jobString>Making OE rifle ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_hp>200</Ammo_OE_rifle_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_hp_large</defName>
+    <label>make OE rifle ballistic hp x500</label>
+    <description>Craft 500 rounds of OE rifle ballistic hp ammunition.</description>
+    <jobString>Making OE rifle ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_hp>500</Ammo_OE_rifle_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_emp_small</defName>
+    <label>make OE rifle ballistic emp x200</label>
+    <description>Craft 200 rounds of OE rifle ballistic emp ammunition.</description>
+    <jobString>Making OE rifle ballistic emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_emp>200</Ammo_OE_rifle_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_ballistic_emp_large</defName>
+    <label>make OE rifle ballistic emp x500</label>
+    <description>Craft 500 rounds of OE rifle ballistic emp ammunition.</description>
+    <jobString>Making OE rifle ballistic emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_ballistic_emp>500</Ammo_OE_rifle_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_cryo_cryo_small</defName>
+    <label>make OE rifle cryo cryo x200</label>
+    <description>Craft 200 rounds of OE rifle cryo cryo ammunition.</description>
+    <jobString>Making OE rifle cryo cryo ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_cryo_cryo>200</Ammo_OE_rifle_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_cryo_cryo_large</defName>
+    <label>make OE rifle cryo cryo x500</label>
+    <description>Craft 500 rounds of OE rifle cryo cryo ammunition.</description>
+    <jobString>Making OE rifle cryo cryo ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_cryo_cryo>500</Ammo_OE_rifle_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_emp_emp_small</defName>
+    <label>make OE rifle emp emp x200</label>
+    <description>Craft 200 rounds of OE rifle emp emp ammunition.</description>
+    <jobString>Making OE rifle emp emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_emp_emp>200</Ammo_OE_rifle_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_emp_emp_large</defName>
+    <label>make OE rifle emp emp x500</label>
+    <description>Craft 500 rounds of OE rifle emp emp ammunition.</description>
+    <jobString>Making OE rifle emp emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_emp_emp>500</Ammo_OE_rifle_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_fire_fire_small</defName>
+    <label>make OE rifle fire fire x200</label>
+    <description>Craft 200 rounds of OE rifle fire fire ammunition.</description>
+    <jobString>Making OE rifle fire fire ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_fire_fire>200</Ammo_OE_rifle_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rifle_fire_fire_large</defName>
+    <label>make OE rifle fire fire x500</label>
+    <description>Craft 500 rounds of OE rifle fire fire ammunition.</description>
+    <jobString>Making OE rifle fire fire ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rifle_fire_fire>500</Ammo_OE_rifle_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_acid_acid_small</defName>
+    <label>make OE rocket acid acid x200</label>
+    <description>Craft 200 rounds of OE rocket acid acid ammunition.</description>
+    <jobString>Making OE rocket acid acid ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_acid_acid>200</Ammo_OE_rocket_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_acid_acid_large</defName>
+    <label>make OE rocket acid acid x500</label>
+    <description>Craft 500 rounds of OE rocket acid acid ammunition.</description>
+    <jobString>Making OE rocket acid acid ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_acid_acid>500</Ammo_OE_rocket_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_ballistic_standard_small</defName>
+    <label>make OE rocket ballistic standard x200</label>
+    <description>Craft 200 rounds of OE rocket ballistic standard ammunition.</description>
+    <jobString>Making OE rocket ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_ballistic_standard>200</Ammo_OE_rocket_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_ballistic_standard_large</defName>
+    <label>make OE rocket ballistic standard x500</label>
+    <description>Craft 500 rounds of OE rocket ballistic standard ammunition.</description>
+    <jobString>Making OE rocket ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_ballistic_standard>500</Ammo_OE_rocket_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_ballistic_ap_small</defName>
+    <label>make OE rocket ballistic ap x200</label>
+    <description>Craft 200 rounds of OE rocket ballistic ap ammunition.</description>
+    <jobString>Making OE rocket ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_ballistic_ap>200</Ammo_OE_rocket_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_ballistic_ap_large</defName>
+    <label>make OE rocket ballistic ap x500</label>
+    <description>Craft 500 rounds of OE rocket ballistic ap ammunition.</description>
+    <jobString>Making OE rocket ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_ballistic_ap>500</Ammo_OE_rocket_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_ballistic_hp_small</defName>
+    <label>make OE rocket ballistic hp x200</label>
+    <description>Craft 200 rounds of OE rocket ballistic hp ammunition.</description>
+    <jobString>Making OE rocket ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_ballistic_hp>200</Ammo_OE_rocket_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_ballistic_hp_large</defName>
+    <label>make OE rocket ballistic hp x500</label>
+    <description>Craft 500 rounds of OE rocket ballistic hp ammunition.</description>
+    <jobString>Making OE rocket ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_ballistic_hp>500</Ammo_OE_rocket_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_cryo_cryo_small</defName>
+    <label>make OE rocket cryo cryo x200</label>
+    <description>Craft 200 rounds of OE rocket cryo cryo ammunition.</description>
+    <jobString>Making OE rocket cryo cryo ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_cryo_cryo>200</Ammo_OE_rocket_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_cryo_cryo_large</defName>
+    <label>make OE rocket cryo cryo x500</label>
+    <description>Craft 500 rounds of OE rocket cryo cryo ammunition.</description>
+    <jobString>Making OE rocket cryo cryo ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_cryo_cryo>500</Ammo_OE_rocket_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_emp_emp_small</defName>
+    <label>make OE rocket emp emp x200</label>
+    <description>Craft 200 rounds of OE rocket emp emp ammunition.</description>
+    <jobString>Making OE rocket emp emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_emp_emp>200</Ammo_OE_rocket_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_emp_emp_large</defName>
+    <label>make OE rocket emp emp x500</label>
+    <description>Craft 500 rounds of OE rocket emp emp ammunition.</description>
+    <jobString>Making OE rocket emp emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_emp_emp>500</Ammo_OE_rocket_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_fire_fire_small</defName>
+    <label>make OE rocket fire fire x200</label>
+    <description>Craft 200 rounds of OE rocket fire fire ammunition.</description>
+    <jobString>Making OE rocket fire fire ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_fire_fire>200</Ammo_OE_rocket_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_rocket_fire_fire_large</defName>
+    <label>make OE rocket fire fire x500</label>
+    <description>Craft 500 rounds of OE rocket fire fire ammunition.</description>
+    <jobString>Making OE rocket fire fire ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_rocket_fire_fire>500</Ammo_OE_rocket_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_acid_acid_small</defName>
+    <label>make OE shotgun acid acid x200</label>
+    <description>Craft 200 rounds of OE shotgun acid acid ammunition.</description>
+    <jobString>Making OE shotgun acid acid ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_acid_acid>200</Ammo_OE_shotgun_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_acid_acid_large</defName>
+    <label>make OE shotgun acid acid x500</label>
+    <description>Craft 500 rounds of OE shotgun acid acid ammunition.</description>
+    <jobString>Making OE shotgun acid acid ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_acid_acid>500</Ammo_OE_shotgun_acid_acid>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_standard_small</defName>
+    <label>make OE shotgun ballistic standard x200</label>
+    <description>Craft 200 rounds of OE shotgun ballistic standard ammunition.</description>
+    <jobString>Making OE shotgun ballistic standard ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_standard>200</Ammo_OE_shotgun_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_standard_large</defName>
+    <label>make OE shotgun ballistic standard x500</label>
+    <description>Craft 500 rounds of OE shotgun ballistic standard ammunition.</description>
+    <jobString>Making OE shotgun ballistic standard ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_standard>500</Ammo_OE_shotgun_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_ap_small</defName>
+    <label>make OE shotgun ballistic ap x200</label>
+    <description>Craft 200 rounds of OE shotgun ballistic ap ammunition.</description>
+    <jobString>Making OE shotgun ballistic ap ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_ap>200</Ammo_OE_shotgun_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_ap_large</defName>
+    <label>make OE shotgun ballistic ap x500</label>
+    <description>Craft 500 rounds of OE shotgun ballistic ap ammunition.</description>
+    <jobString>Making OE shotgun ballistic ap ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_ap>500</Ammo_OE_shotgun_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_hp_small</defName>
+    <label>make OE shotgun ballistic hp x200</label>
+    <description>Craft 200 rounds of OE shotgun ballistic hp ammunition.</description>
+    <jobString>Making OE shotgun ballistic hp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_hp>200</Ammo_OE_shotgun_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_hp_large</defName>
+    <label>make OE shotgun ballistic hp x500</label>
+    <description>Craft 500 rounds of OE shotgun ballistic hp ammunition.</description>
+    <jobString>Making OE shotgun ballistic hp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_hp>500</Ammo_OE_shotgun_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_emp_small</defName>
+    <label>make OE shotgun ballistic emp x200</label>
+    <description>Craft 200 rounds of OE shotgun ballistic emp ammunition.</description>
+    <jobString>Making OE shotgun ballistic emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_emp>200</Ammo_OE_shotgun_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_ballistic_emp_large</defName>
+    <label>make OE shotgun ballistic emp x500</label>
+    <description>Craft 500 rounds of OE shotgun ballistic emp ammunition.</description>
+    <jobString>Making OE shotgun ballistic emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_ballistic_emp>500</Ammo_OE_shotgun_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_cryo_cryo_small</defName>
+    <label>make OE shotgun cryo cryo x200</label>
+    <description>Craft 200 rounds of OE shotgun cryo cryo ammunition.</description>
+    <jobString>Making OE shotgun cryo cryo ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_cryo_cryo>200</Ammo_OE_shotgun_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_cryo_cryo_large</defName>
+    <label>make OE shotgun cryo cryo x500</label>
+    <description>Craft 500 rounds of OE shotgun cryo cryo ammunition.</description>
+    <jobString>Making OE shotgun cryo cryo ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_cryo_cryo>500</Ammo_OE_shotgun_cryo_cryo>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_emp_emp_small</defName>
+    <label>make OE shotgun emp emp x200</label>
+    <description>Craft 200 rounds of OE shotgun emp emp ammunition.</description>
+    <jobString>Making OE shotgun emp emp ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_emp_emp>200</Ammo_OE_shotgun_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_emp_emp_large</defName>
+    <label>make OE shotgun emp emp x500</label>
+    <description>Craft 500 rounds of OE shotgun emp emp ammunition.</description>
+    <jobString>Making OE shotgun emp emp ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_emp_emp>500</Ammo_OE_shotgun_emp_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_fire_fire_small</defName>
+    <label>make OE shotgun fire fire x200</label>
+    <description>Craft 200 rounds of OE shotgun fire fire ammunition.</description>
+    <jobString>Making OE shotgun fire fire ammo.</jobString>
+    <workAmount>2000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>1</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_fire_fire>200</Ammo_OE_shotgun_fire_fire>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_OE_shotgun_fire_fire_large</defName>
+    <label>make OE shotgun fire fire x500</label>
+    <description>Craft 500 rounds of OE shotgun fire fire ammunition.</description>
+    <jobString>Making OE shotgun fire fire ammo.</jobString>
+    <workAmount>5000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Syntherius</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mooncloth</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+        <li>OE_Syntherius</li>
+        <li>OE_Mooncloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_shotgun_fire_fire>500</Ammo_OE_shotgun_fire_fire>
+    </products>
+  </RecipeDef>
+</Defs>

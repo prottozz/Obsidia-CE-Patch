@@ -1,0 +1,292 @@
+families:
+- id: behemoth
+  type: rocket
+  members:
+  - defName: OCC_RocketLauncher
+    rung: occ
+  - defName: OCC_RocketLauncher_M
+    rung: occ_reforge
+- id: blackout
+  type: minigun
+  members:
+  - defName: CAC_Arachna_Minigun
+    rung: mech
+- id: bloodspiller
+  type: pistol
+  members:
+  - defName: OMC_Whip_M
+    rung: omc_mod
+- id: boomshooter
+  type: rocket
+  members:
+  - defName: ODC_RocketLauncher
+    rung: odc_t1
+- id: bytecrusher
+  type: shotgun
+  members:
+  - defName: OMG_Dominator_Shotgun
+    rung: mech
+  - defName: OMG_Shotgun
+    rung: omg
+- id: cerberus
+  type: rifle
+  members:
+  - defName: OCC_Arachna_Rifle
+    rung: mech
+  - defName: OCC_Rifle
+    rung: occ
+  - defName: OCC_Rifle_M
+    rung: occ_reforge
+  - defName: OES_Rifle
+    rung: heroic
+  - defName: OE_Necroframe_Rifle
+    rung: proto
+  - defName: OE_Rifle
+    rung: proto
+- id: chimera
+  type: launcher
+  members:
+  - defName: OCC_MultiCannon
+    rung: occ
+  - defName: OCC_MultiCannon_M
+    rung: occ_reforge
+- id: conspirator
+  type: shotgun
+  members:
+  - defName: ODC_Shotgun
+    rung: odc_t1
+- id: corrupter
+  type: shotgun
+  members:
+  - defName: EGO_Shotgun
+    rung: bio_t3
+- id: cronus
+  type: sniper
+  members:
+  - defName: OCC_Trophy_Railgun_I
+    rung: trophy
+  experimental: true
+- id: dark_giants_bane
+  type: rocket
+  members:
+  - defName: OE_DarkCrusader_RocketLauncher
+    rung: proto
+  experimental: true
+- id: dark_hydra
+  type: minigun
+  members:
+  - defName: OE_DarkCrusader_Minigun
+    rung: proto
+  experimental: true
+- id: dark_judgement
+  type: sniper
+  members:
+  - defName: OE_DarkCrusader_SniperRifle
+    rung: proto
+  experimental: true
+- id: datashot
+  type: pistol
+  members:
+  - defName: OMG_Revolver
+    rung: omg
+- id: doom
+  type: shotgun
+  members:
+  - defName: OE_Necroframe_Shotgun
+    rung: proto
+  - defName: OE_Shotgun
+    rung: proto
+  - defName: OMC_Dominator_Shotgun
+    rung: mech
+  - defName: OMC_Shotgun
+    rung: omc
+  - defName: OMC_Shotgun_M
+    rung: omc_mod
+- id: equalizer
+  type: smg
+  members:
+  - defName: OE_Necroframe_SMG
+    rung: proto
+  - defName: OE_SMG
+    rung: proto
+- id: etherstrike
+  type: sniper
+  members:
+  - defName: OMG_Dominator_SniperRifle
+    rung: mech
+  - defName: OMG_SniperRifle
+    rung: omg
+- id: giants_bane
+  type: rocket
+  members:
+  - defName: OMC_RocketLauncher
+    rung: omc
+  - defName: OMC_RocketLauncher_M
+    rung: omc_mod
+- id: harvest
+  type: rocket
+  members:
+  - defName: ODC_Dominator_BladeLauncher
+    rung: mech
+  - defName: ODC_Trophy_BladeLauncher_A
+    rung: trophy
+  - defName: ODC_Trophy_BladeLauncher_B
+    rung: trophy
+  - defName: ODC_Trophy_BladeLauncher_C
+    rung: trophy
+  - defName: ODC_Trophy_BladeLauncher_C_I
+    rung: trophy
+- id: hellscream
+  type: shotgun
+  members:
+  - defName: OES_ShotgunS
+    rung: heroic
+  - defName: OMC_ShotgunS
+    rung: omc
+  - defName: OMC_ShotgunS_M
+    rung: omc_mod
+- id: hornet
+  type: pistol
+  members:
+  - defName: OCC_Revolver
+    rung: occ
+  - defName: OCC_Revolver_M
+    rung: occ_reforge
+- id: humunculus
+  type: pistol
+  members:
+  - defName: EGO_Pistol
+    rung: bio_t3
+- id: hydra
+  type: minigun
+  members:
+  - defName: OCC_Minigun
+    rung: occ
+  - defName: OCC_Minigun_M
+    rung: occ_reforge
+- id: impaler
+  type: pistol
+  members:
+  - defName: OE_Necroframe_Pistol
+    rung: proto
+  - defName: OE_Pistol
+    rung: proto
+  - defName: OMC_Pistol
+    rung: omc
+  - defName: OMC_Pistol_M
+    rung: omc_mod
+- id: inheritance
+  type: rifle
+  members:
+  - defName: ODC_Rifle
+    rung: odc_t1
+- id: merciless
+  type: pistol
+  members:
+  - defName: OMC_Revolver
+    rung: omc
+  - defName: OMC_Revolver_M
+    rung: omc_mod
+- id: misfit
+  type: smg
+  members:
+  - defName: ODC_SMG_A
+    rung: odc_t1
+  - defName: ODC_SMG_B
+    rung: odc_t2
+- id: nanofire
+  type: pistol
+  members:
+  - defName: OMG_Pistol
+    rung: omg
+- id: patagius
+  type: sniper
+  members:
+  - defName: EGO_SniperRifle
+    rung: bio_t3
+- id: pride
+  type: bow
+  members:
+  - defName: OES_Bow
+    rung: heroic
+  - defName: OE_Bow
+    rung: proto
+  - defName: OE_Necroframe_Bow
+    rung: proto
+- id: prototype_sx_01a
+  type: pistol
+  members:
+  - defName: OMC_Trophy_Pistol_I
+    rung: trophy
+  experimental: true
+- id: purpose
+  type: pistol
+  members:
+  - defName: ODC_Pistol
+    rung: odc_t1
+- id: scylla
+  type: rifle
+  members:
+  - defName: OCC_AR
+    rung: occ
+  - defName: OCC_AR_M
+    rung: occ_reforge
+- id: skullmasher
+  type: sniper
+  members:
+  - defName: OMC_SniperRifle
+    rung: omc
+  - defName: OMC_SniperRifle_M
+    rung: omc_mod
+- id: smuggler
+  type: sniper
+  members:
+  - defName: ODC_SniperRifle_A
+    rung: odc_t1
+  - defName: ODC_SniperRifle_B
+    rung: odc_t2
+- id: striker
+  type: rifle
+  members:
+  - defName: OMC_AR
+    rung: omc
+  - defName: OMC_AR_M
+    rung: omc_mod
+  - defName: OMC_Arachna_AR
+    rung: mech
+- id: thoughtless
+  type: rifle
+  members:
+  - defName: ODC_AssaultRifle_A
+    rung: odc_t1
+  - defName: ODC_AssaultRifle_B
+    rung: odc_t2
+- id: toxocyst
+  type: smg
+  members:
+  - defName: EGO_SMG
+    rung: bio_t3
+- id: trespasser
+  type: pistol
+  members:
+  - defName: ODC_Revolver
+    rung: odc_t1
+- id: unchained
+  type: minigun
+  members:
+  - defName: OES_Minigun
+    rung: heroic
+- id: void_shredder
+  type: minigun
+  members:
+  - defName: OMG_Dominator_Minigun
+    rung: mech
+  - defName: OMG_Minigun
+    rung: omg
+- id: wendigo
+  type: bow
+  members:
+  - defName: OCC_Bow
+    rung: occ
+  - defName: OCC_Bow_M
+    rung: occ_reforge

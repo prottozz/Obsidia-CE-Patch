@@ -1,0 +1,2459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_BigHammer"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_BigScythe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_BigSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Claws"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Knife"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Scepter"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_A"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_B"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_C"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_D"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_E"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_F"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Trophy_Dragonbane_G"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="EGO_Whip"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_BigHammer"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_BigHammer_M"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_BigSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_BigSword_M"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_Dominator_Drill"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>11</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_M"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_M_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_M_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_M_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_PowerFist_M_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_Trophy_Drillspear_I"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_BigSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_DualSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Knife"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Rapier"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_RapierGuard"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Rapier_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Rapier_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Rapier_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Rapier_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Sword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Tonfa"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>10</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_A"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_B"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_C"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_D"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_E"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_F"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_G"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_H"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_I"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_PowerFist_J"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_Sickle_A"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_Sickle_B"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_Sickle_C"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="ODC_Trophy_Sickle_C_I"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Axe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_BigAxe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_BigSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_DualSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Hammer"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Katana"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_PowerFist"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Rapier"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Scythe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Spear"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Sword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Trophy_BigHammer"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_DarkCrusader_BattleAxe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_DarkCrusader_BigSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Hammer"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Necroframe_Hammer"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Necroframe_Spear"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Necroframe_Sword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Spear"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Sword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>8</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMC_Axe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>11</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMC_Axe_M"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMC_Sword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>11</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMC_Sword_M"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMC_Whip"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>11</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_Axe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>18</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_BattleAxe"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>18</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_DualSword"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>18</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_Rapier"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>18</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_Scepter"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>18</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Knife"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_PowerGuitar"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_M_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_M_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_M_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_BigAxe_M_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_M_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_M_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_M_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_ChainAxe_M_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>9</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_M_Acid"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCAcid</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_M_Cryo"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>OTCCryo</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_M_EMP"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>EMP</def>
+              <amount>12</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Hammer_M_Fire"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>14</power>
+          <cooldownTime>1.18</cooldownTime>
+          <extraMeleeDamages>
+            <li>
+              <def>Flame</def>
+              <amount>8</amount>
+            </li>
+          </extraMeleeDamages>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OTC_Trophy_Cards_I"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>handle</label>
+          <capacities><li>Poke</li></capacities>
+          <power>1</power>
+          <chanceFactor>0.33</chanceFactor>
+          <cooldownTime>1.26</cooldownTime>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>blade</label>
+          <capacities><li>Cut</li></capacities>
+          <power>16</power>
+          <cooldownTime>1.18</cooldownTime>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+</Patch>

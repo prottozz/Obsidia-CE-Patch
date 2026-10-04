@@ -1,0 +1,76 @@
+families:
+- id: bloodspiller
+  type: pistol
+  members:
+  - defName: OMC_Whip_EMP
+    rung: omc
+  - defName: OMC_Whip_M_EMP
+    rung: omc_mod
+- id: boomshooter
+  type: rocket
+  members:
+  - defName: ODC_RocketLauncher_EMP
+    rung: odc_t2
+- id: celestial
+  type: pistol
+  members:
+  - defName: OTC_Pistol_EMP
+    rung: otc
+  - defName: OTC_Pistol_M_EMP
+    rung: otc_t2
+- id: conspirator
+  type: shotgun
+  members:
+  - defName: ODC_Shotgun_EMP
+    rung: odc_t2
+- id: equalizer
+  type: smg
+  members:
+  - defName: OTC_SMG_EMP
+    rung: otc
+  - defName: OTC_SMG_M_EMP
+    rung: otc_t2
+- id: meteor
+  type: launcher
+  members:
+  - defName: OTC_GrenadeLauncher_EMP
+    rung: otc
+  - defName: OTC_GrenadeLauncher_M_EMP
+    rung: otc_t2
+- id: nimbus
+  type: bow
+  members:
+  - defName: OTC_Bow_EMP
+    rung: otc
+  - defName: OTC_Bow_M_EMP
+    rung: otc_t2
+- id: nova
+  type: sniper
+  members:
+  - defName: OTC_SniperRifle_EMP
+    rung: otc
+  - defName: OTC_SniperRifle_M_EMP
+    rung: otc_t2
+- id: pulsar
+  type: launcher
+  members:
+  - defName: OTC_Dominator_MultiCannon_EMP
+    rung: mech
+  - defName: OTC_MultiCannon_EMP
+    rung: otc
+  - defName: OTC_MultiCannon_M_EMP
+    rung: otc_t2
+- id: quasar
+  type: shotgun
+  members:
+  - defName: OTC_Arachna_Shotgun_EMP
+    rung: mech
+  - defName: OTC_Shotgun_EMP
+    rung: otc
+  - defName: OTC_Shotgun_M_EMP
+    rung: otc_t2
+- id: trespasser
+  type: pistol
+  members:
+  - defName: ODC_Revolver_EMP
+    rung: odc_t2
