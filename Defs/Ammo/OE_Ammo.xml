@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<ThingCategoryDef>
+  <defName>AmmoOE_cerberus_ballistic</defName>
+  <label>OE cerberus ballistic</label>
+  <parent>AmmoAdvanced</parent>
+</ThingCategoryDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_cerberus_ballistic</defName>
+  <ammoTypes>
+    <Ammo_OE_cerberus_ballistic_standard>Bullet_OE_cerberus_ballistic_standard</Ammo_OE_cerberus_ballistic_standard>
+    <Ammo_OE_cerberus_ballistic_ap>Bullet_OE_cerberus_ballistic_ap</Ammo_OE_cerberus_ballistic_ap>
+    <Ammo_OE_cerberus_ballistic_hp>Bullet_OE_cerberus_ballistic_hp</Ammo_OE_cerberus_ballistic_hp>
+    <Ammo_OE_cerberus_ballistic_emp>Bullet_OE_cerberus_ballistic_emp</Ammo_OE_cerberus_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+  <defName>Ammo_OE_cerberus_ballistic_standard</defName>
+  <graphicData>
+    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
+    <graphicClass>Graphic_StackCount</graphicClass>
+  </graphicData>
+  <ammoClass>FMJ</ammoClass>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_cerberus_ballistic_standard</defName>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+  </projectile>
+</ThingDef>
+
+<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+  <defName>Ammo_OE_cerberus_ballistic_ap</defName>
+  <graphicData>
+    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
+    <graphicClass>Graphic_StackCount</graphicClass>
+  </graphicData>
+  <ammoClass>ArmorPiercing</ammoClass>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_cerberus_ballistic_ap</defName>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+  </projectile>
+</ThingDef>
+
+<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+  <defName>Ammo_OE_cerberus_ballistic_hp</defName>
+  <graphicData>
+    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
+    <graphicClass>Graphic_StackCount</graphicClass>
+  </graphicData>
+  <ammoClass>HollowPoint</ammoClass>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_cerberus_ballistic_hp</defName>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+  </projectile>
+</ThingDef>
+
+<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+  <defName>Ammo_OE_cerberus_ballistic_emp</defName>
+  <graphicData>
+    <texPath>Things/Ammo/Charged/MediumRegular</texPath>
+    <graphicClass>Graphic_StackCount</graphicClass>
+  </graphicData>
+  <ammoClass>Ionized</ammoClass>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_cerberus_ballistic_emp</defName>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+</Defs>

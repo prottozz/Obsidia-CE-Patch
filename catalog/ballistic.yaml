@@ -1,0 +1,17 @@
+families:
+  - id: cerberus
+    type: rifle
+    class: ballistic
+    members:
+      - defName: OE_Rifle
+        rung: proto
+      - defName: OE_Necroframe_Rifle
+        rung: proto
+      - defName: OCC_Rifle
+        rung: occ
+      - defName: OCC_Rifle_M
+        rung: occ_reforge
+      - defName: OES_Rifle
+        rung: heroic
+      - defName: OCC_Arachna_Rifle
+        rung: mech

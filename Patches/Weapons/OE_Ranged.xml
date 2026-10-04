@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>OCC_Arachna_Rifle</defName>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>7</Bulk>
+      <SwayFactor>1.2</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <recoilAmount>1.46</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <warmupTime>1</warmupTime>
+      <range>52</range>
+      <burstShotCount>6</burstShotCount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>40</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+    </AmmoUser>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_Arachna_Rifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities><li>Blunt</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities><li>Poke</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>OCC_Rifle</defName>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>7</Bulk>
+      <SwayFactor>1.2</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <recoilAmount>1.46</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <warmupTime>1</warmupTime>
+      <range>48</range>
+      <burstShotCount>6</burstShotCount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>25</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+    </AmmoUser>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_Rifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities><li>Blunt</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities><li>Poke</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>OCC_Rifle_M</defName>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>7</Bulk>
+      <SwayFactor>1.2</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <recoilAmount>1.46</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <warmupTime>1</warmupTime>
+      <range>68</range>
+      <burstShotCount>6</burstShotCount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>25</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+    </AmmoUser>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OCC_Rifle_M"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities><li>Blunt</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities><li>Poke</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>OES_Rifle</defName>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>7</Bulk>
+      <SwayFactor>1.2</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <recoilAmount>1.46</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <warmupTime>1</warmupTime>
+      <range>75</range>
+      <burstShotCount>6</burstShotCount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>25</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+    </AmmoUser>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OES_Rifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities><li>Blunt</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities><li>Poke</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>OE_Necroframe_Rifle</defName>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>7</Bulk>
+      <SwayFactor>1.2</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <recoilAmount>1.46</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <warmupTime>1</warmupTime>
+      <range>55</range>
+      <burstShotCount>6</burstShotCount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>25</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+    </AmmoUser>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Necroframe_Rifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities><li>Blunt</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities><li>Poke</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>OE_Rifle</defName>
+    <statBases>
+      <Mass>3</Mass>
+      <Bulk>7</Bulk>
+      <SwayFactor>1.2</SwayFactor>
+      <ShotSpread>0.08</ShotSpread>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <recoilAmount>1.46</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_OE_cerberus_ballistic_standard</defaultProjectile>
+      <warmupTime>1</warmupTime>
+      <range>55</range>
+      <burstShotCount>6</burstShotCount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>25</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_OE_cerberus_ballistic</ammoSet>
+    </AmmoUser>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="OE_Rifle"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities><li>Blunt</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities><li>Poke</li></capacities>
+          <power>6</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+</Patch>

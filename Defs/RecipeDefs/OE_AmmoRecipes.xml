@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_standard_small</defName>
+    <label>make OE cerberus ballistic standard x200</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_standard>200</Ammo_OE_cerberus_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_standard_large</defName>
+    <label>make OE cerberus ballistic standard x500</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_standard>500</Ammo_OE_cerberus_ballistic_standard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_ap_small</defName>
+    <label>make OE cerberus ballistic ap x200</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_ap>200</Ammo_OE_cerberus_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_ap_large</defName>
+    <label>make OE cerberus ballistic ap x500</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_ap>500</Ammo_OE_cerberus_ballistic_ap>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_hp_small</defName>
+    <label>make OE cerberus ballistic hp x200</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_hp>200</Ammo_OE_cerberus_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_hp_large</defName>
+    <label>make OE cerberus ballistic hp x500</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_hp>500</Ammo_OE_cerberus_ballistic_hp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_emp_small</defName>
+    <label>make OE cerberus ballistic emp x200</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_emp>200</Ammo_OE_cerberus_ballistic_emp>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>MakeAmmo_OE_cerberus_ballistic_emp_large</defName>
+    <label>make OE cerberus ballistic emp x500</label>
+    <recipeUsers>
+      <li>OE_WeaponWorkbench</li>
+    </recipeUsers>
+    <ingredients>
+      <li><filter><thingDefs><li>OE_Obsidian</li></thingDefs></filter><count>32</count></li>
+      <li><filter><thingDefs><li>OE_Mythril</li></thingDefs></filter><count>16</count></li>
+      <li><filter><thingDefs><li>OE_AmmoKit</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>OE_Obsidian</li>
+        <li>OE_Mythril</li>
+        <li>OE_AmmoKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_OE_cerberus_ballistic_emp>500</Ammo_OE_cerberus_ballistic_emp>
+    </products>
+  </RecipeDef>
+</Defs>
