@@ -3,11 +3,21 @@ from __future__ import annotations
 from collections import Counter
 
 from oe_ce.constants import DAMAGE_CLASSES, EMP_SIDE_TYPES, RUNGS, WEAPON_TYPES
+from oe_ce.emit_ammo import EMP_DEDICATED_AMOUNT, EMP_SIDE_AMOUNT
 from oe_ce.models import Catalog
 
 
+def validate_emp_constants() -> list[str]:
+    if EMP_DEDICATED_AMOUNT > EMP_SIDE_AMOUNT:
+        return []
+    return [
+        "EMP_DEDICATED_AMOUNT must be greater than EMP_SIDE_AMOUNT "
+        f"({EMP_DEDICATED_AMOUNT} <= {EMP_SIDE_AMOUNT})"
+    ]
+
+
 def validate_catalog(catalog: Catalog, core_ranged: set[str]) -> list[str]:
-    errors: list[str] = []
+    errors: list[str] = list(validate_emp_constants())
     seen: list[str] = []
     for fam in catalog.families:
         if fam.type not in WEAPON_TYPES:

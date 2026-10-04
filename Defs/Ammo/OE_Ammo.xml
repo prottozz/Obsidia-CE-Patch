@@ -23,6 +23,10 @@
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <ammoClass>FMJ</ammoClass>
+  <tradeTags>
+    <li>CE_AutoEnableTrade</li>
+    <li>OEGear</li>
+  </tradeTags>
 </ThingDef>
 
 <ThingDef ParentName="BaseBulletCE">
@@ -42,6 +46,10 @@
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <ammoClass>ArmorPiercing</ammoClass>
+  <tradeTags>
+    <li>CE_AutoEnableTrade</li>
+    <li>OEGear</li>
+  </tradeTags>
 </ThingDef>
 
 <ThingDef ParentName="BaseBulletCE">
@@ -61,6 +69,10 @@
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <ammoClass>HollowPoint</ammoClass>
+  <tradeTags>
+    <li>CE_AutoEnableTrade</li>
+    <li>OEGear</li>
+  </tradeTags>
 </ThingDef>
 
 <ThingDef ParentName="BaseBulletCE">
@@ -80,6 +92,10 @@
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <ammoClass>Ionized</ammoClass>
+  <tradeTags>
+    <li>CE_AutoEnableTrade</li>
+    <li>OEGear</li>
+  </tradeTags>
 </ThingDef>
 
 <ThingDef ParentName="BaseBulletCE">

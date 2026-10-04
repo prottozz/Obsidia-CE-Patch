@@ -61,6 +61,10 @@ def _emit_ammo_def(fam: Family, cartridge: str) -> str:
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <ammoClass>{_AMMO_CLASS[cartridge]}</ammoClass>
+  <tradeTags>
+    <li>CE_AutoEnableTrade</li>
+    <li>OEGear</li>
+  </tradeTags>
 </ThingDef>"""
 
 
