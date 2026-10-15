@@ -117,7 +117,7 @@ def _lookup_thing(index: ThingDefIndex, key: str) -> ET.Element | None:
     return index.by_def.get(key) or index.by_name.get(key)
 
 
-def _walk_parents(index: ThingDefIndex, start: ET.Element) -> list[ET.Element]:
+def walk_parents(index: ThingDefIndex, start: ET.Element) -> list[ET.Element]:
     out: list[ET.Element] = []
     current: ET.Element | None = start
     seen: set[str] = set()
@@ -171,7 +171,7 @@ def weapon_projectile_graphic(
     if gun is None:
         return None
     proj_name: str | None = None
-    for el in _walk_parents(idx, gun):
+    for el in walk_parents(idx, gun):
         proj_name = _default_projectile(el)
         if proj_name:
             break
@@ -180,7 +180,7 @@ def weapon_projectile_graphic(
     proj = _lookup_thing(idx, proj_name)
     if proj is None:
         return None
-    for el in _walk_parents(idx, proj):
+    for el in walk_parents(idx, proj):
         graphic = _graphic_from_el(el)
         if graphic is not None:
             return graphic
