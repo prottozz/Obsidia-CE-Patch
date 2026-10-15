@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -97,10 +98,10 @@ def weapon_tags(core: Path, def_name: str) -> list[str]:
     return []
 
 
-def index_weapon_thingdefs(core: Path) -> ThingDefIndex:
+def index_thingdefs(paths: Iterable[Path]) -> ThingDefIndex:
     by_def: dict[str, ET.Element] = {}
     by_name: dict[str, ET.Element] = {}
-    for path in _iter_weapon_xml(core):
+    for path in paths:
         for el in _thingdefs(path):
             if el.tag != "ThingDef":
                 continue
@@ -111,6 +112,10 @@ def index_weapon_thingdefs(core: Path) -> ThingDefIndex:
             if name:
                 by_name[name] = el
     return ThingDefIndex(by_def=by_def, by_name=by_name)
+
+
+def index_weapon_thingdefs(core: Path) -> ThingDefIndex:
+    return index_thingdefs(_iter_weapon_xml(core))
 
 
 def _lookup_thing(index: ThingDefIndex, key: str) -> ET.Element | None:

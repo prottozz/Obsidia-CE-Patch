@@ -5,7 +5,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 from oe_ce.apparel_rungs import ARMOR, HELMET
-from oe_ce.scan_obsidia import ThingDefIndex, walk_parents
+from oe_ce.scan_obsidia import ThingDefIndex, index_thingdefs, walk_parents
 
 APPAREL_EXCLUDE_EXACT = frozenset(
     {
@@ -47,19 +47,7 @@ def _apparel_dir(core: Path) -> Path:
 
 
 def _index(core: Path) -> ThingDefIndex:
-    by_def: dict[str, ET.Element] = {}
-    by_name: dict[str, ET.Element] = {}
-    for path in sorted(_apparel_dir(core).rglob("*.xml")):
-        for el in ET.parse(path).getroot():
-            if el.tag != "ThingDef":
-                continue
-            def_name = (el.findtext("defName") or "").strip()
-            if def_name:
-                by_def[def_name] = el
-            name = el.get("Name")
-            if name:
-                by_name[name] = el
-    return ThingDefIndex(by_def=by_def, by_name=by_name)
+    return index_thingdefs(sorted(_apparel_dir(core).rglob("*.xml")))
 
 
 def _layers(index: ThingDefIndex, el: ET.Element) -> list[str]:
