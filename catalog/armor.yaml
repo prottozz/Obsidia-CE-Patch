@@ -1,0 +1,80 @@
+# Core combat body armor. Rung names match the gun catalog; numbers come from
+# Tools/oe_ce/apparel_rungs.py, not the gun table.
+sets:
+  - id: proto
+    rung: proto
+    members:
+      - defName: OE_Armor_Proto
+  - id: occ
+    rung: occ
+    members:
+      - defName: OCC_Armor
+      - defName: OCC_Armor_M
+        rung: occ_reforge
+      - defName: OCC_Armor_M_Spacer
+        rung: occ_reforge
+  - id: otc
+    rung: otc
+    members:
+      - defName: OTC_Armor
+      - defName: OTC_Armor_M
+        rung: otc_t2
+      - defName: OTC_Armor_M_Spacer
+        rung: otc_t2
+  - id: omc
+    rung: omc
+    members:
+      - defName: OMC_Armor
+      - defName: OMC_Armor_M
+        rung: omc_mod
+      - defName: OMC_Armor_M_Spacer
+        rung: omc_mod
+      - defName: OMC_Armor_M_Smoker
+        rung: omc_mod
+  - id: odc_nomad
+    rung: odc_t1
+    members:
+      - defName: ODC_Armor_Nomad
+  - id: odc_recon
+    rung: odc_t2
+    members:
+      - defName: ODC_Armor_Recon
+      - defName: ODC_Armor_Recon_Spacer
+      - defName: ODC_Armor_Recon_Smoker
+  - id: odc_duelist
+    rung: odc_t3
+    members:
+      - defName: ODC_Armor_Duelist
+      - defName: ODC_Armor_Duelist_Spacer
+      - defName: ODC_Armor_Duelist_Smoker
+  - id: odc_stalker
+    rung: odc_t4
+    members:
+      - defName: ODC_Armor_Stalker_Direwolf
+      - defName: ODC_Armor_Stalker_Raptor
+      - defName: ODC_Armor_Stalker_Ogren
+      - defName: ODC_Armor_Stalker_Tionant
+  - id: cac_light
+    rung: cac_t1
+    members:
+      - defName: CAC_LightArmor
+      - defName: CAC_LightArmor_Smoker
+  - id: cac_heavy
+    rung: cac_t2
+    members:
+      - defName: CAC_HeavyArmor
+      - defName: CAC_HeavyArmor_Smoker
+  - id: ego
+    rung: bio_t3
+    members:
+      - defName: EGO_Armor_Suit
+      - defName: EGO_Armor_Carapace
+      - defName: EGO_Armor_Shell_Melee
+        rung: bio_t4
+      - defName: EGO_Armor_Shell_Ranged
+        rung: bio_t4
+  - id: omg
+    rung: omg
+    members:
+      - defName: OMG_Armor_Corsair
+      - defName: OMG_Armor_Demolition

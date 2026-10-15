@@ -1,0 +1,5007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Smoker"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Smoker"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Carapace"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Melee"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Ranged"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Suit"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>20</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>20</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>45</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>45</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/Mass</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>80</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>80</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>10</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>10</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OCC_Armor"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>20</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>20</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>45</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>45</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/Mass</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>80</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>80</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>10</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>10</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Nomad"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/Mass</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/Mass</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/Mass</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Direwolf"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Ogren"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Raptor"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>28</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>60</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.62</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Stalker_Tionant"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>16</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>16</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>34</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>34</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/Mass</xpath>
+      <value>
+        <Mass>30</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+      <value>
+        <Mass>30</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>80</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+      <value>
+        <Bulk>80</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>12</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/statBases</xpath>
+      <value>
+        <WornBulk>12</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>50</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>50</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>8</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>8</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OE_Armor_Proto"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Leg</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Leg</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>20</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>20</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>45</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>45</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/Mass</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+      <value>
+        <Mass>50</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>80</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>80</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>10</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>10</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OMC_Armor"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Smoker"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>26</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>56</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/Mass</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <Mass>70</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>95</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>18</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>30</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>30</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>64</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>64</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>30</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>30</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>64</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>64</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.65</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/Mass</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+      <value>
+        <Mass>80</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>100</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>20</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>17</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>17</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>38</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>38</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/Mass</xpath>
+      <value>
+        <Mass>40</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+      <value>
+        <Mass>40</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>90</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+      <value>
+        <Bulk>90</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>13</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/statBases</xpath>
+      <value>
+        <WornBulk>13</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>65</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>65</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>9</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>9</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OTC_Armor"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+            <parts>
+              <li>Arm</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Leg</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Leg</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/Mass</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M"]</xpath>
+    <value>
+      <li Class="CombatExtended.PartialArmorExt">
+        <stats>
+          <li>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+          <li>
+            <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+            <parts>
+              <li>Neck</li>
+            </parts>
+          </li>
+        </stats>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]</xpath>
+      <value>
+        <statBases />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Sharp>24</ArmorRating_Sharp>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Blunt>52</ArmorRating_Blunt>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/ArmorRating_Heat</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/ArmorRating_Heat</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <ArmorRating_Heat>0.58</ArmorRating_Heat>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/Mass</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/Mass</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <Mass>60</Mass>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/Bulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/Bulk</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <Bulk>100</Bulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/WornBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases/WornBulk</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/statBases</xpath>
+      <value>
+        <WornBulk>15</WornBulk>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]</xpath>
+      <value>
+        <equippedStatOffsets />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets/CarryWeight</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryWeight>90</CarryWeight>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets/CarryBulk</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Spacer"]/equippedStatOffsets</xpath>
+      <value>
+        <CarryBulk>15</CarryBulk>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>
