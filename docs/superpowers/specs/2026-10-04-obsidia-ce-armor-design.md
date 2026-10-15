@@ -83,9 +83,14 @@ Treat as **in-scope combat helmet** if the def uses an overhead / helmet layer a
 - defNames containing `Shield` or `Barrier`
 - defNames containing `Grenadier`
 - defNames starting with `Grenade_`
-- job / worker gear: miner, medic, constructor, trader, worker helmets and worker shells (`ODC_Helmet_Miner`, `ODC_Helmet_Constructor`, `ODC_Helmet_Medic`, `ODC_Helmet_Trader`, `EGO_Helmet_Exohelm_Worker`, `EGO_Armor_Shell_Worker`, and any later Core def that is clearly the same role)
+- job / worker gear: miner, medic, constructor, trader, beastmaster, worker helmets and worker shells (`ODC_Helmet_Miner`, `ODC_Helmet_Constructor`, `ODC_Helmet_Medic`, `ODC_Helmet_Trader`, `ODC_Helmet_Beastmaster`, `EGO_Helmet_Exohelm_Worker`, `EGO_Armor_Shell_Worker`, and any later Core def that is clearly the same role)
 
-Stalker / trophy / EGO melee-ranged combat shells **are** in scope.
+Stalker / trophy / EGO melee-ranged combat shells **are** in scope. `*_Smoker` and `*_Spacer` variants are in scope (same armor, extra ability or vacuum sealing).
+
+**Inheritance:** Core uses concrete parents (`OCC_Armor_M_Spacer` inherits from `OCC_Armor_M`). Patches apply before XML inheritance, so:
+
+- Shield / barrier / grenadier children of a catalogued piece inherit its CE stats and coverage even though they are never patched directly. Standalone ones with no catalogued parent (`OES_Armor_Shield`, `OES_Armor_Barrier`) stay vanilla.
+- A catalogued child of a catalogued concrete parent does not get its own `PartialArmorExt` (it would duplicate the inherited one). It must resolve to the same coverage template as its parent; the validator fails otherwise.
 
 ## Armor rungs (not the gun table)
 
@@ -102,11 +107,25 @@ Confirmed ranking vs CE analogues:
 | `oec` | Slight step above OMC |
 | `oe` | Above OEC, below `odc_t3` |
 | `odc_t2` | Cataphract neighbourhood |
-| `occ_reforge`, `omc_mod`, `oec_t2`, `otc_t2`, `cac_t1`, `bio_t3`, `odc_t3` | Below persona |
+| `otc_t2` | Same as `odc_t2`: one step **below** `occ_reforge`, so OTC stays weaker than OCC at the reforged tier too |
+| `occ_reforge`, `omc_mod`, `oec_t2`, `cac_t1`, `bio_t3`, `odc_t3` | Below persona |
 | `odc_t4`, `heroic`, `trophy`, `cac_t2`, `bio_t4` | Cataphract / persona |
 | `omg` | Slightly above `odc_t4` |
+| `mech` | Same as `omc` (kept so every rung has a row; no Core worn suit uses it yet) |
 
-Helmets use the set’s rung with a helmet template: same CE analogue, `PartialArmor` focused on head/neck, ratings in the same neighbourhood as that rung’s CE helmet (not a second ad-hoc ladder).
+CE reference points (sharp / blunt, mm / MPa): recon 16 / 34, marine 20 / 45, cataphract 28 / 60. Helmets: recon 12 / 26, marine 16 / 36, cataphract 22 / 50. Heat stays on the vanilla 0–2 scale (recon 0.46, marine 0.54, cataphract 0.60).
+
+Helmets use the set’s rung with a helmet table on the same ladder (recon → marine → cataphract helmet values), not a second ad-hoc ladder.
+
+**Coverage templates** (`CombatExtended.PartialArmorExt` multipliers; Obsidia pieces do not cover hands or feet):
+
+| Template | Rungs | Parts |
+|---|---|---|
+| light | `proto`, `otc` | body: neck 0.60, arm 0.80, leg 0.90 · helmet: eye 0.70, nose/jaw 0.50 |
+| marine | `occ`, `odc_t1`, `omc`, `mech`, `oec`, `oe` | body: neck 0.80, arm 0.90 · helmet: eye/nose 0.80 |
+| heavy | `odc_t2`, `otc_t2` and everything above | body: neck 0.90 · helmet: eye 0.90 |
+
+**Carry capacity:** CE counts worn armor mass against inventory weight. CE’s own recon / marine / cataphract armor add `CarryWeight` / `CarryBulk` (50 / 8, 80 / 10, 100 / 20). Body armor gets the matching offset for its rung so a 50–80 kg suit does not overload the wearer. Helmets get none.
 
 ## What the generator writes
 
@@ -114,28 +133,29 @@ Helmets use the set’s rung with a helmet template: same CE analogue, `PartialA
 
 Per member:
 
-- Replace vanilla `ArmorRating_Sharp` / `Blunt` / `Heat` with CE-scale values from the armor (or helmet) rung table
-- Set `Mass`, `Bulk`, `WornBulk`
-- Add `modExtensions` → `CombatExtended.PartialArmor`
-  - Body armor: torso / neck / shoulders high; arms / legs partial (marine vs cataphract coverage templates by rung)
-  - Helmets: head / neck
+- Set `ArmorRating_Sharp` / `Blunt` / `Heat`, `Mass`, `Bulk`, `WornBulk` to the CE-scale values from the armor (or helmet) rung table. Each stat is a conditional replace-or-add, because many Core pieces inherit these from a parent instead of defining them.
+- Body armor only: set `equippedStatOffsets` `CarryWeight` / `CarryBulk` the same way
+- Add `CombatExtended.PartialArmorExt` with the rung’s coverage template, except on children that inherit it from a catalogued concrete parent
 
-Do not add CE apparel comps for shields (out of scope). Do not retarget `recipeUsers`. Do not emit pawnKind or trader patches for clothing.
+Do not add CE apparel comps for shields (out of scope). Do not retarget `recipeUsers`. Do not emit pawnKind or trader patches for clothing. Leave Obsidia’s own `equippedStatOffsets` (move speed, pain shock, etc.) alone.
 
 ## Tests
 
 - OCC body armor sharp sits in CE marine neighbourhood
-- OTC body armor sharp (and blunt) is strictly below OCC
-- A catalogued helmet gets the helmet `PartialArmor` template, not the body template
+- OTC body armor sharp (and blunt) is strictly below OCC, at both the base and the reforged tier
+- A catalogued helmet gets the helmet `PartialArmorExt` template, not the body template
+- Body armor gets `CarryWeight`; helmets do not
+- A child of a catalogued concrete parent gets stats but no second `PartialArmorExt`
 - Excluded `*Shield*` / uniform / `Grenade_*` defNames are absent from generated patches
-- `validate_catalog` fails if an in-scope Core apparel def is missing, duplicated, or listed despite being excluded
+- The apparel validator fails if an in-scope Core apparel def is missing, duplicated, listed despite being excluded, or inherits from a parent with a different coverage template
 
 ## Playtest bar
 
 1. Colonist in OCC armor + helmet takes CE-plausible hits (not vanilla sponge, not paper).
 2. Same pawn in OTC armor is clearly squishier than OCC.
 3. Headshots care about the helmet; removing it makes the head the weak point.
-4. Unpatched shield / barrier / grenadier items still exist in-game; this slice does not CE them.
+4. A pawn in OCC armor is not overweight from the armor alone (carry offset works).
+5. Shield / barrier / grenadier variants still work as Obsidia made them; the ones built on a catalogued piece show that piece’s CE armor numbers.
 
 ## Later slices (not this spec)
 
