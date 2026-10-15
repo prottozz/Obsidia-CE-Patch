@@ -1,0 +1,84 @@
+# Core combat helmets. Set ids match catalog/armor.yaml where a kit has both.
+sets:
+  - id: proto
+    rung: proto
+    members:
+      - defName: OE_Helmet_Proto
+  - id: occ
+    rung: occ
+    members:
+      - defName: OCC_Helmet
+      - defName: OCC_Helmet_M
+        rung: occ_reforge
+      - defName: OCC_Helmet_M_Spacer
+        rung: occ_reforge
+      - defName: OCC_Helmet_M_Melee
+        rung: occ_reforge
+      - defName: OCC_Helmet_M_Ranged
+        rung: occ_reforge
+  - id: otc
+    rung: otc
+    members:
+      - defName: OTC_Helmet
+      - defName: OTC_Helmet_M
+        rung: otc_t2
+      - defName: OTC_Helmet_M_Spacer
+        rung: otc_t2
+      - defName: OTC_Helmet_M_Melee
+        rung: otc_t2
+      - defName: OTC_Helmet_M_Ranged
+        rung: otc_t2
+  - id: omc
+    rung: omc
+    members:
+      - defName: OMC_Helmet
+      - defName: OMC_Helmet_M
+        rung: omc_mod
+      - defName: OMC_Helmet_M_Spacer
+        rung: omc_mod
+      - defName: OMC_Helmet_M_Melee
+        rung: omc_mod
+      - defName: OMC_Helmet_M_Ranged
+        rung: omc_mod
+  - id: odc_nomad
+    rung: odc_t1
+    members:
+      - defName: ODC_Helmet_Nomad
+  - id: odc_recon
+    rung: odc_t2
+    members:
+      - defName: ODC_Helmet_Recon
+      - defName: ODC_Helmet_Spacer
+  - id: odc_duelist
+    rung: odc_t3
+    members:
+      - defName: ODC_Helmet_Duelist
+  - id: cac_light
+    rung: cac_t1
+    members:
+      - defName: CAC_LightHelmet
+  - id: cac_heavy
+    rung: cac_t2
+    members:
+      - defName: CAC_HeavyHelmet
+  - id: ego
+    rung: bio_t3
+    members:
+      - defName: EGO_Helmet_Mask
+      - defName: EGO_Helmet_Helm
+      - defName: EGO_Helmet_Exohelm_Melee
+        rung: bio_t4
+      - defName: EGO_Helmet_Exohelm_Ranged
+        rung: bio_t4
+  - id: oes
+    rung: heroic
+    members:
+      - defName: OES_Helmet_Melee
+      - defName: OES_Helmet_Ranged
+  - id: omg
+    rung: omg
+    members:
+      - defName: OMG_Helmet_Classic
+      - defName: OMG_Trophy_Helmet_Forgemind
+      - defName: OMG_Trophy_Helmet_Hellrain
+      - defName: OMG_Trophy_Helmet_Orbicore

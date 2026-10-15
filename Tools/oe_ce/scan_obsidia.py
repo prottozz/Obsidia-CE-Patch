@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -97,10 +98,10 @@ def weapon_tags(core: Path, def_name: str) -> list[str]:
     return []
 
 
-def index_weapon_thingdefs(core: Path) -> ThingDefIndex:
+def index_thingdefs(paths: Iterable[Path]) -> ThingDefIndex:
     by_def: dict[str, ET.Element] = {}
     by_name: dict[str, ET.Element] = {}
-    for path in _iter_weapon_xml(core):
+    for path in paths:
         for el in _thingdefs(path):
             if el.tag != "ThingDef":
                 continue
@@ -113,11 +114,15 @@ def index_weapon_thingdefs(core: Path) -> ThingDefIndex:
     return ThingDefIndex(by_def=by_def, by_name=by_name)
 
 
+def index_weapon_thingdefs(core: Path) -> ThingDefIndex:
+    return index_thingdefs(_iter_weapon_xml(core))
+
+
 def _lookup_thing(index: ThingDefIndex, key: str) -> ET.Element | None:
     return index.by_def.get(key) or index.by_name.get(key)
 
 
-def _walk_parents(index: ThingDefIndex, start: ET.Element) -> list[ET.Element]:
+def walk_parents(index: ThingDefIndex, start: ET.Element) -> list[ET.Element]:
     out: list[ET.Element] = []
     current: ET.Element | None = start
     seen: set[str] = set()
@@ -171,7 +176,7 @@ def weapon_projectile_graphic(
     if gun is None:
         return None
     proj_name: str | None = None
-    for el in _walk_parents(idx, gun):
+    for el in walk_parents(idx, gun):
         proj_name = _default_projectile(el)
         if proj_name:
             break
@@ -180,7 +185,7 @@ def weapon_projectile_graphic(
     proj = _lookup_thing(idx, proj_name)
     if proj is None:
         return None
-    for el in _walk_parents(idx, proj):
+    for el in walk_parents(idx, proj):
         graphic = _graphic_from_el(el)
         if graphic is not None:
             return graphic
