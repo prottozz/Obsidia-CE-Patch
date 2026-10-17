@@ -1,0 +1,192 @@
+sets:
+  - id: direwolf
+    analogue: warg
+    members:
+      - defName: OE_Direwolf
+      - defName: OE_Elder_Direwolf
+        analogue: thrumbo
+  - id: raptor
+    analogue: warg
+    members:
+      - defName: OE_Raptor
+      - defName: OE_Elder_Raptor
+        analogue: thrumbo
+  - id: ogren
+    analogue: thrumbo
+    members:
+      - defName: OE_Ogren
+      - defName: OE_Elder_Ogren
+  - id: tionant
+    analogue: megaspider
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Tionant_Blue
+      - defName: OE_Tionant_Green
+      - defName: OE_Tionant_Red
+      - defName: OE_Tionant_Yellow
+      - defName: OE_Elder_Tionant_Blue
+        analogue: thrumbo
+        bodyShape: QuadrupedTall
+      - defName: OE_Elder_Tionant_Green
+        analogue: thrumbo
+        bodyShape: QuadrupedTall
+      - defName: OE_Elder_Tionant_Red
+        analogue: thrumbo
+        bodyShape: QuadrupedTall
+      - defName: OE_Elder_Tionant_Yellow
+        analogue: thrumbo
+        bodyShape: QuadrupedTall
+  - id: arachna_animal
+    analogue: megaspider
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Arachna_Blue
+      - defName: OE_Arachna_Green
+      - defName: OE_Arachna_Red
+      - defName: OE_Arachna_Yellow
+  - id: bruul
+    analogue: megascarab
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Bruul_Acid
+      - defName: OE_Bruul_Cryo
+      - defName: OE_Bruul_EMP
+      - defName: OE_Bruul_Fire
+  - id: scorpid
+    analogue: megascarab
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Scorpid_Blue
+      - defName: OE_Scorpid_Red
+  - id: armagon
+    analogue: thrumbo
+    members:
+      - defName: OE_Armagon
+  - id: sharkaradon
+    analogue: thrumbo
+    bodyShape: Serpentine
+    members:
+      - defName: OE_Sharkaradon
+  - id: small_animals
+    analogue: hide
+    members:
+      - defName: OE_Astrinx
+      - defName: OE_Rosner
+      - defName: OE_Snapper
+      - defName: OE_Caterpillar_Arctic
+      - defName: OE_Caterpillar_Brown
+      - defName: OE_Caterpillar_Desert
+  - id: hootie
+    analogue: hide
+    bodyShape: Birdlike
+    members:
+      - defName: OE_Hootie
+  - id: slime_soft
+    analogue: hide
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Slime_Jelly
+      - defName: OE_Slime_Herbal
+      - defName: OE_Slime_Fungus
+      - defName: OE_Slime_Beer
+      - defName: OE_Slime_Chemfuel
+      - defName: OE_Slime_Neutroamine
+      - defName: OE_Slime_Ambrosia
+      - defName: OE_Slime_Jumy
+  - id: slime_metal
+    analogue: megascarab
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Slime_Steel
+      - defName: OE_Slime_Silver
+      - defName: OE_Slime_Gold
+      - defName: OE_Slime_Jade
+      - defName: OE_Slime_Bone
+      - defName: OE_Slime_Hauler
+  - id: slime_hard
+    analogue: megaspider
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Slime_Uranium
+      - defName: OE_Slime_Platinum
+      - defName: OE_Slime_Syntherius
+      - defName: OE_Slime_Ancient
+      - defName: OE_Slime_Luciferium
+  - id: slime_mythic
+    analogue: thrumbo
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Slime_Mythril
+      - defName: OE_Slime_Obsidian
+      - defName: OE_Slime_Nullium
+      - defName: OE_Slime_Torraxin
+      - defName: OE_Slime_Joltixin
+  - id: necroframe
+    analogue: walker
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_Necroframe_Melee
+      - defName: OE_Mech_Necroframe_Ranged
+  - id: arachna_mech_walker
+    analogue: walker
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Mech_OCC_Arachna
+      - defName: OE_Mech_OMC_Arachna
+      - defName: OE_Mech_OTC_Arachna_Acid
+      - defName: OE_Mech_OTC_Arachna_Cryo
+      - defName: OE_Mech_OTC_Arachna_EMP
+      - defName: OE_Mech_OTC_Arachna_Fire
+  - id: arachna_mech_pikeman
+    analogue: pikeman
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Mech_OEC_Arachna
+      - defName: OE_Mech_CAC_Arachna
+  - id: dominator_walker
+    analogue: walker
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_OCC_Dominator
+      - defName: OE_Mech_OMC_Dominator
+      - defName: OE_Mech_OTC_Dominator_Acid
+      - defName: OE_Mech_OTC_Dominator_Cryo
+      - defName: OE_Mech_OTC_Dominator_EMP
+      - defName: OE_Mech_OTC_Dominator_Fire
+  - id: dominator_pikeman
+    analogue: pikeman
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_ODC_Dominator_Light
+      - defName: OE_Mech_OEC_Dominator
+  - id: dominator_centipede
+    analogue: centipede
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_ODC_Dominator_Heavy
+      - defName: OE_Mech_OMG_Dominator
+  - id: dark_crusader
+    analogue: centipede
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_DarkCrusader
+  - id: chaos_lord
+    analogue: diabolus
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_ChaosLord
+  - id: arachna_queen
+    analogue: warqueen
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Mech_ArachnaQueen
+  - id: crimson_arachna
+    analogue: warqueen_plus
+    bodyShape: QuadrupedLow
+    members:
+      - defName: OE_Mech_CrimsonArachna
+  - id: fallen_legion
+    analogue: apocriton_plus
+    bodyShape: Humanoid
+    members:
+      - defName: OE_Mech_FallenLegion

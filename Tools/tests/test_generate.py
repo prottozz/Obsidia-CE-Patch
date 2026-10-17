@@ -32,6 +32,23 @@ def _write_minimal_core(core: Path, *, with_apparel: bool = True) -> None:
     )
     pawnkinds = core / "Defs" / "PawnKinds"
     pawnkinds.mkdir(parents=True)
+    races = core / "Defs" / "ThingDefs_Races"
+    races.mkdir(parents=True)
+    (races / "Races.xml").write_text(
+        """<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>OE_Direwolf</defName>
+    <race></race>
+  </ThingDef>
+  <ThingDef>
+    <defName>OE_Mech_DarkCrusader</defName>
+    <race><fleshType>Mechanoid</fleshType></race>
+  </ThingDef>
+</Defs>
+""",
+        encoding="utf-8",
+    )
     if not with_apparel:
         return
     apparel = core / "Defs" / "ThingDefs_Misc" / "Apparel"
@@ -92,6 +109,34 @@ def test_generate_fails_without_core_weapons(tmp_path, monkeypatch):
     (core / "Defs" / "PawnKinds").mkdir(parents=True)
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
     with pytest.raises(FileNotFoundError, match="weapons"):
+        generate(tmp_path)
+
+
+def test_generate_writes_race_patches(tmp_path, monkeypatch):
+    shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    core = tmp_path / "fake_core"
+    _write_minimal_core(core)
+    monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
+    generate(tmp_path)
+    animals = (tmp_path / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
+    mechs = (tmp_path / "Patches" / "Races" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
+    assert 'defName="OE_Direwolf"]' in animals
+    assert "CombatExtended.RacePropertiesExtensionCE" in animals
+    assert 'defName="OE_Mech_DarkCrusader"]' in mechs
+    assert "CompAmmoGiver" not in mechs
+    assert 'MayRequire="Ludeon.RimWorld.Biotech"' in mechs
+    armor = (tmp_path / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
+    assert 'defName="OCC_Armor_M"]' in armor
+
+
+def test_generate_fails_without_core_races(tmp_path, monkeypatch):
+    shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    core = tmp_path / "no_races_core"
+    _write_minimal_core(core)
+    shutil.rmtree(core / "Defs" / "ThingDefs_Races")
+    monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    with pytest.raises(FileNotFoundError, match="races"):
         generate(tmp_path)
 
 
