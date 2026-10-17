@@ -1,4 +1,5 @@
 DEFAULT_OBSIDIA_CORE = r"C:\Projects\Assistant\294100\2519492373\1.6\Core"
+DEFAULT_OBSIDIA_BIOTECH = r"C:\Projects\Assistant\294100\2519492373\1.6\Biotech"
 
 # Core ThingDefs that have verbs but are melee weapons (catalogued in melee.yaml).
 RANGED_SCAN_EXCLUDE = frozenset(
