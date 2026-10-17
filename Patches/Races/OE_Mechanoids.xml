@@ -114,7 +114,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -173,7 +173,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -372,7 +372,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_CAC_Arachna"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -413,7 +413,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_CAC_Arachna"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -594,7 +594,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_ChaosLord"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -635,7 +635,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_ChaosLord"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -818,7 +818,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -877,7 +877,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -1076,7 +1076,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_DarkCrusader"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1117,7 +1117,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_DarkCrusader"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1298,7 +1298,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1339,7 +1339,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1520,7 +1520,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_Necroframe_Melee"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1561,7 +1561,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_Necroframe_Melee"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1740,7 +1740,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_Necroframe_Ranged"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1781,7 +1781,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_Necroframe_Ranged"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -1960,7 +1960,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OCC_Arachna"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -2001,7 +2001,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OCC_Arachna"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -2180,7 +2180,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OCC_Dominator"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -2221,7 +2221,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OCC_Dominator"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -2400,7 +2400,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_ODC_Dominator_Heavy"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -2441,7 +2441,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_ODC_Dominator_Heavy"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -2620,7 +2620,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_ODC_Dominator_Light"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claws</label>
           <capacities>
@@ -2661,7 +2661,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_ODC_Dominator_Light"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claws</label>
           <capacities>
@@ -2840,7 +2840,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OEC_Arachna"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -2881,7 +2881,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OEC_Arachna"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -3060,7 +3060,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OEC_Dominator"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3101,7 +3101,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OEC_Dominator"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3280,7 +3280,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OMC_Arachna"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -3321,7 +3321,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OMC_Arachna"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -3500,7 +3500,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OMC_Dominator"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3541,7 +3541,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OMC_Dominator"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3720,7 +3720,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3761,7 +3761,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3940,7 +3940,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_Acid"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -3981,7 +3981,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_Acid"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4160,7 +4160,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_Cryo"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4201,7 +4201,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_Cryo"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4380,7 +4380,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_EMP"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4421,7 +4421,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_EMP"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4600,7 +4600,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_Fire"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4641,7 +4641,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Arachna_Fire"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>front left leg</label>
           <capacities>
@@ -4820,7 +4820,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_Acid"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -4861,7 +4861,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_Acid"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5040,7 +5040,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_Cryo"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5081,7 +5081,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_Cryo"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5260,7 +5260,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_EMP"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5301,7 +5301,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_EMP"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5480,7 +5480,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_Fire"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5521,7 +5521,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Mech_OTC_Dominator_Fire"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>

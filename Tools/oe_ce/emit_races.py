@@ -56,12 +56,15 @@ def collect_race_tools(core: Path, biotech: Path | None = None) -> dict[str, lis
     index = index_thingdefs(paths)
     out: dict[str, list[RaceTool]] = {}
     for def_name, el in index.by_def.items():
+        collected: list[RaceTool] = []
         for node in walk_parents(index, el):
             tools = node.find("tools")
             if tools is None:
                 continue
-            out[def_name] = [convert_tool_element(li) for li in tools.findall("li")]
-            break
+            converted = [convert_tool_element(li) for li in tools.findall("li")]
+            collected = converted + collected
+        if collected:
+            out[def_name] = collected
     return out
 
 
@@ -102,7 +105,7 @@ def _tools_op(def_name: str, tools: list[RaceTool]) -> str:
     <match Class="PatchOperationReplace">
       <xpath>{base}/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
 {inner}
         </tools>
       </value>
@@ -110,7 +113,7 @@ def _tools_op(def_name: str, tools: list[RaceTool]) -> str:
     <nomatch Class="PatchOperationAdd">
       <xpath>{base}</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
 {inner}
         </tools>
       </value>

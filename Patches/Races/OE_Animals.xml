@@ -97,7 +97,49 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -122,7 +164,49 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -263,7 +347,49 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -288,7 +414,49 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -429,7 +597,49 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -454,7 +664,49 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -595,7 +847,49 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -620,7 +914,49 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
+        <li Class="CombatExtended.ToolCE">
+          <label>left first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right first leg</label>
+          <capacities>
+            <li>Scratch</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.65</cooldownTime>
+          <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+          <armorPenetrationSharp>0.28</armorPenetrationSharp>
+          <chanceFactor>0.5</chanceFactor>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>2</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.28</armorPenetrationBlunt>
+          <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+          <chanceFactor>0.2</chanceFactor>
+          <surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>10</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+        </li>
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -776,7 +1112,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Armagon"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -823,7 +1159,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Armagon"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -986,7 +1322,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Astrinx"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -1059,7 +1395,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Astrinx"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -1248,7 +1584,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1291,7 +1627,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1450,7 +1786,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1493,7 +1829,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1652,7 +1988,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1695,7 +2031,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1854,7 +2190,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -1897,7 +2233,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>tentacle</label>
           <capacities>
@@ -2056,7 +2392,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mandibles</label>
           <capacities>
@@ -2094,7 +2430,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mandibles</label>
           <capacities>
@@ -2248,7 +2584,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mandibles</label>
           <capacities>
@@ -2286,7 +2622,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mandibles</label>
           <capacities>
@@ -2440,7 +2776,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mandibles</label>
           <capacities>
@@ -2478,7 +2814,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mandibles</label>
           <capacities>
@@ -2632,7 +2968,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Direwolf"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -2707,7 +3043,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Direwolf"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -2913,7 +3249,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -2988,7 +3324,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -3194,7 +3530,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3267,7 +3603,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -3471,7 +3807,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left foot claw</label>
           <capacities>
@@ -3542,7 +3878,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left foot claw</label>
           <capacities>
@@ -3744,7 +4080,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -3819,7 +4155,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4025,7 +4361,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4100,7 +4436,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4306,7 +4642,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4381,7 +4717,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4587,7 +4923,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4662,7 +4998,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -4853,7 +5189,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Hootie"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>claws</label>
           <capacities>
@@ -4900,7 +5236,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Hootie"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>claws</label>
           <capacities>
@@ -5078,7 +5414,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Ogren"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5151,7 +5487,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Ogren"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left fist</label>
           <capacities>
@@ -5340,7 +5676,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Raptor"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left foot claw</label>
           <capacities>
@@ -5411,7 +5747,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Raptor"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left foot claw</label>
           <capacities>
@@ -5598,7 +5934,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Rosner"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>horn</label>
           <capacities>
@@ -5648,7 +5984,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Rosner"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>horn</label>
           <capacities>
@@ -5814,7 +6150,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -5891,7 +6227,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -6084,7 +6420,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -6161,7 +6497,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <capacities>
             <li>Bite</li>
@@ -6369,7 +6705,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claws</label>
           <capacities>
@@ -6428,7 +6764,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claws</label>
           <capacities>
@@ -6603,7 +6939,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -6646,7 +6982,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -6805,7 +7141,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -6844,7 +7180,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -6999,7 +7335,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7026,7 +7362,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7169,7 +7505,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7206,7 +7542,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7359,7 +7695,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7386,7 +7722,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7529,7 +7865,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7572,7 +7908,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7731,7 +8067,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7774,7 +8110,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7933,7 +8269,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -7968,7 +8304,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8119,7 +8455,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8162,7 +8498,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8321,7 +8657,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8364,7 +8700,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8523,7 +8859,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8550,7 +8886,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8708,7 +9044,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8735,7 +9071,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8878,7 +9214,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -8921,7 +9257,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9080,7 +9416,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9107,7 +9443,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9265,7 +9601,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9308,7 +9644,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9467,7 +9803,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9494,7 +9830,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9652,7 +9988,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9695,7 +10031,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9869,7 +10205,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -9912,7 +10248,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10071,7 +10407,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10114,7 +10450,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10273,7 +10609,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10316,7 +10652,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10475,7 +10811,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10518,7 +10854,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10677,7 +11013,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10720,7 +11056,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10894,7 +11230,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -10921,7 +11257,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -11064,7 +11400,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -11107,7 +11443,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>mouth</label>
           <capacities>
@@ -11266,7 +11602,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Snapper"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>claw</label>
           <capacities>
@@ -11295,7 +11631,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Snapper"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>claw</label>
           <capacities>
@@ -11440,7 +11776,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -11515,7 +11851,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -11706,7 +12042,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -11781,7 +12117,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -11972,7 +12308,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -12047,7 +12383,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -12238,7 +12574,7 @@
     <match Class="PatchOperationReplace">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]/tools</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>
@@ -12313,7 +12649,7 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]</xpath>
       <value>
-        <tools>
+        <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>left claw</label>
           <capacities>

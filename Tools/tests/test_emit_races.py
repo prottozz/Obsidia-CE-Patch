@@ -1,6 +1,7 @@
+from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from oe_ce.emit_races import convert_tool_element, emit_race_xml
+from oe_ce.emit_races import collect_race_tools, convert_tool_element, emit_race_xml
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_races import CoreRace
@@ -101,6 +102,121 @@ def test_biotech_boss_is_wrapped_with_mayrequire():
     assert "<ArmorRating_Sharp>24</ArmorRating_Sharp>" in xml
     assert "<ArmorRating_Blunt>54</ArmorRating_Blunt>" in xml
     assert "<bodyShape>Humanoid</bodyShape>" in xml
+
+
+def _write_races(root: Path, body: str) -> Path:
+    races = root / "Defs" / "ThingDefs_Races"
+    races.mkdir(parents=True, exist_ok=True)
+    (races / "Fixture.xml").write_text(
+        f'<?xml version="1.0" encoding="utf-8"?>\n<Defs>\n{body}\n</Defs>\n',
+        encoding="utf-8",
+    )
+    return root
+
+
+def _emitted_tools(xml: str, def_name: str) -> list[ET.Element]:
+    root = ET.fromstring(xml.split("?>", 1)[1])
+    found: list[ET.Element] = []
+    for op in root:
+        if (op.findtext("xpath") or "") != f'Defs/ThingDef[defName="{def_name}"]/tools':
+            continue
+        for branch in (op.find("match"), op.find("nomatch")):
+            if branch is None:
+                continue
+            tools = branch.find("value/tools")
+            if tools is not None:
+                found.append(tools)
+    return found
+
+
+INHERITED_TOOLS_FIXTURE = """
+  <ThingDef Name="OEBaseBeast" Abstract="True">
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities><li>Scratch</li></capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.30</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="OEBaseBeast">
+    <defName>OE_Direwolf</defName>
+    <race />
+  </ThingDef>
+  <ThingDef Name="OEBaseArachna" Abstract="True">
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities><li>Scratch</li></capacities>
+        <armorPenetration>0.20</armorPenetration>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities><li>Scratch</li></capacities>
+        <armorPenetration>0.20</armorPenetration>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities><li>Blunt</li></capacities>
+        <armorPenetration>0.10</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="OEBaseArachna">
+    <defName>OE_Arachna_Blue</defName>
+    <race />
+    <tools>
+      <li>
+        <label>bite</label>
+        <capacities><li>Bite</li></capacities>
+        <armorPenetration>0.28</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+"""
+
+
+def test_inherited_tools_emit_inherit_false_and_all_parent_attacks(tmp_path):
+    core = _write_races(tmp_path, INHERITED_TOOLS_FIXTURE)
+    tools = collect_race_tools(core)
+    xml = emit_race_xml(
+        [
+            RaceSet("direwolf", "warg", members=[RaceMember("OE_Direwolf")]),
+            RaceSet("arachna", "megaspider", members=[RaceMember("OE_Arachna_Blue")]),
+        ],
+        ANIMAL,
+        {
+            "OE_Direwolf": CoreRace("OE_Direwolf", ANIMAL),
+            "OE_Arachna_Blue": CoreRace("OE_Arachna_Blue", ANIMAL),
+        },
+        tools,
+    )
+    wolf = _emitted_tools(xml, "OE_Direwolf")
+    assert wolf
+    for block in wolf:
+        assert block.get("Inherit") == "False"
+        lis = list(block)
+        assert len(lis) == 1
+        assert all(li.get("Class") == "CombatExtended.ToolCE" for li in lis)
+        assert lis[0].findtext("label") == "left claw"
+        assert lis[0].find("armorPenetration") is None
+        assert lis[0].find("armorPenetrationSharp") is not None
+
+    arachna = _emitted_tools(xml, "OE_Arachna_Blue")
+    assert arachna
+    for block in arachna:
+        assert block.get("Inherit") == "False"
+        lis = list(block)
+        assert len(lis) == 4
+        assert all(li.get("Class") == "CombatExtended.ToolCE" for li in lis)
+        labels = [li.findtext("label") for li in lis]
+        assert "bite" in labels
+        assert labels.count("left claw") == 1
+        assert labels.count("right claw") == 1
+        assert labels.count("head") == 1
+        assert all(li.find("armorPenetration") is None for li in lis)
 
 
 def test_kind_filter_and_sorted_patch():
