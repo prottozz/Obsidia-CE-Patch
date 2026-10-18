@@ -102,6 +102,15 @@ def test_biotech_boss_is_wrapped_with_mayrequire():
     assert "<ArmorRating_Sharp>24</ArmorRating_Sharp>" in xml
     assert "<ArmorRating_Blunt>54</ArmorRating_Blunt>" in xml
     assert "<bodyShape>Humanoid</bodyShape>" in xml
+    root = ET.fromstring(xml.split("?>", 1)[1])
+    seq = next(op for op in root if op.get("Class") == "PatchOperationSequence")
+    ops = seq.find("operations")
+    assert ops is not None
+    children = list(ops)
+    assert children
+    for child in children:
+        assert child.tag == "li", child.tag
+        assert child.get("Class")
 
 
 def _write_races(root: Path, body: str) -> Path:

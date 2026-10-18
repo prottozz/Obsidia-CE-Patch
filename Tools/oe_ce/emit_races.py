@@ -174,8 +174,17 @@ def _durability_ops(def_name: str, kind: str, durability: int) -> list[str]:
     ]
 
 
+def _as_sequence_item(op: str) -> str:
+    text = op.strip()
+    if not text.startswith("<Operation ") or not text.endswith("</Operation>"):
+        raise ValueError(f"expected a top-level Patch Operation, got: {text[:80]!r}")
+    text = "<li " + text[len("<Operation ") :]
+    text = text[: -len("</Operation>")] + "</li>"
+    return "\n".join(f"    {line}" if line else line for line in text.split("\n"))
+
+
 def _wrap_biotech(ops: list[str]) -> str:
-    inner = "\n".join(ops)
+    inner = "\n".join(_as_sequence_item(op) for op in ops)
     return f"""  <Operation Class="PatchOperationSequence" MayRequire="{BIOTECH_PACKAGE}">
     <operations>
 {inner}
