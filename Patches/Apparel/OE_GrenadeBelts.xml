@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[@Name="OEGrenadeBeltsProjectileBase"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[@Name="OEGrenadeBeltsProjectileBase"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_Acid"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw acid grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>15.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_OTC_Acid</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_Acid"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_Cryo"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw cryo grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>15.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_OTC_Cryo</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_Cryo"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_Fire"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw fire grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>15.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_OTC_Fire</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_Fire"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OTC_GrenadeBelt_EMP"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw EMP grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>15.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_OTC_EMP</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OTC_EMP"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_GrenadeBelt"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OCC_GrenadeBelt"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw blast grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>15.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_OCC</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OCC"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OCC"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_GrenadeBelt"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ODC_GrenadeBelt"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw stun grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>15.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_ODC</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_ODC"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_ODC"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_GrenadeBelt"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMG_GrenadeBelt"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <label>throw necrobane grenade</label>
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <hasStandardCommand>true</hasStandardCommand>
+              <onlyManualCast>True</onlyManualCast>
+              <warmupTime>1.5</warmupTime>
+              <range>17.9</range>
+              <minRange>3</minRange>
+              <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+              <soundCast>ThrowGrenade</soundCast>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+              <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <defaultProjectile>Grenade_GrenadeBelt_OMG</defaultProjectile>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OMG"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Grenade_GrenadeBelt_OMG"]/projectile</xpath>
+        <attribute>Class</attribute>
+        <value>CombatExtended.ProjectilePropertiesCE</value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+</Patch>

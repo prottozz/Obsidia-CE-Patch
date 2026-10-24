@@ -109,6 +109,12 @@ def test_generate_writes_apparel_patches(tmp_path, monkeypatch):
     assert 'MayRequire="Ludeon.RimWorld.Biotech"' in race_shields
     assert upgrades.is_file()
     assert "MU.MechUpgradeDef" in upgrades.read_text(encoding="utf-8")
+    belts = (tmp_path / "Patches" / "Apparel" / "OE_GrenadeBelts.xml").read_text(
+        encoding="utf-8"
+    )
+    assert "OTC_GrenadeBelt_Acid" in belts
+    assert "Verb_LaunchProjectileStaticCE" in belts
+    assert "forcedMissRadius" not in belts
 
 
 def test_generate_fails_without_core_weapons(tmp_path, monkeypatch):
@@ -156,3 +162,36 @@ def test_generate_fails_without_core_apparel(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
     with pytest.raises(FileNotFoundError, match="apparel"):
         generate(tmp_path)
+
+
+def test_generate_wraps_royalty_apparel(tmp_path, monkeypatch):
+    shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    core = tmp_path / "fake_core"
+    _write_minimal_core(core)
+    royalty = tmp_path / "fake_royalty"
+    apparel = royalty / "Defs" / "ThingDefs_Misc" / "Apparel"
+    apparel.mkdir(parents=True)
+    (apparel / "Armor.xml").write_text(
+        """<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="OECArmorBase" Abstract="True">
+    <apparel><layers><li>Middle</li><li>Shell</li></layers></apparel>
+  </ThingDef>
+  <ThingDef ParentName="OECArmorBase">
+    <defName>OEC_Armor</defName>
+  </ThingDef>
+</Defs>
+""",
+        encoding="utf-8",
+    )
+    monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    monkeypatch.setenv("OBSIDIA_ROYALTY", str(royalty))
+    monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
+    generate(tmp_path)
+    armor = (tmp_path / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
+    assert 'defName="OEC_Armor"]' in armor
+    assert 'MayRequire="Ludeon.RimWorld.Royalty"' in armor
+    inner = armor.split("<operations>")[1].split("</operations>")[0]
+    assert "<li Class=" in inner
+    assert "<Operation Class=" not in inner
+    assert 'defName="OCC_Armor_M"]' in armor.split('MayRequire="Ludeon.RimWorld.Royalty"')[0]

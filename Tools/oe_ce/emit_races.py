@@ -4,7 +4,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 from oe_ce.constants import BIOTECH_PACKAGE
-from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath, wrap_may_require
+from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath, wrap_optional_def
 from oe_ce.race_analogues import ANIMAL, MECHANOID, race_stats
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_obsidia import index_thingdefs, walk_parents
@@ -174,8 +174,8 @@ def _durability_ops(def_name: str, kind: str, durability: int) -> list[str]:
     ]
 
 
-def _wrap_biotech(ops: list[str]) -> str:
-    return wrap_may_require(ops, BIOTECH_PACKAGE)
+def _wrap_biotech(ops: list[str], def_name: str) -> str:
+    return wrap_optional_def(ops, BIOTECH_PACKAGE, def_name)
 
 
 def emit_race_xml(
@@ -215,7 +215,7 @@ def emit_race_xml(
         if not inherit_parent:
             ops.extend(_durability_ops(name, kind, stats.durability))
         if name in BIOTECH_BOSSES:
-            blocks.append(_wrap_biotech(ops))
+            blocks.append(_wrap_biotech(ops, name))
         else:
             blocks.extend(ops)
     inner = "\n".join(blocks)

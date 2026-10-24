@@ -2,6 +2,9 @@
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OCC_Armor_M_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OCC_Armor_M_Barrier"]</xpath>
       <value>
@@ -41,6 +44,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OCC_Armor_M_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OCC_Armor_M_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OCC_Armor_M_Shield"]</xpath>
       <value>
@@ -80,6 +86,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Barrier"]</xpath>
       <value>
@@ -119,6 +128,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Shield"]</xpath>
       <value>
@@ -158,6 +170,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Barrier"]</xpath>
       <value>
@@ -197,6 +212,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Shield"]</xpath>
       <value>
@@ -236,6 +254,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]</xpath>
       <value>
@@ -275,6 +296,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]</xpath>
       <value>
@@ -374,6 +398,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]/equippedStatOffsets</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]/equippedStatOffsets</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OES_Armor_Barrier"]</xpath>
       <value>
@@ -434,6 +461,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]</xpath>
       <value>
@@ -473,6 +503,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]</xpath>
       <value>
@@ -572,6 +605,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]/equippedStatOffsets</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]/equippedStatOffsets</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OES_Armor_Shield"]</xpath>
       <value>
@@ -632,6 +668,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OMC_Armor_M_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OMC_Armor_M_Barrier"]</xpath>
       <value>
@@ -671,6 +710,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OMC_Armor_M_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OMC_Armor_M_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OMC_Armor_M_Shield"]</xpath>
       <value>
@@ -710,6 +752,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OMG_Armor_Corsair"]</xpath>
       <value>
@@ -749,6 +794,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OMG_Armor_Demolition"]</xpath>
       <value>
@@ -788,6 +836,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OTC_Armor_M_Barrier"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Barrier"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OTC_Armor_M_Barrier"]</xpath>
       <value>
@@ -827,6 +878,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OTC_Armor_M_Shield"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OTC_Armor_M_Shield"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OTC_Armor_M_Shield"]</xpath>
       <value>
@@ -864,10 +918,15 @@
       </value>
     </nomatch>
   </Operation>
-  <Operation Class="PatchOperationSequence" MayRequire="Ludeon.RimWorld.Royalty">
-    <operations>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]</xpath>
           <value>
@@ -905,167 +964,21 @@
           </value>
         </nomatch>
       </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]</xpath>
-          <value>
-            <statBases />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/ArmorRating_Sharp</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/ArmorRating_Sharp</xpath>
-          <value>
-            <ArmorRating_Sharp>26</ArmorRating_Sharp>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-          <value>
-            <ArmorRating_Sharp>26</ArmorRating_Sharp>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/ArmorRating_Blunt</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/ArmorRating_Blunt</xpath>
-          <value>
-            <ArmorRating_Blunt>56</ArmorRating_Blunt>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-          <value>
-            <ArmorRating_Blunt>56</ArmorRating_Blunt>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/ArmorRating_Heat</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/ArmorRating_Heat</xpath>
-          <value>
-            <ArmorRating_Heat>0.6</ArmorRating_Heat>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-          <value>
-            <ArmorRating_Heat>0.6</ArmorRating_Heat>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/Mass</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/Mass</xpath>
-          <value>
-            <Mass>70</Mass>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-          <value>
-            <Mass>70</Mass>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/Bulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/Bulk</xpath>
-          <value>
-            <Bulk>100</Bulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-          <value>
-            <Bulk>100</Bulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/WornBulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases/WornBulk</xpath>
-          <value>
-            <WornBulk>15</WornBulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/statBases</xpath>
-          <value>
-            <WornBulk>15</WornBulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]</xpath>
-          <value>
-            <equippedStatOffsets />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets/CarryWeight</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets/CarryWeight</xpath>
-          <value>
-            <CarryWeight>95</CarryWeight>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets</xpath>
-          <value>
-            <CarryWeight>95</CarryWeight>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets/CarryBulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets/CarryBulk</xpath>
-          <value>
-            <CarryBulk>18</CarryBulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]/equippedStatOffsets</xpath>
-          <value>
-            <CarryBulk>18</CarryBulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Barrier"]</xpath>
-        <value>
-          <li Class="CombatExtended.PartialArmorExt">
-            <stats>
-              <li>
-                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-                <parts>
-                  <li>Neck</li>
-                </parts>
-              </li>
-              <li>
-                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
-                <parts>
-                  <li>Neck</li>
-                </parts>
-              </li>
-            </stats>
-          </li>
-        </value>
-      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]</xpath>
           <value>
@@ -1103,171 +1016,21 @@
           </value>
         </nomatch>
       </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]</xpath>
-          <value>
-            <statBases />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/ArmorRating_Sharp</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/ArmorRating_Sharp</xpath>
-          <value>
-            <ArmorRating_Sharp>26</ArmorRating_Sharp>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-          <value>
-            <ArmorRating_Sharp>26</ArmorRating_Sharp>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/ArmorRating_Blunt</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/ArmorRating_Blunt</xpath>
-          <value>
-            <ArmorRating_Blunt>56</ArmorRating_Blunt>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-          <value>
-            <ArmorRating_Blunt>56</ArmorRating_Blunt>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/ArmorRating_Heat</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/ArmorRating_Heat</xpath>
-          <value>
-            <ArmorRating_Heat>0.6</ArmorRating_Heat>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-          <value>
-            <ArmorRating_Heat>0.6</ArmorRating_Heat>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/Mass</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/Mass</xpath>
-          <value>
-            <Mass>70</Mass>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-          <value>
-            <Mass>70</Mass>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/Bulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/Bulk</xpath>
-          <value>
-            <Bulk>100</Bulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-          <value>
-            <Bulk>100</Bulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/WornBulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases/WornBulk</xpath>
-          <value>
-            <WornBulk>15</WornBulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/statBases</xpath>
-          <value>
-            <WornBulk>15</WornBulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]</xpath>
-          <value>
-            <equippedStatOffsets />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets/CarryWeight</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets/CarryWeight</xpath>
-          <value>
-            <CarryWeight>95</CarryWeight>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets</xpath>
-          <value>
-            <CarryWeight>95</CarryWeight>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets/CarryBulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets/CarryBulk</xpath>
-          <value>
-            <CarryBulk>18</CarryBulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]/equippedStatOffsets</xpath>
-          <value>
-            <CarryBulk>18</CarryBulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="OEC_Armor_M_Shield"]</xpath>
-        <value>
-          <li Class="CombatExtended.PartialArmorExt">
-            <stats>
-              <li>
-                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
-                <parts>
-                  <li>Neck</li>
-                </parts>
-              </li>
-              <li>
-                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
-                <parts>
-                  <li>Neck</li>
-                </parts>
-              </li>
-            </stats>
-          </li>
-        </value>
-      </li>
-    </operations>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
   </Operation>
-  <Operation Class="PatchOperationSequence" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-    <operations>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Defender"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Defender"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Defender"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Defender"]</xpath>
           <value>
@@ -1305,8 +1068,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Mechanitor"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Mechanitor"]</xpath>
           <value>
@@ -1344,8 +1120,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Melee"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Melee"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Melee"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Melee"]</xpath>
           <value>
@@ -1383,8 +1172,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Psy"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Psy"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Psy"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Psy"]</xpath>
           <value>
@@ -1422,8 +1224,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Ranged"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Ranged"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Ranged"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Ranged"]</xpath>
           <value>
@@ -1461,8 +1276,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Scientist"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Scientist"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Scientist"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Scientist"]</xpath>
           <value>
@@ -1500,8 +1328,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Social"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Social"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Social"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Social"]</xpath>
           <value>
@@ -1539,8 +1380,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Worker"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Worker"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Worker"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Trophy_Grimoire_Worker"]</xpath>
           <value>
@@ -1578,65 +1432,159 @@
           </value>
         </nomatch>
       </li>
-    </operations>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
   </Operation>
-  <Operation Class="PatchOperationSequence" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
-    <operations>
-    <li Class="PatchOperationReplace">
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[@Name="OEShieldBase"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBase"]/thingClass</xpath>
-        <value>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]/thingClass</xpath>
+          <value>
           <thingClass>CombatExtended.Apparel_Shield</thingClass>
-        </value>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]</xpath>
+          <value>
+          <thingClass>CombatExtended.Apparel_Shield</thingClass>
+          </value>
+        </nomatch>
       </li>
-    <li Class="PatchOperationReplace">
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBase"]/apparel/bodyPartGroups</xpath>
-        <value>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]/apparel/bodyPartGroups</xpath>
+          <value>
           <bodyPartGroups>
             <li>LeftShoulder</li>
           </bodyPartGroups>
-        </value>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]</xpath>
+          <value>
+          <bodyPartGroups>
+            <li>LeftShoulder</li>
+          </bodyPartGroups>
+          </value>
+        </nomatch>
       </li>
-    <li Class="PatchOperationReplace">
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBase"]/apparel/layers</xpath>
-        <value>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]/apparel/layers</xpath>
+          <value>
           <layers>
             <li>Shield</li>
           </layers>
-        </value>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]</xpath>
+          <value>
+          <layers>
+            <li>Shield</li>
+          </layers>
+          </value>
+        </nomatch>
       </li>
-    <li Class="PatchOperationReplace">
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/thingClass</xpath>
-        <value>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/thingClass</xpath>
+          <value>
           <thingClass>CombatExtended.Apparel_Shield</thingClass>
-        </value>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]</xpath>
+          <value>
+          <thingClass>CombatExtended.Apparel_Shield</thingClass>
+          </value>
+        </nomatch>
       </li>
-    <li Class="PatchOperationReplace">
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/apparel/bodyPartGroups</xpath>
-        <value>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/apparel/bodyPartGroups</xpath>
+          <value>
           <bodyPartGroups>
             <li>LeftShoulder</li>
           </bodyPartGroups>
-        </value>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]</xpath>
+          <value>
+          <bodyPartGroups>
+            <li>LeftShoulder</li>
+          </bodyPartGroups>
+          </value>
+        </nomatch>
       </li>
-    <li Class="PatchOperationReplace">
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/apparel/layers</xpath>
-        <value>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/apparel/layers</xpath>
+          <value>
           <layers>
             <li>Shield</li>
           </layers>
-        </value>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]</xpath>
+          <value>
+          <layers>
+            <li>Shield</li>
+          </layers>
+          </value>
+        </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/equippedStatOffsets</xpath>
@@ -1671,6 +1619,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]</xpath>
           <value>
@@ -1788,6 +1739,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="CAC_Shield_Big"]</xpath>
           <value>
@@ -1830,17 +1784,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/equippedStatOffsets</xpath>
@@ -1875,6 +1845,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]</xpath>
           <value>
@@ -1988,6 +1961,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="EGO_Shield_Medium"]</xpath>
           <value>
@@ -2026,17 +2002,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/equippedStatOffsets</xpath>
@@ -2071,6 +2063,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]</xpath>
           <value>
@@ -2188,6 +2183,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OCC_Shield_Big"]</xpath>
           <value>
@@ -2230,17 +2228,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/equippedStatOffsets</xpath>
@@ -2275,6 +2289,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]</xpath>
           <value>
@@ -2388,6 +2405,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Medium"]</xpath>
           <value>
@@ -2426,17 +2446,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/equippedStatOffsets</xpath>
@@ -2471,6 +2507,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]</xpath>
           <value>
@@ -2583,6 +2622,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="ODC_Shield_Small"]</xpath>
           <value>
@@ -2621,17 +2663,250 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core,Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
+        </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/tools</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/tools</xpath>
+        </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/equippedStatOffsets</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/equippedStatOffsets</xpath>
+          <value>
+          <equippedStatOffsets>
+            <ReloadSpeed>-0.2</ReloadSpeed>
+            <MeleeHitChance>-1</MeleeHitChance>
+            <ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+            <AimingAccuracy>-0.08</AimingAccuracy>
+            <Suppressability>-0.25</Suppressability>
+            <MeleeCritChance>-0.05</MeleeCritChance>
+            <MeleeParryChance>1</MeleeParryChance>
+          </equippedStatOffsets>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
+          <value>
+          <equippedStatOffsets>
+            <ReloadSpeed>-0.2</ReloadSpeed>
+            <MeleeHitChance>-1</MeleeHitChance>
+            <ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+            <AimingAccuracy>-0.08</AimingAccuracy>
+            <Suppressability>-0.25</Suppressability>
+            <MeleeCritChance>-0.05</MeleeCritChance>
+            <MeleeParryChance>1</MeleeParryChance>
+          </equippedStatOffsets>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>15.75</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>15.75</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>35.25</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>35.25</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.41</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.41</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Mass</xpath>
+          <value>
+            <Mass>5</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+          <value>
+            <Mass>5</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>7</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+          <value>
+            <Bulk>7</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>4</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
+          <value>
+            <WornBulk>4</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
+        <value>
+          <li Class="CombatExtended.ShieldDefExtension">
+            <shieldCoverage>
+                <li>Hands</li>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Torso</li>
+            </shieldCoverage>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/apparel</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
+          <value>
+            <apparel />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/apparel</xpath>
+        <value>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
+                <workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
+                <texPath>Things/Item/Equipment/Utility/Shield/OEC/OECShield</texPath>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <parentTagDef>ApparelBody</parentTagDef>
+                <drawData>
+                  <scale>0.8</scale>
+                  <defaultData>
+                    <layer>85</layer>
+                  </defaultData>
+                  <dataEast>
+                    <layer>-5</layer>
+                    <offset>(0, 0, -0.1)</offset>
+                  </dataEast>
+                  <dataNorth>
+                    <layer>-5</layer>
+                    <offset>(0.15, 0, -0.1)</offset>
+                  </dataNorth>
+                  <dataSouth>
+                <offset>(0.25, 0, -0.15)</offset>
+                  </dataSouth>
+                </drawData>
+              </li>
+            </renderNodeProperties>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OES_Shield_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/equippedStatOffsets</xpath>
@@ -2666,6 +2941,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OES_Shield_Big"]</xpath>
           <value>
@@ -2783,6 +3061,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OES_Shield_Big"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OES_Shield_Big"]</xpath>
           <value>
@@ -2825,17 +3106,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OES_Shield_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/equippedStatOffsets</xpath>
@@ -2870,6 +3167,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OES_Shield_Small"]</xpath>
           <value>
@@ -2982,6 +3282,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OES_Shield_Small"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OES_Shield_Small"]</xpath>
           <value>
@@ -3020,17 +3323,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/equippedStatOffsets</xpath>
@@ -3065,6 +3384,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]</xpath>
           <value>
@@ -3178,6 +3500,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OMC_Shield_Medium"]</xpath>
           <value>
@@ -3216,17 +3541,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/equippedStatOffsets</xpath>
@@ -3261,6 +3602,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]</xpath>
           <value>
@@ -3374,6 +3718,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OMG_Shield_Medium"]</xpath>
           <value>
@@ -3412,17 +3759,33 @@
             </renderNodeProperties>
         </value>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/tools</xpath>
         <match Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/tools</xpath>
         </match>
+        <nomatch Class="PatchOperationTest">
+          <xpath>Defs</xpath>
+        </nomatch>
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/equippedStatOffsets</xpath>
@@ -3457,6 +3820,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]</xpath>
           <value>
@@ -3570,6 +3936,9 @@
       </li>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/apparel</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]/apparel</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OTC_Shield_Medium"]</xpath>
           <value>
@@ -3608,205 +3977,10 @@
             </renderNodeProperties>
         </value>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core,Ludeon.RimWorld.Royalty">
-    <operations>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/comps/li[@Class="VEF.Apparels.CompProperties_Shield"]</xpath>
-        </match>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/tools</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/tools</xpath>
-        </match>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/equippedStatOffsets</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/equippedStatOffsets</xpath>
-          <value>
-          <equippedStatOffsets>
-            <ReloadSpeed>-0.2</ReloadSpeed>
-            <MeleeHitChance>-1</MeleeHitChance>
-            <ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
-            <AimingAccuracy>-0.08</AimingAccuracy>
-            <Suppressability>-0.25</Suppressability>
-            <MeleeCritChance>-0.05</MeleeCritChance>
-            <MeleeParryChance>1</MeleeParryChance>
-          </equippedStatOffsets>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
-          <value>
-          <equippedStatOffsets>
-            <ReloadSpeed>-0.2</ReloadSpeed>
-            <MeleeHitChance>-1</MeleeHitChance>
-            <ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
-            <AimingAccuracy>-0.08</AimingAccuracy>
-            <Suppressability>-0.25</Suppressability>
-            <MeleeCritChance>-0.05</MeleeCritChance>
-            <MeleeParryChance>1</MeleeParryChance>
-          </equippedStatOffsets>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
-          <value>
-            <statBases />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Sharp</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Sharp</xpath>
-          <value>
-            <ArmorRating_Sharp>15.75</ArmorRating_Sharp>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-          <value>
-            <ArmorRating_Sharp>15.75</ArmorRating_Sharp>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Blunt</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Blunt</xpath>
-          <value>
-            <ArmorRating_Blunt>35.25</ArmorRating_Blunt>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-          <value>
-            <ArmorRating_Blunt>35.25</ArmorRating_Blunt>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Heat</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/ArmorRating_Heat</xpath>
-          <value>
-            <ArmorRating_Heat>0.41</ArmorRating_Heat>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-          <value>
-            <ArmorRating_Heat>0.41</ArmorRating_Heat>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Mass</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Mass</xpath>
-          <value>
-            <Mass>5</Mass>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-          <value>
-            <Mass>5</Mass>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Bulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/Bulk</xpath>
-          <value>
-            <Bulk>7</Bulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-          <value>
-            <Bulk>7</Bulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/WornBulk</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases/WornBulk</xpath>
-          <value>
-            <WornBulk>4</WornBulk>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/statBases</xpath>
-          <value>
-            <WornBulk>4</WornBulk>
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
-        <value>
-          <li Class="CombatExtended.ShieldDefExtension">
-            <shieldCoverage>
-                <li>Hands</li>
-                <li>Arms</li>
-                <li>Shoulders</li>
-                <li>Torso</li>
-            </shieldCoverage>
-          </li>
-        </value>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/apparel</xpath>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]</xpath>
-          <value>
-            <apparel />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="OEC_Shield_Small"]/apparel</xpath>
-        <value>
-            <renderNodeProperties>
-              <li>
-                <nodeClass>CombatExtended.PawnRenderNode_Apparel</nodeClass>
-                <workerClass>CombatExtended.PawnRenderNodeWorker_Drafted</workerClass>
-                <texPath>Things/Item/Equipment/Utility/Shield/OEC/OECShield</texPath>
-                <shaderTypeDef>CutoutComplex</shaderTypeDef>
-                <parentTagDef>ApparelBody</parentTagDef>
-                <drawData>
-                  <scale>0.8</scale>
-                  <defaultData>
-                    <layer>85</layer>
-                  </defaultData>
-                  <dataEast>
-                    <layer>-5</layer>
-                    <offset>(0, 0, -0.1)</offset>
-                  </dataEast>
-                  <dataNorth>
-                    <layer>-5</layer>
-                    <offset>(0.15, 0, -0.1)</offset>
-                  </dataNorth>
-                  <dataSouth>
-                <offset>(0.25, 0, -0.15)</offset>
-                  </dataSouth>
-                </drawData>
-              </li>
-            </renderNodeProperties>
-        </value>
-      </li>
-    </operations>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
   </Operation>
 </Patch>

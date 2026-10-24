@@ -52,7 +52,7 @@ def _emit_recipe(fam: Family, cartridge: str, *, large: bool) -> str:
     <workAmount>{work_amount}</workAmount>
     <workSkill>Crafting</workSkill>
     <workSkillLearnFactor>0.5</workSkillLearnFactor>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat MayRequire="Alias.DegeneralizeWork">SmithingSpeed</workSpeedStat>
     <recipeUsers>
       <li>OE_WeaponWorkbench</li>
     </recipeUsers>

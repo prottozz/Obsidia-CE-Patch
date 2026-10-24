@@ -57,13 +57,10 @@ def _extra_melee_xml(def_name: str) -> str:
     return ""
 
 
-def _tools_replace(member: Member) -> str:
+def _tools_xml(member: Member) -> str:
     power = MELEE_POWER_BY_RUNG[member.rung]
     extra = _extra_melee_xml(member.def_name)
-    return f"""  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/ThingDef[defName="{member.def_name}"]/tools</xpath>
-    <value>
-      <tools>
+    return f"""      <tools Inherit="False">
         <li Class="CombatExtended.ToolCE">
           <label>handle</label>
           <capacities><li>Poke</li></capacities>
@@ -77,8 +74,26 @@ def _tools_replace(member: Member) -> str:
           <power>{power}</power>
           <cooldownTime>1.18</cooldownTime>{extra}
         </li>
-      </tools>
-    </value>
+      </tools>"""
+
+
+def _tools_replace(member: Member) -> str:
+    base = f'Defs/ThingDef[defName="{member.def_name}"]'
+    tools = _tools_xml(member)
+    return f"""  <Operation Class="PatchOperationConditional">
+    <xpath>{base}/tools</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>{base}/tools</xpath>
+      <value>
+{tools}
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>{base}</xpath>
+      <value>
+{tools}
+      </value>
+    </nomatch>
   </Operation>"""
 
 

@@ -9,6 +9,7 @@ from oe_ce.apparel_rungs import ARMOR, HELMET
 class ApparelMember:
     def_name: str
     rung: str | None = None
+    may_require: str | None = None
 
 
 @dataclass
@@ -16,9 +17,13 @@ class ApparelSet:
     id: str
     rung: str
     members: list[ApparelMember] = field(default_factory=list)
+    may_require: str | None = None
 
     def member_rung(self, member: ApparelMember) -> str:
         return member.rung or self.rung
+
+    def member_may_require(self, member: ApparelMember) -> str | None:
+        return member.may_require or self.may_require
 
 
 @dataclass

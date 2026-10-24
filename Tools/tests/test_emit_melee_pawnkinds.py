@@ -21,6 +21,15 @@ def test_emit_melee_xml_includes_toolce():
     assert "<label>handle</label>" in xml
     assert "<label>blade</label>" in xml
     assert "<power>8</power>" in xml
+    assert 'Class="PatchOperationConditional"' in xml
+    assert 'Inherit="False"' in xml
+
+
+def test_melee_without_local_tools_adds_tools():
+    xml = emit_melee_xml([Member("OTC_Trophy_Cards_I", "otc")])
+    assert 'defName="OTC_Trophy_Cards_I"]/tools' in xml
+    assert "<nomatch Class=" in xml
+    assert "CombatExtended.ToolCE" in xml
 
 
 def test_elemental_melee_keeps_extra_damage():
