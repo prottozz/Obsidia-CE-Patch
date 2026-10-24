@@ -21,6 +21,28 @@
   <loadAfter>
     <li>CETeam.CombatExtended</li>
     <li>ObsidiaExpansion.Core</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>GoGaTio.MechanoidUpgrades</li>
   </loadAfter>
-  <description>Combat Extended compatibility for Obsidia Expansion Core weapons, ammo, and raid magazines.</description>
+  <optionalDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Royalty</packageId>
+      <displayName>Royalty</displayName>
+    </li>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+    </li>
+    <li>
+      <packageId>GoGaTio.MechanoidUpgrades</packageId>
+      <displayName>Mechanoid Upgrades</displayName>
+    </li>
+  </optionalDependencies>
+  <description>Combat Extended compatibility for Obsidia Expansion Core weapons, ammo, raid magazines, apparel, race bodies, and shields.</description>
 </ModMetaData>

@@ -1,5 +1,13 @@
 DEFAULT_OBSIDIA_CORE = r"C:\Projects\Assistant\294100\2519492373\1.6\Core"
 DEFAULT_OBSIDIA_BIOTECH = r"C:\Projects\Assistant\294100\2519492373\1.6\Biotech"
+DEFAULT_OBSIDIA_ROYALTY = r"C:\Projects\Assistant\294100\2519492373\1.6\Royalty"
+DEFAULT_OBSIDIA_VEF = r"C:\Projects\Assistant\294100\2519492373\1.6\Mods\VEF"
+DEFAULT_OBSIDIA_MU = r"C:\Projects\Assistant\294100\2519492373\1.6\Mods\MechanoidUpgrades"
+
+ROYALTY_PACKAGE = "Ludeon.RimWorld.Royalty"
+BIOTECH_PACKAGE = "Ludeon.RimWorld.Biotech"
+VEF_PACKAGE = "OskarPotocki.VanillaFactionsExpanded.Core"
+MU_PACKAGE = "GoGaTio.MechanoidUpgrades"
 
 # Core ThingDefs that have verbs but are melee weapons (catalogued in melee.yaml).
 RANGED_SCAN_EXCLUDE = frozenset(

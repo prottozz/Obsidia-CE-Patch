@@ -9,12 +9,16 @@ def format_num(value: float | int) -> str:
     return format(value, "g")
 
 
-def thing_xpath(def_name: str) -> str:
-    return f'Defs/ThingDef[defName="{def_name}"]'
+def thing_xpath(def_name: str, tag: str = "ThingDef") -> str:
+    return f'Defs/{tag}[defName="{def_name}"]'
 
 
-def ensure_node(def_name: str, node: str) -> str:
-    base = thing_xpath(def_name)
+def named_xpath(name: str, tag: str = "ThingDef") -> str:
+    return f'Defs/{tag}[@Name="{name}"]'
+
+
+def ensure_node(def_name: str, node: str, tag: str = "ThingDef") -> str:
+    base = thing_xpath(def_name, tag)
     return f"""  <Operation Class="PatchOperationConditional">
     <xpath>{base}/{node}</xpath>
     <nomatch Class="PatchOperationAdd">
@@ -26,21 +30,42 @@ def ensure_node(def_name: str, node: str) -> str:
   </Operation>"""
 
 
-def set_stat(def_name: str, node: str, stat: str, value: float) -> str:
-    base = thing_xpath(def_name)
-    text = format_num(value)
+def set_stat(def_name: str, node: str, stat: str, value: float, tag: str = "ThingDef") -> str:
+    return set_xpath_value(f"{thing_xpath(def_name, tag)}/{node}", stat, value)
+
+
+def set_xpath_value(parent_xpath: str, stat: str, value: float | str) -> str:
+    text = value if isinstance(value, str) else format_num(value)
     return f"""  <Operation Class="PatchOperationConditional">
-    <xpath>{base}/{node}/{stat}</xpath>
+    <xpath>{parent_xpath}/{stat}</xpath>
     <match Class="PatchOperationReplace">
-      <xpath>{base}/{node}/{stat}</xpath>
+      <xpath>{parent_xpath}/{stat}</xpath>
       <value>
         <{stat}>{text}</{stat}>
       </value>
     </match>
     <nomatch Class="PatchOperationAdd">
-      <xpath>{base}/{node}</xpath>
+      <xpath>{parent_xpath}</xpath>
       <value>
         <{stat}>{text}</{stat}>
       </value>
     </nomatch>
+  </Operation>"""
+
+
+def as_sequence_item(op: str) -> str:
+    text = op.strip()
+    if not text.startswith("<Operation ") or not text.endswith("</Operation>"):
+        raise ValueError(f"expected a top-level Patch Operation, got: {text[:80]!r}")
+    text = "<li " + text[len("<Operation ") :]
+    text = text[: -len("</Operation>")] + "</li>"
+    return "\n".join(f"    {line}" if line else line for line in text.split("\n"))
+
+
+def wrap_may_require(ops: list[str], packages: str) -> str:
+    inner = "\n".join(as_sequence_item(op) for op in ops)
+    return f"""  <Operation Class="PatchOperationSequence" MayRequire="{packages}">
+    <operations>
+{inner}
+    </operations>
   </Operation>"""
