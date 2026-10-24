@@ -32,7 +32,7 @@ def _partial_armor(def_name: str, template: str) -> str:
   </Operation>"""
 
 
-def _member_ops(kind: str, def_name: str, rung: str, inherits_coverage: bool) -> list[str]:
+def member_ops(kind: str, def_name: str, rung: str, inherits_coverage: bool) -> list[str]:
     stats = apparel_stats(kind, rung)
     ops = [ensure_node(def_name, "statBases")]
     for stat, value in (
@@ -60,6 +60,6 @@ def emit_apparel_xml(sets: list[ApparelSet], kind: str, core: dict[str, CoreAppa
     for def_name, rung in rows:
         info = core.get(def_name)
         inherits = info is not None and info.concrete_parent in catalogued
-        blocks.extend(_member_ops(kind, def_name, rung, inherits))
+        blocks.extend(member_ops(kind, def_name, rung, inherits))
     inner = "\n".join(blocks)
     return f'<?xml version="1.0" encoding="utf-8"?>\n<Patch>\n{inner}\n</Patch>\n'

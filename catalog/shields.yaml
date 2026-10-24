@@ -1,0 +1,214 @@
+# Energy bubbles, VEF handhelds, innate mech shields, and the overcharged module.
+# Numbers come from Tools/oe_ce/shield_rungs.py.
+
+worn:
+  - id: occ_guardian
+    rung: occ_reforge
+    role: guardian
+    plate: inherit
+    members:
+      - defName: OCC_Armor_M_Shield
+  - id: occ_protector
+    rung: occ_reforge
+    role: protector
+    plate: inherit
+    members:
+      - defName: OCC_Armor_M_Barrier
+  - id: otc_guardian
+    rung: otc_t2
+    role: guardian
+    plate: inherit
+    members:
+      - defName: OTC_Armor_M_Shield
+  - id: otc_protector
+    rung: otc_t2
+    role: protector
+    plate: inherit
+    members:
+      - defName: OTC_Armor_M_Barrier
+  - id: omc_guardian
+    rung: omc_mod
+    role: guardian
+    plate: inherit
+    members:
+      - defName: OMC_Armor_M_Shield
+  - id: omc_protector
+    rung: omc_mod
+    role: protector
+    plate: inherit
+    members:
+      - defName: OMC_Armor_M_Barrier
+  - id: odc_recon_guardian
+    rung: odc_t2
+    role: guardian
+    plate: inherit
+    members:
+      - defName: ODC_Armor_Recon_Shield
+  - id: odc_recon_protector
+    rung: odc_t2
+    role: protector
+    plate: inherit
+    members:
+      - defName: ODC_Armor_Recon_Barrier
+  - id: odc_duelist_guardian
+    rung: odc_t3
+    role: guardian
+    plate: inherit
+    members:
+      - defName: ODC_Armor_Duelist_Shield
+  - id: odc_duelist_protector
+    rung: odc_t3
+    role: protector
+    plate: inherit
+    members:
+      - defName: ODC_Armor_Duelist_Barrier
+  - id: oes_guardian
+    rung: heroic
+    role: guardian
+    plate: emit
+    members:
+      - defName: OES_Armor_Shield
+  - id: oes_protector
+    rung: heroic
+    role: protector
+    plate: emit
+    members:
+      - defName: OES_Armor_Barrier
+  - id: omg_protector
+    rung: omg
+    role: protector
+    plate: skip
+    members:
+      - defName: OMG_Armor_Corsair
+      - defName: OMG_Armor_Demolition
+  - id: oec_guardian
+    rung: oec_t2
+    role: guardian
+    plate: emit
+    mayRequire: Ludeon.RimWorld.Royalty
+    members:
+      - defName: OEC_Armor_M_Shield
+  - id: oec_protector
+    rung: oec_t2
+    role: protector
+    plate: emit
+    mayRequire: Ludeon.RimWorld.Royalty
+    members:
+      - defName: OEC_Armor_M_Barrier
+  - id: trophy_grimoire
+    rung: trophy
+    role: protector
+    plate: skip
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OE_Trophy_Grimoire_Worker
+      - defName: OE_Trophy_Grimoire_Ranged
+      - defName: OE_Trophy_Grimoire_Melee
+      - defName: OE_Trophy_Grimoire_Defender
+      - defName: OE_Trophy_Grimoire_Mechanitor
+      - defName: OE_Trophy_Grimoire_Psy
+      - defName: OE_Trophy_Grimoire_Scientist
+      - defName: OE_Trophy_Grimoire_Social
+
+handheld:
+  - id: odc_small
+    rung: odc_t2
+    size: small
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: ODC_Shield_Small
+  - id: oec_small
+    rung: oec
+    size: small
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core,Ludeon.RimWorld.Royalty
+    members:
+      - defName: OEC_Shield_Small
+  - id: oes_small
+    rung: heroic
+    size: small
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OES_Shield_Small
+        mass: 4
+  - id: odc_medium
+    rung: odc_t2
+    size: medium
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: ODC_Shield_Medium
+  - id: otc_medium
+    rung: otc
+    size: medium
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OTC_Shield_Medium
+  - id: omc_medium
+    rung: omc
+    size: medium
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OMC_Shield_Medium
+  - id: ego_medium
+    rung: bio_t4
+    size: medium
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: EGO_Shield_Medium
+        mass: 7
+  - id: omg_medium
+    rung: omg
+    size: medium
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OMG_Shield_Medium
+        bulk: 12
+        wornBulk: 8
+  - id: occ_big
+    rung: occ_reforge
+    size: big
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OCC_Shield_Big
+  - id: cac_big
+    rung: cac_t2
+    size: big
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: CAC_Shield_Big
+        mass: 12
+  - id: oes_big
+    rung: heroic
+    size: big
+    mayRequire: OskarPotocki.VanillaFactionsExpanded.Core
+    members:
+      - defName: OES_Shield_Big
+        mass: 10
+
+innate:
+  - id: arachna_queen
+    analogue: warqueen
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_ArachnaQueen
+  - id: crimson_arachna
+    analogue: warqueen_plus
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_CrimsonArachna
+  - id: fallen_legion
+    analogue: apocriton_plus
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_FallenLegion
+  - id: omg_dominator
+    analogue: legionary
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_OMG_Dominator
+
+upgrades:
+  - id: overcharged_shield
+    factor: 2.5
+    mayRequire: GoGaTio.MechanoidUpgrades
+    members:
+      - defName: OE_MechUpgrade_Module_Shield_O

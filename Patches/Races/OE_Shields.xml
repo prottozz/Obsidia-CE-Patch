@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence" MayRequire="Ludeon.RimWorld.Biotech">
+    <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>4.5</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases</xpath>
+          <value>
+            <EnergyShieldEnergyMax>4.5</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases/EnergyShieldRechargeRate</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases/EnergyShieldRechargeRate</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>5.25</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases</xpath>
+          <value>
+            <EnergyShieldEnergyMax>5.25</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases/EnergyShieldRechargeRate</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases/EnergyShieldRechargeRate</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.85</EnergyShieldRechargeRate>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.85</EnergyShieldRechargeRate>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>6</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases</xpath>
+          <value>
+            <EnergyShieldEnergyMax>6</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases/EnergyShieldRechargeRate</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases/EnergyShieldRechargeRate</xpath>
+          <value>
+            <EnergyShieldRechargeRate>1</EnergyShieldRechargeRate>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases</xpath>
+          <value>
+            <EnergyShieldRechargeRate>1</EnergyShieldRechargeRate>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.25</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.25</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases/EnergyShieldRechargeRate</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases/EnergyShieldRechargeRate</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.375</EnergyShieldRechargeRate>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.375</EnergyShieldRechargeRate>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

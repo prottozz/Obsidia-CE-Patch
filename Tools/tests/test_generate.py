@@ -100,6 +100,15 @@ def test_generate_writes_apparel_patches(tmp_path, monkeypatch):
     assert "CombatExtended.PartialArmorExt" in armor
     assert 'defName="OCC_Helmet"]' in helmets
     assert "CarryWeight" not in helmets
+    shields = (tmp_path / "Patches" / "Apparel" / "OE_Shields.xml").read_text(encoding="utf-8")
+    race_shields = (tmp_path / "Patches" / "Races" / "OE_Shields.xml").read_text(
+        encoding="utf-8"
+    )
+    upgrades = tmp_path / "Patches" / "Misc" / "OE_MechUpgrades.xml"
+    assert 'defName="OCC_Armor_M_Shield"]' in shields
+    assert 'MayRequire="Ludeon.RimWorld.Biotech"' in race_shields
+    assert upgrades.is_file()
+    assert "MU.MechUpgradeDef" in upgrades.read_text(encoding="utf-8")
 
 
 def test_generate_fails_without_core_weapons(tmp_path, monkeypatch):

@@ -3,14 +3,14 @@ from __future__ import annotations
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath
+from oe_ce.constants import BIOTECH_PACKAGE
+from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath, wrap_may_require
 from oe_ce.race_analogues import ANIMAL, MECHANOID, race_stats
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_obsidia import index_thingdefs, walk_parents
 from oe_ce.scan_races import BIOTECH_BOSSES, CoreRace
 
 SHARP_CAPACITIES = frozenset({"Scratch", "Bite", "Cut", "Stab", "Poke"})
-BIOTECH_PACKAGE = "Ludeon.RimWorld.Biotech"
 _HANDLED_TOOL_TAGS = frozenset(
     {"label", "capacities", "power", "cooldownTime", "linkedBodyPartsGroup", "armorPenetration"}
 )
@@ -174,22 +174,8 @@ def _durability_ops(def_name: str, kind: str, durability: int) -> list[str]:
     ]
 
 
-def _as_sequence_item(op: str) -> str:
-    text = op.strip()
-    if not text.startswith("<Operation ") or not text.endswith("</Operation>"):
-        raise ValueError(f"expected a top-level Patch Operation, got: {text[:80]!r}")
-    text = "<li " + text[len("<Operation ") :]
-    text = text[: -len("</Operation>")] + "</li>"
-    return "\n".join(f"    {line}" if line else line for line in text.split("\n"))
-
-
 def _wrap_biotech(ops: list[str]) -> str:
-    inner = "\n".join(_as_sequence_item(op) for op in ops)
-    return f"""  <Operation Class="PatchOperationSequence" MayRequire="{BIOTECH_PACKAGE}">
-    <operations>
-{inner}
-    </operations>
-  </Operation>"""
+    return wrap_may_require(ops, BIOTECH_PACKAGE)
 
 
 def emit_race_xml(

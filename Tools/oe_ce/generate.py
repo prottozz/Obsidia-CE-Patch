@@ -6,7 +6,13 @@ from pathlib import Path
 
 from oe_ce.apparel_load import load_apparel_catalog
 from oe_ce.apparel_rungs import ARMOR, HELMET
-from oe_ce.constants import DEFAULT_OBSIDIA_BIOTECH, DEFAULT_OBSIDIA_CORE
+from oe_ce.constants import (
+    DEFAULT_OBSIDIA_BIOTECH,
+    DEFAULT_OBSIDIA_CORE,
+    DEFAULT_OBSIDIA_MU,
+    DEFAULT_OBSIDIA_ROYALTY,
+    DEFAULT_OBSIDIA_VEF,
+)
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
 from oe_ce.emit_guns import emit_gun_patches
@@ -14,15 +20,19 @@ from oe_ce.emit_melee import emit_melee_xml
 from oe_ce.emit_pawnkinds import emit_pawnkind_xml
 from oe_ce.emit_races import collect_race_tools, emit_race_xml
 from oe_ce.emit_recipes import emit_recipe_xml
+from oe_ce.emit_shields import emit_innate_xml, emit_upgrade_xml, emit_worn_handheld_xml
 from oe_ce.load import load_catalog
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
 from oe_ce.scan_apparel import scan_core_apparel
 from oe_ce.scan_obsidia import scan_core_ranged
 from oe_ce.scan_races import scan_races
+from oe_ce.scan_shields import scan_shields
+from oe_ce.shield_load import load_shield_catalog
 from oe_ce.validate import validate_catalog
 from oe_ce.validate_apparel import validate_apparel_catalog
 from oe_ce.validate_races import validate_race_catalog
+from oe_ce.validate_shields import validate_shield_catalog
 
 
 def _write(path: Path, content: str) -> None:
@@ -45,19 +55,30 @@ def _require_core_dirs(core: Path) -> None:
         raise FileNotFoundError(f"Obsidia Core races dir missing: {races}")
 
 
+def _optional_dir(env_name: str, default: str) -> Path | None:
+    path = Path(os.environ.get(env_name, default))
+    return path if path.is_dir() else None
+
+
 def generate(root: Path) -> None:
     cat = load_catalog(root / "catalog")
     apparel = load_apparel_catalog(root / "catalog")
     races = load_race_catalog(root / "catalog")
+    shields = load_shield_catalog(root / "catalog")
     core = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
     _require_core_dirs(core)
     core_apparel = scan_core_apparel(core)
     errors = validate_catalog(cat, scan_core_ranged(core))
     errors += validate_apparel_catalog(apparel, core_apparel)
-    biotech = Path(os.environ.get("OBSIDIA_BIOTECH", DEFAULT_OBSIDIA_BIOTECH))
-    bio = biotech if biotech.is_dir() else None
+    bio = _optional_dir("OBSIDIA_BIOTECH", DEFAULT_OBSIDIA_BIOTECH)
+    royalty = _optional_dir("OBSIDIA_ROYALTY", DEFAULT_OBSIDIA_ROYALTY)
+    vef = _optional_dir("OBSIDIA_VEF", DEFAULT_OBSIDIA_VEF)
+    mu = _optional_dir("OBSIDIA_MU", DEFAULT_OBSIDIA_MU)
     core_races = scan_races(core, bio)
     errors += validate_race_catalog(races, core_races)
+    armor_names = {m.def_name for s in apparel.armor for m in s.members}
+    scanned_shields = scan_shields(core, royalty, vef, bio, mu)
+    errors += validate_shield_catalog(shields, scanned_shields, armor_names)
     if errors and os.environ.get("OE_CE_ALLOW_PARTIAL") != "1":
         for msg in errors:
             print(msg, file=sys.stderr)
@@ -96,4 +117,16 @@ def generate(root: Path) -> None:
     _write(
         root / "Patches" / "Races" / "OE_Mechanoids.xml",
         emit_race_xml(races.sets, MECHANOID, core_races, race_tools),
+    )
+    _write(
+        root / "Patches" / "Apparel" / "OE_Shields.xml",
+        emit_worn_handheld_xml(shields, scanned_shields),
+    )
+    _write(
+        root / "Patches" / "Races" / "OE_Shields.xml",
+        emit_innate_xml(shields),
+    )
+    _write(
+        root / "Patches" / "Misc" / "OE_MechUpgrades.xml",
+        emit_upgrade_xml(shields),
     )

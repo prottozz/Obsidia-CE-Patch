@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence" MayRequire="GoGaTio.MechanoidUpgrades">
+    <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/statFactors</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]</xpath>
+          <value>
+            <statFactors />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/statFactors/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/statFactors/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/statFactors</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/comps/li[@Class="MU.UpgradeCompProperties_ShieldUpgrade"]/factor</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/comps/li[@Class="MU.UpgradeCompProperties_ShieldUpgrade"]/factor</xpath>
+          <value>
+            <factor>2.5</factor>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/comps/li[@Class="MU.UpgradeCompProperties_ShieldUpgrade"]</xpath>
+          <value>
+            <factor>2.5</factor>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
