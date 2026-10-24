@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence" MayRequire="GoGaTio.MechanoidUpgrades">
-    <operations>
+  <Operation Class="PatchOperationConditional" MayRequire="GoGaTio.MechanoidUpgrades">
+    <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/statFactors</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]/statFactors</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]</xpath>
           <value>
@@ -41,6 +46,10 @@
           </value>
         </nomatch>
       </li>
-    </operations>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
   </Operation>
 </Patch>

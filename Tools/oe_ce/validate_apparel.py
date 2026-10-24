@@ -23,7 +23,7 @@ def validate_apparel_catalog(cat: ApparelCatalog, core: dict[str, CoreApparel]) 
             continue
         info = core.get(name)
         if info is None:
-            errors.append(f"{name}: not an in-scope Core apparel def")
+            errors.append(f"{name}: not an in-scope apparel def")
         elif info.kind != kind:
             errors.append(f"{name}: catalogued as {kind} but Core layer is {info.kind}")
         resolved[name] = (kind, rung)
@@ -31,7 +31,7 @@ def validate_apparel_catalog(cat: ApparelCatalog, core: dict[str, CoreApparel]) 
         if count > 1:
             errors.append(f"duplicate apparel defName {name}")
     for missing in sorted(set(core) - set(seen)):
-        errors.append(f"Core apparel defName not in catalog: {missing}")
+        errors.append(f"apparel defName not in catalog: {missing}")
     for name, (kind, rung) in sorted(resolved.items()):
         info = core.get(name)
         if info is None or info.concrete_parent not in resolved:

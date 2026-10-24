@@ -84,14 +84,14 @@ worn:
   - id: oec_guardian
     rung: oec_t2
     role: guardian
-    plate: emit
+    plate: inherit
     mayRequire: Ludeon.RimWorld.Royalty
     members:
       - defName: OEC_Armor_M_Shield
   - id: oec_protector
     rung: oec_t2
     role: protector
-    plate: emit
+    plate: inherit
     mayRequire: Ludeon.RimWorld.Royalty
     members:
       - defName: OEC_Armor_M_Barrier

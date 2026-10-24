@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence" MayRequire="Ludeon.RimWorld.Biotech">
-    <operations>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]</xpath>
           <value>
@@ -41,8 +46,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachna"]</xpath>
           <value>
@@ -80,8 +98,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Mech_FallenLegion"]</xpath>
           <value>
@@ -119,8 +150,21 @@
           </value>
         </nomatch>
       </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
     <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]/statBases</xpath>
+        </match>
         <nomatch Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="OE_Mech_OMG_Dominator"]</xpath>
           <value>
@@ -158,6 +202,10 @@
           </value>
         </nomatch>
       </li>
-    </operations>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
   </Operation>
 </Patch>

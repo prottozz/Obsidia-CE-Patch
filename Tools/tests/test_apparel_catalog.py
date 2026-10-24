@@ -1,8 +1,13 @@
+from pathlib import Path
+
 from oe_ce.apparel_load import load_apparel_catalog
 from oe_ce.apparel_models import ApparelCatalog, ApparelMember, ApparelSet
 from oe_ce.apparel_rungs import ARMOR, HELMET
+from oe_ce.constants import ROYALTY_PACKAGE
 from oe_ce.scan_apparel import CoreApparel
 from oe_ce.validate_apparel import validate_apparel_catalog
+
+ROOT = Path(__file__).resolve().parents[2]
 
 CORE = {
     "OCC_Armor": CoreApparel("OCC_Armor", ARMOR),
@@ -44,7 +49,7 @@ def test_member_rung_override():
 def test_missing_core_piece_is_error():
     cat = ApparelCatalog(armor=[_armor_set()], helmets=[])
     errs = validate_apparel_catalog(cat, CORE)
-    assert "Core apparel defName not in catalog: OCC_Helmet" in errs
+    assert "apparel defName not in catalog: OCC_Helmet" in errs
 
 
 def test_duplicate_is_error():
@@ -89,12 +94,20 @@ def test_unknown_rung_is_error():
 def test_load_reads_both_files(tmp_path):
     (tmp_path / "armor.yaml").write_text(
         "sets:\n"
+        "  - id: oec\n"
+        "    rung: oec\n"
+        "    mayRequire: Ludeon.RimWorld.Royalty\n"
+        "    members:\n"
+        "      - defName: OEC_Armor\n"
+        "      - defName: OEC_Armor_M\n"
+        "        rung: oec_t2\n"
         "  - id: occ\n"
         "    rung: occ\n"
         "    members:\n"
         "      - defName: OCC_Armor\n"
-        "      - defName: OCC_Armor_M\n"
-        "        rung: occ_reforge\n",
+        "      - defName: OCC_Armor_M_Jump\n"
+        "        rung: occ_reforge\n"
+        "        mayRequire: Ludeon.RimWorld.Royalty\n",
         encoding="utf-8",
     )
     (tmp_path / "helmets.yaml").write_text(
@@ -106,14 +119,49 @@ def test_load_reads_both_files(tmp_path):
         encoding="utf-8",
     )
     cat = load_apparel_catalog(tmp_path)
-    assert [m.def_name for m in cat.armor[0].members] == ["OCC_Armor", "OCC_Armor_M"]
-    assert cat.armor[0].members[1].rung == "occ_reforge"
-    assert cat.armor[0].members[0].rung is None
+    assert cat.armor[0].id == "oec"
+    assert cat.armor[0].may_require == ROYALTY_PACKAGE
+    assert cat.armor[0].members[0].def_name == "OEC_Armor"
+    assert cat.armor[0].members[0].may_require is None
+    assert cat.armor[0].members[1].rung == "oec_t2"
+    assert cat.armor[1].members[1].def_name == "OCC_Armor_M_Jump"
+    assert cat.armor[1].members[1].may_require == ROYALTY_PACKAGE
+    assert cat.armor[1].members[1].rung == "occ_reforge"
     assert cat.helmets[0].members[0].def_name == "OCC_Helmet"
     kinds = [k for k, _s, _m in cat.entries()]
-    assert kinds == [ARMOR, ARMOR, HELMET]
+    assert kinds == [ARMOR, ARMOR, ARMOR, ARMOR, HELMET]
+
+
+def test_member_may_require_falls_back_to_set():
+    s = ApparelSet(
+        "oec",
+        "oec",
+        [ApparelMember("OEC_Armor"), ApparelMember("OEC_Armor_M", may_require="other")],
+        may_require=ROYALTY_PACKAGE,
+    )
+    assert s.member_may_require(s.members[0]) == ROYALTY_PACKAGE
+    assert s.member_may_require(s.members[1]) == "other"
 
 
 def test_load_missing_files_is_empty(tmp_path):
     cat = load_apparel_catalog(tmp_path)
     assert cat.armor == [] and cat.helmets == []
+
+
+def test_load_repo_catalog_includes_royalty_mayrequire():
+    cat = load_apparel_catalog(ROOT / "catalog")
+    armor = {m.def_name: (s, m) for s in cat.armor for m in s.members}
+    helmets = {m.def_name: (s, m) for s in cat.helmets for m in s.members}
+    oec = next(s for s in cat.armor if s.id == "oec")
+    assert oec.may_require == ROYALTY_PACKAGE
+    assert "OEC_Armor" in armor
+    assert "OEC_Armor_M" in armor
+    assert "OCC_Armor_M_Jump" in armor
+    assert armor["OCC_Armor_M_Jump"][1].may_require == ROYALTY_PACKAGE
+    assert armor["OCC_Armor_M_Jump"][1].rung == "occ_reforge"
+    assert "OEC_Helmet" in helmets
+    assert "ODC_Helmet_Prestige" in helmets
+    assert "OMG_Trophy_Helmet_Neuroflash" in helmets
+    assert "OEC_Armor_M_Grenadier" not in armor
+    assert "OEC_Armor_M_Shield" not in armor
+    assert "OEC_Armor_M_Barrier" not in armor

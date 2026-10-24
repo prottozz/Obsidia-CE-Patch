@@ -18,9 +18,14 @@ def _sets(path: Path) -> list[ApparelSet]:
                 id=raw["id"],
                 rung=raw["rung"],
                 members=[
-                    ApparelMember(def_name=m["defName"], rung=m.get("rung"))
+                    ApparelMember(
+                        def_name=m["defName"],
+                        rung=m.get("rung"),
+                        may_require=m.get("mayRequire"),
+                    )
                     for m in raw.get("members") or []
                 ],
+                may_require=raw.get("mayRequire"),
             )
         )
     return out

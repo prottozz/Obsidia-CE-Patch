@@ -16,6 +16,8 @@ def test_load_repo_catalog_covers_spec_inventory():
     assert worn["OES_Armor_Shield"].rung == "heroic"
     assert worn["OMG_Armor_Corsair"].plate == "skip"
     assert worn["OEC_Armor_M_Barrier"].may_require == "Ludeon.RimWorld.Royalty"
+    assert worn["OEC_Armor_M_Shield"].plate == "inherit"
+    assert worn["OEC_Armor_M_Barrier"].plate == "inherit"
     assert worn["OE_Trophy_Grimoire_Defender"].may_require == (
         "OskarPotocki.VanillaFactionsExpanded.Core"
     )

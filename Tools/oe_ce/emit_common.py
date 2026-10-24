@@ -19,8 +19,12 @@ def named_xpath(name: str, tag: str = "ThingDef") -> str:
 
 def ensure_node(def_name: str, node: str, tag: str = "ThingDef") -> str:
     base = thing_xpath(def_name, tag)
+    path = f"{base}/{node}"
     return f"""  <Operation Class="PatchOperationConditional">
-    <xpath>{base}/{node}</xpath>
+    <xpath>{path}</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>{path}</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>{base}</xpath>
       <value>
@@ -69,3 +73,25 @@ def wrap_may_require(ops: list[str], packages: str) -> str:
 {inner}
     </operations>
   </Operation>"""
+
+
+def wrap_optional_xpath(ops: list[str], packages: str, xpath: str) -> str:
+    inner = "\n".join(as_sequence_item(op) for op in ops)
+    may = f' MayRequire="{packages}"' if packages else ""
+    return f"""  <Operation Class="PatchOperationConditional"{may}>
+    <xpath>{xpath}</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+{inner}
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>"""
+
+
+def wrap_optional_def(
+    ops: list[str], packages: str, def_name: str, tag: str = "ThingDef"
+) -> str:
+    return wrap_optional_xpath(ops, packages, thing_xpath(def_name, tag))

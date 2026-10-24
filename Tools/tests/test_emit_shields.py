@@ -57,6 +57,35 @@ def test_oes_emits_partial_armor_and_heroic_sharp_occ_does_not():
     assert "<EnergyShieldEnergyMax>2.07</EnergyShieldEnergyMax>" in xml
 
 
+def test_oec_barrier_and_shield_are_wrapped_separately():
+    cat = ShieldCatalog(
+        worn=[
+            WornSet(
+                "oec_g",
+                "oec_t2",
+                "guardian",
+                "inherit",
+                [ShieldMember("OEC_Armor_M_Shield")],
+                may_require="Ludeon.RimWorld.Royalty",
+            ),
+            WornSet(
+                "oec_p",
+                "oec_t2",
+                "protector",
+                "inherit",
+                [ShieldMember("OEC_Armor_M_Barrier")],
+                may_require="Ludeon.RimWorld.Royalty",
+            ),
+        ]
+    )
+    xml = emit_worn_handheld_xml(cat, {})
+    assert xml.count('MayRequire="Ludeon.RimWorld.Royalty"') == 2
+    barrier = xml.split('defName="OEC_Armor_M_Barrier"')[1].split(
+        'defName="OEC_Armor_M_Shield"'
+    )[0]
+    assert 'defName="OEC_Armor_M_Shield"]' not in barrier
+
+
 def test_oec_worn_wrapped_royalty():
     cat = ShieldCatalog(
         worn=[
@@ -64,18 +93,24 @@ def test_oec_worn_wrapped_royalty():
                 "oec",
                 "oec_t2",
                 "guardian",
-                "emit",
+                "inherit",
                 [ShieldMember("OEC_Armor_M_Shield")],
                 may_require="Ludeon.RimWorld.Royalty",
             )
         ]
     )
-    scanned = {"OEC_Armor_M_Shield": CoreShield("OEC_Armor_M_Shield", WORN, True)}
+    scanned = {
+        "OEC_Armor_M_Shield": CoreShield(
+            "OEC_Armor_M_Shield", WORN, True, "OEC_Armor_M"
+        )
+    }
     xml = emit_worn_handheld_xml(cat, scanned)
     assert 'MayRequire="Ludeon.RimWorld.Royalty"' in xml
     assert "<li Class=" in xml
     assert "<operations>" in xml
     assert "<Operation Class=" not in xml.split("<operations>")[1].split("</operations>")[0]
+    assert "<EnergyShieldEnergyMax>2.15</EnergyShieldEnergyMax>" in xml
+    assert "PartialArmorExt" not in xml
 
 
 def test_handheld_converts_vef_to_ce():
@@ -116,6 +151,8 @@ def test_handheld_converts_vef_to_ce():
     assert "CombatExtended.PawnRenderNode_Apparel" in xml
     assert "Things/Shield/ODC" in xml
     assert 'MayRequire="OskarPotocki.VanillaFactionsExpanded.Core,Ludeon.RimWorld.Royalty"' in xml
+    assert xml.count('ThingDef[@Name="OEShieldBase"]') >= 1
+    assert xml.count('PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core"') >= 2
 
 
 def test_innate_queen_is_biotech_sequence_of_li():
@@ -152,6 +189,7 @@ def test_upgrade_targets_mechupgradedef():
     )
     xml = emit_upgrade_xml(cat)
     assert 'MayRequire="GoGaTio.MechanoidUpgrades"' in xml
+    assert 'Class="PatchOperationConditional"' in xml
     assert 'MU.MechUpgradeDef[defName="OE_MechUpgrade_Module_Shield_O"]' in xml
     assert "<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>" in xml
     assert "<factor>2.5</factor>" in xml

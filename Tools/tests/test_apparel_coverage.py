@@ -3,12 +3,13 @@ from pathlib import Path
 
 from oe_ce.apparel_load import load_apparel_catalog
 from oe_ce.apparel_rungs import ARMOR, HELMET, apparel_stats
-from oe_ce.constants import DEFAULT_OBSIDIA_CORE
+from oe_ce.constants import DEFAULT_OBSIDIA_CORE, DEFAULT_OBSIDIA_ROYALTY
 from oe_ce.scan_apparel import scan_core_apparel
 from oe_ce.validate_apparel import validate_apparel_catalog
 
 ROOT = Path(__file__).resolve().parents[2]
 CORE = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
+ROYALTY = Path(os.environ.get("OBSIDIA_ROYALTY", DEFAULT_OBSIDIA_ROYALTY))
 
 
 def _rung(sets, def_name):
@@ -21,7 +22,8 @@ def _rung(sets, def_name):
 
 def test_core_apparel_fully_catalogued():
     cat = load_apparel_catalog(ROOT / "catalog")
-    errs = validate_apparel_catalog(cat, scan_core_apparel(CORE))
+    royalty = ROYALTY if ROYALTY.is_dir() else None
+    errs = validate_apparel_catalog(cat, scan_core_apparel(CORE, royalty))
     assert errs == [], "\n".join(errs)
 
 

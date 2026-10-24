@@ -10,6 +10,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]</xpath>
       <value>
@@ -231,6 +234,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Blue"]</xpath>
       <value>
@@ -260,6 +266,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]</xpath>
       <value>
@@ -481,6 +490,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Green"]</xpath>
       <value>
@@ -510,6 +522,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]</xpath>
       <value>
@@ -731,6 +746,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Red"]</xpath>
       <value>
@@ -760,6 +778,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]</xpath>
       <value>
@@ -981,6 +1002,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Arachna_Yellow"]</xpath>
       <value>
@@ -1010,6 +1034,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Armagon"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Armagon"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Armagon"]</xpath>
       <value>
@@ -1206,6 +1233,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Armagon"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Armagon"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Armagon"]</xpath>
       <value>
@@ -1235,6 +1265,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Astrinx"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Astrinx"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Astrinx"]</xpath>
       <value>
@@ -1468,6 +1501,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Astrinx"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Astrinx"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Astrinx"]</xpath>
       <value>
@@ -1497,6 +1533,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]</xpath>
       <value>
@@ -1670,6 +1709,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]</xpath>
       <value>
@@ -1699,6 +1741,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]</xpath>
       <value>
@@ -1872,6 +1917,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]</xpath>
       <value>
@@ -1901,6 +1949,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]</xpath>
       <value>
@@ -2074,6 +2125,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]</xpath>
       <value>
@@ -2103,6 +2157,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]</xpath>
       <value>
@@ -2276,6 +2333,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]</xpath>
       <value>
@@ -2305,6 +2365,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]</xpath>
       <value>
@@ -2468,6 +2531,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Arctic"]</xpath>
       <value>
@@ -2497,6 +2563,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]</xpath>
       <value>
@@ -2660,6 +2729,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Brown"]</xpath>
       <value>
@@ -2689,6 +2761,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]</xpath>
       <value>
@@ -2852,6 +2927,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Caterpillar_Desert"]</xpath>
       <value>
@@ -2881,6 +2959,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Direwolf"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Direwolf"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Direwolf"]</xpath>
       <value>
@@ -3118,6 +3199,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Direwolf"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Direwolf"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Direwolf"]</xpath>
       <value>
@@ -3147,6 +3231,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]</xpath>
       <value>
@@ -3399,6 +3486,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Direwolf"]</xpath>
       <value>
@@ -3428,6 +3518,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]</xpath>
       <value>
@@ -3676,6 +3769,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Ogren"]</xpath>
       <value>
@@ -3705,6 +3801,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]</xpath>
       <value>
@@ -3949,6 +4048,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Raptor"]</xpath>
       <value>
@@ -3978,6 +4080,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]</xpath>
       <value>
@@ -4230,6 +4335,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Blue"]</xpath>
       <value>
@@ -4259,6 +4367,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]</xpath>
       <value>
@@ -4511,6 +4622,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Green"]</xpath>
       <value>
@@ -4540,6 +4654,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]</xpath>
       <value>
@@ -4792,6 +4909,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Red"]</xpath>
       <value>
@@ -4821,6 +4941,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]</xpath>
       <value>
@@ -5073,6 +5196,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Elder_Tionant_Yellow"]</xpath>
       <value>
@@ -5102,6 +5228,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Hootie"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Hootie"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Hootie"]</xpath>
       <value>
@@ -5283,6 +5412,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Hootie"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Hootie"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Hootie"]</xpath>
       <value>
@@ -5312,6 +5444,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Ogren"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Ogren"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Ogren"]</xpath>
       <value>
@@ -5560,6 +5695,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Ogren"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Ogren"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Ogren"]</xpath>
       <value>
@@ -5589,6 +5727,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Raptor"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Raptor"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Raptor"]</xpath>
       <value>
@@ -5818,6 +5959,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Raptor"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Raptor"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Raptor"]</xpath>
       <value>
@@ -5847,6 +5991,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Rosner"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Rosner"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Rosner"]</xpath>
       <value>
@@ -6034,6 +6181,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Rosner"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Rosner"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Rosner"]</xpath>
       <value>
@@ -6063,6 +6213,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]</xpath>
       <value>
@@ -6304,6 +6457,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Blue"]</xpath>
       <value>
@@ -6333,6 +6489,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]</xpath>
       <value>
@@ -6574,6 +6733,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Scorpid_Red"]</xpath>
       <value>
@@ -6603,6 +6765,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]</xpath>
       <value>
@@ -6823,6 +6988,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Sharkaradon"]</xpath>
       <value>
@@ -6852,6 +7020,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]</xpath>
       <value>
@@ -7025,6 +7196,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ambrosia"]</xpath>
       <value>
@@ -7054,6 +7228,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]</xpath>
       <value>
@@ -7219,6 +7396,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Ancient"]</xpath>
       <value>
@@ -7248,6 +7428,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]</xpath>
       <value>
@@ -7389,6 +7572,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Beer"]</xpath>
       <value>
@@ -7418,6 +7604,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]</xpath>
       <value>
@@ -7579,6 +7768,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Bone"]</xpath>
       <value>
@@ -7608,6 +7800,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]</xpath>
       <value>
@@ -7749,6 +7944,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Chemfuel"]</xpath>
       <value>
@@ -7778,6 +7976,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]</xpath>
       <value>
@@ -7951,6 +8152,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Fungus"]</xpath>
       <value>
@@ -7980,6 +8184,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]</xpath>
       <value>
@@ -8153,6 +8360,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Gold"]</xpath>
       <value>
@@ -8182,6 +8392,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]</xpath>
       <value>
@@ -8339,6 +8552,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Hauler"]</xpath>
       <value>
@@ -8368,6 +8584,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]</xpath>
       <value>
@@ -8541,6 +8760,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Herbal"]</xpath>
       <value>
@@ -8570,6 +8792,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]</xpath>
       <value>
@@ -8743,6 +8968,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jade"]</xpath>
       <value>
@@ -8772,6 +9000,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]</xpath>
       <value>
@@ -8913,6 +9144,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jelly"]</xpath>
       <value>
@@ -8942,6 +9176,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]</xpath>
       <value>
@@ -9098,6 +9335,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Joltixin"]</xpath>
       <value>
@@ -9127,6 +9367,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]</xpath>
       <value>
@@ -9300,6 +9543,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Jumy"]</xpath>
       <value>
@@ -9329,6 +9575,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]</xpath>
       <value>
@@ -9470,6 +9719,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Luciferium"]</xpath>
       <value>
@@ -9499,6 +9751,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]</xpath>
       <value>
@@ -9687,6 +9942,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Mythril"]</xpath>
       <value>
@@ -9716,6 +9974,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]</xpath>
       <value>
@@ -9857,6 +10118,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Neutroamine"]</xpath>
       <value>
@@ -9886,6 +10150,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]</xpath>
       <value>
@@ -10074,6 +10341,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Nullium"]</xpath>
       <value>
@@ -10103,6 +10373,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]</xpath>
       <value>
@@ -10291,6 +10564,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Obsidian"]</xpath>
       <value>
@@ -10320,6 +10596,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]</xpath>
       <value>
@@ -10493,6 +10772,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Platinum"]</xpath>
       <value>
@@ -10522,6 +10804,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]</xpath>
       <value>
@@ -10695,6 +10980,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Silver"]</xpath>
       <value>
@@ -10724,6 +11012,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]</xpath>
       <value>
@@ -10897,6 +11188,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Steel"]</xpath>
       <value>
@@ -10926,6 +11220,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]</xpath>
       <value>
@@ -11099,6 +11396,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Syntherius"]</xpath>
       <value>
@@ -11128,6 +11428,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]</xpath>
       <value>
@@ -11284,6 +11587,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Torraxin"]</xpath>
       <value>
@@ -11313,6 +11619,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]</xpath>
       <value>
@@ -11486,6 +11795,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Slime_Uranium"]</xpath>
       <value>
@@ -11515,6 +11827,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Snapper"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Snapper"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Snapper"]</xpath>
       <value>
@@ -11660,6 +11975,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Snapper"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Snapper"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Snapper"]</xpath>
       <value>
@@ -11689,6 +12007,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]</xpath>
       <value>
@@ -11926,6 +12247,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Blue"]</xpath>
       <value>
@@ -11955,6 +12279,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]</xpath>
       <value>
@@ -12192,6 +12519,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Green"]</xpath>
       <value>
@@ -12221,6 +12551,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]</xpath>
       <value>
@@ -12458,6 +12791,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Red"]</xpath>
       <value>
@@ -12487,6 +12823,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]/statBases</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]/statBases</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]</xpath>
       <value>
@@ -12724,6 +13063,9 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]/comps</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]/comps</xpath>
+    </match>
     <nomatch Class="PatchOperationAdd">
       <xpath>Defs/ThingDef[defName="OE_Tionant_Yellow"]</xpath>
       <value>

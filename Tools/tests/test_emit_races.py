@@ -103,7 +103,10 @@ def test_biotech_boss_is_wrapped_with_mayrequire():
     assert "<ArmorRating_Blunt>54</ArmorRating_Blunt>" in xml
     assert "<bodyShape>Humanoid</bodyShape>" in xml
     root = ET.fromstring(xml.split("?>", 1)[1])
-    seq = next(op for op in root if op.get("Class") == "PatchOperationSequence")
+    outer = next(op for op in root if op.get("MayRequire") == "Ludeon.RimWorld.Biotech")
+    assert outer.get("Class") == "PatchOperationConditional"
+    seq = outer.find("match")
+    assert seq is not None and seq.get("Class") == "PatchOperationSequence"
     ops = seq.find("operations")
     assert ops is not None
     children = list(ops)

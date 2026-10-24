@@ -15,6 +15,7 @@ from oe_ce.constants import (
 )
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
+from oe_ce.emit_grenade_belts import emit_grenade_belt_xml
 from oe_ce.emit_guns import emit_gun_patches
 from oe_ce.emit_melee import emit_melee_xml
 from oe_ce.emit_pawnkinds import emit_pawnkind_xml
@@ -24,7 +25,7 @@ from oe_ce.emit_shields import emit_innate_xml, emit_upgrade_xml, emit_worn_hand
 from oe_ce.load import load_catalog
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
-from oe_ce.scan_apparel import scan_core_apparel
+from oe_ce.scan_apparel import scan_core_apparel, scan_isolated_grenadiers
 from oe_ce.scan_obsidia import scan_core_ranged
 from oe_ce.scan_races import scan_races
 from oe_ce.scan_shields import scan_shields
@@ -67,13 +68,14 @@ def generate(root: Path) -> None:
     shields = load_shield_catalog(root / "catalog")
     core = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
     _require_core_dirs(core)
-    core_apparel = scan_core_apparel(core)
-    errors = validate_catalog(cat, scan_core_ranged(core))
-    errors += validate_apparel_catalog(apparel, core_apparel)
     bio = _optional_dir("OBSIDIA_BIOTECH", DEFAULT_OBSIDIA_BIOTECH)
     royalty = _optional_dir("OBSIDIA_ROYALTY", DEFAULT_OBSIDIA_ROYALTY)
     vef = _optional_dir("OBSIDIA_VEF", DEFAULT_OBSIDIA_VEF)
     mu = _optional_dir("OBSIDIA_MU", DEFAULT_OBSIDIA_MU)
+    core_apparel = scan_core_apparel(core, royalty)
+    isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
+    errors = validate_catalog(cat, scan_core_ranged(core))
+    errors += validate_apparel_catalog(apparel, core_apparel)
     core_races = scan_races(core, bio)
     errors += validate_race_catalog(races, core_races)
     armor_names = {m.def_name for s in apparel.armor for m in s.members}
@@ -103,11 +105,15 @@ def generate(root: Path) -> None:
     )
     _write(
         root / "Patches" / "Apparel" / "OE_Armor.xml",
-        emit_apparel_xml(apparel.armor, ARMOR, core_apparel),
+        emit_apparel_xml(apparel.armor, ARMOR, core_apparel, isolated_grenadiers),
     )
     _write(
         root / "Patches" / "Apparel" / "OE_Helmets.xml",
-        emit_apparel_xml(apparel.helmets, HELMET, core_apparel),
+        emit_apparel_xml(apparel.helmets, HELMET, core_apparel, isolated_grenadiers),
+    )
+    _write(
+        root / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
+        emit_grenade_belt_xml(),
     )
     race_tools = collect_race_tools(core, bio)
     _write(

@@ -14,7 +14,12 @@ def test_recipes_use_obsidia_bench_and_mats():
     assert "<workAmount>2000</workAmount>" in xml
     assert "<workAmount>5000</workAmount>" in xml
     assert "<workSkill>Crafting</workSkill>" in xml
-    assert "<workSpeedStat>SmithingSpeed</workSpeedStat>" in xml
+    assert (
+        '<workSpeedStat MayRequire="Alias.DegeneralizeWork">SmithingSpeed</workSpeedStat>'
+        in xml
+    )
+    assert "<workSpeedStat>SmithingSpeed</workSpeedStat>" not in xml
+    assert "<workSpeedStat>GeneralLaborSpeed</workSpeedStat>" not in xml
     assert "<workSkillLearnFactor>0.5</workSkillLearnFactor>" in xml
     assert 'ParentName="AmmoRecipeBase"' in xml
 

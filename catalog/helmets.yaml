@@ -1,4 +1,5 @@
-# Core combat helmets. Set ids match catalog/armor.yaml where a kit has both.
+# Core combat helmets plus Royalty variants. Set ids match catalog/armor.yaml
+# where a kit has both.
 sets:
   - id: proto
     rung: proto
@@ -49,6 +50,8 @@ sets:
     members:
       - defName: ODC_Helmet_Recon
       - defName: ODC_Helmet_Spacer
+      - defName: ODC_Helmet_Prestige
+        mayRequire: Ludeon.RimWorld.Royalty
   - id: odc_duelist
     rung: odc_t3
     members:
@@ -57,10 +60,14 @@ sets:
     rung: cac_t1
     members:
       - defName: CAC_LightHelmet
+      - defName: CAC_LightHelmet_Prestige
+        mayRequire: Ludeon.RimWorld.Royalty
   - id: cac_heavy
     rung: cac_t2
     members:
       - defName: CAC_HeavyHelmet
+      - defName: CAC_HeavyHelmet_Prestige
+        mayRequire: Ludeon.RimWorld.Royalty
   - id: ego
     rung: bio_t3
     members:
@@ -70,6 +77,9 @@ sets:
         rung: bio_t4
       - defName: EGO_Helmet_Exohelm_Ranged
         rung: bio_t4
+      - defName: EGO_Helmet_Exohelm_Psy
+        rung: bio_t4
+        mayRequire: Ludeon.RimWorld.Royalty
   - id: oes
     rung: heroic
     members:
@@ -82,3 +92,20 @@ sets:
       - defName: OMG_Trophy_Helmet_Forgemind
       - defName: OMG_Trophy_Helmet_Hellrain
       - defName: OMG_Trophy_Helmet_Orbicore
+      - defName: OMG_Trophy_Helmet_Neuroflash
+        mayRequire: Ludeon.RimWorld.Royalty
+      - defName: OMG_Trophy_Helmet_Mindtwister
+        mayRequire: Ludeon.RimWorld.Royalty
+  - id: oec
+    rung: oec
+    mayRequire: Ludeon.RimWorld.Royalty
+    members:
+      - defName: OEC_Helmet
+      - defName: OEC_Helmet_M
+        rung: oec_t2
+      - defName: OEC_Helmet_M_Spacer
+        rung: oec_t2
+      - defName: OEC_Helmet_M_Melee
+        rung: oec_t2
+      - defName: OEC_Helmet_M_Ranged
+        rung: oec_t2

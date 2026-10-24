@@ -17,3 +17,6 @@ def test_about_package_id():
     assert "<packageId>prottozz.ObsidiaCEPatch</packageId>" in text
     assert "CETeam.CombatExtended" in text
     assert "ObsidiaExpansion.Core" in text
+    assert "Ludeon.RimWorld.Royalty" in text
+    assert "Alias.DegeneralizeWork" in text
+    assert "optionalDependencies" not in text
