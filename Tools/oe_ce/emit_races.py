@@ -8,7 +8,17 @@ from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath, wr
 from oe_ce.race_analogues import ANIMAL, MECHANOID, race_stats
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_obsidia import index_thingdefs, walk_parents
-from oe_ce.scan_races import BIOTECH_BOSSES, CoreRace
+from oe_ce.scan_races import CoreRace
+
+# TODO(slice-6): remove when emit no longer gates on boss allow-list
+BIOTECH_BOSSES = frozenset(
+    {
+        "OE_Mech_ChaosLord",
+        "OE_Mech_ArachnaQueen",
+        "OE_Mech_CrimsonArachna",
+        "OE_Mech_FallenLegion",
+    }
+)
 
 SHARP_CAPACITIES = frozenset({"Scratch", "Bite", "Cut", "Stab", "Poke"})
 _HANDLED_TOOL_TAGS = frozenset(

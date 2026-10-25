@@ -4,7 +4,17 @@ from collections import Counter
 
 from oe_ce.race_analogues import ANALOGUES, BODY_SHAPES
 from oe_ce.race_models import RaceCatalog
-from oe_ce.scan_races import BIOTECH_BOSSES, CoreRace
+from oe_ce.scan_races import CoreRace
+
+# TODO(slice-6): remove when validate no longer gates on boss allow-list
+BIOTECH_BOSSES = frozenset(
+    {
+        "OE_Mech_ChaosLord",
+        "OE_Mech_ArachnaQueen",
+        "OE_Mech_CrimsonArachna",
+        "OE_Mech_FallenLegion",
+    }
+)
 
 
 def validate_race_catalog(cat: RaceCatalog, core: dict[str, CoreRace]) -> list[str]:
