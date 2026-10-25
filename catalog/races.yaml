@@ -44,6 +44,8 @@ sets:
       - defName: OE_Arachna_Green
       - defName: OE_Arachna_Red
       - defName: OE_Arachna_Yellow
+      - defName: OE_Arachna_Tox
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: bruul
     analogue: megascarab
     bodyShape: QuadrupedLow
@@ -58,6 +60,8 @@ sets:
     members:
       - defName: OE_Scorpid_Blue
       - defName: OE_Scorpid_Red
+      - defName: OE_Scorpid_Tox
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: armagon
     analogue: thrumbo
     members:
@@ -76,6 +80,8 @@ sets:
       - defName: OE_Caterpillar_Arctic
       - defName: OE_Caterpillar_Brown
       - defName: OE_Caterpillar_Desert
+      - defName: OE_Caterpillar_Tox
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: hootie
     analogue: hide
     bodyShape: Birdlike
@@ -93,6 +99,12 @@ sets:
       - defName: OE_Slime_Neutroamine
       - defName: OE_Slime_Ambrosia
       - defName: OE_Slime_Jumy
+      - defName: OE_Slime_Hemogen
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OE_Slime_Alcrexin
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OE_Slime_Genepack
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: slime_metal
     analogue: megascarab
     bodyShape: QuadrupedLow
@@ -103,6 +115,10 @@ sets:
       - defName: OE_Slime_Jade
       - defName: OE_Slime_Bone
       - defName: OE_Slime_Hauler
+      - defName: OE_Slime_SyntheriusOfSin
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OE_Slime_Bioferrite
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: slime_hard
     analogue: megaspider
     bodyShape: QuadrupedLow
@@ -137,6 +153,10 @@ sets:
       - defName: OE_Mech_OTC_Arachna_Cryo
       - defName: OE_Mech_OTC_Arachna_EMP
       - defName: OE_Mech_OTC_Arachna_Fire
+      - defName: OE_Mech_ArachnaDrone
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OE_Mech_CrimsonArachnaDrone
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: arachna_mech_pikeman
     analogue: pikeman
     bodyShape: QuadrupedLow
@@ -173,20 +193,88 @@ sets:
   - id: chaos_lord
     analogue: diabolus
     bodyShape: Humanoid
+    mayRequire: Ludeon.RimWorld.Biotech
     members:
       - defName: OE_Mech_ChaosLord
   - id: arachna_queen
     analogue: warqueen
     bodyShape: QuadrupedLow
+    mayRequire: Ludeon.RimWorld.Biotech
     members:
       - defName: OE_Mech_ArachnaQueen
   - id: crimson_arachna
     analogue: warqueen_plus
     bodyShape: QuadrupedLow
+    mayRequire: Ludeon.RimWorld.Biotech
     members:
       - defName: OE_Mech_CrimsonArachna
   - id: fallen_legion
     analogue: apocriton_plus
     bodyShape: Humanoid
+    mayRequire: Ludeon.RimWorld.Biotech
     members:
       - defName: OE_Mech_FallenLegion
+  - id: maid
+    analogue: walker
+    bodyShape: Humanoid
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_Maid
+  - id: octo
+    analogue: walker
+    bodyShape: QuadrupedLow
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_Octo
+  - id: legion_drone
+    analogue: walker
+    bodyShape: Humanoid
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_LegionDrone
+  - id: legion_guard
+    analogue: pikeman
+    bodyShape: Humanoid
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Mech_LegionGuard
+  - id: dryad
+    analogue: hide
+    mayRequire: Ludeon.RimWorld.Ideology
+    members:
+      - defName: OE_Dryad_Synthesis
+  - id: cyber_arachna
+    analogue: megaspider
+    bodyShape: QuadrupedLow
+    mayRequire: Ludeon.RimWorld.Anomaly
+    members:
+      - defName: OE_CyberArachna
+  - id: returned
+    analogue: walker
+    bodyShape: Humanoid
+    mayRequire: Ludeon.RimWorld.Anomaly
+    members:
+      - defName: OE_Returned
+  - id: chaos_slime
+    analogue: hide
+    bodyShape: QuadrupedLow
+    mayRequire: Ludeon.RimWorld.Anomaly
+    members:
+      - defName: OE_ChaosSlime_Larval
+      - defName: OE_ChaosSlime_Adult
+      - defName: OE_ChaosSlime_Phantom
+      - defName: OE_ChaosSlime_Resonant
+      - defName: OE_ChaosSlime_Badass
+        analogue: megascarab
+      - defName: OE_ChaosSlime_SuperBadass
+        analogue: megascarab
+      - defName: OE_ChaosSlime_UltimateBadass
+        analogue: megaspider
+      - defName: OE_ChaosSlime_Goliath
+        analogue: megaspider
+      - defName: OE_ChaosSlime_Mut_Goliath
+        analogue: thrumbo
+        bodyShape: QuadrupedTall
+      - defName: OE_ChaosSlime_Invincible
+        analogue: thrumbo
+        bodyShape: QuadrupedTall

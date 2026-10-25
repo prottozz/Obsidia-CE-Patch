@@ -1,3 +1,6 @@
+from pathlib import Path
+
+from oe_ce.constants import ANOMALY_PACKAGE, BIOTECH_PACKAGE, IDEOLOGY_PACKAGE
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
 from oe_ce.race_models import RaceCatalog, RaceMember, RaceSet
@@ -190,3 +193,24 @@ def test_member_may_require_falls_back_to_set():
 def test_load_missing_file_is_empty(tmp_path):
     cat = load_race_catalog(tmp_path)
     assert cat.sets == []
+
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def test_load_repo_catalog_dlc_mayrequire():
+    cat = load_race_catalog(ROOT / "catalog")
+    by_name = {
+        m.def_name: cat.sets[i].member_may_require(m)
+        for i, s in enumerate(cat.sets)
+        for m in s.members
+    }
+    assert by_name["OE_Arachna_Tox"] == BIOTECH_PACKAGE
+    assert by_name["OE_Mech_Maid"] == BIOTECH_PACKAGE
+    assert by_name["OE_ChaosSlime_Invincible"] == ANOMALY_PACKAGE
+    assert by_name["OE_Dryad_Synthesis"] == IDEOLOGY_PACKAGE
+    assert by_name["OE_Mech_ChaosLord"] == BIOTECH_PACKAGE
+    inv = next(m for s in cat.sets for m in s.members if m.def_name == "OE_ChaosSlime_Invincible")
+    s = next(s for s in cat.sets for m in s.members if m.def_name == inv.def_name)
+    assert s.member_analogue(inv) == "thrumbo"
+    assert s.member_body_shape(inv) == "QuadrupedTall"
