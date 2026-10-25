@@ -188,6 +188,30 @@ def test_dryad_is_wrapped_ideology():
     assert f'MayRequire="{IDEOLOGY_PACKAGE}"' in xml
 
 
+def test_hidden_entity_unhides_stats_inside_anomaly_wrap():
+    scanned = {
+        **CORE,
+        "OE_CyberArachna": CoreRace("OE_CyberArachna", ANIMAL, hide_stats=True),
+    }
+    xml = emit_race_xml(
+        [
+            RaceSet(
+                "cyber_arachna",
+                "megaspider",
+                "QuadrupedLow",
+                [RaceMember("OE_CyberArachna")],
+                may_require=ANOMALY_PACKAGE,
+            )
+        ],
+        ANIMAL,
+        scanned,
+        {},
+    )
+    assert "<hideStats>false</hideStats>" in xml
+    assert f'MayRequire="{ANOMALY_PACKAGE}"' in xml
+    assert xml.index("<hideStats>false</hideStats>") > xml.index(f'MayRequire="{ANOMALY_PACKAGE}"')
+
+
 def test_luraxin_is_wrapped_royalty():
     scanned = {**CORE, "OE_Slime_Luraxin": CoreRace("OE_Slime_Luraxin", ANIMAL)}
     xml = emit_race_xml(

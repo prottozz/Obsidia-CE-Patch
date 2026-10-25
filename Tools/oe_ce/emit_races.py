@@ -156,6 +156,15 @@ def _include(member: RaceMember, kind: str, core: dict[str, CoreRace]) -> bool:
     return info is not None and info.kind == kind
 
 
+def _unhide_stats_op(def_name: str) -> str:
+    return f"""  <Operation Class="PatchOperationReplace">
+    <xpath>{thing_xpath(def_name)}/hideStats</xpath>
+    <value>
+      <hideStats>false</hideStats>
+    </value>
+  </Operation>"""
+
+
 def _extension_op(def_name: str, shape: str) -> str:
     return f"""  <Operation Class="PatchOperationAddModExtension">
     <xpath>{thing_xpath(def_name)}</xpath>
@@ -200,6 +209,8 @@ def emit_race_xml(
         parent = info.concrete_parent if info is not None else None
         ops: list[str] = []
         inherit_parent = parent is not None and parent in catalogued
+        if info is not None and info.hide_stats:
+            ops.append(_unhide_stats_op(name))
         if not (inherit_parent and shapes.get(parent) == shape):
             ops.append(_extension_op(name, shape))
         ops.append(ensure_node(name, "statBases"))

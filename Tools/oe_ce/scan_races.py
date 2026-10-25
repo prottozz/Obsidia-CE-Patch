@@ -13,6 +13,7 @@ class CoreRace:
     def_name: str
     kind: str
     concrete_parent: str | None = None
+    hide_stats: bool = False
 
 
 def _races_dir(root: Path, label: str) -> Path:
@@ -40,6 +41,14 @@ def _kind(index: ThingDefIndex, el: ET.Element, def_name: str) -> str:
     return ANIMAL
 
 
+def _hide_stats(index: ThingDefIndex, el: ET.Element) -> bool:
+    for node in walk_parents(index, el):
+        text = node.findtext("hideStats")
+        if text is not None and text.strip():
+            return text.strip().lower() == "true"
+    return False
+
+
 def _concrete_parent(index: ThingDefIndex, el: ET.Element) -> str | None:
     parent_name = el.get("ParentName")
     if not parent_name:
@@ -57,7 +66,12 @@ def _collect(index: ThingDefIndex) -> dict[str, CoreRace]:
             continue
         if not _has_race(index, el):
             continue
-        out[def_name] = CoreRace(def_name, _kind(index, el, def_name), _concrete_parent(index, el))
+        out[def_name] = CoreRace(
+            def_name,
+            _kind(index, el, def_name),
+            _concrete_parent(index, el),
+            _hide_stats(index, el),
+        )
     return out
 
 

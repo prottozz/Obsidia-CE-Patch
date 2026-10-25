@@ -5765,6 +5765,12 @@
     <xpath>Defs/ThingDef[defName="OE_CyberArachna"]</xpath>
     <match Class="PatchOperationSequence">
       <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OE_CyberArachna"]/hideStats</xpath>
+        <value>
+          <hideStats>false</hideStats>
+        </value>
+      </li>
     <li Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef[defName="OE_CyberArachna"]</xpath>
         <value>
@@ -9176,6 +9182,12 @@
     <xpath>Defs/ThingDef[defName="OE_Returned"]</xpath>
     <match Class="PatchOperationSequence">
       <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OE_Returned"]/hideStats</xpath>
+        <value>
+          <hideStats>false</hideStats>
+        </value>
+      </li>
     <li Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef[defName="OE_Returned"]</xpath>
         <value>

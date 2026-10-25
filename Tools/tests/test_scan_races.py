@@ -65,6 +65,7 @@ ANOMALY_FIXTURE = """
   </ThingDef>
   <ThingDef>
     <defName>OE_CyberArachna</defName>
+    <hideStats>true</hideStats>
     <race><fleshType>EntityFlesh</fleshType></race>
   </ThingDef>
 """
@@ -129,6 +130,8 @@ def test_anomaly_entities_are_animals(tmp_path):
     found = scan_races(core, anomaly=anomaly)
     assert found["OE_ChaosSlime_Larval"].kind == ANIMAL
     assert found["OE_CyberArachna"].kind == ANIMAL
+    assert found["OE_CyberArachna"].hide_stats is True
+    assert found["OE_ChaosSlime_Larval"].hide_stats is False
 
 
 def test_ideology_dryad_scanned_abstract_skipped(tmp_path):
