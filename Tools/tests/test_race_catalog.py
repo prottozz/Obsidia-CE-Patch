@@ -107,14 +107,35 @@ def test_load_reads_overrides(tmp_path):
         "  - id: chaos_lord\n"
         "    analogue: diabolus\n"
         "    bodyShape: Humanoid\n"
+        "    mayRequire: Ludeon.RimWorld.Biotech\n"
         "    members:\n"
-        "      - defName: OE_Mech_ChaosLord\n",
+        "      - defName: OE_Mech_ChaosLord\n"
+        "  - id: arachna\n"
+        "    analogue: megaspider\n"
+        "    members:\n"
+        "      - defName: OE_Arachna_Blue\n"
+        "      - defName: OE_Arachna_Tox\n"
+        "        mayRequire: Ludeon.RimWorld.Biotech\n",
         encoding="utf-8",
     )
     cat = load_race_catalog(tmp_path)
     assert cat.sets[0].member_analogue(cat.sets[0].members[1]) == "thrumbo"
     assert cat.sets[1].body_shape == "Humanoid"
     assert cat.sets[1].members[0].def_name == "OE_Mech_ChaosLord"
+    assert cat.sets[1].may_require == "Ludeon.RimWorld.Biotech"
+    assert cat.sets[2].members[1].may_require == "Ludeon.RimWorld.Biotech"
+
+
+def test_member_may_require_falls_back_to_set():
+    s = RaceSet(
+        "chaos_slime",
+        "hide",
+        "QuadrupedLow",
+        [RaceMember("OE_ChaosSlime_Larval"), RaceMember("OE_ChaosSlime_Goliath", may_require="x")],
+        may_require="Ludeon.RimWorld.Anomaly",
+    )
+    assert s.member_may_require(s.members[0]) == "Ludeon.RimWorld.Anomaly"
+    assert s.member_may_require(s.members[1]) == "x"
 
 
 def test_load_missing_file_is_empty(tmp_path):

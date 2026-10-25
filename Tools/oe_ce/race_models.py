@@ -23,6 +23,7 @@ class RaceMember:
     analogue: str | None = None
     body_shape: str | None = None
     tools: list[RaceTool] | None = None
+    may_require: str | None = None
 
 
 @dataclass
@@ -31,6 +32,7 @@ class RaceSet:
     analogue: str
     body_shape: str | None = None
     members: list[RaceMember] = field(default_factory=list)
+    may_require: str | None = None
 
     def member_analogue(self, member: RaceMember) -> str:
         return member.analogue or self.analogue
@@ -41,6 +43,9 @@ class RaceSet:
         if self.body_shape:
             return self.body_shape
         return race_stats(self.member_analogue(member)).body_shape
+
+    def member_may_require(self, member: RaceMember) -> str | None:
+        return member.may_require or self.may_require
 
 
 @dataclass
