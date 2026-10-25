@@ -79,6 +79,15 @@ IDEOLOGY_FIXTURE = """
   </ThingDef>
 """
 
+ROYALTY_FIXTURE = """
+  <ThingDef Name="OEBaseLiquidSlime" Abstract="True">
+    <race><fleshType>Flesh</fleshType></race>
+  </ThingDef>
+  <ThingDef ParentName="OEBaseLiquidSlime">
+    <defName>OE_Slime_Luraxin</defName>
+  </ThingDef>
+"""
+
 
 def _write_races(root: Path, body: str) -> Path:
     races = root / "Defs" / "ThingDefs_Races"
@@ -149,6 +158,21 @@ def test_biotech_missing_is_core_only(tmp_path):
     core = _write_races(tmp_path, FIXTURE)
     found = scan_races(core, tmp_path / "nope")
     assert "OE_Mech_ChaosLord" not in found
+    assert "OE_Direwolf" in found
+
+
+def test_royalty_slime_scanned_when_royalty_passed(tmp_path):
+    core = _write_races(tmp_path / "core", FIXTURE)
+    roy = _write_races(tmp_path / "roy", ROYALTY_FIXTURE)
+    found = scan_races(core, royalty=roy)
+    assert "OE_Slime_Luraxin" in found
+    assert found["OE_Slime_Luraxin"].kind == ANIMAL
+
+
+def test_royalty_missing_is_core_only(tmp_path):
+    core = _write_races(tmp_path, FIXTURE)
+    found = scan_races(core)
+    assert "OE_Slime_Luraxin" not in found
     assert "OE_Direwolf" in found
 
 

@@ -9,6 +9,7 @@ from oe_ce.scan_races import CoreRace
 BIOTECH_PACKAGE = "Ludeon.RimWorld.Biotech"
 ANOMALY_PACKAGE = "Ludeon.RimWorld.Anomaly"
 IDEOLOGY_PACKAGE = "Ludeon.RimWorld.Ideology"
+ROYALTY_PACKAGE = "Ludeon.RimWorld.Royalty"
 
 CORE = {
     "OE_Direwolf": CoreRace("OE_Direwolf", ANIMAL),
@@ -185,6 +186,25 @@ def test_dryad_is_wrapped_ideology():
     )
     assert "<ArmorRating_Sharp>0.05</ArmorRating_Sharp>" in xml
     assert f'MayRequire="{IDEOLOGY_PACKAGE}"' in xml
+
+
+def test_luraxin_is_wrapped_royalty():
+    scanned = {**CORE, "OE_Slime_Luraxin": CoreRace("OE_Slime_Luraxin", ANIMAL)}
+    xml = emit_race_xml(
+        [
+            RaceSet(
+                "slime_soft",
+                "hide",
+                "QuadrupedLow",
+                [RaceMember("OE_Slime_Luraxin", may_require=ROYALTY_PACKAGE)],
+            )
+        ],
+        ANIMAL,
+        scanned,
+        {},
+    )
+    assert "<ArmorRating_Sharp>0.05</ArmorRating_Sharp>" in xml
+    assert f'MayRequire="{ROYALTY_PACKAGE}"' in xml
 
 
 def test_core_only_emit_omits_unscanned_optional_members():

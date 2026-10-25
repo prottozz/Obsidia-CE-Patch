@@ -75,8 +75,9 @@ def scan_races(
     biotech: Path | None = None,
     anomaly: Path | None = None,
     ideology: Path | None = None,
+    royalty: Path | None = None,
 ) -> dict[str, CoreRace]:
     xml_paths = sorted(_races_dir(core, "Core").rglob("*.xml"))
-    for root in (biotech, anomaly, ideology):
+    for root in (biotech, anomaly, ideology, royalty):
         xml_paths.extend(_optional_race_xmls(root))
     return _collect(index_thingdefs(xml_paths))

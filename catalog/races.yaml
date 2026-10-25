@@ -105,6 +105,8 @@ sets:
         mayRequire: Ludeon.RimWorld.Biotech
       - defName: OE_Slime_Genepack
         mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OE_Slime_Luraxin
+        mayRequire: Ludeon.RimWorld.Royalty
   - id: slime_metal
     analogue: megascarab
     bodyShape: QuadrupedLow

@@ -17,6 +17,7 @@ from oe_ce.constants import (
     DEFAULT_OBSIDIA_ROYALTY,
     DEFAULT_OBSIDIA_VEF,
     IDEOLOGY_PACKAGE,
+    ROYALTY_PACKAGE,
 )
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
@@ -83,13 +84,14 @@ def generate(root: Path) -> None:
     isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
     errors = validate_catalog(cat, scan_core_ranged(core))
     errors += validate_apparel_catalog(apparel, core_apparel)
-    core_races = scan_races(core, bio, anomaly, ideology)
+    core_races = scan_races(core, bio, anomaly, ideology, royalty)
     present_packages = frozenset(
         pkg
         for path, pkg in (
             (bio, BIOTECH_PACKAGE),
             (anomaly, ANOMALY_PACKAGE),
             (ideology, IDEOLOGY_PACKAGE),
+            (royalty, ROYALTY_PACKAGE),
         )
         if path is not None
     )
@@ -131,7 +133,7 @@ def generate(root: Path) -> None:
         root / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
         emit_grenade_belt_xml(),
     )
-    race_tools = collect_race_tools(core, bio, anomaly, ideology)
+    race_tools = collect_race_tools(core, bio, anomaly, ideology, royalty)
     _write(
         root / "Patches" / "Races" / "OE_Animals.xml",
         emit_race_xml(races.sets, ANIMAL, core_races, race_tools),

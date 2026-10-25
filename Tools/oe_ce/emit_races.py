@@ -51,9 +51,10 @@ def collect_race_tools(
     biotech: Path | None = None,
     anomaly: Path | None = None,
     ideology: Path | None = None,
+    royalty: Path | None = None,
 ) -> dict[str, list[RaceTool]]:
     paths = sorted((core / "Defs" / "ThingDefs_Races").rglob("*.xml"))
-    for root in (biotech, anomaly, ideology):
+    for root in (biotech, anomaly, ideology, royalty):
         if root is None:
             continue
         races = root / "Defs" / "ThingDefs_Races"

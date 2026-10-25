@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from oe_ce.constants import ANOMALY_PACKAGE, BIOTECH_PACKAGE, IDEOLOGY_PACKAGE
+from oe_ce.constants import ANOMALY_PACKAGE, BIOTECH_PACKAGE, IDEOLOGY_PACKAGE, ROYALTY_PACKAGE
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
 from oe_ce.race_models import RaceCatalog, RaceMember, RaceSet
@@ -209,6 +209,7 @@ def test_load_repo_catalog_dlc_mayrequire():
     assert by_name["OE_Mech_Maid"] == BIOTECH_PACKAGE
     assert by_name["OE_ChaosSlime_Invincible"] == ANOMALY_PACKAGE
     assert by_name["OE_Dryad_Synthesis"] == IDEOLOGY_PACKAGE
+    assert by_name["OE_Slime_Luraxin"] == ROYALTY_PACKAGE
     assert by_name["OE_Mech_ChaosLord"] == BIOTECH_PACKAGE
     inv = next(m for s in cat.sets for m in s.members if m.def_name == "OE_ChaosSlime_Invincible")
     s = next(s for s in cat.sets for m in s.members if m.def_name == inv.def_name)
