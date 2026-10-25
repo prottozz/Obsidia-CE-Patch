@@ -6,6 +6,10 @@ from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_races import CoreRace
 
+BIOTECH_PACKAGE = "Ludeon.RimWorld.Biotech"
+ANOMALY_PACKAGE = "Ludeon.RimWorld.Anomaly"
+IDEOLOGY_PACKAGE = "Ludeon.RimWorld.Ideology"
+
 CORE = {
     "OE_Direwolf": CoreRace("OE_Direwolf", ANIMAL),
     "OE_Direwolf_Pup": CoreRace("OE_Direwolf_Pup", ANIMAL, "OE_Direwolf"),
@@ -92,10 +96,22 @@ def test_child_of_catalogued_parent_gets_stats_but_no_second_extension():
 
 
 def test_biotech_boss_is_wrapped_with_mayrequire():
+    scanned = {
+        **CORE,
+        "OE_Mech_ChaosLord": CoreRace("OE_Mech_ChaosLord", MECHANOID),
+    }
     xml = emit_race_xml(
-        [RaceSet("chaos_lord", "diabolus", "Humanoid", [RaceMember("OE_Mech_ChaosLord")])],
+        [
+            RaceSet(
+                "chaos_lord",
+                "diabolus",
+                "Humanoid",
+                [RaceMember("OE_Mech_ChaosLord")],
+                may_require=BIOTECH_PACKAGE,
+            )
+        ],
         MECHANOID,
-        CORE,
+        scanned,
         {},
     )
     assert 'MayRequire="Ludeon.RimWorld.Biotech"' in xml
@@ -114,6 +130,71 @@ def test_biotech_boss_is_wrapped_with_mayrequire():
     for child in children:
         assert child.tag == "li", child.tag
         assert child.get("Class")
+
+
+def test_maid_walker_is_wrapped_biotech():
+    scanned = {**CORE, "OE_Mech_Maid": CoreRace("OE_Mech_Maid", MECHANOID)}
+    xml = emit_race_xml(
+        [RaceSet("maid", "walker", "Humanoid", [RaceMember("OE_Mech_Maid")], may_require=BIOTECH_PACKAGE)],
+        MECHANOID,
+        scanned,
+        {},
+    )
+    assert "<ArmorRating_Sharp>4</ArmorRating_Sharp>" in xml
+    assert "<bodyShape>Humanoid</bodyShape>" in xml
+    assert f'MayRequire="{BIOTECH_PACKAGE}"' in xml
+    inner = xml.split("<operations>")[1].split("</operations>")[0]
+    assert "<li Class=" in inner
+    assert "<Operation Class=" not in inner
+
+
+def test_invincible_slime_is_wrapped_anomaly():
+    scanned = {**CORE, "OE_ChaosSlime_Invincible": CoreRace("OE_ChaosSlime_Invincible", ANIMAL)}
+    xml = emit_race_xml(
+        [
+            RaceSet(
+                "chaos_slime",
+                "hide",
+                "QuadrupedLow",
+                [
+                    RaceMember(
+                        "OE_ChaosSlime_Invincible",
+                        analogue="thrumbo",
+                        body_shape="QuadrupedTall",
+                    )
+                ],
+                may_require=ANOMALY_PACKAGE,
+            )
+        ],
+        ANIMAL,
+        scanned,
+        {},
+    )
+    assert "<ArmorRating_Sharp>14</ArmorRating_Sharp>" in xml
+    assert "<bodyShape>QuadrupedTall</bodyShape>" in xml
+    assert f'MayRequire="{ANOMALY_PACKAGE}"' in xml
+
+
+def test_dryad_is_wrapped_ideology():
+    scanned = {**CORE, "OE_Dryad_Synthesis": CoreRace("OE_Dryad_Synthesis", ANIMAL)}
+    xml = emit_race_xml(
+        [RaceSet("dryad", "hide", members=[RaceMember("OE_Dryad_Synthesis")], may_require=IDEOLOGY_PACKAGE)],
+        ANIMAL,
+        scanned,
+        {},
+    )
+    assert "<ArmorRating_Sharp>0.05</ArmorRating_Sharp>" in xml
+    assert f'MayRequire="{IDEOLOGY_PACKAGE}"' in xml
+
+
+def test_core_only_emit_omits_unscanned_optional_members():
+    xml = emit_race_xml(
+        [RaceSet("maid", "walker", "Humanoid", [RaceMember("OE_Mech_Maid")], may_require=BIOTECH_PACKAGE)],
+        MECHANOID,
+        CORE,
+        {},
+    )
+    assert "OE_Mech_Maid" not in xml
 
 
 def _write_races(root: Path, body: str) -> Path:

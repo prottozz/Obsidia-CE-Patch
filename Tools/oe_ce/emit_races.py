@@ -3,22 +3,11 @@ from __future__ import annotations
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from oe_ce.constants import BIOTECH_PACKAGE
 from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath, wrap_optional_def
 from oe_ce.race_analogues import ANIMAL, MECHANOID, race_stats
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_obsidia import index_thingdefs, walk_parents
 from oe_ce.scan_races import CoreRace
-
-# TODO(slice-6): remove when emit no longer gates on boss allow-list
-BIOTECH_BOSSES = frozenset(
-    {
-        "OE_Mech_ChaosLord",
-        "OE_Mech_ArachnaQueen",
-        "OE_Mech_CrimsonArachna",
-        "OE_Mech_FallenLegion",
-    }
-)
 
 SHARP_CAPACITIES = frozenset({"Scratch", "Bite", "Cut", "Stab", "Poke"})
 _HANDLED_TOOL_TAGS = frozenset(
@@ -156,9 +145,7 @@ def _durability_xml(kind: str, durability: int) -> str:
 
 def _include(member: RaceMember, kind: str, core: dict[str, CoreRace]) -> bool:
     info = core.get(member.def_name)
-    if info is not None:
-        return info.kind == kind
-    return kind == MECHANOID and member.def_name in BIOTECH_BOSSES
+    return info is not None and info.kind == kind
 
 
 def _extension_op(def_name: str, shape: str) -> str:
@@ -182,10 +169,6 @@ def _durability_ops(def_name: str, kind: str, durability: int) -> list[str]:
     </value>
   </Operation>""",
     ]
-
-
-def _wrap_biotech(ops: list[str], def_name: str) -> str:
-    return wrap_optional_def(ops, BIOTECH_PACKAGE, def_name)
 
 
 def emit_race_xml(
@@ -224,8 +207,9 @@ def emit_race_xml(
             ops.append(_tools_op(name, tool_rows))
         if not inherit_parent:
             ops.extend(_durability_ops(name, kind, stats.durability))
-        if name in BIOTECH_BOSSES:
-            blocks.append(_wrap_biotech(ops, name))
+        pkg = race_set.member_may_require(member)
+        if pkg:
+            blocks.append(wrap_optional_def(ops, pkg, name))
         else:
             blocks.extend(ops)
     inner = "\n".join(blocks)
