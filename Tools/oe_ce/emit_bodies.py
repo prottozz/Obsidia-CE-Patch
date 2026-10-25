@@ -10,16 +10,22 @@ MECHANOID = "mechanoid"
 NATURAL_ARMOR = "CoveredByNaturalArmor"
 
 SCYTHER_DEFS = frozenset({
-    "MechanicalNeck", "MechanicalHead", "OEMechanicalHead",
+    "MechanicalNeck", "MechanicalHead", "MechanicalThoraxCanManipulate",
+    "OEMechanicalHead", "OEMechanicalHeadLarge", "OEMechanicalThorax",
+    "OEMechanicalThoraxLarge",
     "SightSensor", "HearingSensor", "SmellSensor",
     "MechanicalShoulder", "MechanicalArm", "MechanicalHand", "MechanicalFinger",
     "MechanicalLeg", "MechanicalFoot",
+    "OEMechanicalShoulder", "OEMechanicalArm", "OEMechanicalHand", "OEMechanicalFinger",
+    "OEMechanicalLeg", "OEMechanicalLegLarge", "OEMechanicalFoot", "OEMechanicalFootLarge",
     "Reactor", "FluidReprocessor",
 })
 
 LANCER_COVERAGE = {
     "MechanicalShoulder": 0.15,
     "MechanicalLeg": 0.18,
+    "OEMechanicalShoulder": 0.15,
+    "OEMechanicalLeg": 0.18,
     "FluidReprocessor": 0.05,
 }
 
