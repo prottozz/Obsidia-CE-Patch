@@ -23,17 +23,30 @@ def _good() -> RaceCatalog:
                 ],
             ),
             RaceSet("crusader", "centipede", "Humanoid", [RaceMember("OE_Mech_DarkCrusader")]),
-            RaceSet("chaos_lord", "diabolus", "Humanoid", [RaceMember("OE_Mech_ChaosLord")]),
-            RaceSet("arachna_queen", "warqueen", members=[RaceMember("OE_Mech_ArachnaQueen")]),
+            RaceSet(
+                "chaos_lord",
+                "diabolus",
+                "Humanoid",
+                [RaceMember("OE_Mech_ChaosLord")],
+                may_require="Ludeon.RimWorld.Biotech",
+            ),
+            RaceSet(
+                "arachna_queen",
+                "warqueen",
+                members=[RaceMember("OE_Mech_ArachnaQueen")],
+                may_require="Ludeon.RimWorld.Biotech",
+            ),
             RaceSet(
                 "crimson_arachna",
                 "warqueen_plus",
                 members=[RaceMember("OE_Mech_CrimsonArachna")],
+                may_require="Ludeon.RimWorld.Biotech",
             ),
             RaceSet(
                 "fallen_legion",
                 "apocriton_plus",
                 members=[RaceMember("OE_Mech_FallenLegion")],
+                may_require="Ludeon.RimWorld.Biotech",
             ),
         ]
     )
@@ -88,11 +101,47 @@ def test_excluded_bullet_catalogued_is_error():
     assert any("Bullet_Bruul_Acid" in e and "not an in-scope" in e for e in errs)
 
 
-def test_missing_biotech_boss_is_error_even_without_scan():
-    cat = _good()
-    cat.sets = [s for s in cat.sets if s.id != "chaos_lord"]
-    errs = validate_race_catalog(cat, CORE)
-    assert "Biotech boss defName not in catalog: OE_Mech_ChaosLord" in errs
+def test_optional_member_absent_from_scan_is_ok_when_package_missing():
+    cat = RaceCatalog(sets=[
+        RaceSet("direwolf", "warg", members=[RaceMember("OE_Direwolf"), RaceMember("OE_Elder_Direwolf")]),
+        RaceSet("crusader", "centipede", "Humanoid", [RaceMember("OE_Mech_DarkCrusader")]),
+        RaceSet(
+            "maid",
+            "walker",
+            "Humanoid",
+            [RaceMember("OE_Mech_Maid")],
+            may_require="Ludeon.RimWorld.Biotech",
+        ),
+    ])
+    assert validate_race_catalog(cat, CORE) == []
+
+
+def test_optional_member_missing_from_present_tree_is_error():
+    cat = RaceCatalog(sets=[
+        RaceSet("direwolf", "warg", members=[RaceMember("OE_Direwolf"), RaceMember("OE_Elder_Direwolf")]),
+        RaceSet("crusader", "centipede", "Humanoid", [RaceMember("OE_Mech_DarkCrusader")]),
+        RaceSet(
+            "maid",
+            "walker",
+            "Humanoid",
+            [RaceMember("OE_Mech_Maid")],
+            may_require="Ludeon.RimWorld.Biotech",
+        ),
+    ])
+    errs = validate_race_catalog(
+        cat, CORE, present_packages=frozenset({"Ludeon.RimWorld.Biotech"})
+    )
+    assert any("OE_Mech_Maid" in e and "not an in-scope" in e for e in errs)
+
+
+def test_scanned_dlc_race_must_be_catalogued():
+    scanned = dict(CORE)
+    scanned["OE_Mech_Maid"] = CoreRace("OE_Mech_Maid", MECHANOID)
+    cat = _good()  # no Maid
+    errs = validate_race_catalog(
+        cat, scanned, present_packages=frozenset({"Ludeon.RimWorld.Biotech"})
+    )
+    assert any("OE_Mech_Maid" in e and "not in catalog" in e for e in errs)
 
 
 def test_load_reads_overrides(tmp_path):
