@@ -2,6 +2,9 @@ from pathlib import Path
 
 from oe_ce.body_load import load_body_catalog
 from oe_ce.body_models import BODY_ANALOGUES
+from oe_ce.constants import ANOMALY_PACKAGE, BIOTECH_PACKAGE
+
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def test_load_reads_mayrequire(tmp_path):
@@ -30,3 +33,14 @@ def test_analogue_keys_are_the_six():
     assert BODY_ANALOGUES == frozenset(
         {"beetle", "quadruped", "fingerspike", "scyther", "lancer", "human"}
     )
+
+
+def test_load_repo_catalog_bodies():
+    cat = load_body_catalog(ROOT / "catalog")
+    by_name = {b.def_name: b for b in cat.bodies}
+    assert by_name["OEDominator"].analogue == "lancer"
+    assert by_name["OEMechanicalOcto"].may_require == BIOTECH_PACKAGE
+    assert by_name["OECyberArachnaLike"].analogue == "beetle"
+    assert by_name["OEReturnedLike"].may_require == ANOMALY_PACKAGE
+    assert by_name["OESlimeLike"].analogue == "fingerspike"
+    assert len(by_name) == 14
