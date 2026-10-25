@@ -46,12 +46,19 @@ def convert_tool_element(li: ET.Element) -> RaceTool:
     )
 
 
-def collect_race_tools(core: Path, biotech: Path | None = None) -> dict[str, list[RaceTool]]:
+def collect_race_tools(
+    core: Path,
+    biotech: Path | None = None,
+    anomaly: Path | None = None,
+    ideology: Path | None = None,
+) -> dict[str, list[RaceTool]]:
     paths = sorted((core / "Defs" / "ThingDefs_Races").rglob("*.xml"))
-    if biotech is not None:
-        bio = biotech / "Defs" / "ThingDefs_Races"
-        if bio.is_dir():
-            paths += sorted(bio.rglob("*.xml"))
+    for root in (biotech, anomaly, ideology):
+        if root is None:
+            continue
+        races = root / "Defs" / "ThingDefs_Races"
+        if races.is_dir():
+            paths += sorted(races.rglob("*.xml"))
     index = index_thingdefs(paths)
     out: dict[str, list[RaceTool]] = {}
     for def_name, el in index.by_def.items():

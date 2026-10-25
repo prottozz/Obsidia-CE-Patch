@@ -326,3 +326,36 @@ def test_kind_filter_and_sorted_patch():
     assert root.tag == "Patch"
     assert "OE_Direwolf" not in xml
     assert xml.index('defName="OE_Mech_DarkCrusader"') < xml.index('defName="OE_Mech_OCC_Dominator"')
+
+
+def test_collect_race_tools_reads_anomaly_tree(tmp_path):
+    core = tmp_path / "core"
+    (core / "Defs" / "ThingDefs_Races").mkdir(parents=True)
+    (core / "Defs" / "ThingDefs_Races" / "Core.xml").write_text(
+        '<?xml version="1.0"?><Defs><ThingDef><defName>OE_Direwolf</defName><race /></ThingDef></Defs>',
+        encoding="utf-8",
+    )
+    anomaly = tmp_path / "anomaly"
+    (anomaly / "Defs" / "ThingDefs_Races").mkdir(parents=True)
+    (anomaly / "Defs" / "ThingDefs_Races" / "A.xml").write_text(
+        """<?xml version="1.0"?>
+<Defs>
+  <ThingDef>
+    <defName>OE_Returned</defName>
+    <race />
+    <tools>
+      <li>
+        <label>claw</label>
+        <capacities><li>Scratch</li></capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
+""",
+        encoding="utf-8",
+    )
+    tools = collect_race_tools(core, anomaly=anomaly)
+    assert tools["OE_Returned"][0].armor_penetration_sharp == 0.2

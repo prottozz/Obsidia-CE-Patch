@@ -129,9 +129,34 @@ def test_generate_fails_without_core_weapons(tmp_path, monkeypatch):
 
 def test_generate_writes_race_patches(tmp_path, monkeypatch):
     shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    race_yaml = tmp_path / "catalog" / "races.yaml"
+    race_yaml.write_text(
+        race_yaml.read_text(encoding="utf-8").replace(
+            "  - id: chaos_lord\n    analogue: diabolus",
+            "  - id: chaos_lord\n    analogue: diabolus\n    mayRequire: Ludeon.RimWorld.Biotech",
+        ),
+        encoding="utf-8",
+    )
     core = tmp_path / "fake_core"
     _write_minimal_core(core)
+    biotech = tmp_path / "fake_biotech"
+    races = biotech / "Defs" / "ThingDefs_Races"
+    races.mkdir(parents=True)
+    (races / "Mechs.xml").write_text(
+        """<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>OE_Mech_ChaosLord</defName>
+    <race><fleshType>Mechanoid</fleshType></race>
+  </ThingDef>
+</Defs>
+""",
+        encoding="utf-8",
+    )
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    monkeypatch.setenv("OBSIDIA_BIOTECH", str(biotech))
+    monkeypatch.setenv("OBSIDIA_ANOMALY", str(tmp_path / "no_anomaly"))
+    monkeypatch.setenv("OBSIDIA_IDEOLOGY", str(tmp_path / "no_ideology"))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
     animals = (tmp_path / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
