@@ -61,13 +61,13 @@ def _collect(index: ThingDefIndex) -> dict[str, CoreRace]:
     return out
 
 
-def _merge_optional(out: dict[str, CoreRace], root: Path | None, label: str) -> None:
+def _optional_race_xmls(root: Path | None) -> list[Path]:
     if root is None:
-        return
+        return []
     races = root / "Defs" / "ThingDefs_Races"
     if not races.is_dir():
-        return
-    out.update(_collect(index_thingdefs(sorted(races.rglob("*.xml")))))
+        return []
+    return sorted(races.rglob("*.xml"))
 
 
 def scan_races(
@@ -76,9 +76,7 @@ def scan_races(
     anomaly: Path | None = None,
     ideology: Path | None = None,
 ) -> dict[str, CoreRace]:
-    index = index_thingdefs(sorted(_races_dir(core, "Core").rglob("*.xml")))
-    out = _collect(index)
-    _merge_optional(out, biotech, "Biotech")
-    _merge_optional(out, anomaly, "Anomaly")
-    _merge_optional(out, ideology, "Ideology")
-    return out
+    xml_paths = sorted(_races_dir(core, "Core").rglob("*.xml"))
+    for root in (biotech, anomaly, ideology):
+        xml_paths.extend(_optional_race_xmls(root))
+    return _collect(index_thingdefs(xml_paths))

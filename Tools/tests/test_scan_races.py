@@ -130,6 +130,21 @@ def test_ideology_dryad_scanned_abstract_skipped(tmp_path):
     assert "OE_AwakenedDryad_Synthesis" not in found
 
 
+BIO_INHERITED_RACE_FIXTURE = """
+  <ThingDef ParentName="OEBaseBeast">
+    <defName>OE_Scorpid_Tox</defName>
+  </ThingDef>
+"""
+
+
+def test_biotech_race_inherited_from_core_parent(tmp_path):
+    core = _write_races(tmp_path / "core", FIXTURE)
+    bio = _write_races(tmp_path / "bio", BIO_INHERITED_RACE_FIXTURE)
+    found = scan_races(core, bio)
+    assert "OE_Scorpid_Tox" in found
+    assert found["OE_Scorpid_Tox"].kind == ANIMAL
+
+
 def test_biotech_missing_is_core_only(tmp_path):
     core = _write_races(tmp_path, FIXTURE)
     found = scan_races(core, tmp_path / "nope")
