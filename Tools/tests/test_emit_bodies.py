@@ -34,7 +34,8 @@ def test_beetle_natural_armor_skips_inside_organs():
 
 def test_dominator_lancer_leg_coverage_unwrapped():
     leg = _part("MechanicalLeg", 'corePart/parts/li[def="MechanicalLeg"]')
-    core = _part("MechanicalThorax", "corePart", children=[leg])
+    oe_leg = _part("OEMechanicalLeg", 'corePart/parts/li[def="OEMechanicalLeg"]')
+    core = _part("MechanicalThorax", "corePart", children=[leg, oe_leg])
     xml = emit_body_xml(
         [BodyEntry("OEDominator", "lancer")],
         {"OEDominator": _body("OEDominator", core)},
@@ -42,8 +43,40 @@ def test_dominator_lancer_leg_coverage_unwrapped():
     )
     assert "<coverage>0.18</coverage>" in xml
     assert 'corePart/parts/li[def="MechanicalLeg"]' in xml
+    assert 'corePart/parts/li[def="OEMechanicalLeg"]/coverage' in xml
     assert "MayRequire" not in xml
     assert 'defName="OEDominator"' in xml
+
+
+def _covered_by_natural_armor_add(xml: str, groups_xpath: str) -> int:
+    block = (
+        '  <Operation Class="PatchOperationAdd">\n'
+        f"    <xpath>{groups_xpath}</xpath>\n"
+        "    <value>\n"
+        "      <li>CoveredByNaturalArmor</li>\n"
+        "    </value>\n"
+        "  </Operation>"
+    )
+    return xml.count(block)
+
+
+def test_lancer_duplicate_fluid_reprocessor_xpath_emits_once():
+    xp = 'corePart/parts/li[def="FluidReprocessor"]'
+    fluids = [_part("FluidReprocessor", xp), _part("FluidReprocessor", xp)]
+    core = _part("OEMechanicalThorax", "corePart", children=fluids)
+    xml = emit_body_xml(
+        [BodyEntry("OEDominator", "lancer")],
+        {"OEDominator": _body("OEDominator", core)},
+        MECHANOID,
+    )
+    groups = (
+        'Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups'
+    )
+    assert _covered_by_natural_armor_add(xml, groups) == 1
+    fluid_cov = (
+        'Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/coverage'
+    )
+    assert xml.count(f"<xpath>{fluid_cov}</xpath>") == 2
 
 
 def test_octo_scyther_wrapped_biotech():
@@ -87,3 +120,8 @@ def test_returned_keeps_custom_limb_group_and_adds_leftarm():
     assert "OE_ReturnedLeftLimb" in xml
     assert "LeftArm" in xml
     assert 'corePart/parts/li[def="OEReturnedArm"]/groups' in xml
+    assert (
+        '<nomatch Class="PatchOperationTest">\n      <xpath>Defs</xpath>\n    </nomatch>'
+        in xml
+    )
+    assert 'groups/li[.="OE_ReturnedLeftLimb"]' in xml

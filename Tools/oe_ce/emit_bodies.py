@@ -102,7 +102,7 @@ def _add_group_when_marker(body: str, xpath: str, marker: str, group: str) -> st
       </operations>
     </match>
     <nomatch Class="PatchOperationTest">
-      <xpath>{marker_path}</xpath>
+      <xpath>Defs</xpath>
     </nomatch>
   </Operation>'''
 
@@ -120,34 +120,53 @@ def _natural_armor_ops(body: str, part: BodyPart) -> list[str]:
 
 def _beetle_ops(body: str, root: BodyPart) -> list[str]:
     ops: list[str] = []
+    seen_xpaths: set[str] = set()
     for part in _iter_parts(root):
         if part.xpath == "corePart" or _outside(part):
+            if part.xpath in seen_xpaths:
+                continue
+            seen_xpaths.add(part.xpath)
             ops.extend(_natural_armor_ops(body, part))
     return ops
 
 
 def _scyther_ops(body: str, root: BodyPart) -> list[str]:
     ops: list[str] = []
+    seen_xpaths: set[str] = set()
     for part in _iter_parts(root):
         if part.xpath == "corePart" or (part.def_name and part.def_name in SCYTHER_DEFS):
+            if part.xpath in seen_xpaths:
+                continue
+            seen_xpaths.add(part.xpath)
             ops.extend(_natural_armor_ops(body, part))
     return ops
 
 
 def _lancer_ops(body: str, root: BodyPart) -> list[str]:
     ops = _scyther_ops(body, root)
+    seen_coverage: set[str] = set()
     for part in _iter_parts(root):
         if part.def_name and part.def_name in LANCER_COVERAGE:
+            if part.xpath in seen_coverage:
+                continue
+            seen_coverage.add(part.xpath)
             ops.append(_set_coverage(body, part.xpath, LANCER_COVERAGE[part.def_name]))
     return ops
 
 
 def _human_ops(body: str, root: BodyPart) -> list[str]:
     ops: list[str] = []
+    seen_armor: set[str] = set()
+    seen_coverage: set[str] = set()
     for part in _iter_parts(root):
         if _outside(part):
-            ops.extend(_natural_armor_ops(body, part))
+            if part.xpath not in seen_armor:
+                seen_armor.add(part.xpath)
+                ops.extend(_natural_armor_ops(body, part))
         if part.def_name and part.def_name in HUMAN_COVERAGE:
+            if part.xpath in seen_coverage:
+                continue
+            seen_coverage.add(part.xpath)
             ops.append(_set_coverage(body, part.xpath, HUMAN_COVERAGE[part.def_name]))
         label_key = (part.custom_label or "").lower()
         if label_key in HUMAN_ARM_LABELS:
@@ -163,8 +182,12 @@ def _human_ops(body: str, root: BodyPart) -> list[str]:
 
 def _quadruped_ops(body: str, root: BodyPart) -> list[str]:
     ops: list[str] = []
+    seen_xpaths: set[str] = set()
     for part in _iter_parts(root):
         if part.xpath == "corePart" or (part.def_name and part.def_name in QUAD_DEFS):
+            if part.xpath in seen_xpaths:
+                continue
+            seen_xpaths.add(part.xpath)
             ops.extend(_natural_armor_ops(body, part))
     return ops
 

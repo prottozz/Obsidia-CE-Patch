@@ -1779,7 +1779,7 @@
           </operations>
         </match>
         <nomatch Class="PatchOperationTest">
-          <xpath>Defs/BodyDef[defName="OEReturnedLike"]/corePart/parts/li[customLabel="left shoulder"]/parts/li[customLabel="left arachna arm"]/groups/li[.="OE_ReturnedLeftLimb"]</xpath>
+          <xpath>Defs</xpath>
         </nomatch>
       </li>
     <li Class="PatchOperationConditional">
@@ -1894,7 +1894,7 @@
           </operations>
         </match>
         <nomatch Class="PatchOperationTest">
-          <xpath>Defs/BodyDef[defName="OEReturnedLike"]/corePart/parts/li[customLabel="right shoulder"]/parts/li[customLabel="right arachna arm"]/groups/li[.="OE_ReturnedRightLimb"]</xpath>
+          <xpath>Defs</xpath>
         </nomatch>
       </li>
     <li Class="PatchOperationConditional">

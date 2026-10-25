@@ -505,24 +505,6 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-    <match Class="PatchOperationTest">
-      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-    </match>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
-      <value>
-        <groups />
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-    <value>
-      <li>CoveredByNaturalArmor</li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
     <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/coverage</xpath>
     <match Class="PatchOperationReplace">
       <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/coverage</xpath>
@@ -598,21 +580,6 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/coverage</xpath>
-    <match Class="PatchOperationReplace">
-      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/coverage</xpath>
-      <value>
-        <coverage>0.05</coverage>
-      </value>
-    </match>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
-      <value>
-        <coverage>0.05</coverage>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
     <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/groups</xpath>
     <match Class="PatchOperationTest">
       <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/groups</xpath>
@@ -644,24 +611,6 @@
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="Reactor"]/groups</xpath>
-    <value>
-      <li>CoveredByNaturalArmor</li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-    <match Class="PatchOperationTest">
-      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-    </match>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
-      <value>
-        <groups />
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
     <value>
       <li>CoveredByNaturalArmor</li>
     </value>
@@ -1049,24 +998,6 @@
         </value>
       </li>
     <li Class="PatchOperationConditional">
-        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        <match Class="PatchOperationTest">
-          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
-          <value>
-            <groups />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAdd">
-        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        <value>
-          <li>CoveredByNaturalArmor</li>
-        </value>
-      </li>
-    <li Class="PatchOperationConditional">
         <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
         <match Class="PatchOperationTest">
           <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
@@ -1342,24 +1273,6 @@
       </li>
     <li Class="PatchOperationAdd">
         <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="Reactor"]/groups</xpath>
-        <value>
-          <li>CoveredByNaturalArmor</li>
-        </value>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        <match Class="PatchOperationTest">
-          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
-          <value>
-            <groups />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAdd">
-        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
         <value>
           <li>CoveredByNaturalArmor</li>
         </value>
@@ -1730,24 +1643,6 @@
       </li>
     <li Class="PatchOperationAdd">
         <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="Reactor"]/groups</xpath>
-        <value>
-          <li>CoveredByNaturalArmor</li>
-        </value>
-      </li>
-    <li Class="PatchOperationConditional">
-        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        <match Class="PatchOperationTest">
-          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
-          <value>
-            <groups />
-          </value>
-        </nomatch>
-      </li>
-    <li Class="PatchOperationAdd">
-        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
         <value>
           <li>CoveredByNaturalArmor</li>
         </value>
