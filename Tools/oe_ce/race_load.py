@@ -27,6 +27,7 @@ def _member(raw: dict) -> RaceMember:
         analogue=raw.get("analogue"),
         body_shape=raw.get("bodyShape"),
         tools=[_tool(t) for t in tools] if tools is not None else None,
+        may_require=raw.get("mayRequire"),
     )
 
 
@@ -43,6 +44,7 @@ def load_race_catalog(catalog_dir: Path) -> RaceCatalog:
                 analogue=raw["analogue"],
                 body_shape=raw.get("bodyShape"),
                 members=[_member(m) for m in raw.get("members") or []],
+                may_require=raw.get("mayRequire"),
             )
         )
     return RaceCatalog(sets)

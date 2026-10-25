@@ -3,12 +3,11 @@ from __future__ import annotations
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-from oe_ce.constants import BIOTECH_PACKAGE
 from oe_ce.emit_common import ensure_node, format_num, set_stat, thing_xpath, wrap_optional_def
 from oe_ce.race_analogues import ANIMAL, MECHANOID, race_stats
 from oe_ce.race_models import RaceMember, RaceSet, RaceTool
 from oe_ce.scan_obsidia import index_thingdefs, walk_parents
-from oe_ce.scan_races import BIOTECH_BOSSES, CoreRace
+from oe_ce.scan_races import CoreRace
 
 SHARP_CAPACITIES = frozenset({"Scratch", "Bite", "Cut", "Stab", "Poke"})
 _HANDLED_TOOL_TAGS = frozenset(
@@ -47,12 +46,20 @@ def convert_tool_element(li: ET.Element) -> RaceTool:
     )
 
 
-def collect_race_tools(core: Path, biotech: Path | None = None) -> dict[str, list[RaceTool]]:
+def collect_race_tools(
+    core: Path,
+    biotech: Path | None = None,
+    anomaly: Path | None = None,
+    ideology: Path | None = None,
+    royalty: Path | None = None,
+) -> dict[str, list[RaceTool]]:
     paths = sorted((core / "Defs" / "ThingDefs_Races").rglob("*.xml"))
-    if biotech is not None:
-        bio = biotech / "Defs" / "ThingDefs_Races"
-        if bio.is_dir():
-            paths += sorted(bio.rglob("*.xml"))
+    for root in (biotech, anomaly, ideology, royalty):
+        if root is None:
+            continue
+        races = root / "Defs" / "ThingDefs_Races"
+        if races.is_dir():
+            paths += sorted(races.rglob("*.xml"))
     index = index_thingdefs(paths)
     out: dict[str, list[RaceTool]] = {}
     for def_name, el in index.by_def.items():
@@ -146,9 +153,16 @@ def _durability_xml(kind: str, durability: int) -> str:
 
 def _include(member: RaceMember, kind: str, core: dict[str, CoreRace]) -> bool:
     info = core.get(member.def_name)
-    if info is not None:
-        return info.kind == kind
-    return kind == MECHANOID and member.def_name in BIOTECH_BOSSES
+    return info is not None and info.kind == kind
+
+
+def _unhide_stats_op(def_name: str) -> str:
+    return f"""  <Operation Class="PatchOperationReplace">
+    <xpath>{thing_xpath(def_name)}/hideStats</xpath>
+    <value>
+      <hideStats>false</hideStats>
+    </value>
+  </Operation>"""
 
 
 def _extension_op(def_name: str, shape: str) -> str:
@@ -174,10 +188,6 @@ def _durability_ops(def_name: str, kind: str, durability: int) -> list[str]:
     ]
 
 
-def _wrap_biotech(ops: list[str], def_name: str) -> str:
-    return wrap_optional_def(ops, BIOTECH_PACKAGE, def_name)
-
-
 def emit_race_xml(
     sets: list[RaceSet],
     kind: str,
@@ -199,6 +209,8 @@ def emit_race_xml(
         parent = info.concrete_parent if info is not None else None
         ops: list[str] = []
         inherit_parent = parent is not None and parent in catalogued
+        if info is not None and info.hide_stats:
+            ops.append(_unhide_stats_op(name))
         if not (inherit_parent and shapes.get(parent) == shape):
             ops.append(_extension_op(name, shape))
         ops.append(ensure_node(name, "statBases"))
@@ -214,8 +226,9 @@ def emit_race_xml(
             ops.append(_tools_op(name, tool_rows))
         if not inherit_parent:
             ops.extend(_durability_ops(name, kind, stats.durability))
-        if name in BIOTECH_BOSSES:
-            blocks.append(_wrap_biotech(ops, name))
+        pkg = race_set.member_may_require(member)
+        if pkg:
+            blocks.append(wrap_optional_def(ops, pkg, name))
         else:
             blocks.extend(ops)
     inner = "\n".join(blocks)

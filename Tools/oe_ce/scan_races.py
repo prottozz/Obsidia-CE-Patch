@@ -7,21 +7,13 @@ import xml.etree.ElementTree as ET
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.scan_obsidia import ThingDefIndex, index_thingdefs, walk_parents
 
-BIOTECH_BOSSES = frozenset(
-    {
-        "OE_Mech_ChaosLord",
-        "OE_Mech_ArachnaQueen",
-        "OE_Mech_CrimsonArachna",
-        "OE_Mech_FallenLegion",
-    }
-)
-
 
 @dataclass(frozen=True)
 class CoreRace:
     def_name: str
     kind: str
     concrete_parent: str | None = None
+    hide_stats: bool = False
 
 
 def _races_dir(root: Path, label: str) -> Path:
@@ -49,6 +41,14 @@ def _kind(index: ThingDefIndex, el: ET.Element, def_name: str) -> str:
     return ANIMAL
 
 
+def _hide_stats(index: ThingDefIndex, el: ET.Element) -> bool:
+    for node in walk_parents(index, el):
+        text = node.findtext("hideStats")
+        if text is not None and text.strip():
+            return text.strip().lower() == "true"
+    return False
+
+
 def _concrete_parent(index: ThingDefIndex, el: ET.Element) -> str | None:
     parent_name = el.get("ParentName")
     if not parent_name:
@@ -59,27 +59,39 @@ def _concrete_parent(index: ThingDefIndex, el: ET.Element) -> str | None:
     return (parent.findtext("defName") or "").strip() or None
 
 
-def _collect(index: ThingDefIndex, allowed: frozenset[str] | None = None) -> dict[str, CoreRace]:
+def _collect(index: ThingDefIndex) -> dict[str, CoreRace]:
     out: dict[str, CoreRace] = {}
     for def_name, el in index.by_def.items():
         if el.get("Abstract") == "True":
             continue
-        if allowed is not None and def_name not in allowed:
-            continue
         if not _has_race(index, el):
             continue
-        out[def_name] = CoreRace(def_name, _kind(index, el, def_name), _concrete_parent(index, el))
+        out[def_name] = CoreRace(
+            def_name,
+            _kind(index, el, def_name),
+            _concrete_parent(index, el),
+            _hide_stats(index, el),
+        )
     return out
 
 
-def scan_races(core: Path, biotech: Path | None = None) -> dict[str, CoreRace]:
-    index = index_thingdefs(sorted(_races_dir(core, "Core").rglob("*.xml")))
-    out = _collect(index)
-    if biotech is None:
-        return out
-    bio_dir = biotech / "Defs" / "ThingDefs_Races"
-    if not bio_dir.is_dir():
-        return out
-    bio_index = index_thingdefs(sorted(bio_dir.rglob("*.xml")))
-    out.update(_collect(bio_index, BIOTECH_BOSSES))
-    return out
+def _optional_race_xmls(root: Path | None) -> list[Path]:
+    if root is None:
+        return []
+    races = root / "Defs" / "ThingDefs_Races"
+    if not races.is_dir():
+        return []
+    return sorted(races.rglob("*.xml"))
+
+
+def scan_races(
+    core: Path,
+    biotech: Path | None = None,
+    anomaly: Path | None = None,
+    ideology: Path | None = None,
+    royalty: Path | None = None,
+) -> dict[str, CoreRace]:
+    xml_paths = sorted(_races_dir(core, "Core").rglob("*.xml"))
+    for root in (biotech, anomaly, ideology, royalty):
+        xml_paths.extend(_optional_race_xmls(root))
+    return _collect(index_thingdefs(xml_paths))

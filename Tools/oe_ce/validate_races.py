@@ -4,10 +4,15 @@ from collections import Counter
 
 from oe_ce.race_analogues import ANALOGUES, BODY_SHAPES
 from oe_ce.race_models import RaceCatalog
-from oe_ce.scan_races import BIOTECH_BOSSES, CoreRace
+from oe_ce.scan_races import CoreRace
 
 
-def validate_race_catalog(cat: RaceCatalog, core: dict[str, CoreRace]) -> list[str]:
+def validate_race_catalog(
+    cat: RaceCatalog,
+    scanned: dict[str, CoreRace],
+    *,
+    present_packages: frozenset[str] = frozenset(),
+) -> list[str]:
     errors: list[str] = []
     seen: list[str] = []
     for race_set, member in cat.entries():
@@ -21,14 +26,15 @@ def validate_race_catalog(cat: RaceCatalog, core: dict[str, CoreRace]) -> list[s
             shape = race_set.member_body_shape(member)
         if shape is not None and shape not in BODY_SHAPES:
             errors.append(f"{name}: unknown bodyShape {shape}")
-        if name not in core and name not in BIOTECH_BOSSES:
+        if name not in scanned:
+            pkg = race_set.member_may_require(member)
+            if pkg and pkg not in present_packages:
+                continue
             errors.append(f"{name}: not an in-scope race ThingDef")
     for name, count in Counter(seen).items():
         if count > 1:
             errors.append(f"duplicate race defName {name}")
     catalogued = set(seen)
-    for missing in sorted(set(core) - catalogued):
+    for missing in sorted(set(scanned) - catalogued):
         errors.append(f"Core race defName not in catalog: {missing}")
-    for boss in sorted(BIOTECH_BOSSES - catalogued):
-        errors.append(f"Biotech boss defName not in catalog: {boss}")
     return errors

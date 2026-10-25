@@ -1,11 +1,14 @@
+import os
 import shutil
 from pathlib import Path
 
 import pytest
 
+from oe_ce.constants import DEFAULT_OBSIDIA_ANOMALY
 from oe_ce.generate import generate
 
 ROOT = Path(__file__).resolve().parents[2]
+ANOMALY = Path(os.environ.get("OBSIDIA_ANOMALY", DEFAULT_OBSIDIA_ANOMALY))
 
 
 def _write_minimal_core(core: Path, *, with_apparel: bool = True) -> None:
@@ -117,6 +120,33 @@ def test_generate_writes_apparel_patches(tmp_path, monkeypatch):
     assert "forcedMissRadius" not in belts
 
 
+def test_generate_writes_dlc_race_wraps(tmp_path, monkeypatch):
+    shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    core = tmp_path / "fake_core"
+    _write_minimal_core(core)
+    monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
+    generate(tmp_path)
+    animals = tmp_path / "Patches" / "Races" / "OE_Animals.xml"
+    mechs = tmp_path / "Patches" / "Races" / "OE_Mechanoids.xml"
+    assert animals.is_file()
+    assert mechs.is_file()
+
+
+@pytest.mark.skipif(not ANOMALY.is_dir(), reason="Obsidia Anomaly not installed")
+def test_generated_animals_wraps_anomaly_when_tree_present():
+    animals = (ROOT / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
+    mechs = (ROOT / "Patches" / "Races" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
+    assert 'MayRequire="Ludeon.RimWorld.Anomaly"' in animals
+    assert "OE_ChaosSlime_Invincible" in animals
+    assert "<ArmorRating_Sharp>14</ArmorRating_Sharp>" in animals
+    assert 'MayRequire="Ludeon.RimWorld.Ideology"' in animals
+    assert "OE_Dryad_Synthesis" in animals
+    assert "OE_Mech_Maid" in mechs
+    assert 'MayRequire="Ludeon.RimWorld.Biotech"' in mechs
+    assert "forcedMissRadius" not in animals
+
+
 def test_generate_fails_without_core_weapons(tmp_path, monkeypatch):
     shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
     core = tmp_path / "empty_core"
@@ -129,9 +159,34 @@ def test_generate_fails_without_core_weapons(tmp_path, monkeypatch):
 
 def test_generate_writes_race_patches(tmp_path, monkeypatch):
     shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    race_yaml = tmp_path / "catalog" / "races.yaml"
+    race_yaml.write_text(
+        race_yaml.read_text(encoding="utf-8").replace(
+            "  - id: chaos_lord\n    analogue: diabolus",
+            "  - id: chaos_lord\n    analogue: diabolus\n    mayRequire: Ludeon.RimWorld.Biotech",
+        ),
+        encoding="utf-8",
+    )
     core = tmp_path / "fake_core"
     _write_minimal_core(core)
+    biotech = tmp_path / "fake_biotech"
+    races = biotech / "Defs" / "ThingDefs_Races"
+    races.mkdir(parents=True)
+    (races / "Mechs.xml").write_text(
+        """<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>OE_Mech_ChaosLord</defName>
+    <race><fleshType>Mechanoid</fleshType></race>
+  </ThingDef>
+</Defs>
+""",
+        encoding="utf-8",
+    )
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    monkeypatch.setenv("OBSIDIA_BIOTECH", str(biotech))
+    monkeypatch.setenv("OBSIDIA_ANOMALY", str(tmp_path / "no_anomaly"))
+    monkeypatch.setenv("OBSIDIA_IDEOLOGY", str(tmp_path / "no_ideology"))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
     animals = (tmp_path / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")

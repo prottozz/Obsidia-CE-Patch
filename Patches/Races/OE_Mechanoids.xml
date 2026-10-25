@@ -1,6 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>QuadrupedLow</bodyShape>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/MeleeDodgeChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/MeleeDodgeChance</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/MeleeCritChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/MeleeCritChance</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/MeleeParryChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases/MeleeParryChance</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/statBases</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/tools</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>front left leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.35</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>front right leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.35</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>front left leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.35</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>front right leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.35</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaDrone"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+              <Durability>800</Durability>
+              <Regenerates>true</Regenerates>
+              <RegenInterval>1250</RegenInterval>
+              <RegenValue>5</RegenValue>
+              <MinArmorPct>0.5</MinArmorPct>
+              <Repairable>true</Repairable>
+              <RepairIngredients>
+                <Steel>5</Steel>
+                <Plasteel>5</Plasteel>
+              </RepairIngredients>
+              <RepairTime>300</RepairTime>
+              <RepairValue>200</RepairValue>
+            </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
     <xpath>Defs/ThingDef[defName="OE_Mech_ArachnaQueen"]</xpath>
     <match Class="PatchOperationSequence">
       <operations>
@@ -1006,6 +1278,298 @@
       <xpath>Defs</xpath>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>QuadrupedLow</bodyShape>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/MeleeDodgeChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/MeleeDodgeChance</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/MeleeCritChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/MeleeCritChance</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/MeleeParryChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases/MeleeParryChance</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/statBases</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/tools</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>front left leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.45</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Scratch</def>
+                  <amount>5</amount>
+    			  <chance>0.55</chance>
+                </li>
+    			<li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>front right leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.45</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Scratch</def>
+                  <amount>5</amount>
+    			  <chance>0.55</chance>
+                </li>
+    			<li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>front left leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.45</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Scratch</def>
+                  <amount>5</amount>
+    			  <chance>0.55</chance>
+                </li>
+    			<li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>front right leg</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>5</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+              <armorPenetrationSharp>0.45</armorPenetrationSharp>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Scratch</def>
+                  <amount>5</amount>
+    			  <chance>0.55</chance>
+                </li>
+    			<li>
+                  <def>Stun</def>
+                  <amount>3</amount>
+    			  <chance>0.55</chance>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.25</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OE_Mech_CrimsonArachnaDrone"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+              <Durability>800</Durability>
+              <Regenerates>true</Regenerates>
+              <RegenInterval>1250</RegenInterval>
+              <RegenValue>5</RegenValue>
+              <MinArmorPct>0.5</MinArmorPct>
+              <Repairable>true</Repairable>
+              <RepairIngredients>
+                <Steel>5</Steel>
+                <Plasteel>5</Plasteel>
+              </RepairIngredients>
+              <RepairTime>300</RepairTime>
+              <RepairValue>200</RepairValue>
+            </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="OE_Mech_DarkCrusader"]</xpath>
     <value>
@@ -1448,6 +2012,762 @@
         <value>
             <li Class="CombatExtended.CompProperties_ArmorDurability">
               <Durability>3400</Durability>
+              <Regenerates>true</Regenerates>
+              <RegenInterval>1250</RegenInterval>
+              <RegenValue>5</RegenValue>
+              <MinArmorPct>0.5</MinArmorPct>
+              <Repairable>true</Repairable>
+              <RepairIngredients>
+                <Steel>5</Steel>
+                <Plasteel>5</Plasteel>
+              </RepairIngredients>
+              <RepairTime>300</RepairTime>
+              <RepairValue>200</RepairValue>
+            </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Humanoid</bodyShape>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/MeleeDodgeChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/MeleeDodgeChance</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/MeleeCritChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/MeleeCritChance</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/MeleeParryChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases/MeleeParryChance</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/statBases</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/tools</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>left fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Flame</def>
+                  <amount>10</amount>
+                </li>
+    			<li>
+                  <def>EMP</def>
+                  <amount>10</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Flame</def>
+                  <amount>10</amount>
+                </li>
+    			<li>
+                  <def>EMP</def>
+                  <amount>10</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>left fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Flame</def>
+                  <amount>10</amount>
+                </li>
+    			<li>
+                  <def>EMP</def>
+                  <amount>10</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+              <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Flame</def>
+                  <amount>10</amount>
+                </li>
+    			<li>
+                  <def>EMP</def>
+                  <amount>10</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.4</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionDrone"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+              <Durability>800</Durability>
+              <Regenerates>true</Regenerates>
+              <RegenInterval>1250</RegenInterval>
+              <RegenValue>5</RegenValue>
+              <MinArmorPct>0.5</MinArmorPct>
+              <Repairable>true</Repairable>
+              <RepairIngredients>
+                <Steel>5</Steel>
+                <Plasteel>5</Plasteel>
+              </RepairIngredients>
+              <RepairTime>300</RepairTime>
+              <RepairValue>200</RepairValue>
+            </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Humanoid</bodyShape>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>7</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>7</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>15</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>15</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/MeleeDodgeChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/MeleeDodgeChance</xpath>
+          <value>
+            <MeleeDodgeChance>0.04</MeleeDodgeChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+          <value>
+            <MeleeDodgeChance>0.04</MeleeDodgeChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/MeleeCritChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/MeleeCritChance</xpath>
+          <value>
+            <MeleeCritChance>0.13</MeleeCritChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+          <value>
+            <MeleeCritChance>0.13</MeleeCritChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/MeleeParryChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases/MeleeParryChance</xpath>
+          <value>
+            <MeleeParryChance>0.15</MeleeParryChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/statBases</xpath>
+          <value>
+            <MeleeParryChance>0.15</MeleeParryChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/tools</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>left fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>15</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>15</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>left fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>15</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>15</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OE_Mech_LegionGuard"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+              <Durability>1200</Durability>
+              <Regenerates>true</Regenerates>
+              <RegenInterval>1250</RegenInterval>
+              <RegenValue>5</RegenValue>
+              <MinArmorPct>0.5</MinArmorPct>
+              <Repairable>true</Repairable>
+              <RepairIngredients>
+                <Steel>5</Steel>
+                <Plasteel>5</Plasteel>
+              </RepairIngredients>
+              <RepairTime>300</RepairTime>
+              <RepairValue>200</RepairValue>
+            </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>Humanoid</bodyShape>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/MeleeDodgeChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/MeleeDodgeChance</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/MeleeCritChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/MeleeCritChance</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/MeleeParryChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases/MeleeParryChance</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/statBases</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/tools</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>left fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>3</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>3</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>4</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>left fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>3</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>right fist</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>3</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>4</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Maid"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+              <Durability>800</Durability>
               <Regenerates>true</Regenerates>
               <RegenInterval>1250</RegenInterval>
               <RegenValue>5</RegenValue>
@@ -5761,5 +7081,217 @@
           <RepairValue>200</RepairValue>
         </li>
     </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]</xpath>
+        <value>
+          <li Class="CombatExtended.RacePropertiesExtensionCE">
+            <bodyShape>QuadrupedLow</bodyShape>
+          </li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>4</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>6</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/MeleeDodgeChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/MeleeDodgeChance</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+          <value>
+            <MeleeDodgeChance>0.13</MeleeDodgeChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/MeleeCritChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/MeleeCritChance</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+          <value>
+            <MeleeCritChance>0.12</MeleeCritChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/MeleeParryChance</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases/MeleeParryChance</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/statBases</xpath>
+          <value>
+            <MeleeParryChance>0.09</MeleeParryChance>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/tools</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>tentacle</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>4</power>
+              <cooldownTime>1.5</cooldownTime>
+              <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>4</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]</xpath>
+          <value>
+            <tools Inherit="False">
+            <li Class="CombatExtended.ToolCE">
+              <label>tentacle</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>4</power>
+              <cooldownTime>1.5</cooldownTime>
+              <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>4</power>
+              <cooldownTime>2</cooldownTime>
+              <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+              <armorPenetrationBlunt>0.09</armorPenetrationBlunt>
+              <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+              <chanceFactor>0.2</chanceFactor>
+            </li>
+            </tools>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OE_Mech_Octo"]/comps</xpath>
+        <value>
+            <li Class="CombatExtended.CompProperties_ArmorDurability">
+              <Durability>800</Durability>
+              <Regenerates>true</Regenerates>
+              <RegenInterval>1250</RegenInterval>
+              <RegenValue>5</RegenValue>
+              <MinArmorPct>0.5</MinArmorPct>
+              <Repairable>true</Repairable>
+              <RepairIngredients>
+                <Steel>5</Steel>
+                <Plasteel>5</Plasteel>
+              </RepairIngredients>
+              <RepairTime>300</RepairTime>
+              <RepairValue>200</RepairValue>
+            </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
   </Operation>
 </Patch>

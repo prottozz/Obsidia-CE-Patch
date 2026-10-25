@@ -1,11 +1,15 @@
 DEFAULT_OBSIDIA_CORE = r"C:\Projects\Assistant\294100\2519492373\1.6\Core"
 DEFAULT_OBSIDIA_BIOTECH = r"C:\Projects\Assistant\294100\2519492373\1.6\Biotech"
+DEFAULT_OBSIDIA_ANOMALY = r"C:\Projects\Assistant\294100\2519492373\1.6\Anomaly"
+DEFAULT_OBSIDIA_IDEOLOGY = r"C:\Projects\Assistant\294100\2519492373\1.6\Ideology"
 DEFAULT_OBSIDIA_ROYALTY = r"C:\Projects\Assistant\294100\2519492373\1.6\Royalty"
 DEFAULT_OBSIDIA_VEF = r"C:\Projects\Assistant\294100\2519492373\1.6\Mods\VEF"
 DEFAULT_OBSIDIA_MU = r"C:\Projects\Assistant\294100\2519492373\1.6\Mods\MechanoidUpgrades"
 
 ROYALTY_PACKAGE = "Ludeon.RimWorld.Royalty"
 BIOTECH_PACKAGE = "Ludeon.RimWorld.Biotech"
+ANOMALY_PACKAGE = "Ludeon.RimWorld.Anomaly"
+IDEOLOGY_PACKAGE = "Ludeon.RimWorld.Ideology"
 VEF_PACKAGE = "OskarPotocki.VanillaFactionsExpanded.Core"
 MU_PACKAGE = "GoGaTio.MechanoidUpgrades"
 
