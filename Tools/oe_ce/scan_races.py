@@ -7,15 +7,6 @@ import xml.etree.ElementTree as ET
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.scan_obsidia import ThingDefIndex, index_thingdefs, walk_parents
 
-BIOTECH_BOSSES = frozenset(
-    {
-        "OE_Mech_ChaosLord",
-        "OE_Mech_ArachnaQueen",
-        "OE_Mech_CrimsonArachna",
-        "OE_Mech_FallenLegion",
-    }
-)
-
 
 @dataclass(frozen=True)
 class CoreRace:
@@ -59,12 +50,10 @@ def _concrete_parent(index: ThingDefIndex, el: ET.Element) -> str | None:
     return (parent.findtext("defName") or "").strip() or None
 
 
-def _collect(index: ThingDefIndex, allowed: frozenset[str] | None = None) -> dict[str, CoreRace]:
+def _collect(index: ThingDefIndex) -> dict[str, CoreRace]:
     out: dict[str, CoreRace] = {}
     for def_name, el in index.by_def.items():
         if el.get("Abstract") == "True":
-            continue
-        if allowed is not None and def_name not in allowed:
             continue
         if not _has_race(index, el):
             continue
@@ -72,14 +61,24 @@ def _collect(index: ThingDefIndex, allowed: frozenset[str] | None = None) -> dic
     return out
 
 
-def scan_races(core: Path, biotech: Path | None = None) -> dict[str, CoreRace]:
+def _merge_optional(out: dict[str, CoreRace], root: Path | None, label: str) -> None:
+    if root is None:
+        return
+    races = root / "Defs" / "ThingDefs_Races"
+    if not races.is_dir():
+        return
+    out.update(_collect(index_thingdefs(sorted(races.rglob("*.xml")))))
+
+
+def scan_races(
+    core: Path,
+    biotech: Path | None = None,
+    anomaly: Path | None = None,
+    ideology: Path | None = None,
+) -> dict[str, CoreRace]:
     index = index_thingdefs(sorted(_races_dir(core, "Core").rglob("*.xml")))
     out = _collect(index)
-    if biotech is None:
-        return out
-    bio_dir = biotech / "Defs" / "ThingDefs_Races"
-    if not bio_dir.is_dir():
-        return out
-    bio_index = index_thingdefs(sorted(bio_dir.rglob("*.xml")))
-    out.update(_collect(bio_index, BIOTECH_BOSSES))
+    _merge_optional(out, biotech, "Biotech")
+    _merge_optional(out, anomaly, "Anomaly")
+    _merge_optional(out, ideology, "Ideology")
     return out
