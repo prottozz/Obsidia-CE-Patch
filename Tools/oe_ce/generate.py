@@ -25,18 +25,24 @@ from oe_ce.emit_grenade_belts import emit_grenade_belt_xml
 from oe_ce.emit_guns import emit_gun_patches
 from oe_ce.emit_melee import emit_melee_xml
 from oe_ce.emit_pawnkinds import emit_pawnkind_xml
+from oe_ce.emit_bodies import ANIMAL as BODY_ANIMAL
+from oe_ce.emit_bodies import MECHANOID as BODY_MECHANOID
+from oe_ce.emit_bodies import emit_body_xml
 from oe_ce.emit_races import collect_race_tools, emit_race_xml
 from oe_ce.emit_recipes import emit_recipe_xml
 from oe_ce.emit_shields import emit_innate_xml, emit_upgrade_xml, emit_worn_handheld_xml
+from oe_ce.body_load import load_body_catalog
 from oe_ce.load import load_catalog
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
 from oe_ce.scan_apparel import scan_core_apparel, scan_isolated_grenadiers
+from oe_ce.scan_bodies import scan_bodies
 from oe_ce.scan_obsidia import scan_core_ranged
 from oe_ce.scan_races import scan_races
 from oe_ce.scan_shields import scan_shields
 from oe_ce.shield_load import load_shield_catalog
 from oe_ce.validate import validate_catalog
+from oe_ce.validate_bodies import validate_body_catalog
 from oe_ce.validate_apparel import validate_apparel_catalog
 from oe_ce.validate_races import validate_race_catalog
 from oe_ce.validate_shields import validate_shield_catalog
@@ -60,6 +66,9 @@ def _require_core_dirs(core: Path) -> None:
         raise FileNotFoundError(f"Obsidia Core apparel dir missing: {apparel}")
     if not races.is_dir():
         raise FileNotFoundError(f"Obsidia Core races dir missing: {races}")
+    core_bodies = core / "Defs" / "Bodies"
+    if not core_bodies.is_dir():
+        raise FileNotFoundError(f"Obsidia Core bodies dir missing: {core_bodies}")
 
 
 def _optional_dir(env_name: str, default: str) -> Path | None:
@@ -72,6 +81,7 @@ def generate(root: Path) -> None:
     apparel = load_apparel_catalog(root / "catalog")
     races = load_race_catalog(root / "catalog")
     shields = load_shield_catalog(root / "catalog")
+    bodies = load_body_catalog(root / "catalog")
     core = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
     _require_core_dirs(core)
     bio = _optional_dir("OBSIDIA_BIOTECH", DEFAULT_OBSIDIA_BIOTECH)
@@ -96,6 +106,8 @@ def generate(root: Path) -> None:
         if path is not None
     )
     errors += validate_race_catalog(races, core_races, present_packages=present_packages)
+    scanned_bodies = scan_bodies(core, bio, anomaly)
+    errors += validate_body_catalog(bodies, scanned_bodies, present_packages=present_packages)
     armor_names = {m.def_name for s in apparel.armor for m in s.members}
     scanned_shields = scan_shields(core, royalty, vef, bio, mu)
     errors += validate_shield_catalog(shields, scanned_shields, armor_names)
@@ -141,6 +153,14 @@ def generate(root: Path) -> None:
     _write(
         root / "Patches" / "Races" / "OE_Mechanoids.xml",
         emit_race_xml(races.sets, MECHANOID, core_races, race_tools),
+    )
+    _write(
+        root / "Patches" / "Bodies" / "OE_Animals.xml",
+        emit_body_xml(bodies.bodies, scanned_bodies, BODY_ANIMAL),
+    )
+    _write(
+        root / "Patches" / "Bodies" / "OE_Mechanoids.xml",
+        emit_body_xml(bodies.bodies, scanned_bodies, BODY_MECHANOID),
     )
     _write(
         root / "Patches" / "Apparel" / "OE_Shields.xml",

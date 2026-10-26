@@ -1,0 +1,34 @@
+bodies:
+  - defName: OEArachnaLike
+    analogue: beetle
+  - defName: OEScorpidLike
+    analogue: beetle
+  - defName: OETionantLike
+    analogue: beetle
+  - defName: OEArmagonLike
+    analogue: beetle
+  - defName: OEBruulLike
+    analogue: beetle
+  - defName: OERaptorLike
+    analogue: quadruped
+  - defName: OESlimeLike
+    analogue: fingerspike
+  - defName: OEMechanicalArachna
+    analogue: scyther
+  - defName: OEDominator
+    analogue: lancer
+  - defName: OEMechanicalOcto
+    analogue: scyther
+    mayRequire: Ludeon.RimWorld.Biotech
+  - defName: OEMechanicalArachnaDrone
+    analogue: scyther
+    mayRequire: Ludeon.RimWorld.Biotech
+  - defName: OEMechanicalArachnaQueen
+    analogue: scyther
+    mayRequire: Ludeon.RimWorld.Biotech
+  - defName: OEReturnedLike
+    analogue: human
+    mayRequire: Ludeon.RimWorld.Anomaly
+  - defName: OECyberArachnaLike
+    analogue: beetle
+    mayRequire: Ludeon.RimWorld.Anomaly

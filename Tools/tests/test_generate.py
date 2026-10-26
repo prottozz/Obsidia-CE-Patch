@@ -35,6 +35,32 @@ def _write_minimal_core(core: Path, *, with_apparel: bool = True) -> None:
     )
     pawnkinds = core / "Defs" / "PawnKinds"
     pawnkinds.mkdir(parents=True)
+    bodies = core / "Defs" / "Bodies"
+    bodies.mkdir(parents=True)
+    (bodies / "Bodies.xml").write_text(
+        """<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyDef>
+    <defName>OESlimeLike</defName>
+    <corePart>
+      <def>Body</def>
+      <parts>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Eye</def>
+          <coverage>0.05</coverage>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+</Defs>
+""",
+        encoding="utf-8",
+    )
     races = core / "Defs" / "ThingDefs_Races"
     races.mkdir(parents=True)
     (races / "Races.xml").write_text(
@@ -118,6 +144,34 @@ def test_generate_writes_apparel_patches(tmp_path, monkeypatch):
     assert "OTC_GrenadeBelt_Acid" in belts
     assert "Verb_LaunchProjectileStaticCE" in belts
     assert "forcedMissRadius" not in belts
+
+
+def test_generate_writes_body_patches(tmp_path, monkeypatch):
+    shutil.copytree(ROOT / "catalog", tmp_path / "catalog")
+    core = tmp_path / "fake_core"
+    _write_minimal_core(core)
+    monkeypatch.setenv("OBSIDIA_CORE", str(core))
+    monkeypatch.setenv("OBSIDIA_BIOTECH", str(tmp_path / "nope"))
+    monkeypatch.setenv("OBSIDIA_ANOMALY", str(tmp_path / "nope"))
+    monkeypatch.setenv("OBSIDIA_IDEOLOGY", str(tmp_path / "nope"))
+    monkeypatch.setenv("OBSIDIA_ROYALTY", str(tmp_path / "nope"))
+    monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
+    generate(tmp_path)
+    animals = tmp_path / "Patches" / "Bodies" / "OE_Animals.xml"
+    mechs = tmp_path / "Patches" / "Bodies" / "OE_Mechanoids.xml"
+    assert animals.is_file()
+    assert mechs.is_file()
+
+
+def test_generated_bodies_cover_arachna_and_dominator():
+    animals = (ROOT / "Patches" / "Bodies" / "OE_Animals.xml").read_text(encoding="utf-8")
+    mechs = (ROOT / "Patches" / "Bodies" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
+    assert 'defName="OEArachnaLike"' in animals
+    assert "CoveredByNaturalArmor" in animals
+    assert 'defName="OEDominator"' in mechs
+    assert "<coverage>0.18</coverage>" in mechs
+    assert 'MayRequire="Ludeon.RimWorld.Biotech"' in mechs
+    assert 'MayRequire="Ludeon.RimWorld.Anomaly"' in animals
 
 
 def test_generate_writes_dlc_race_wraps(tmp_path, monkeypatch):

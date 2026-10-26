@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left sight sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left sight sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left sight sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left sight sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right sight sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right sight sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right sight sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right sight sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left pinky"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left pinky"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left pinky"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left pinky"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left middle finger"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left middle finger"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left middle finger"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left middle finger"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left index finger"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left index finger"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left index finger"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left index finger"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left thumb"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left thumb"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left thumb"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/parts/li[customLabel="left arm"]/parts/li[customLabel="left hand"]/parts/li[customLabel="left thumb"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right pinky"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right pinky"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right pinky"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right pinky"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right middle finger"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right middle finger"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right middle finger"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right middle finger"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right index finger"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right index finger"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right index finger"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right index finger"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right thumb"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right thumb"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right thumb"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/parts/li[customLabel="right arm"]/parts/li[customLabel="right hand"]/parts/li[customLabel="right thumb"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/parts/li[customLabel="left foot"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/parts/li[customLabel="left foot"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/parts/li[customLabel="left foot"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/parts/li[customLabel="left foot"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/parts/li[customLabel="right foot"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/parts/li[customLabel="right foot"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/parts/li[customLabel="right foot"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/parts/li[customLabel="right foot"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="Reactor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/coverage</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]/coverage</xpath>
+      <value>
+        <coverage>0.15</coverage>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left mechanical shoulder"]</xpath>
+      <value>
+        <coverage>0.15</coverage>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/coverage</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]/coverage</xpath>
+      <value>
+        <coverage>0.15</coverage>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right mechanical shoulder"]</xpath>
+      <value>
+        <coverage>0.15</coverage>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/coverage</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]/coverage</xpath>
+      <value>
+        <coverage>0.18</coverage>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="left leg"]</xpath>
+      <value>
+        <coverage>0.18</coverage>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/coverage</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]/coverage</xpath>
+      <value>
+        <coverage>0.18</coverage>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[customLabel="right leg"]</xpath>
+      <value>
+        <coverage>0.18</coverage>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/coverage</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]/coverage</xpath>
+      <value>
+        <coverage>0.05</coverage>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEDominator"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
+      <value>
+        <coverage>0.05</coverage>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="Reactor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left first sight sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left second sight sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right first sight sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right second sight sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]/groups</xpath>
+    <match Class="PatchOperationTest">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]/groups</xpath>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]</xpath>
+      <value>
+        <groups />
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachna"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]/groups</xpath>
+    <value>
+      <li>CoveredByNaturalArmor</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="Reactor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left first sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left second sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right first sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right second sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left hearing sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right hearing sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left first leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left second leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right first leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right second leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaDrone"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="Reactor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left first sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left first sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left second sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left second sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right first sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right first sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right second sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right second sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left hearing sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="left hearing sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right hearing sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[customLabel="right hearing sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[def="SmellSensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[def="SmellSensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[def="SmellSensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="OEMechanicalHeadLarge"]/parts/li[def="SmellSensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left first leg"]/parts/li[customLabel="left first foot"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="left second leg"]/parts/li[customLabel="left second foot"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right first leg"]/parts/li[customLabel="right first foot"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalArachnaQueen"]/corePart/parts/li[customLabel="right second leg"]/parts/li[customLabel="right second foot"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="Reactor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="Reactor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="FluidReprocessor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="left sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="left sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="left sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="left sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="right sight sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="right sight sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="right sight sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="right sight sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="hearing sensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="hearing sensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="hearing sensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[customLabel="hearing sensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]</xpath>
+          <value>
+            <groups />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef[defName="OEMechanicalOcto"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="SmellSensor"]/groups</xpath>
+        <value>
+          <li>CoveredByNaturalArmor</li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+</Patch>
