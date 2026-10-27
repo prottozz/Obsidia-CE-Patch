@@ -14,13 +14,20 @@ from oe_ce.constants import (
     DEFAULT_OBSIDIA_CORE,
     DEFAULT_OBSIDIA_IDEOLOGY,
     DEFAULT_OBSIDIA_MU,
+    DEFAULT_OBSIDIA_ODYSSEY,
     DEFAULT_OBSIDIA_ROYALTY,
     DEFAULT_OBSIDIA_VEF,
+    GAME_VERSION,
     IDEOLOGY_PACKAGE,
+    MU_PACKAGE,
+    ODYSSEY_PACKAGE,
     ROYALTY_PACKAGE,
+    VEF_PACKAGE,
 )
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
+from oe_ce.emit_apparel_verbs import emit_apparel_verb_xml
+from oe_ce.emit_drones import emit_drone_xml, scan_drones, validate_drones
 from oe_ce.emit_grenade_belts import emit_grenade_belt_xml
 from oe_ce.emit_guns import emit_gun_patches
 from oe_ce.emit_melee import emit_melee_xml
@@ -36,6 +43,7 @@ from oe_ce.load import load_catalog
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
 from oe_ce.scan_apparel import scan_core_apparel, scan_isolated_grenadiers
+from oe_ce.scan_apparel_verbs import scan_apparel_verbs
 from oe_ce.scan_bodies import scan_bodies
 from oe_ce.scan_obsidia import scan_core_ranged
 from oe_ce.scan_races import scan_races
@@ -88,13 +96,9 @@ def generate(root: Path) -> None:
     anomaly = _optional_dir("OBSIDIA_ANOMALY", DEFAULT_OBSIDIA_ANOMALY)
     ideology = _optional_dir("OBSIDIA_IDEOLOGY", DEFAULT_OBSIDIA_IDEOLOGY)
     royalty = _optional_dir("OBSIDIA_ROYALTY", DEFAULT_OBSIDIA_ROYALTY)
+    odyssey = _optional_dir("OBSIDIA_ODYSSEY", DEFAULT_OBSIDIA_ODYSSEY)
     vef = _optional_dir("OBSIDIA_VEF", DEFAULT_OBSIDIA_VEF)
     mu = _optional_dir("OBSIDIA_MU", DEFAULT_OBSIDIA_MU)
-    core_apparel = scan_core_apparel(core, royalty)
-    isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
-    errors = validate_catalog(cat, scan_core_ranged(core))
-    errors += validate_apparel_catalog(apparel, core_apparel)
-    core_races = scan_races(core, bio, anomaly, ideology, royalty)
     present_packages = frozenset(
         pkg
         for path, pkg in (
@@ -102,75 +106,107 @@ def generate(root: Path) -> None:
             (anomaly, ANOMALY_PACKAGE),
             (ideology, IDEOLOGY_PACKAGE),
             (royalty, ROYALTY_PACKAGE),
+            (odyssey, ODYSSEY_PACKAGE),
         )
         if path is not None
     )
+    core_apparel = scan_core_apparel(
+        core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey
+    )
+    isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
+    apparel_verbs = scan_apparel_verbs(
+        core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey
+    )
+    errors = validate_catalog(cat, scan_core_ranged(core))
+    errors += validate_apparel_catalog(
+        apparel, core_apparel, present_packages=present_packages
+    )
+    errors += apparel_verbs.errors
+    drones = scan_drones(odyssey)
+    errors += validate_drones(drones)
+    core_races = scan_races(core, bio, anomaly, ideology, royalty)
     errors += validate_race_catalog(races, core_races, present_packages=present_packages)
     scanned_bodies = scan_bodies(core, bio, anomaly)
     errors += validate_body_catalog(bodies, scanned_bodies, present_packages=present_packages)
     armor_names = {m.def_name for s in apparel.armor for m in s.members}
-    scanned_shields = scan_shields(core, royalty, vef, bio, mu)
-    errors += validate_shield_catalog(shields, scanned_shields, armor_names)
+    scanned_shields = scan_shields(
+        core, royalty, vef, bio, mu, anomaly=anomaly, odyssey=odyssey
+    )
+    shield_packages = present_packages | frozenset(
+        pkg for path, pkg in ((vef, VEF_PACKAGE), (mu, MU_PACKAGE)) if path is not None
+    )
+    errors += validate_shield_catalog(
+        shields, scanned_shields, armor_names, present_packages=shield_packages
+    )
     if errors and os.environ.get("OE_CE_ALLOW_PARTIAL") != "1":
         for msg in errors:
             print(msg, file=sys.stderr)
         sys.exit(1)
 
-    _write(root / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families, core))
+    out = root / GAME_VERSION
+    _write(out / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families, core))
     _write(
-        root / "Defs" / "RecipeDefs" / "OE_AmmoRecipes.xml",
+        out / "Defs" / "RecipeDefs" / "OE_AmmoRecipes.xml",
         emit_recipe_xml(cat.families),
     )
     _write(
-        root / "Patches" / "Weapons" / "OE_Ranged.xml",
+        out / "Patches" / "Weapons" / "OE_Ranged.xml",
         emit_gun_patches(cat.families, core),
     )
     _write(
-        root / "Patches" / "Weapons" / "OE_Melee.xml",
+        out / "Patches" / "Weapons" / "OE_Melee.xml",
         emit_melee_xml(cat.melee),
     )
     _write(
-        root / "Patches" / "PawnKinds" / "OE_Loadouts.xml",
+        out / "Patches" / "PawnKinds" / "OE_Loadouts.xml",
         emit_pawnkind_xml(core, cat.families),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_Armor.xml",
+        out / "Patches" / "Apparel" / "OE_Armor.xml",
         emit_apparel_xml(apparel.armor, ARMOR, core_apparel, isolated_grenadiers),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_Helmets.xml",
+        out / "Patches" / "Apparel" / "OE_Helmets.xml",
         emit_apparel_xml(apparel.helmets, HELMET, core_apparel, isolated_grenadiers),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
+        out / "Patches" / "Apparel" / "OE_ApparelVerbs.xml",
+        emit_apparel_verb_xml(apparel_verbs),
+    )
+    _write(
+        out / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
         emit_grenade_belt_xml(),
     )
     race_tools = collect_race_tools(core, bio, anomaly, ideology, royalty)
     _write(
-        root / "Patches" / "Races" / "OE_Animals.xml",
+        out / "Patches" / "Races" / "OE_Animals.xml",
         emit_race_xml(races.sets, ANIMAL, core_races, race_tools),
     )
     _write(
-        root / "Patches" / "Races" / "OE_Mechanoids.xml",
+        out / "Patches" / "Races" / "OE_Mechanoids.xml",
         emit_race_xml(races.sets, MECHANOID, core_races, race_tools),
     )
     _write(
-        root / "Patches" / "Bodies" / "OE_Animals.xml",
+        out / "Patches" / "Races" / "OE_Drones.xml",
+        emit_drone_xml(drones),
+    )
+    _write(
+        out / "Patches" / "Bodies" / "OE_Animals.xml",
         emit_body_xml(bodies.bodies, scanned_bodies, BODY_ANIMAL),
     )
     _write(
-        root / "Patches" / "Bodies" / "OE_Mechanoids.xml",
+        out / "Patches" / "Bodies" / "OE_Mechanoids.xml",
         emit_body_xml(bodies.bodies, scanned_bodies, BODY_MECHANOID),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_Shields.xml",
+        out / "Patches" / "Apparel" / "OE_Shields.xml",
         emit_worn_handheld_xml(shields, scanned_shields),
     )
     _write(
-        root / "Patches" / "Races" / "OE_Shields.xml",
+        out / "Patches" / "Races" / "OE_Shields.xml",
         emit_innate_xml(shields),
     )
     _write(
-        root / "Patches" / "Misc" / "OE_MechUpgrades.xml",
+        out / "Patches" / "Misc" / "OE_MechUpgrades.xml",
         emit_upgrade_xml(shields),
     )

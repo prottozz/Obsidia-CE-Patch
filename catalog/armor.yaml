@@ -1,4 +1,4 @@
-# Core combat body armor plus Royalty variants. Rung names match the gun
+# Core combat body armor plus Royalty / Biotech / Anomaly / Odyssey variants. Rung names match the gun
 # catalog; numbers come from Tools/oe_ce/apparel_rungs.py, not the gun table.
 sets:
   - id: proto
@@ -19,6 +19,12 @@ sets:
       - defName: OCC_Armor_M_ForceField
         rung: occ_reforge
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: OCC_Armor_M_Mechanitor
+        rung: occ_reforge
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OCC_Armor_M_Turret
+        rung: occ_reforge
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: otc
     rung: otc
     members:
@@ -27,6 +33,12 @@ sets:
         rung: otc_t2
       - defName: OTC_Armor_M_Spacer
         rung: otc_t2
+      - defName: OTC_Armor_M_Mechanitor
+        rung: otc_t2
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OTC_Armor_M_Turret
+        rung: otc_t2
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: omc
     rung: omc
     members:
@@ -43,6 +55,12 @@ sets:
       - defName: OMC_Armor_M_ForceField
         rung: omc_mod
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: OMC_Armor_M_Mechanitor
+        rung: omc_mod
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OMC_Armor_M_Turret
+        rung: omc_mod
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: odc_nomad
     rung: odc_t1
     members:
@@ -57,6 +75,10 @@ sets:
         mayRequire: Ludeon.RimWorld.Royalty
       - defName: ODC_Armor_Recon_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: ODC_Armor_Recon_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: ODC_Armor_Recon_Turret
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: odc_duelist
     rung: odc_t3
     members:
@@ -67,6 +89,10 @@ sets:
         mayRequire: Ludeon.RimWorld.Royalty
       - defName: ODC_Armor_Duelist_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: ODC_Armor_Duelist_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: ODC_Armor_Duelist_Turret
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: odc_stalker
     rung: odc_t4
     members:
@@ -83,6 +109,12 @@ sets:
         mayRequire: Ludeon.RimWorld.Royalty
       - defName: CAC_LightArmor_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: CAC_LightArmor_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: CAC_LightArmor_Turret
+        mayRequire: Ludeon.RimWorld.Anomaly
+      - defName: CAC_LightArmor_Swarmling
+        mayRequire: Ludeon.RimWorld.Odyssey
   - id: cac_heavy
     rung: cac_t2
     members:
@@ -92,6 +124,18 @@ sets:
         mayRequire: Ludeon.RimWorld.Royalty
       - defName: CAC_HeavyArmor_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: CAC_HeavyArmor_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: CAC_HeavyArmor_Turret
+        mayRequire: Ludeon.RimWorld.Anomaly
+      - defName: CAC_HeavyArmor_Swarmling
+        mayRequire: Ludeon.RimWorld.Odyssey
+  # Anomaly priest kit: vanilla 1.85 Sharp sits between CAC heavy and OMG.
+  - id: cac_priest
+    rung: cac_t2
+    mayRequire: Ludeon.RimWorld.Anomaly
+    members:
+      - defName: CAC_PriestArmor
   - id: ego
     rung: bio_t3
     members:
@@ -104,11 +148,18 @@ sets:
       - defName: EGO_Armor_Shell_Psy
         rung: bio_t4
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: EGO_Armor_Shell_Mechanitor
+        rung: bio_t4
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: omg
     rung: omg
     members:
       - defName: OMG_Armor_Corsair
       - defName: OMG_Armor_Demolition
+      - defName: OMG_Armor_Commando
+        mayRequire: Ludeon.RimWorld.Anomaly
+      - defName: OMG_Armor_Swarmling
+        mayRequire: Ludeon.RimWorld.Odyssey
   - id: oec
     rung: oec
     mayRequire: Ludeon.RimWorld.Royalty
@@ -122,3 +173,16 @@ sets:
         rung: oec_t2
       - defName: OEC_Armor_M_Jump
         rung: oec_t2
+  # Biotech child armor: proto plate at ~0.6x proto weight (vanilla kid 5 kg vs proto 8.5 kg).
+  - id: kid
+    rung: proto
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Armor_Kid
+        mass: 18
+        bulk: 50
+        wornBulk: 7
+      - defName: OE_Armor_Kid_Spacer
+        mass: 18
+        bulk: 50
+        wornBulk: 7

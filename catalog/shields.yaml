@@ -81,6 +81,20 @@ worn:
     members:
       - defName: OMG_Armor_Corsair
       - defName: OMG_Armor_Demolition
+  - id: omg_protector_anomaly
+    rung: omg
+    role: protector
+    plate: skip
+    mayRequire: Ludeon.RimWorld.Anomaly
+    members:
+      - defName: OMG_Armor_Commando
+  - id: omg_protector_odyssey
+    rung: omg
+    role: protector
+    plate: skip
+    mayRequire: Ludeon.RimWorld.Odyssey
+    members:
+      - defName: OMG_Armor_Swarmling
   - id: oec_guardian
     rung: oec_t2
     role: guardian

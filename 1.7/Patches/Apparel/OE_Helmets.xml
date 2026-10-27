@@ -3781,6 +3781,139 @@
       </value>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>22</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>22</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>50</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>50</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Mechanitor"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
     <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Prestige"]</xpath>
     <match Class="PatchOperationSequence">
@@ -3889,6 +4022,139 @@
       </li>
     <li Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef[defName="CAC_HeavyHelmet_Prestige"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>46</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>46</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="CAC_LightHelmet_Mechanitor"]</xpath>
         <value>
           <li Class="CombatExtended.PartialArmorExt">
             <stats>
@@ -4047,6 +4313,272 @@
       <xpath>Defs</xpath>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>22</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>22</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>50</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>50</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="CAC_PriestHelmet"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>22</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>22</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>50</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>50</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Mechanitor"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
     <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Psy"]</xpath>
     <match Class="PatchOperationSequence">
@@ -4155,6 +4687,251 @@
       </li>
     <li Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef[defName="EGO_Helmet_Exohelm_Psy"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>46</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>46</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>19</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>19</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>43</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>43</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.58</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.58</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>5.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>5.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>5.5</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>5.5</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="ODC_Helmet_Mechanitor"]</xpath>
         <value>
           <li Class="CombatExtended.PartialArmorExt">
             <stats>
@@ -4917,6 +5694,811 @@
       <xpath>Defs</xpath>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>26</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>26</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/Mass</xpath>
+          <value>
+            <Mass>1.8</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+          <value>
+            <Mass>1.8</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>2.5</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+          <value>
+            <Bulk>2.5</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+                <parts>
+                  <li>Nose</li>
+                  <li>Jaw</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+                <parts>
+                  <li>Nose</li>
+                  <li>Jaw</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>12</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>26</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>26</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/Mass</xpath>
+          <value>
+            <Mass>1.8</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+          <value>
+            <Mass>1.8</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>2.5</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+          <value>
+            <Bulk>2.5</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OE_Helmet_Kid_Spacer"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+                <parts>
+                  <li>Nose</li>
+                  <li>Jaw</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+                <parts>
+                  <li>Nose</li>
+                  <li>Jaw</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>20</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>46</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>46</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.6</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Fleshcrafter"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Gasveil"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
     <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Mindtwister"]</xpath>
     <match Class="PatchOperationSequence">
@@ -5025,6 +6607,139 @@
       </li>
     <li Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Mindtwister"]</xpath>
+        <value>
+          <li Class="CombatExtended.PartialArmorExt">
+            <stats>
+              <li>
+                <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+              <li>
+                <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+                <parts>
+                  <li>Eye</li>
+                </parts>
+              </li>
+            </stats>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>54</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.65</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/Mass</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+          <value>
+            <Mass>6.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+          <value>
+            <Bulk>6</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]</xpath>
         <value>
           <li Class="CombatExtended.PartialArmorExt">
             <stats>
@@ -5176,6 +6891,118 @@
             </stats>
           </li>
         </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Sharp</xpath>
+          <value>
+            <ArmorRating_Sharp>19</ArmorRating_Sharp>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Sharp>19</ArmorRating_Sharp>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Blunt</xpath>
+          <value>
+            <ArmorRating_Blunt>43</ArmorRating_Blunt>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Blunt>43</ArmorRating_Blunt>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/ArmorRating_Heat</xpath>
+          <value>
+            <ArmorRating_Heat>0.58</ArmorRating_Heat>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <ArmorRating_Heat>0.58</ArmorRating_Heat>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/Mass</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/Mass</xpath>
+          <value>
+            <Mass>5.6</Mass>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <Mass>5.6</Mass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/Bulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/Bulk</xpath>
+          <value>
+            <Bulk>5.5</Bulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <Bulk>5.5</Bulk>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/WornBulk</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases/WornBulk</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Helmet_M_Mechanitor"]/statBases</xpath>
+          <value>
+            <WornBulk>1</WornBulk>
+          </value>
+        </nomatch>
       </li>
       </operations>
     </match>

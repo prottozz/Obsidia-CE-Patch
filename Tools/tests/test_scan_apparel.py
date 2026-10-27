@@ -186,3 +186,54 @@ def test_real_isolated_grenadiers_cover_otc_occ_oec():
     if royalty is not None:
         assert isolated["OEC_Armor_M_Grenadier"].sharp == 1.15
         assert isolated["OEC_Armor_M_Grenadier"].may_require == ROYALTY_PACKAGE
+
+
+BIOTECH_FIXTURE = """
+  <ThingDef ParentName="OCCArmorMod">
+    <defName>OCC_Armor_M_Mechanitor</defName>
+  </ThingDef>
+  <ThingDef ParentName="OEHelmetBase">
+    <defName>OE_Helmet_Kid</defName>
+  </ThingDef>
+"""
+
+ANOMALY_FIXTURE = """
+  <ThingDef ParentName="OCCArmorMod">
+    <defName>OCC_Armor_M_Turret</defName>
+  </ThingDef>
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Grenade_Armor_OCC_TurretPack</defName>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>CAC_DisruptorFlare</defName>
+  </ThingDef>
+"""
+
+ODYSSEY_FIXTURE = """
+  <ThingDef ParentName="OEArmorBase">
+    <defName>OMG_Armor_Swarmling</defName>
+  </ThingDef>
+  <ThingDef ParentName="BaseDrone">
+    <defName>OMG_Swarmling_Drone</defName>
+  </ThingDef>
+"""
+
+
+def test_scan_dlc_records_package_and_core_parent(tmp_path):
+    from oe_ce.constants import ANOMALY_PACKAGE, BIOTECH_PACKAGE, ODYSSEY_PACKAGE
+
+    core = _write_apparel(tmp_path / "core", FIXTURE)
+    royalty = _write_apparel(tmp_path / "royalty", ROYALTY_FIXTURE)
+    bio = _write_apparel(tmp_path / "bio", BIOTECH_FIXTURE)
+    anomaly = _write_apparel(tmp_path / "anomaly", ANOMALY_FIXTURE)
+    odyssey = _write_apparel(tmp_path / "odyssey", ODYSSEY_FIXTURE)
+    found = scan_core_apparel(core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey)
+    mech = found["OCC_Armor_M_Mechanitor"]
+    assert (mech.kind, mech.concrete_parent, mech.package) == (ARMOR, "OCC_Armor_M", BIOTECH_PACKAGE)
+    assert found["OE_Helmet_Kid"].kind == HELMET
+    assert found["OCC_Armor_M_Turret"].package == ANOMALY_PACKAGE
+    assert found["OMG_Armor_Swarmling"].package == ODYSSEY_PACKAGE
+    assert found["OCC_Armor_M_Jump"].package == ROYALTY_PACKAGE
+    assert found["OCC_Armor_M"].package is None
+    for name in ("Grenade_Armor_OCC_TurretPack", "CAC_DisruptorFlare", "OMG_Swarmling_Drone"):
+        assert name not in found

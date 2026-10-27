@@ -52,19 +52,30 @@ def _remove_if_present(xpath: str) -> str:
   </Operation>"""
 
 
-def member_ops(kind: str, def_name: str, rung: str, inherits_coverage: bool) -> list[str]:
+def member_ops(
+    kind: str,
+    def_name: str,
+    rung: str,
+    inherits_coverage: bool,
+    *,
+    mass: float | None = None,
+    bulk: float | None = None,
+    worn_bulk: float | None = None,
+) -> list[str]:
     stats = apparel_stats(kind, rung)
     ops = [ensure_node(def_name, "statBases")]
     for stat, value in (
         ("ArmorRating_Sharp", stats.sharp),
         ("ArmorRating_Blunt", stats.blunt),
         ("ArmorRating_Heat", stats.heat),
-        ("Mass", stats.mass),
-        ("Bulk", stats.bulk),
-        ("WornBulk", stats.worn_bulk),
+        ("Mass", stats.mass if mass is None else mass),
+        ("Bulk", stats.bulk if bulk is None else bulk),
+        ("WornBulk", stats.worn_bulk if worn_bulk is None else worn_bulk),
     ):
         ops.append(set_stat(def_name, "statBases", stat, value))
-    if kind == ARMOR and stats.carry_weight is not None and stats.carry_bulk is not None:
+    # A mass override marks a scaled-down piece (kid gear): no adult carry offsets.
+    carries = mass is None and stats.carry_weight is not None and stats.carry_bulk is not None
+    if kind == ARMOR and carries:
         ops.append(ensure_node(def_name, "equippedStatOffsets"))
         ops.append(set_stat(def_name, "equippedStatOffsets", "CarryWeight", stats.carry_weight))
         ops.append(set_stat(def_name, "equippedStatOffsets", "CarryBulk", stats.carry_bulk))
@@ -139,16 +150,23 @@ def emit_apparel_xml(
 ) -> str:
     catalogued = {m.def_name for s in sets for m in s.members}
     rows = sorted(
-        (m.def_name, s.member_rung(m), s.member_may_require(m))
-        for s in sets
-        for m in s.members
+        ((m.def_name, s.member_rung(m), s.member_may_require(m), m) for s in sets for m in s.members),
+        key=lambda row: row[0],
     )
     core_ops: list[str] = []
     optional: list[tuple[str, str, list[str]]] = []
-    for def_name, rung, may_require in rows:
+    for def_name, rung, may_require, member in rows:
         info = core.get(def_name)
         inherits = info is not None and info.concrete_parent in catalogued
-        ops = member_ops(kind, def_name, rung, inherits)
+        ops = member_ops(
+            kind,
+            def_name,
+            rung,
+            inherits,
+            mass=member.mass,
+            bulk=member.bulk,
+            worn_bulk=member.worn_bulk,
+        )
         if may_require:
             optional.append((may_require, def_name, ops))
         else:

@@ -10,6 +10,11 @@ class ApparelMember:
     def_name: str
     rung: str | None = None
     may_require: str | None = None
+    # Optional per-piece overrides of the rung's Mass / Bulk / WornBulk
+    # (kid gear). A mass override also drops the rung's carry offsets.
+    mass: float | None = None
+    bulk: float | None = None
+    worn_bulk: float | None = None
 
 
 @dataclass

@@ -8,7 +8,12 @@ from oe_ce.constants import RUNGS
 from oe_ce.scan_apparel import CoreApparel, is_excluded_apparel
 
 
-def validate_apparel_catalog(cat: ApparelCatalog, core: dict[str, CoreApparel]) -> list[str]:
+def validate_apparel_catalog(
+    cat: ApparelCatalog,
+    core: dict[str, CoreApparel],
+    *,
+    present_packages: frozenset[str] = frozenset(),
+) -> list[str]:
     errors: list[str] = []
     seen: list[str] = []
     resolved: dict[str, tuple[str, str]] = {}
@@ -22,10 +27,18 @@ def validate_apparel_catalog(cat: ApparelCatalog, core: dict[str, CoreApparel]) 
             errors.append(f"{name}: excluded apparel must not be catalogued")
             continue
         info = core.get(name)
+        may_require = apparel_set.member_may_require(member)
         if info is None:
+            if may_require and may_require not in present_packages:
+                continue
             errors.append(f"{name}: not an in-scope apparel def")
-        elif info.kind != kind:
-            errors.append(f"{name}: catalogued as {kind} but Core layer is {info.kind}")
+        else:
+            if info.kind != kind:
+                errors.append(f"{name}: catalogued as {kind} but Core layer is {info.kind}")
+            if info.package != may_require:
+                errors.append(
+                    f"{name}: mayRequire {may_require} but defined in {info.package or 'Core'}"
+                )
         resolved[name] = (kind, rung)
     for name, count in Counter(seen).items():
         if count > 1:

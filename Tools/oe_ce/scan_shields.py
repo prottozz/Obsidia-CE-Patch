@@ -182,6 +182,8 @@ def scan_shields(
     vef: Path | None = None,
     biotech: Path | None = None,
     mech_upgrades: Path | None = None,
+    anomaly: Path | None = None,
+    odyssey: Path | None = None,
 ) -> dict[str, CoreShield]:
     apparel = _xml_paths(core / "Defs" / "ThingDefs_Misc" / "Apparel")
     races = _xml_paths(core / "Defs" / "ThingDefs_Races")
@@ -190,8 +192,12 @@ def scan_shields(
     bio_defs = _xml_paths(biotech / "Defs" if biotech is not None else None)
     bio_patches = _xml_paths(biotech / "Patches" if biotech is not None else None)
     mu_paths = _xml_paths(mech_upgrades)
+    anomaly_defs = _xml_paths(anomaly / "Defs" if anomaly is not None else None)
+    odyssey_defs = _xml_paths(odyssey / "Defs" if odyssey is not None else None)
 
-    index = _index_thingdefs(apparel + races + royalty_paths + vef_paths + bio_defs)
+    index = _index_thingdefs(
+        apparel + races + royalty_paths + vef_paths + bio_defs + anomaly_defs + odyssey_defs
+    )
     out: dict[str, CoreShield] = {}
     _collect_thingdefs(index, out)
     for name in _patched_energy_names(bio_patches):

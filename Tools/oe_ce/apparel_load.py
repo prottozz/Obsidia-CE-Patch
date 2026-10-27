@@ -22,6 +22,9 @@ def _sets(path: Path) -> list[ApparelSet]:
                         def_name=m["defName"],
                         rung=m.get("rung"),
                         may_require=m.get("mayRequire"),
+                        mass=m.get("mass"),
+                        bulk=m.get("bulk"),
+                        worn_bulk=m.get("wornBulk"),
                     )
                     for m in raw.get("members") or []
                 ],

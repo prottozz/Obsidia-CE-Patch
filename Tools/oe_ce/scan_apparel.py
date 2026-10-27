@@ -5,7 +5,12 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 from oe_ce.apparel_rungs import ARMOR, HELMET
-from oe_ce.constants import ROYALTY_PACKAGE
+from oe_ce.constants import (
+    ANOMALY_PACKAGE,
+    BIOTECH_PACKAGE,
+    ODYSSEY_PACKAGE,
+    ROYALTY_PACKAGE,
+)
 from oe_ce.scan_obsidia import ThingDefIndex, index_thingdefs, walk_parents
 
 APPAREL_EXCLUDE_EXACT = frozenset(
@@ -38,6 +43,7 @@ class CoreApparel:
     def_name: str
     kind: str
     concrete_parent: str | None = None
+    package: str | None = None
 
 
 @dataclass(frozen=True)
@@ -159,10 +165,45 @@ def scan_isolated_grenadiers(
     return out
 
 
+def _dlc_trees(
+    royalty: Path | None,
+    biotech: Path | None,
+    anomaly: Path | None,
+    odyssey: Path | None,
+) -> list[tuple[Path, str]]:
+    return [
+        (root, pkg)
+        for root, pkg in (
+            (royalty, ROYALTY_PACKAGE),
+            (biotech, BIOTECH_PACKAGE),
+            (anomaly, ANOMALY_PACKAGE),
+            (odyssey, ODYSSEY_PACKAGE),
+        )
+        if root is not None
+    ]
+
+
 def scan_core_apparel(
-    core: Path, royalty: Path | None = None
+    core: Path,
+    royalty: Path | None = None,
+    *,
+    biotech: Path | None = None,
+    anomaly: Path | None = None,
+    odyssey: Path | None = None,
 ) -> dict[str, CoreApparel]:
-    index = _index(core, royalty)
+    """Combat Shell / Overhead apparel from Core plus any DLC trees passed.
+
+    One index spans every tree so DLC children resolve their Core parents.
+    ``package`` is the DLC whose folder defines the def (None for Core).
+    """
+    files = _apparel_files(core, required=True)
+    package_of: dict[str, str] = {}
+    for root, pkg in _dlc_trees(royalty, biotech, anomaly, odyssey):
+        dlc_files = _apparel_files(root, required=False)
+        for def_name in index_thingdefs(dlc_files).by_def:
+            package_of[def_name] = pkg
+        files = files + dlc_files
+    index = index_thingdefs(files)
     out: dict[str, CoreApparel] = {}
     for def_name, el in sorted(index.by_def.items()):
         if el.get("Abstract") == "True" or is_excluded_apparel(def_name):
@@ -170,5 +211,7 @@ def scan_core_apparel(
         kind = _kind(_layers(index, el))
         if kind is None:
             continue
-        out[def_name] = CoreApparel(def_name, kind, _concrete_parent(index, el))
+        out[def_name] = CoreApparel(
+            def_name, kind, _concrete_parent(index, el), package_of.get(def_name)
+        )
     return out

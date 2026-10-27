@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CAC_HeavyArmor_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_CAC_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="CAC_LightArmor_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CAC_LightArmor_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_CAC_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="CAC_PriestArmor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="CAC_PriestArmor"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy flare</label>
+              <defaultProjectile>Grenade_DisruptorFlare</defaultProjectile>
+              <warmupTime>0.35</warmupTime>
+              <range>19.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <violent>false</violent>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>FlareLaunch</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <explosionRadiusRingColor>(0.8, 0.8, 0.4, 1)</explosionRadiusRingColor>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Mechanitor"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="EGO_Armor_Shell_Mechanitor"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_EGO_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OCC_Armor_M_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OCC_Armor_M_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_OCC_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ODC_Armor_Duelist_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_ODC_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="ODC_Armor_Recon_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_ODC_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMC_Armor_M_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMC_Armor_M_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_OMC_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy turret</label>
+              <defaultProjectile>Grenade_Armor_OMG_TurretPack</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Firemark"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <commandIcon>UI/Abilities/Armor/DisruptorFlare</commandIcon>
+              <defaultProjectile>OMG_DisruptorFlare</defaultProjectile>
+              <warmupTime>0.5</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <violent>false</violent>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>FlareLaunch</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <explosionRadiusRingColor>(0.8, 0.8, 0.4, 1)</explosionRadiusRingColor>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMG_Trophy_Helmet_Necrospark"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <defaultProjectile>Grenade_OMG_Deadlife</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>23.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <violent>false</violent>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OTC_Armor_M_Turret"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OTC_Armor_M_Turret"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy acid turret</label>
+              <defaultProjectile>Grenade_Armor_OTC_TurretPack_Acid</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy cryo turret</label>
+              <defaultProjectile>Grenade_Armor_OTC_TurretPack_Cryo</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy fire turret</label>
+              <defaultProjectile>Grenade_Armor_OTC_TurretPack_Fire</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+              <label>deploy EMP turret</label>
+              <defaultProjectile>Grenade_Armor_OTC_TurretPack_EMP</defaultProjectile>
+              <warmupTime>1.0</warmupTime>
+              <range>22.9</range>
+              <burstShotCount>1</burstShotCount>
+              <onlyManualCast>true</onlyManualCast>
+              <hasStandardCommand>true</hasStandardCommand>
+              <targetable>true</targetable>
+              <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+              </targetParams>
+              <soundCast>ThrowGrenade</soundCast>
+              <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+              <canGoWild>false</canGoWild>
+              <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+              <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_CAC_TurretPack"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_CAC_TurretPack"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_CAC_TurretPack"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>CAC_Turret_TacticalTurret</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_EGO_TurretPack"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_EGO_TurretPack"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_EGO_TurretPack"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>EGO_Turret_TacticalTurret</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OCC_TurretPack"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OCC_TurretPack"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OCC_TurretPack"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OCC_Turret_TacticalTurret</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_ODC_TurretPack"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_ODC_TurretPack"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_ODC_TurretPack"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>ODC_Turret_TacticalTurret</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OMC_TurretPack"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OMC_TurretPack"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OMC_TurretPack"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OMC_Turret_TacticalTurret</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OMG_TurretPack"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OMG_TurretPack"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OMG_TurretPack"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OMG_Turret_TacticalTurret</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Acid"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Acid"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OTC_Turret_TacticalTurret_Acid</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Cryo"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Cryo"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OTC_Turret_TacticalTurret_Cryo</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_EMP"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_EMP"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OTC_Turret_TacticalTurret_EMP</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Fire"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_Armor_OTC_TurretPack_Fire"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spawnsThingDef>OTC_Turret_TacticalTurret_Fire</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="Grenade_OMG_Deadlife"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_OMG_Deadlife"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Grenade_OMG_Deadlife"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <damageAmountBase>0</damageAmountBase>
+              <speed>12</speed>
+              <explosionRadius>0.1</explosionRadius>
+              <damageDef>DeadlifeDust</damageDef>
+              <soundExplode>ToxicShellLanded</soundExplode>
+              <postExplosionSpawnThingDef>Shell_OMG_Deadlife</postExplosionSpawnThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_DisruptorFlare"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMG_DisruptorFlare"]/thingClass</xpath>
+        <value>
+          <thingClass>CombatExtended.ProjectileCE_SpawnsThing</thingClass>
+        </value>
+      </li>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OMG_DisruptorFlare"]/projectile</xpath>
+        <value>
+          <projectile Class="CombatExtended.ProjectilePropertiesCE">
+              <dropsCasings>false</dropsCasings>
+              <dangerFactor>0</dangerFactor>
+              <airborneSuppressionFactor>0</airborneSuppressionFactor>
+              <speed>12</speed>
+              <spinRate>3</spinRate>
+              <landedEffecter>DisruptorFlareLanded</landedEffecter>
+              <spawnsThingDef>DisruptorFlare</spawnsThingDef>
+          </projectile>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+</Patch>
