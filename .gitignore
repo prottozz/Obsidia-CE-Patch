@@ -5,3 +5,5 @@ docs/superpowers/
 .worktrees/
 *.pyc
 .venv/
+Source/**/obj/
+Source/**/bin/

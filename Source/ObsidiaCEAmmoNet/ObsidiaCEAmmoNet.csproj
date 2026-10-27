@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Bridge between Obsidia's VEF PipeSystem ammo network (OE_AmmoNet) and Combat
+    Extended turret magazines. Loaded only when VEF is active (see LoadFolders.xml).
+
+    Build:  dotnet build -c Release -p:CombatExtendedDll=<path to CE 1.7 CombatExtended.dll>
+    PipeSystemDll defaults to the VEF 1.7 copy under ../../../references.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>14</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ObsidiaCEAmmoNet</AssemblyName>
+    <RootNamespace>ObsidiaCEAmmoNet</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>none</DebugType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutputPath>$(MSBuildThisFileDirectory)..\..\1.7\Mods\AmmoNet\Assemblies\</OutputPath>
+    <PipeSystemDll Condition="'$(PipeSystemDll)' == ''">$(MSBuildThisFileDirectory)..\..\..\references\294100\2023507013\1.7\Assemblies\PipeSystem.dll</PipeSystemDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.4977-alpha.1" ExcludeAssets="runtime" />
+    <Reference Include="CombatExtended">
+      <HintPath>$(CombatExtendedDll)</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="PipeSystem">
+      <HintPath>$(PipeSystemDll)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
