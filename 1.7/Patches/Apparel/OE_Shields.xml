@@ -1438,6 +1438,110 @@
       <xpath>Defs</xpath>
     </nomatch>
   </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Anomaly">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.07</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.07</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases/EnergyShieldRechargeRate</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases/EnergyShieldRechargeRate</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.307</EnergyShieldRechargeRate>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Commando"]/statBases</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.307</EnergyShieldRechargeRate>
+          </value>
+        </nomatch>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]</xpath>
+          <value>
+            <statBases />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases/EnergyShieldEnergyMax</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases/EnergyShieldEnergyMax</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.07</EnergyShieldEnergyMax>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases</xpath>
+          <value>
+            <EnergyShieldEnergyMax>2.07</EnergyShieldEnergyMax>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases/EnergyShieldRechargeRate</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases/EnergyShieldRechargeRate</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.307</EnergyShieldRechargeRate>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Armor_Swarmling"]/statBases</xpath>
+          <value>
+            <EnergyShieldRechargeRate>0.307</EnergyShieldRechargeRate>
+          </value>
+        </nomatch>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
   <Operation Class="PatchOperationConditional" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
     <xpath>Defs/ThingDef[@Name="OEShieldBase"]</xpath>
     <match Class="PatchOperationSequence">

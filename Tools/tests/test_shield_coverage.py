@@ -3,9 +3,11 @@ from pathlib import Path
 
 from oe_ce.apparel_load import load_apparel_catalog
 from oe_ce.constants import (
+    DEFAULT_OBSIDIA_ANOMALY,
     DEFAULT_OBSIDIA_BIOTECH,
     DEFAULT_OBSIDIA_CORE,
     DEFAULT_OBSIDIA_MU,
+    DEFAULT_OBSIDIA_ODYSSEY,
     DEFAULT_OBSIDIA_ROYALTY,
     DEFAULT_OBSIDIA_VEF,
 )
@@ -31,6 +33,9 @@ def test_obsidia_shields_fully_catalogued():
         vef=_dir("OBSIDIA_VEF", DEFAULT_OBSIDIA_VEF),
         biotech=_dir("OBSIDIA_BIOTECH", DEFAULT_OBSIDIA_BIOTECH),
         mech_upgrades=_dir("OBSIDIA_MU", DEFAULT_OBSIDIA_MU),
+        anomaly=_dir("OBSIDIA_ANOMALY", DEFAULT_OBSIDIA_ANOMALY),
+        odyssey=_dir("OBSIDIA_ODYSSEY", DEFAULT_OBSIDIA_ODYSSEY),
     )
-    errs = validate_shield_catalog(cat, scanned, armor_names)
+    # Strict: every catalogued row must be found when its tree is installed.
+    errs = validate_shield_catalog(cat, scanned, armor_names, present_packages=None)
     assert errs == [], "\n".join(errs)

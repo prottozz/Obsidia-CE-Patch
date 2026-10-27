@@ -19,8 +19,10 @@ from oe_ce.constants import (
     DEFAULT_OBSIDIA_VEF,
     GAME_VERSION,
     IDEOLOGY_PACKAGE,
+    MU_PACKAGE,
     ODYSSEY_PACKAGE,
     ROYALTY_PACKAGE,
+    VEF_PACKAGE,
 )
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
@@ -118,8 +120,15 @@ def generate(root: Path) -> None:
     scanned_bodies = scan_bodies(core, bio, anomaly)
     errors += validate_body_catalog(bodies, scanned_bodies, present_packages=present_packages)
     armor_names = {m.def_name for s in apparel.armor for m in s.members}
-    scanned_shields = scan_shields(core, royalty, vef, bio, mu)
-    errors += validate_shield_catalog(shields, scanned_shields, armor_names)
+    scanned_shields = scan_shields(
+        core, royalty, vef, bio, mu, anomaly=anomaly, odyssey=odyssey
+    )
+    shield_packages = present_packages | frozenset(
+        pkg for path, pkg in ((vef, VEF_PACKAGE), (mu, MU_PACKAGE)) if path is not None
+    )
+    errors += validate_shield_catalog(
+        shields, scanned_shields, armor_names, present_packages=shield_packages
+    )
     if errors and os.environ.get("OE_CE_ALLOW_PARTIAL") != "1":
         for msg in errors:
             print(msg, file=sys.stderr)

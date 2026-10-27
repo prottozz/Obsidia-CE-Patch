@@ -156,3 +156,39 @@ def test_duplicate_and_upgrade_factor():
     assert any("factor" in e for e in errors)
     assert any("size" in e for e in errors)
     assert any("analogue" in e for e in errors)
+
+
+def _anomaly_commando() -> ShieldCatalog:
+    return _cat(
+        worn=[
+            WornSet(
+                "omg_protector_anomaly",
+                "omg",
+                "protector",
+                "skip",
+                [ShieldMember("OMG_Armor_Commando")],
+                may_require="Ludeon.RimWorld.Anomaly",
+            )
+        ]
+    )
+
+
+def test_optional_worn_skipped_only_when_package_absent():
+    assert validate_shield_catalog(_anomaly_commando(), {}, ARMOR) == []
+    errors = validate_shield_catalog(
+        _anomaly_commando(),
+        {},
+        ARMOR,
+        present_packages=frozenset({"Ludeon.RimWorld.Anomaly"}),
+    )
+    assert any("OMG_Armor_Commando" in e and "not in scan" in e for e in errors)
+    scanned = {"OMG_Armor_Commando": CoreShield("OMG_Armor_Commando", WORN, False)}
+    assert (
+        validate_shield_catalog(
+            _anomaly_commando(),
+            scanned,
+            ARMOR,
+            present_packages=frozenset({"Ludeon.RimWorld.Anomaly"}),
+        )
+        == []
+    )

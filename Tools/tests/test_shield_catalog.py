@@ -66,4 +66,4 @@ def test_catalog_def_names_are_unique():
     cat = load_shield_catalog(ROOT / "catalog")
     names = list(cat.def_names())
     assert len(names) == len(set(names))
-    assert len(names) == 24 + 11 + 4 + 1
+    assert len(names) == 26 + 11 + 4 + 1
