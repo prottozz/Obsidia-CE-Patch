@@ -9568,4 +9568,1713 @@
     </secondaryDamage>
   </projectile>
 </ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_CAC_Gun_TacticalTurret</defName>
+  <label>CAC_Gun_TacticalTurret shotgun ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_shotgun_ballistic_standard>Bullet_OE_CAC_Gun_TacticalTurret_standard</Ammo_OE_shotgun_ballistic_standard>
+    <Ammo_OE_shotgun_ballistic_ap>Bullet_OE_CAC_Gun_TacticalTurret_ap</Ammo_OE_shotgun_ballistic_ap>
+    <Ammo_OE_shotgun_ballistic_hp>Bullet_OE_CAC_Gun_TacticalTurret_hp</Ammo_OE_shotgun_ballistic_hp>
+    <Ammo_OE_shotgun_ballistic_emp>Bullet_OE_CAC_Gun_TacticalTurret_emp</Ammo_OE_shotgun_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_Gun_TacticalTurret_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_Gun_TacticalTurret_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_Gun_TacticalTurret_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_CAC_TurretGun_Big</defName>
+  <label>CAC_TurretGun_Big rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_CAC_TurretGun_Big_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_CAC_TurretGun_Big_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_CAC_TurretGun_Big_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_CAC_TurretGun_Big_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Big_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Big_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Big_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Big_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_CAC_TurretGun_Small</defName>
+  <label>CAC_TurretGun_Small rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_CAC_TurretGun_Small_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_CAC_TurretGun_Small_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_CAC_TurretGun_Small_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_CAC_TurretGun_Small_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Small_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Small_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Small_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_CAC_TurretGun_Small_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OCC_Gun_TacticalTurret</defName>
+  <label>OCC_Gun_TacticalTurret rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_OCC_Gun_TacticalTurret_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_OCC_Gun_TacticalTurret_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_OCC_Gun_TacticalTurret_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_OCC_Gun_TacticalTurret_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_Gun_TacticalTurret_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_Gun_TacticalTurret_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_Gun_TacticalTurret_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OCC_TurretGun_Big</defName>
+  <label>OCC_TurretGun_Big launcher ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_launcher_ballistic_standard>Bullet_OE_OCC_TurretGun_Big_standard</Ammo_OE_launcher_ballistic_standard>
+    <Ammo_OE_launcher_ballistic_ap>Bullet_OE_OCC_TurretGun_Big_ap</Ammo_OE_launcher_ballistic_ap>
+    <Ammo_OE_launcher_ballistic_hp>Bullet_OE_OCC_TurretGun_Big_hp</Ammo_OE_launcher_ballistic_hp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_TurretGun_Big_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_Rocket</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_TurretGun_Big_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_Rocket</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_TurretGun_Big_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_Rocket</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OCC_TurretGun_Small</defName>
+  <label>OCC_TurretGun_Small launcher ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_launcher_ballistic_standard>Bullet_OE_OCC_TurretGun_Small_standard</Ammo_OE_launcher_ballistic_standard>
+    <Ammo_OE_launcher_ballistic_ap>Bullet_OE_OCC_TurretGun_Small_ap</Ammo_OE_launcher_ballistic_ap>
+    <Ammo_OE_launcher_ballistic_hp>Bullet_OE_OCC_TurretGun_Small_hp</Ammo_OE_launcher_ballistic_hp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_TurretGun_Small_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_TurretGun_Small_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OCC_TurretGun_Small_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_ODC_Gun_TacticalTurret</defName>
+  <label>ODC_Gun_TacticalTurret pistol ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_ballistic_standard>Bullet_OE_ODC_Gun_TacticalTurret_standard</Ammo_OE_pistol_ballistic_standard>
+    <Ammo_OE_pistol_ballistic_ap>Bullet_OE_ODC_Gun_TacticalTurret_ap</Ammo_OE_pistol_ballistic_ap>
+    <Ammo_OE_pistol_ballistic_hp>Bullet_OE_ODC_Gun_TacticalTurret_hp</Ammo_OE_pistol_ballistic_hp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.8</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_Gun_TacticalTurret_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.8</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_Gun_TacticalTurret_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.8</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_ODC_TurretGun_Big</defName>
+  <label>ODC_TurretGun_Big rocket ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rocket_ballistic_standard>Bullet_OE_ODC_TurretGun_Big_standard</Ammo_OE_rocket_ballistic_standard>
+    <Ammo_OE_rocket_ballistic_ap>Bullet_OE_ODC_TurretGun_Big_ap</Ammo_OE_rocket_ballistic_ap>
+    <Ammo_OE_rocket_ballistic_hp>Bullet_OE_ODC_TurretGun_Big_hp</Ammo_OE_rocket_ballistic_hp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_TurretGun_Big_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_NACJAC_Charge</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>2.0</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_TurretGun_Big_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_NACJAC_Charge</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>2.0</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_TurretGun_Big_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_NACJAC_Charge</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>2.0</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_ODC_TurretGun_Small</defName>
+  <label>ODC_TurretGun_Small pistol emp</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_emp_emp>Bullet_OE_ODC_TurretGun_Small_emp</Ammo_OE_pistol_emp_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_ODC_TurretGun_Small_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/ODC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>18</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.45</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OEC_Gun_TacticalTurret</defName>
+  <label>OEC_Gun_TacticalTurret rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_OEC_Gun_TacticalTurret_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_OEC_Gun_TacticalTurret_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_OEC_Gun_TacticalTurret_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_OEC_Gun_TacticalTurret_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_Gun_TacticalTurret_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_Gun_TacticalTurret_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_Gun_TacticalTurret_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.2</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OEC_TurretGun_Big</defName>
+  <label>OEC_TurretGun_Big rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_OEC_TurretGun_Big_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_OEC_TurretGun_Big_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_OEC_TurretGun_Big_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_OEC_TurretGun_Big_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Big_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Big_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Big_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Big_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OEC_TurretGun_Small</defName>
+  <label>OEC_TurretGun_Small rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_OEC_TurretGun_Small_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_OEC_TurretGun_Small_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_OEC_TurretGun_Small_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_OEC_TurretGun_Small_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Small_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Small_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Small_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OEC_TurretGun_Small_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OEC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OMC_Gun_TacticalTurret</defName>
+  <label>OMC_Gun_TacticalTurret pistol ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_ballistic_standard>Bullet_OE_OMC_Gun_TacticalTurret_standard</Ammo_OE_pistol_ballistic_standard>
+    <Ammo_OE_pistol_ballistic_ap>Bullet_OE_OMC_Gun_TacticalTurret_ap</Ammo_OE_pistol_ballistic_ap>
+    <Ammo_OE_pistol_ballistic_hp>Bullet_OE_OMC_Gun_TacticalTurret_hp</Ammo_OE_pistol_ballistic_hp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_Gun_TacticalTurret_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_Gun_TacticalTurret_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall_M</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OMC_TurretGun_Big</defName>
+  <label>OMC_TurretGun_Big rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_OMC_TurretGun_Big_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_OMC_TurretGun_Big_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_OMC_TurretGun_Big_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_OMC_TurretGun_Big_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Big_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Big_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Big_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Big_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OMC_TurretGun_Small</defName>
+  <label>OMC_TurretGun_Small shotgun ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_shotgun_ballistic_standard>Bullet_OE_OMC_TurretGun_Small_standard</Ammo_OE_shotgun_ballistic_standard>
+    <Ammo_OE_shotgun_ballistic_ap>Bullet_OE_OMC_TurretGun_Small_ap</Ammo_OE_shotgun_ballistic_ap>
+    <Ammo_OE_shotgun_ballistic_hp>Bullet_OE_OMC_TurretGun_Small_hp</Ammo_OE_shotgun_ballistic_hp>
+    <Ammo_OE_shotgun_ballistic_emp>Bullet_OE_OMC_TurretGun_Small_emp</Ammo_OE_shotgun_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Small_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Small_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Small_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMC_TurretGun_Small_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OMC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OMG_Gun_TacticalTurret</defName>
+  <label>OMG_Gun_TacticalTurret pistol ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_ballistic_standard>Bullet_OE_OMG_Gun_TacticalTurret_standard</Ammo_OE_pistol_ballistic_standard>
+    <Ammo_OE_pistol_ballistic_ap>Bullet_OE_OMG_Gun_TacticalTurret_ap</Ammo_OE_pistol_ballistic_ap>
+    <Ammo_OE_pistol_ballistic_hp>Bullet_OE_OMG_Gun_TacticalTurret_hp</Ammo_OE_pistol_ballistic_hp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_Gun_TacticalTurret_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_Gun_TacticalTurret_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OMG_TurretGun_Big</defName>
+  <label>OMG_TurretGun_Big rifle ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_rifle_ballistic_standard>Bullet_OE_OMG_TurretGun_Big_standard</Ammo_OE_rifle_ballistic_standard>
+    <Ammo_OE_rifle_ballistic_ap>Bullet_OE_OMG_TurretGun_Big_ap</Ammo_OE_rifle_ballistic_ap>
+    <Ammo_OE_rifle_ballistic_hp>Bullet_OE_OMG_TurretGun_Big_hp</Ammo_OE_rifle_ballistic_hp>
+    <Ammo_OE_rifle_ballistic_emp>Bullet_OE_OMG_TurretGun_Big_emp</Ammo_OE_rifle_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Big_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Big_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Big_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Big_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OMG_TurretGun_Small</defName>
+  <label>OMG_TurretGun_Small shotgun ballistic</label>
+  <ammoTypes>
+    <Ammo_OE_shotgun_ballistic_standard>Bullet_OE_OMG_TurretGun_Small_standard</Ammo_OE_shotgun_ballistic_standard>
+    <Ammo_OE_shotgun_ballistic_ap>Bullet_OE_OMG_TurretGun_Small_ap</Ammo_OE_shotgun_ballistic_ap>
+    <Ammo_OE_shotgun_ballistic_hp>Bullet_OE_OMG_TurretGun_Small_hp</Ammo_OE_shotgun_ballistic_hp>
+    <Ammo_OE_shotgun_ballistic_emp>Bullet_OE_OMG_TurretGun_Small_emp</Ammo_OE_shotgun_ballistic_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Small_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Small_ap</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>10</damageAmountBase>
+    <armorPenetrationSharp>32</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Small_hp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>16</damageAmountBase>
+    <armorPenetrationSharp>10</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_TurretGun_Small_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/CAC_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>6</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.15</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_Gun_TacticalTurret_Acid</defName>
+  <label>OTC_Gun_TacticalTurret_Acid pistol acid</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_acid_acid>Bullet_OE_OTC_Gun_TacticalTurret_Acid_acid</Ammo_OE_pistol_acid_acid>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_Gun_TacticalTurret_Acid_acid</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_Acid</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.6</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>12</damageAmountBase>
+    <armorPenetrationSharp>40</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCAcid</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_Gun_TacticalTurret_Cryo</defName>
+  <label>OTC_Gun_TacticalTurret_Cryo pistol cryo</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_cryo_cryo>Bullet_OE_OTC_Gun_TacticalTurret_Cryo_cryo</Ammo_OE_pistol_cryo_cryo>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_Gun_TacticalTurret_Cryo_cryo</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_Cryo</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.6</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCCryo</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_Gun_TacticalTurret_EMP</defName>
+  <label>OTC_Gun_TacticalTurret_EMP pistol emp</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_emp_emp>Bullet_OE_OTC_Gun_TacticalTurret_EMP_emp</Ammo_OE_pistol_emp_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_Gun_TacticalTurret_EMP_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_EMP</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.6</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>18</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.45</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_Gun_TacticalTurret_Fire</defName>
+  <label>OTC_Gun_TacticalTurret_Fire pistol fire</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_fire_fire>Bullet_OE_OTC_Gun_TacticalTurret_Fire_fire</Ammo_OE_pistol_fire_fire>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_Gun_TacticalTurret_Fire_fire</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_Fire</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>0.6</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>Flame</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Big_Acid</defName>
+  <label>OTC_TurretGun_Big_Acid launcher acid</label>
+  <ammoTypes>
+    <Ammo_OE_launcher_acid_acid>Bullet_OE_OTC_TurretGun_Big_Acid_acid</Ammo_OE_launcher_acid_acid>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Big_Acid_acid</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_Grenade_Acid</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>12</damageAmountBase>
+    <armorPenetrationSharp>40</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCAcid</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Big_Cryo</defName>
+  <label>OTC_TurretGun_Big_Cryo launcher cryo</label>
+  <ammoTypes>
+    <Ammo_OE_launcher_cryo_cryo>Bullet_OE_OTC_TurretGun_Big_Cryo_cryo</Ammo_OE_launcher_cryo_cryo>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Big_Cryo_cryo</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_Grenade_Cryo</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCCryo</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Big_EMP</defName>
+  <label>OTC_TurretGun_Big_EMP launcher emp</label>
+  <ammoTypes>
+    <Ammo_OE_launcher_emp_emp>Bullet_OE_OTC_TurretGun_Big_EMP_emp</Ammo_OE_launcher_emp_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Big_EMP_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_Grenade_EMP</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>18</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.45</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Big_Fire</defName>
+  <label>OTC_TurretGun_Big_Fire launcher fire</label>
+  <ammoTypes>
+    <Ammo_OE_launcher_fire_fire>Bullet_OE_OTC_TurretGun_Big_Fire_fire</Ammo_OE_launcher_fire_fire>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Big_Fire_fire</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_Grenade_Fire</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>1.5</drawSize>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>Flame</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Small_Acid</defName>
+  <label>OTC_TurretGun_Small_Acid pistol acid</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_acid_acid>Bullet_OE_OTC_TurretGun_Small_Acid_acid</Ammo_OE_pistol_acid_acid>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Small_Acid_acid</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_Acid</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>12</damageAmountBase>
+    <armorPenetrationSharp>40</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCAcid</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Small_Cryo</defName>
+  <label>OTC_TurretGun_Small_Cryo pistol cryo</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_cryo_cryo>Bullet_OE_OTC_TurretGun_Small_Cryo_cryo</Ammo_OE_pistol_cryo_cryo>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Small_Cryo_cryo</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_Cryo</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCCryo</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Small_EMP</defName>
+  <label>OTC_TurretGun_Small_EMP pistol emp</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_emp_emp>Bullet_OE_OTC_TurretGun_Small_EMP_emp</Ammo_OE_pistol_emp_emp>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Small_EMP_emp</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_EMP</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>8</damageAmountBase>
+    <armorPenetrationSharp>12</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>EMP</def>
+        <amount>18</amount>
+      </li>
+    </secondaryDamage>
+    <empShieldBreakChance>0.45</empShieldBreakChance>
+  </projectile>
+</ThingDef>
+
+<CombatExtended.AmmoSetDef>
+  <defName>AmmoSet_OE_OTC_TurretGun_Small_Fire</defName>
+  <label>OTC_TurretGun_Small_Fire pistol fire</label>
+  <ammoTypes>
+    <Ammo_OE_pistol_fire_fire>Bullet_OE_OTC_TurretGun_Small_Fire_fire</Ammo_OE_pistol_fire_fire>
+  </ammoTypes>
+</CombatExtended.AmmoSetDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OTC_TurretGun_Small_Fire_fire</defName>
+  <graphicData>
+    <texPath>Things/Projectile/OTC_EnergySmall_M_Fire</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>Flame</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+    <ai_IsIncendiary>true</ai_IsIncendiary>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_EGO_Gun_TacticalTurret_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_EGO_TurretGun_Small_GrenadeLauncher_cryo</defName>
+  <graphicData>
+    <texPath>Things/Projectile/EGO_Grenade</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+    <secondaryDamage>
+      <li>
+        <def>OTCCryo</def>
+        <amount>8</amount>
+      </li>
+    </secondaryDamage>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_EGO_TurretGun_Small_SMG_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/EGO_BulletSmall</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_EGO_TurretGun_Small_Shotgun_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/EGO_Shotgun</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_EGO_TurretGun_Small_SniperRifle_standard</defName>
+  <graphicData>
+    <texPath>Things/Projectile/EGO_BulletBig</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
+
+<ThingDef ParentName="BaseBulletCE">
+  <defName>Bullet_OE_OMG_Gun_TacticalTurret_Lancecaster_energy</defName>
+  <graphicData>
+    <texPath>Things/Projectile/Bullet_Small</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>Bullet</damageDef>
+    <damageAmountBase>13</damageAmountBase>
+    <armorPenetrationSharp>18</armorPenetrationSharp>
+    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <speed>151</speed>
+  </projectile>
+</ThingDef>
 </Defs>
