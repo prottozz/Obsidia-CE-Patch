@@ -339,3 +339,24 @@ def test_committed_dlc_apparel_is_wrapped_and_plated():
     assert pkg == "Ludeon.RimWorld.Biotech"
     assert "<ArmorRating_Sharp>22</ArmorRating_Sharp>" in mech
     assert helmets["OMG_Trophy_Helmet_Necrospark"][0] == "Ludeon.RimWorld.Anomaly"
+
+
+def test_committed_apparel_verbs_cover_dlc_deploys():
+    path = ROOT / "1.7" / "Patches" / "Apparel" / "OE_ApparelVerbs.xml"
+    blocks = _optional_blocks(path)
+    for name in (
+        "OCC_Armor_M_Turret",
+        "OTC_Armor_M_Turret",
+        "OMG_Armor_Commando",
+        "CAC_PriestArmor",
+        "OMG_Trophy_Helmet_Firemark",
+        "OMG_Trophy_Helmet_Necrospark",
+        "Grenade_Armor_OTC_TurretPack_EMP",
+        "Grenade_OMG_Deadlife",
+    ):
+        assert blocks[name][0] == "Ludeon.RimWorld.Anomaly", name
+    pkg, ego = blocks["EGO_Armor_Shell_Mechanitor"]
+    assert pkg == "Ludeon.RimWorld.Biotech"
+    assert "Verb_LaunchProjectileStaticCE" in ego
+    assert blocks["OTC_Armor_M_Turret"][1].count("Verb_LaunchProjectileStaticCE") == 4
+    assert "OMG_Armor_Swarmling" not in blocks

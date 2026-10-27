@@ -26,6 +26,7 @@ from oe_ce.constants import (
 )
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
+from oe_ce.emit_apparel_verbs import emit_apparel_verb_xml
 from oe_ce.emit_grenade_belts import emit_grenade_belt_xml
 from oe_ce.emit_guns import emit_gun_patches
 from oe_ce.emit_melee import emit_melee_xml
@@ -41,6 +42,7 @@ from oe_ce.load import load_catalog
 from oe_ce.race_analogues import ANIMAL, MECHANOID
 from oe_ce.race_load import load_race_catalog
 from oe_ce.scan_apparel import scan_core_apparel, scan_isolated_grenadiers
+from oe_ce.scan_apparel_verbs import scan_apparel_verbs
 from oe_ce.scan_bodies import scan_bodies
 from oe_ce.scan_obsidia import scan_core_ranged
 from oe_ce.scan_races import scan_races
@@ -111,10 +113,14 @@ def generate(root: Path) -> None:
         core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey
     )
     isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
+    apparel_verbs = scan_apparel_verbs(
+        core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey
+    )
     errors = validate_catalog(cat, scan_core_ranged(core))
     errors += validate_apparel_catalog(
         apparel, core_apparel, present_packages=present_packages
     )
+    errors += apparel_verbs.errors
     core_races = scan_races(core, bio, anomaly, ideology, royalty)
     errors += validate_race_catalog(races, core_races, present_packages=present_packages)
     scanned_bodies = scan_bodies(core, bio, anomaly)
@@ -159,6 +165,10 @@ def generate(root: Path) -> None:
     _write(
         out / "Patches" / "Apparel" / "OE_Helmets.xml",
         emit_apparel_xml(apparel.helmets, HELMET, core_apparel, isolated_grenadiers),
+    )
+    _write(
+        out / "Patches" / "Apparel" / "OE_ApparelVerbs.xml",
+        emit_apparel_verb_xml(apparel_verbs),
     )
     _write(
         out / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
