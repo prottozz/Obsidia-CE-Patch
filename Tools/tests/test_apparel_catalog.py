@@ -165,3 +165,58 @@ def test_load_repo_catalog_includes_royalty_mayrequire():
     assert "OEC_Armor_M_Grenadier" not in armor
     assert "OEC_Armor_M_Shield" not in armor
     assert "OEC_Armor_M_Barrier" not in armor
+
+
+def test_load_reads_member_mass_overrides(tmp_path):
+    (tmp_path / "armor.yaml").write_text(
+        "sets:\n"
+        "  - id: kid\n"
+        "    rung: proto\n"
+        "    mayRequire: Ludeon.RimWorld.Biotech\n"
+        "    members:\n"
+        "      - defName: OE_Armor_Kid\n"
+        "        mass: 18\n"
+        "        bulk: 50\n"
+        "        wornBulk: 7\n",
+        encoding="utf-8",
+    )
+    member = load_apparel_catalog(tmp_path).armor[0].members[0]
+    assert (member.mass, member.bulk, member.worn_bulk) == (18, 50, 7)
+
+
+def _dlc_cat(may_require: str | None) -> ApparelCatalog:
+    return ApparelCatalog(
+        armor=[
+            _armor_set(),
+            ApparelSet(
+                "occ_dlc",
+                "occ_reforge",
+                [ApparelMember("OCC_Armor_M_Turret", may_require=may_require)],
+            ),
+        ],
+        helmets=[ApparelSet("occ", "occ", [ApparelMember("OCC_Helmet")])],
+    )
+
+
+def test_missing_dlc_row_skipped_when_tree_absent():
+    from oe_ce.constants import ANOMALY_PACKAGE
+
+    assert validate_apparel_catalog(_dlc_cat(ANOMALY_PACKAGE), CORE) == []
+    errs = validate_apparel_catalog(
+        _dlc_cat(ANOMALY_PACKAGE), CORE, present_packages=frozenset({ANOMALY_PACKAGE})
+    )
+    assert "OCC_Armor_M_Turret: not an in-scope apparel def" in errs
+
+
+def test_may_require_must_match_scanned_package():
+    from oe_ce.constants import ANOMALY_PACKAGE, BIOTECH_PACKAGE
+
+    scanned = dict(CORE)
+    scanned["OCC_Armor_M_Turret"] = CoreApparel(
+        "OCC_Armor_M_Turret", ARMOR, "OCC_Armor_M", ANOMALY_PACKAGE
+    )
+    ok = validate_apparel_catalog(_dlc_cat(ANOMALY_PACKAGE), scanned)
+    assert ok == []
+    for wrong in (None, BIOTECH_PACKAGE):
+        errs = validate_apparel_catalog(_dlc_cat(wrong), scanned)
+        assert any("OCC_Armor_M_Turret: mayRequire" in e for e in errs), wrong
