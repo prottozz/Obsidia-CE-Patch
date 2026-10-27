@@ -16,6 +16,7 @@ from oe_ce.constants import (
     DEFAULT_OBSIDIA_MU,
     DEFAULT_OBSIDIA_ROYALTY,
     DEFAULT_OBSIDIA_VEF,
+    GAME_VERSION,
     IDEOLOGY_PACKAGE,
     ROYALTY_PACKAGE,
 )
@@ -116,61 +117,62 @@ def generate(root: Path) -> None:
             print(msg, file=sys.stderr)
         sys.exit(1)
 
-    _write(root / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families, core))
+    out = root / GAME_VERSION
+    _write(out / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families, core))
     _write(
-        root / "Defs" / "RecipeDefs" / "OE_AmmoRecipes.xml",
+        out / "Defs" / "RecipeDefs" / "OE_AmmoRecipes.xml",
         emit_recipe_xml(cat.families),
     )
     _write(
-        root / "Patches" / "Weapons" / "OE_Ranged.xml",
+        out / "Patches" / "Weapons" / "OE_Ranged.xml",
         emit_gun_patches(cat.families, core),
     )
     _write(
-        root / "Patches" / "Weapons" / "OE_Melee.xml",
+        out / "Patches" / "Weapons" / "OE_Melee.xml",
         emit_melee_xml(cat.melee),
     )
     _write(
-        root / "Patches" / "PawnKinds" / "OE_Loadouts.xml",
+        out / "Patches" / "PawnKinds" / "OE_Loadouts.xml",
         emit_pawnkind_xml(core, cat.families),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_Armor.xml",
+        out / "Patches" / "Apparel" / "OE_Armor.xml",
         emit_apparel_xml(apparel.armor, ARMOR, core_apparel, isolated_grenadiers),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_Helmets.xml",
+        out / "Patches" / "Apparel" / "OE_Helmets.xml",
         emit_apparel_xml(apparel.helmets, HELMET, core_apparel, isolated_grenadiers),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
+        out / "Patches" / "Apparel" / "OE_GrenadeBelts.xml",
         emit_grenade_belt_xml(),
     )
     race_tools = collect_race_tools(core, bio, anomaly, ideology, royalty)
     _write(
-        root / "Patches" / "Races" / "OE_Animals.xml",
+        out / "Patches" / "Races" / "OE_Animals.xml",
         emit_race_xml(races.sets, ANIMAL, core_races, race_tools),
     )
     _write(
-        root / "Patches" / "Races" / "OE_Mechanoids.xml",
+        out / "Patches" / "Races" / "OE_Mechanoids.xml",
         emit_race_xml(races.sets, MECHANOID, core_races, race_tools),
     )
     _write(
-        root / "Patches" / "Bodies" / "OE_Animals.xml",
+        out / "Patches" / "Bodies" / "OE_Animals.xml",
         emit_body_xml(bodies.bodies, scanned_bodies, BODY_ANIMAL),
     )
     _write(
-        root / "Patches" / "Bodies" / "OE_Mechanoids.xml",
+        out / "Patches" / "Bodies" / "OE_Mechanoids.xml",
         emit_body_xml(bodies.bodies, scanned_bodies, BODY_MECHANOID),
     )
     _write(
-        root / "Patches" / "Apparel" / "OE_Shields.xml",
+        out / "Patches" / "Apparel" / "OE_Shields.xml",
         emit_worn_handheld_xml(shields, scanned_shields),
     )
     _write(
-        root / "Patches" / "Races" / "OE_Shields.xml",
+        out / "Patches" / "Races" / "OE_Shields.xml",
         emit_innate_xml(shields),
     )
     _write(
-        root / "Patches" / "Misc" / "OE_MechUpgrades.xml",
+        out / "Patches" / "Misc" / "OE_MechUpgrades.xml",
         emit_upgrade_xml(shields),
     )

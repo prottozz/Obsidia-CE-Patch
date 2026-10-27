@@ -1,3 +1,5 @@
+GAME_VERSION = "1.7"  # generated Defs/ and Patches/ live under this folder
+
 DEFAULT_OBSIDIA_CORE = r"C:\Projects\Assistant\294100\2519492373\1.6\Core"
 DEFAULT_OBSIDIA_BIOTECH = r"C:\Projects\Assistant\294100\2519492373\1.6\Biotech"
 DEFAULT_OBSIDIA_ANOMALY = r"C:\Projects\Assistant\294100\2519492373\1.6\Anomaly"

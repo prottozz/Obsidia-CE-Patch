@@ -107,8 +107,8 @@ def test_generate_cerberus_files(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
-    ammo = (tmp_path / "Defs" / "Ammo" / "OE_Ammo.xml").read_text(encoding="utf-8")
-    guns = (tmp_path / "Patches" / "Weapons" / "OE_Ranged.xml").read_text(encoding="utf-8")
+    ammo = (tmp_path / "1.7" / "Defs" / "Ammo" / "OE_Ammo.xml").read_text(encoding="utf-8")
+    guns = (tmp_path / "1.7" / "Patches" / "Weapons" / "OE_Ranged.xml").read_text(encoding="utf-8")
     assert "Ammo_OE_rifle_ballistic_standard" in ammo
     assert "AmmoSet_OE_OE_Rifle" in ammo
     assert "OE_Rifle" in guns
@@ -122,23 +122,23 @@ def test_generate_writes_apparel_patches(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
-    armor = (tmp_path / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
-    helmets = (tmp_path / "Patches" / "Apparel" / "OE_Helmets.xml").read_text(encoding="utf-8")
+    armor = (tmp_path / "1.7" / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
+    helmets = (tmp_path / "1.7" / "Patches" / "Apparel" / "OE_Helmets.xml").read_text(encoding="utf-8")
     assert 'defName="OCC_Armor_M"]' in armor
     assert "OCC_Armor_M_Shield" not in armor
     assert "CombatExtended.PartialArmorExt" in armor
     assert 'defName="OCC_Helmet"]' in helmets
     assert "CarryWeight" not in helmets
-    shields = (tmp_path / "Patches" / "Apparel" / "OE_Shields.xml").read_text(encoding="utf-8")
-    race_shields = (tmp_path / "Patches" / "Races" / "OE_Shields.xml").read_text(
+    shields = (tmp_path / "1.7" / "Patches" / "Apparel" / "OE_Shields.xml").read_text(encoding="utf-8")
+    race_shields = (tmp_path / "1.7" / "Patches" / "Races" / "OE_Shields.xml").read_text(
         encoding="utf-8"
     )
-    upgrades = tmp_path / "Patches" / "Misc" / "OE_MechUpgrades.xml"
+    upgrades = tmp_path / "1.7" / "Patches" / "Misc" / "OE_MechUpgrades.xml"
     assert 'defName="OCC_Armor_M_Shield"]' in shields
     assert 'MayRequire="Ludeon.RimWorld.Biotech"' in race_shields
     assert upgrades.is_file()
     assert "MU.MechUpgradeDef" in upgrades.read_text(encoding="utf-8")
-    belts = (tmp_path / "Patches" / "Apparel" / "OE_GrenadeBelts.xml").read_text(
+    belts = (tmp_path / "1.7" / "Patches" / "Apparel" / "OE_GrenadeBelts.xml").read_text(
         encoding="utf-8"
     )
     assert "OTC_GrenadeBelt_Acid" in belts
@@ -157,15 +157,15 @@ def test_generate_writes_body_patches(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_ROYALTY", str(tmp_path / "nope"))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
-    animals = tmp_path / "Patches" / "Bodies" / "OE_Animals.xml"
-    mechs = tmp_path / "Patches" / "Bodies" / "OE_Mechanoids.xml"
+    animals = tmp_path / "1.7" / "Patches" / "Bodies" / "OE_Animals.xml"
+    mechs = tmp_path / "1.7" / "Patches" / "Bodies" / "OE_Mechanoids.xml"
     assert animals.is_file()
     assert mechs.is_file()
 
 
 def test_generated_bodies_cover_arachna_and_dominator():
-    animals = (ROOT / "Patches" / "Bodies" / "OE_Animals.xml").read_text(encoding="utf-8")
-    mechs = (ROOT / "Patches" / "Bodies" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
+    animals = (ROOT / "1.7" / "Patches" / "Bodies" / "OE_Animals.xml").read_text(encoding="utf-8")
+    mechs = (ROOT / "1.7" / "Patches" / "Bodies" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
     assert 'defName="OEArachnaLike"' in animals
     assert "CoveredByNaturalArmor" in animals
     assert 'defName="OEDominator"' in mechs
@@ -181,16 +181,16 @@ def test_generate_writes_dlc_race_wraps(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_CORE", str(core))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
-    animals = tmp_path / "Patches" / "Races" / "OE_Animals.xml"
-    mechs = tmp_path / "Patches" / "Races" / "OE_Mechanoids.xml"
+    animals = tmp_path / "1.7" / "Patches" / "Races" / "OE_Animals.xml"
+    mechs = tmp_path / "1.7" / "Patches" / "Races" / "OE_Mechanoids.xml"
     assert animals.is_file()
     assert mechs.is_file()
 
 
 @pytest.mark.skipif(not ANOMALY.is_dir(), reason="Obsidia Anomaly not installed")
 def test_generated_animals_wraps_anomaly_when_tree_present():
-    animals = (ROOT / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
-    mechs = (ROOT / "Patches" / "Races" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
+    animals = (ROOT / "1.7" / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
+    mechs = (ROOT / "1.7" / "Patches" / "Races" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
     assert 'MayRequire="Ludeon.RimWorld.Anomaly"' in animals
     assert "OE_ChaosSlime_Invincible" in animals
     assert "<ArmorRating_Sharp>14</ArmorRating_Sharp>" in animals
@@ -243,14 +243,14 @@ def test_generate_writes_race_patches(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_IDEOLOGY", str(tmp_path / "no_ideology"))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
-    animals = (tmp_path / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
-    mechs = (tmp_path / "Patches" / "Races" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
+    animals = (tmp_path / "1.7" / "Patches" / "Races" / "OE_Animals.xml").read_text(encoding="utf-8")
+    mechs = (tmp_path / "1.7" / "Patches" / "Races" / "OE_Mechanoids.xml").read_text(encoding="utf-8")
     assert 'defName="OE_Direwolf"]' in animals
     assert "CombatExtended.RacePropertiesExtensionCE" in animals
     assert 'defName="OE_Mech_DarkCrusader"]' in mechs
     assert "CompAmmoGiver" not in mechs
     assert 'MayRequire="Ludeon.RimWorld.Biotech"' in mechs
-    armor = (tmp_path / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
+    armor = (tmp_path / "1.7" / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
     assert 'defName="OCC_Armor_M"]' in armor
 
 
@@ -297,7 +297,7 @@ def test_generate_wraps_royalty_apparel(tmp_path, monkeypatch):
     monkeypatch.setenv("OBSIDIA_ROYALTY", str(royalty))
     monkeypatch.setenv("OE_CE_ALLOW_PARTIAL", "1")
     generate(tmp_path)
-    armor = (tmp_path / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
+    armor = (tmp_path / "1.7" / "Patches" / "Apparel" / "OE_Armor.xml").read_text(encoding="utf-8")
     assert 'defName="OEC_Armor"]' in armor
     assert 'MayRequire="Ludeon.RimWorld.Royalty"' in armor
     inner = armor.split("<operations>")[1].split("</operations>")[0]

@@ -1,13 +1,15 @@
+import os
 import re
 from pathlib import Path
 
+from oe_ce.constants import DEFAULT_OBSIDIA_CORE
 from oe_ce.emit_melee import emit_melee_xml
 from oe_ce.emit_pawnkinds import emit_pawnkind_xml
 from oe_ce.load import load_catalog
 from oe_ce.models import Family, Member
 from oe_ce.scan_obsidia import weapon_tags
 
-CORE = Path(r"C:\Projects\Assistant\294100\2519492373\1.6\Core")
+CORE = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
 
 
 def test_weapon_tags_oe_rifle_includes_oesnipergun():
