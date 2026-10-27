@@ -29,6 +29,7 @@ def test_about_package_id():
     assert "Ludeon.RimWorld.Anomaly" in text
     assert "Ludeon.RimWorld.Ideology" in text
     assert "Ludeon.RimWorld.Biotech" in text
+    assert "Ludeon.RimWorld.Odyssey" in text
     assert "Alias.DegeneralizeWork" in text
     assert "optionalDependencies" not in text
 
