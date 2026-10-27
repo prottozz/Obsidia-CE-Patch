@@ -397,7 +397,6 @@
               <defaultProjectile>Grenade_OMG_Deadlife</defaultProjectile>
               <warmupTime>1.0</warmupTime>
               <range>23.9</range>
-              <forcedMissRadius>0.1</forcedMissRadius>
               <burstShotCount>1</burstShotCount>
               <onlyManualCast>true</onlyManualCast>
               <violent>false</violent>

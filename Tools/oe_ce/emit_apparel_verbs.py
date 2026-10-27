@@ -15,7 +15,10 @@ from oe_ce.emit_common import thing_xpath, wrap_optional_def
 from oe_ce.scan_apparel_verbs import FLARE, GAS, TURRET, ApparelVerbScan, DeployProjectile
 
 _CE_VERB = "CombatExtended.Verb_LaunchProjectileStaticCE"
-_SKIP_TAGS = frozenset({"verbClass"})
+# forcedMissRadius: vanilla ConfigErrors demands it only for vanilla-explosive
+# projectiles; ProjectileCE_Explosive does not count, so keeping Obsidia's 0.1
+# on the deadlife dart is a load error. CE handles spread itself (same as belts).
+_SKIP_TAGS = frozenset({"verbClass", "forcedMissRadius"})
 # CE extras every static deploy verb gets (same as the grenade belts / CE flare pack).
 _CE_EXTRAS = (
     ("ignorePartialLoSBlocker", "true"),

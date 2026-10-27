@@ -360,6 +360,7 @@ def test_committed_apparel_verbs_cover_dlc_deploys():
     assert "Verb_LaunchProjectileStaticCE" in ego
     assert blocks["OTC_Armor_M_Turret"][1].count("Verb_LaunchProjectileStaticCE") == 4
     assert "OMG_Armor_Swarmling" not in blocks
+    assert "forcedMissRadius" not in path.read_text(encoding="utf-8")
 
 
 def test_committed_drones_patch_both_swarmlings():

@@ -66,7 +66,7 @@ ANOMALY = """
   </ThingDef>
   <ThingDef ParentName="OEHelmetBase">
     <defName>OMG_Trophy_Helmet_Necrospark</defName>
-    <verbs><li><verbClass>Verb_LaunchProjectileStatic</verbClass><defaultProjectile>Grenade_OMG_Deadlife</defaultProjectile></li></verbs>
+    <verbs><li><verbClass>Verb_LaunchProjectileStatic</verbClass><defaultProjectile>Grenade_OMG_Deadlife</defaultProjectile><forcedMissRadius>0.1</forcedMissRadius></li></verbs>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Grenade_OMG_Deadlife</defName>
@@ -158,3 +158,4 @@ def test_emit_converts_verbs_and_projectiles(tmp_path):
     assert "<damageAmountBase>0</damageAmountBase>" in xml
     assert "<speed>45</speed>" not in xml
     assert 'defName="Grenade_DisruptorFlare"' not in xml
+    assert "forcedMissRadius" not in xml
