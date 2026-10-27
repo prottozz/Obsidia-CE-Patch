@@ -304,3 +304,38 @@ def test_generate_wraps_royalty_apparel(tmp_path, monkeypatch):
     assert "<li Class=" in inner
     assert "<Operation Class=" not in inner
     assert 'defName="OCC_Armor_M"]' in armor.split('MayRequire="Ludeon.RimWorld.Royalty"')[0]
+
+
+def _optional_blocks(path: Path) -> dict[str, tuple[str | None, str]]:
+    import xml.etree.ElementTree as ET
+
+    out = {}
+    for op in ET.parse(path).getroot():
+        xpath = op.findtext("xpath") or ""
+        if op.get("MayRequire") and xpath.startswith('Defs/ThingDef[defName="'):
+            name = xpath.split('"')[1]
+            out[name] = (op.get("MayRequire"), ET.tostring(op, encoding="unicode"))
+    return out
+
+
+def test_committed_dlc_apparel_is_wrapped_and_plated():
+    armor = _optional_blocks(ROOT / "1.7" / "Patches" / "Apparel" / "OE_Armor.xml")
+    helmets = _optional_blocks(ROOT / "1.7" / "Patches" / "Apparel" / "OE_Helmets.xml")
+    pkg, turret = armor["OCC_Armor_M_Turret"]
+    assert pkg == "Ludeon.RimWorld.Anomaly"
+    assert "<ArmorRating_Sharp>26</ArmorRating_Sharp>" in turret
+    assert "PartialArmorExt" not in turret
+    pkg, priest = armor["CAC_PriestArmor"]
+    assert pkg == "Ludeon.RimWorld.Anomaly"
+    assert "<ArmorRating_Sharp>28</ArmorRating_Sharp>" in priest
+    assert "PartialArmorExt" in priest
+    pkg, swarm = armor["OMG_Armor_Swarmling"]
+    assert pkg == "Ludeon.RimWorld.Odyssey"
+    assert "<ArmorRating_Sharp>30</ArmorRating_Sharp>" in swarm
+    pkg, kid = armor["OE_Armor_Kid"]
+    assert pkg == "Ludeon.RimWorld.Biotech"
+    assert "<Mass>18</Mass>" in kid and "CarryWeight" not in kid
+    pkg, mech = helmets["EGO_Helmet_Exohelm_Mechanitor"]
+    assert pkg == "Ludeon.RimWorld.Biotech"
+    assert "<ArmorRating_Sharp>22</ArmorRating_Sharp>" in mech
+    assert helmets["OMG_Trophy_Helmet_Necrospark"][0] == "Ludeon.RimWorld.Anomaly"

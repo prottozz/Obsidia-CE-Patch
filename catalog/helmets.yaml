@@ -1,4 +1,4 @@
-# Core combat helmets plus Royalty variants. Set ids match catalog/armor.yaml
+# Core combat helmets plus Royalty / Biotech / Anomaly variants. Set ids match catalog/armor.yaml
 # where a kit has both.
 sets:
   - id: proto
@@ -17,6 +17,9 @@ sets:
         rung: occ_reforge
       - defName: OCC_Helmet_M_Ranged
         rung: occ_reforge
+      - defName: OCC_Helmet_M_Mechanitor
+        rung: occ_reforge
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: otc
     rung: otc
     members:
@@ -29,6 +32,9 @@ sets:
         rung: otc_t2
       - defName: OTC_Helmet_M_Ranged
         rung: otc_t2
+      - defName: OTC_Helmet_M_Mechanitor
+        rung: otc_t2
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: omc
     rung: omc
     members:
@@ -41,6 +47,9 @@ sets:
         rung: omc_mod
       - defName: OMC_Helmet_M_Ranged
         rung: omc_mod
+      - defName: OMC_Helmet_M_Mechanitor
+        rung: omc_mod
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: odc_nomad
     rung: odc_t1
     members:
@@ -52,6 +61,9 @@ sets:
       - defName: ODC_Helmet_Spacer
       - defName: ODC_Helmet_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      # Tagged for both Recon and Duelist mechanitors, same call as Prestige.
+      - defName: ODC_Helmet_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: odc_duelist
     rung: odc_t3
     members:
@@ -62,12 +74,21 @@ sets:
       - defName: CAC_LightHelmet
       - defName: CAC_LightHelmet_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: CAC_LightHelmet_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: cac_heavy
     rung: cac_t2
     members:
       - defName: CAC_HeavyHelmet
       - defName: CAC_HeavyHelmet_Prestige
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: CAC_HeavyHelmet_Mechanitor
+        mayRequire: Ludeon.RimWorld.Biotech
+  - id: cac_priest
+    rung: cac_t2
+    mayRequire: Ludeon.RimWorld.Anomaly
+    members:
+      - defName: CAC_PriestHelmet
   - id: ego
     rung: bio_t3
     members:
@@ -80,6 +101,9 @@ sets:
       - defName: EGO_Helmet_Exohelm_Psy
         rung: bio_t4
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: EGO_Helmet_Exohelm_Mechanitor
+        rung: bio_t4
+        mayRequire: Ludeon.RimWorld.Biotech
   - id: oes
     rung: heroic
     members:
@@ -96,6 +120,14 @@ sets:
         mayRequire: Ludeon.RimWorld.Royalty
       - defName: OMG_Trophy_Helmet_Mindtwister
         mayRequire: Ludeon.RimWorld.Royalty
+      - defName: OMG_Trophy_Helmet_Gasveil
+        mayRequire: Ludeon.RimWorld.Biotech
+      - defName: OMG_Trophy_Helmet_Firemark
+        mayRequire: Ludeon.RimWorld.Anomaly
+      - defName: OMG_Trophy_Helmet_Fleshcrafter
+        mayRequire: Ludeon.RimWorld.Anomaly
+      - defName: OMG_Trophy_Helmet_Necrospark
+        mayRequire: Ludeon.RimWorld.Anomaly
   - id: oec
     rung: oec
     mayRequire: Ludeon.RimWorld.Royalty
@@ -109,3 +141,13 @@ sets:
         rung: oec_t2
       - defName: OEC_Helmet_M_Ranged
         rung: oec_t2
+  - id: kid
+    rung: proto
+    mayRequire: Ludeon.RimWorld.Biotech
+    members:
+      - defName: OE_Helmet_Kid
+        mass: 1.8
+        bulk: 2.5
+      - defName: OE_Helmet_Kid_Spacer
+        mass: 1.8
+        bulk: 2.5

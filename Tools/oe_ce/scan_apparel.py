@@ -199,7 +199,7 @@ def scan_core_apparel(
     files = _apparel_files(core, required=True)
     package_of: dict[str, str] = {}
     for root, pkg in _dlc_trees(royalty, biotech, anomaly, odyssey):
-        dlc_files = _apparel_files(root, required=True)
+        dlc_files = _apparel_files(root, required=False)
         for def_name in index_thingdefs(dlc_files).by_def:
             package_of[def_name] = pkg
         files = files + dlc_files

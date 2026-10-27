@@ -14,10 +14,12 @@ from oe_ce.constants import (
     DEFAULT_OBSIDIA_CORE,
     DEFAULT_OBSIDIA_IDEOLOGY,
     DEFAULT_OBSIDIA_MU,
+    DEFAULT_OBSIDIA_ODYSSEY,
     DEFAULT_OBSIDIA_ROYALTY,
     DEFAULT_OBSIDIA_VEF,
     GAME_VERSION,
     IDEOLOGY_PACKAGE,
+    ODYSSEY_PACKAGE,
     ROYALTY_PACKAGE,
 )
 from oe_ce.emit_ammo import emit_ammo_xml
@@ -89,13 +91,9 @@ def generate(root: Path) -> None:
     anomaly = _optional_dir("OBSIDIA_ANOMALY", DEFAULT_OBSIDIA_ANOMALY)
     ideology = _optional_dir("OBSIDIA_IDEOLOGY", DEFAULT_OBSIDIA_IDEOLOGY)
     royalty = _optional_dir("OBSIDIA_ROYALTY", DEFAULT_OBSIDIA_ROYALTY)
+    odyssey = _optional_dir("OBSIDIA_ODYSSEY", DEFAULT_OBSIDIA_ODYSSEY)
     vef = _optional_dir("OBSIDIA_VEF", DEFAULT_OBSIDIA_VEF)
     mu = _optional_dir("OBSIDIA_MU", DEFAULT_OBSIDIA_MU)
-    core_apparel = scan_core_apparel(core, royalty)
-    isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
-    errors = validate_catalog(cat, scan_core_ranged(core))
-    errors += validate_apparel_catalog(apparel, core_apparel)
-    core_races = scan_races(core, bio, anomaly, ideology, royalty)
     present_packages = frozenset(
         pkg
         for path, pkg in (
@@ -103,9 +101,19 @@ def generate(root: Path) -> None:
             (anomaly, ANOMALY_PACKAGE),
             (ideology, IDEOLOGY_PACKAGE),
             (royalty, ROYALTY_PACKAGE),
+            (odyssey, ODYSSEY_PACKAGE),
         )
         if path is not None
     )
+    core_apparel = scan_core_apparel(
+        core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey
+    )
+    isolated_grenadiers = scan_isolated_grenadiers(core, royalty)
+    errors = validate_catalog(cat, scan_core_ranged(core))
+    errors += validate_apparel_catalog(
+        apparel, core_apparel, present_packages=present_packages
+    )
+    core_races = scan_races(core, bio, anomaly, ideology, royalty)
     errors += validate_race_catalog(races, core_races, present_packages=present_packages)
     scanned_bodies = scan_bodies(core, bio, anomaly)
     errors += validate_body_catalog(bodies, scanned_bodies, present_packages=present_packages)
