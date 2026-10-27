@@ -1,0 +1,215 @@
+# Obsidia turret guns. type / class / rung feed the gun pipeline (caliber, damage
+# class, stats); magazine = Obsidia OE_AmmoKit fuelCapacity of the fueled turret using
+# the gun, kitShots = its fuelMultiplier (shots per kit, used by the ammo-network
+# bridge). Guns whose turrets never used ammo omit both and get no CE magazine.
+guns:
+  - defName: CAC_Gun_TacticalTurret
+    type: shotgun
+    class: ballistic
+    rung: cac_t1
+    magazine: 100
+    kitShots: 5
+  - defName: CAC_TurretGun_Big
+    type: minigun
+    class: ballistic
+    rung: cac_t2
+    magazine: 850
+    kitShots: 8.45
+  - defName: CAC_TurretGun_Small
+    type: sniper
+    class: ballistic
+    rung: cac_t1
+    magazine: 250
+    kitShots: 1.43
+  - defName: EGO_Gun_TacticalTurret
+    type: pistol
+    class: ballistic
+    rung: bio_t3
+    mayRequire: Ludeon.RimWorld.Biotech
+  - defName: EGO_TurretGun_Small_GrenadeLauncher
+    type: launcher
+    class: cryo
+    rung: bio_t3
+    mayRequire: Ludeon.RimWorld.Biotech
+  - defName: EGO_TurretGun_Small_SMG
+    type: smg
+    class: ballistic
+    rung: bio_t3
+  - defName: EGO_TurretGun_Small_Shotgun
+    type: shotgun
+    class: ballistic
+    rung: bio_t3
+  - defName: EGO_TurretGun_Small_SniperRifle
+    type: sniper
+    class: ballistic
+    rung: bio_t3
+  - defName: OCC_Gun_TacticalTurret
+    type: rifle
+    class: ballistic
+    rung: occ
+    magazine: 100
+    kitShots: 2.86
+  - defName: OCC_TurretGun_Big
+    type: launcher
+    class: ballistic
+    rung: occ_reforge
+    magazine: 380
+    kitShots: 5.6
+  - defName: OCC_TurretGun_Small
+    type: launcher
+    class: ballistic
+    rung: occ
+    magazine: 150
+    kitShots: 1.43
+  - defName: ODC_Gun_TacticalTurret
+    type: smg
+    class: ballistic
+    rung: odc_t1
+    magazine: 200
+    kitShots: 8
+  - defName: ODC_TurretGun_Big
+    type: rocket
+    class: ballistic
+    rung: odc_t3
+    magazine: 55
+    kitShots: 0.05
+  - defName: ODC_TurretGun_Small
+    type: smg
+    class: emp
+    rung: odc_t2
+    magazine: 300
+    kitShots: 12
+  - defName: OEC_Gun_TacticalTurret
+    type: sniper
+    class: ballistic
+    rung: oec
+    magazine: 100
+    kitShots: 0.74
+    mayRequire: Ludeon.RimWorld.Royalty
+  - defName: OEC_TurretGun_Big
+    type: sniper
+    class: ballistic
+    rung: oec_t2
+    magazine: 350
+    kitShots: 0.7
+    mayRequire: Ludeon.RimWorld.Royalty
+  - defName: OEC_TurretGun_Small
+    type: rifle
+    class: ballistic
+    rung: oec
+    magazine: 200
+    kitShots: 2.86
+    mayRequire: Ludeon.RimWorld.Royalty
+  - defName: OMC_Gun_TacticalTurret
+    type: pistol
+    class: ballistic
+    rung: omc
+    magazine: 150
+    kitShots: 2.98
+  - defName: OMC_TurretGun_Big
+    type: lmg
+    class: ballistic
+    rung: omc_mod
+    magazine: 750
+    kitShots: 6
+  - defName: OMC_TurretGun_Small
+    type: shotgun
+    class: ballistic
+    rung: omc
+    magazine: 200
+    kitShots: 5.75
+  - defName: OMG_Gun_TacticalTurret
+    type: pistol
+    class: ballistic
+    rung: omg
+    magazine: 100
+    kitShots: 2.86
+  - defName: OMG_Gun_TacticalTurret_Lancecaster
+    type: lmg
+    class: energy
+    rung: omg
+    mayRequire: Ludeon.RimWorld.Odyssey
+  - defName: OMG_TurretGun_Big
+    type: sniper
+    class: ballistic
+    rung: omg
+    magazine: 375
+    kitShots: 0.7
+  - defName: OMG_TurretGun_Small
+    type: shotgun
+    class: ballistic
+    rung: omg
+    magazine: 250
+    kitShots: 5.75
+  - defName: OTC_Gun_TacticalTurret_Acid
+    type: pistol
+    class: acid
+    rung: otc
+    magazine: 150
+    kitShots: 2.98
+  - defName: OTC_Gun_TacticalTurret_Cryo
+    type: pistol
+    class: cryo
+    rung: otc
+    magazine: 150
+    kitShots: 2.98
+  - defName: OTC_Gun_TacticalTurret_EMP
+    type: pistol
+    class: emp
+    rung: otc
+    magazine: 150
+    kitShots: 2.98
+  - defName: OTC_Gun_TacticalTurret_Fire
+    type: pistol
+    class: fire
+    rung: otc
+    magazine: 150
+    kitShots: 2.98
+  - defName: OTC_TurretGun_Big_Acid
+    type: launcher
+    class: acid
+    rung: otc_t2
+    magazine: 250
+    kitShots: 1.4
+  - defName: OTC_TurretGun_Big_Cryo
+    type: launcher
+    class: cryo
+    rung: otc_t2
+    magazine: 250
+    kitShots: 1.4
+  - defName: OTC_TurretGun_Big_EMP
+    type: launcher
+    class: emp
+    rung: otc_t2
+    magazine: 250
+    kitShots: 1.4
+  - defName: OTC_TurretGun_Big_Fire
+    type: launcher
+    class: fire
+    rung: otc_t2
+    magazine: 250
+    kitShots: 1.4
+  - defName: OTC_TurretGun_Small_Acid
+    type: smg
+    class: acid
+    rung: otc
+    magazine: 300
+    kitShots: 8.6
+  - defName: OTC_TurretGun_Small_Cryo
+    type: smg
+    class: cryo
+    rung: otc
+    magazine: 300
+    kitShots: 8.6
+  - defName: OTC_TurretGun_Small_EMP
+    type: smg
+    class: emp
+    rung: otc
+    magazine: 300
+    kitShots: 8.6
+  - defName: OTC_TurretGun_Small_Fire
+    type: smg
+    class: fire
+    rung: otc
+    magazine: 300
+    kitShots: 8.6
