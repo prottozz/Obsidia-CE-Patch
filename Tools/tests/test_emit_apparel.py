@@ -283,3 +283,34 @@ def test_royalty_members_are_wrapped_separately():
     assert 'defName="OEC_Armor"]' in rest.split(f'MayRequire="{ROYALTY_PACKAGE}"', 1)[0]
     assert 'defName="OEC_Armor"]' not in second.split("<operations>")[1].split("</operations>")[0]
     assert 'defName="OEC_Armor_M"]' in second
+
+
+def test_kid_overrides_mass_bulk_and_drop_carry():
+    from oe_ce.constants import BIOTECH_PACKAGE
+
+    core = {
+        "OE_Armor_Kid": CoreApparel("OE_Armor_Kid", ARMOR, None, BIOTECH_PACKAGE),
+        "OE_Helmet_Kid": CoreApparel("OE_Helmet_Kid", HELMET, None, BIOTECH_PACKAGE),
+    }
+    armor = ApparelSet(
+        "kid", "proto", [ApparelMember("OE_Armor_Kid", mass=18, bulk=50, worn_bulk=7)],
+        may_require=BIOTECH_PACKAGE,
+    )
+    xml = emit_apparel_xml([armor], ARMOR, core)
+    ET.fromstring(xml)
+    assert "<ArmorRating_Sharp>16</ArmorRating_Sharp>" in xml
+    assert "<Mass>18</Mass>" in xml
+    assert "<Bulk>50</Bulk>" in xml
+    assert "<WornBulk>7</WornBulk>" in xml
+    assert "<Mass>30</Mass>" not in xml
+    assert "CarryWeight" not in xml
+    assert "CombatExtended.PartialArmorExt" in xml
+    assert f'MayRequire="{BIOTECH_PACKAGE}"' in xml
+    helmet = ApparelSet(
+        "kid", "proto", [ApparelMember("OE_Helmet_Kid", mass=1.8, bulk=2.5)],
+        may_require=BIOTECH_PACKAGE,
+    )
+    xml = emit_apparel_xml([helmet], HELMET, core)
+    assert "<Mass>1.8</Mass>" in xml
+    assert "<Bulk>2.5</Bulk>" in xml
+    assert "<WornBulk>1</WornBulk>" in xml
