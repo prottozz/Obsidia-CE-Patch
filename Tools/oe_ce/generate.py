@@ -27,6 +27,7 @@ from oe_ce.constants import (
 from oe_ce.emit_ammo import emit_ammo_xml
 from oe_ce.emit_apparel import emit_apparel_xml
 from oe_ce.emit_apparel_verbs import emit_apparel_verb_xml
+from oe_ce.emit_drones import emit_drone_xml, scan_drones, validate_drones
 from oe_ce.emit_grenade_belts import emit_grenade_belt_xml
 from oe_ce.emit_guns import emit_gun_patches
 from oe_ce.emit_melee import emit_melee_xml
@@ -121,6 +122,8 @@ def generate(root: Path) -> None:
         apparel, core_apparel, present_packages=present_packages
     )
     errors += apparel_verbs.errors
+    drones = scan_drones(odyssey)
+    errors += validate_drones(drones)
     core_races = scan_races(core, bio, anomaly, ideology, royalty)
     errors += validate_race_catalog(races, core_races, present_packages=present_packages)
     scanned_bodies = scan_bodies(core, bio, anomaly)
@@ -182,6 +185,10 @@ def generate(root: Path) -> None:
     _write(
         out / "Patches" / "Races" / "OE_Mechanoids.xml",
         emit_race_xml(races.sets, MECHANOID, core_races, race_tools),
+    )
+    _write(
+        out / "Patches" / "Races" / "OE_Drones.xml",
+        emit_drone_xml(drones),
     )
     _write(
         out / "Patches" / "Bodies" / "OE_Animals.xml",

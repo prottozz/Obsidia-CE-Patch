@@ -360,3 +360,11 @@ def test_committed_apparel_verbs_cover_dlc_deploys():
     assert "Verb_LaunchProjectileStaticCE" in ego
     assert blocks["OTC_Armor_M_Turret"][1].count("Verb_LaunchProjectileStaticCE") == 4
     assert "OMG_Armor_Swarmling" not in blocks
+
+
+def test_committed_drones_patch_both_swarmlings():
+    blocks = _optional_blocks(ROOT / "1.7" / "Patches" / "Races" / "OE_Drones.xml")
+    assert set(blocks) == {"CAC_Swarmling_Drone", "OMG_Swarmling_Drone"}
+    for pkg, xml in blocks.values():
+        assert pkg == "Ludeon.RimWorld.Odyssey"
+        assert "CombatExtended.ToolCE" in xml
