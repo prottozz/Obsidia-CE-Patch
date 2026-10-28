@@ -16,6 +16,8 @@
       <defaultProjectile>Bullet_OE_OCC_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.8</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -60,6 +62,8 @@
       <defaultProjectile>Bullet_OE_OCC_RocketLauncher_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>74.8</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -194,6 +198,8 @@
       <defaultProjectile>Bullet_OE_ODC_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>52.8</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -779,6 +785,8 @@
       <warmupTime>1</warmupTime>
       <range>93.75</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>8</magazineSize>
@@ -1386,6 +1394,8 @@
       <defaultProjectile>Bullet_OE_OMC_RocketLauncher_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>57.2</range>
+      <minRange>4</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -1430,6 +1440,8 @@
       <defaultProjectile>Bullet_OE_OMC_RocketLauncher_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>74.8</range>
+      <minRange>4</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -3387,6 +3399,8 @@
       <defaultProjectile>Bullet_OE_OCC_Bow_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>43.2</range>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -3431,6 +3445,8 @@
       <defaultProjectile>Bullet_OE_OCC_Bow_M_standard</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>61.2</range>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -3565,6 +3581,8 @@
       <defaultProjectile>Bullet_OE_ODC_RocketLauncher_Fire_fire</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -3835,6 +3853,8 @@
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -3880,6 +3900,8 @@
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -4465,6 +4487,8 @@
       <defaultProjectile>Bullet_OE_ODC_RocketLauncher_EMP_emp</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -4735,6 +4759,8 @@
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -4780,6 +4806,8 @@
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -5365,6 +5393,8 @@
       <defaultProjectile>Bullet_OE_ODC_RocketLauncher_Acid_acid</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -5635,6 +5665,8 @@
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -5680,6 +5712,8 @@
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -6265,6 +6299,8 @@
       <defaultProjectile>Bullet_OE_ODC_RocketLauncher_Cryo_cryo</defaultProjectile>
       <warmupTime>1</warmupTime>
       <range>68.2</range>
+      <minRange>5</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
@@ -6535,6 +6571,8 @@
       <warmupTime>1</warmupTime>
       <range>40</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>
@@ -6580,6 +6618,8 @@
       <warmupTime>1</warmupTime>
       <range>54.4</range>
       <burstShotCount>6</burstShotCount>
+      <minRange>3</minRange>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
     </Properties>
     <AmmoUser>
       <magazineSize>6</magazineSize>

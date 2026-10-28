@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from oe_ce.explosive import Blast, explosive_round
 from oe_ce.models import Family, Member, unique_ammo_families
 from oe_ce.scan_obsidia import (
     ProjectileGraphic,
@@ -195,20 +196,69 @@ def _emit_bullet(
 </ThingDef>"""
 
 
+def _emit_explosive_bullet(
+    fam: Family,
+    member: Member,
+    cartridge: str,
+    graphic: ProjectileGraphic | None,
+    blast: Blast,
+) -> str:
+    rnd = explosive_round(blast, fam.type, cartridge)
+    extra = _projectile_extras(fam, cartridge)
+    neighbours = (
+        "\n    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>"
+        if rnd.radius < 1.5
+        else ""
+    )
+    comps = ""
+    if rnd.fragments:
+        comps = f"""
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>{rnd.fragments}</Fragment_Small>
+      </fragments>
+      <fragSpeedFactor>{rnd.frag_speed:g}</fragSpeedFactor>
+    </li>
+  </comps>"""
+    return f"""<ThingDef ParentName="BaseExplosiveBullet">
+  <defName>{fam.member_bullet_def(member, cartridge)}</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+{_graphic_xml(graphic)}
+  <projectile Class="CombatExtended.ProjectilePropertiesCE">
+    <damageDef>{rnd.damage_def}</damageDef>
+    <damageAmountBase>{rnd.damage}</damageAmountBase>
+    <explosionRadius>{rnd.radius:g}</explosionRadius>{neighbours}
+    <speed>{rnd.speed}</speed>{extra}
+  </projectile>{comps}
+</ThingDef>"""
+
+
 def emit_ammo_xml(
     families: list[Family],
     core: Path | None = None,
     *,
     bullet_only: list[Family] | None = None,
     extra_index: ThingDefIndex | None = None,
+    blasts: dict[str, Blast] | None = None,
 ) -> str:
     """Ammo defs, ammo sets and member bullets.
 
     ``families`` get ammo defs (per caliber/class), a member ammo set and a bullet
     per cartridge. ``bullet_only`` families (turret guns with no CE magazine) get
     just the default-cartridge bullet. ``extra_index`` resolves projectile graphics
-    for guns outside Core's Weapons folder (turret guns).
+    for guns outside Core's Weapons folder (turret guns). ``blasts`` maps gun
+    defName to its Obsidia explosive projectile; those members get CE explosive
+    bullets (slice 10).
     """
+    blasts = blasts or {}
+
+    def bullet(fam: Family, member: Member, cart: str, graphic: ProjectileGraphic | None) -> str:
+        blast = blasts.get(member.def_name)
+        if blast is not None:
+            return _emit_explosive_bullet(fam, member, cart, graphic, blast)
+        return _emit_bullet(fam, member, cart, graphic)
+
     index: ThingDefIndex | None = index_weapon_thingdefs(core) if core is not None else None
 
     def graphic_for(def_name: str) -> ProjectileGraphic | None:
@@ -229,11 +279,11 @@ def emit_ammo_xml(
             graphic = graphic_for(member.def_name)
             body.append(_emit_ammo_set(fam, member))
             for cart in fam.resolved_cartridges():
-                body.append(_emit_bullet(fam, member, cart, graphic))
+                body.append(bullet(fam, member, cart, graphic))
     for fam in bullet_only or []:
         for member in sorted(fam.members, key=lambda m: m.def_name):
             body.append(
-                _emit_bullet(fam, member, fam.default_cartridge(), graphic_for(member.def_name))
+                bullet(fam, member, fam.default_cartridge(), graphic_for(member.def_name))
             )
     inner = "\n\n".join(body)
     return f'<?xml version="1.0" encoding="utf-8"?>\n<Defs>\n{inner}\n</Defs>'

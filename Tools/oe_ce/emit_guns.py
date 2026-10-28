@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from oe_ce.explosive import Blast, min_range
 from oe_ce.models import Family, Member
 from oe_ce.rungs import gun_stats
 from oe_ce.scan_obsidia import thing_def_has_tools
@@ -39,7 +40,20 @@ def _tools_replace(member: Member) -> str:
   </Operation>"""
 
 
-def _make_gun_op(fam: Family, member: Member) -> str:
+def explosive_verb_lines(blast: Blast | None) -> str:
+    """minRange + building-destroyer AI for guns with a CE blast radius >= 2."""
+    if blast is None:
+        return ""
+    rng = min_range(blast)
+    if rng is None:
+        return ""
+    return (
+        f"\n      <minRange>{rng}</minRange>"
+        "\n      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>"
+    )
+
+
+def _make_gun_op(fam: Family, member: Member, blast: Blast | None = None) -> str:
     stats = gun_stats(fam.type, member)
     burst_line = ""
     burst = stats.get("burst")
@@ -60,7 +74,7 @@ def _make_gun_op(fam: Family, member: Member) -> str:
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>{fam.member_bullet_def(member, fam.default_cartridge())}</defaultProjectile>
       <warmupTime>{_xml_num(stats["warmup"])}</warmupTime>
-      <range>{_xml_num(stats["range"])}</range>{burst_line}
+      <range>{_xml_num(stats["range"])}</range>{burst_line}{explosive_verb_lines(blast)}
     </Properties>
     <AmmoUser>
       <magazineSize>{_xml_num(stats["magazine"])}</magazineSize>
@@ -70,11 +84,14 @@ def _make_gun_op(fam: Family, member: Member) -> str:
   </Operation>"""
 
 
-def emit_gun_patches(families: list[Family], core: Path) -> str:
+def emit_gun_patches(
+    families: list[Family], core: Path, blasts: dict[str, Blast] | None = None
+) -> str:
+    blasts = blasts or {}
     blocks: list[str] = []
     for fam in families:
         for member in sorted(fam.members, key=lambda m: m.def_name):
-            blocks.append(_make_gun_op(fam, member))
+            blocks.append(_make_gun_op(fam, member, blasts.get(member.def_name)))
             if thing_def_has_tools(core, member.def_name):
                 blocks.append(_tools_replace(member))
     inner = "\n".join(blocks)
