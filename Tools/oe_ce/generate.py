@@ -37,6 +37,7 @@ from oe_ce.emit_bodies import MECHANOID as BODY_MECHANOID
 from oe_ce.emit_bodies import emit_body_xml
 from oe_ce.emit_races import collect_race_tools, emit_race_xml
 from oe_ce.emit_recipes import emit_recipe_xml
+from oe_ce.emit_turrets import emit_ammo_net_xml, emit_turret_xml
 from oe_ce.emit_shields import emit_innate_xml, emit_upgrade_xml, emit_worn_handheld_xml
 from oe_ce.body_load import load_body_catalog
 from oe_ce.load import load_catalog
@@ -48,6 +49,9 @@ from oe_ce.scan_bodies import scan_bodies
 from oe_ce.scan_obsidia import scan_core_ranged
 from oe_ce.scan_races import scan_races
 from oe_ce.scan_shields import scan_shields
+from oe_ce.scan_turrets import scan_turrets
+from oe_ce.turret_models import load_turret_catalog
+from oe_ce.validate_turrets import validate_turret_catalog
 from oe_ce.shield_load import load_shield_catalog
 from oe_ce.validate import validate_catalog
 from oe_ce.validate_bodies import validate_body_catalog
@@ -90,6 +94,7 @@ def generate(root: Path) -> None:
     races = load_race_catalog(root / "catalog")
     shields = load_shield_catalog(root / "catalog")
     bodies = load_body_catalog(root / "catalog")
+    turrets = load_turret_catalog(root / "catalog")
     core = Path(os.environ.get("OBSIDIA_CORE", DEFAULT_OBSIDIA_CORE))
     _require_core_dirs(core)
     bio = _optional_dir("OBSIDIA_BIOTECH", DEFAULT_OBSIDIA_BIOTECH)
@@ -122,6 +127,8 @@ def generate(root: Path) -> None:
         apparel, core_apparel, present_packages=present_packages
     )
     errors += apparel_verbs.errors
+    turret_scan = scan_turrets(core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey)
+    errors += validate_turret_catalog(turrets, turret_scan, present_packages=present_packages)
     drones = scan_drones(odyssey)
     errors += validate_drones(drones)
     core_races = scan_races(core, bio, anomaly, ideology, royalty)
@@ -144,10 +151,33 @@ def generate(root: Path) -> None:
         sys.exit(1)
 
     out = root / GAME_VERSION
-    _write(out / "Defs" / "Ammo" / "OE_Ammo.xml", emit_ammo_xml(cat.families, core))
+    turret_bursts = {name: gun.burst for name, gun in turret_scan.guns.items()}
+    turret_mag = [
+        g.family(turret_bursts.get(g.def_name)) for g in turrets.guns if g.magazine is not None
+    ]
+    turret_free = [
+        g.family(turret_bursts.get(g.def_name)) for g in turrets.guns if g.magazine is None
+    ]
+    _write(
+        out / "Defs" / "Ammo" / "OE_Ammo.xml",
+        emit_ammo_xml(
+            cat.families + turret_mag,
+            core,
+            bullet_only=turret_free,
+            extra_index=turret_scan.index,
+        ),
+    )
     _write(
         out / "Defs" / "RecipeDefs" / "OE_AmmoRecipes.xml",
-        emit_recipe_xml(cat.families),
+        emit_recipe_xml(cat.families + turret_mag),
+    )
+    _write(
+        out / "Patches" / "Buildings" / "OE_Turrets.xml",
+        emit_turret_xml(turrets, turret_scan),
+    )
+    _write(
+        out / "Mods" / "AmmoNet" / "Patches" / "OE_AmmoNetFeed.xml",
+        emit_ammo_net_xml(turrets, turret_scan),
     )
     _write(
         out / "Patches" / "Weapons" / "OE_Ranged.xml",

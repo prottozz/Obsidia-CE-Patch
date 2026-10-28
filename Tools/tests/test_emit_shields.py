@@ -142,6 +142,10 @@ def test_handheld_converts_vef_to_ce():
     }
     xml = emit_worn_handheld_xml(cat, scanned)
     assert "<thingClass>CombatExtended.Apparel_Shield</thingClass>" in xml
+    # Obsidia shields inherit BaseWeapon (equipmentType Primary); once tools are
+    # removed RimWorld 1.7 errors "is equipment but has no verbs or tools".
+    assert xml.count("<equipmentType>None</equipmentType>") == 4  # replace + add, two bases
+    assert 'ThingDef[@Name="OEShieldBase"]/equipmentType' in xml
     assert 'ThingDef[@Name="OEShieldBase"]' in xml
     assert 'ThingDef[@Name="OEShieldBaseNQ"]' in xml
     assert 'Class="VEF.Apparels.CompProperties_Shield"' in xml

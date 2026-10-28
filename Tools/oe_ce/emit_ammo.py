@@ -195,8 +195,30 @@ def _emit_bullet(
 </ThingDef>"""
 
 
-def emit_ammo_xml(families: list[Family], core: Path | None = None) -> str:
+def emit_ammo_xml(
+    families: list[Family],
+    core: Path | None = None,
+    *,
+    bullet_only: list[Family] | None = None,
+    extra_index: ThingDefIndex | None = None,
+) -> str:
+    """Ammo defs, ammo sets and member bullets.
+
+    ``families`` get ammo defs (per caliber/class), a member ammo set and a bullet
+    per cartridge. ``bullet_only`` families (turret guns with no CE magazine) get
+    just the default-cartridge bullet. ``extra_index`` resolves projectile graphics
+    for guns outside Core's Weapons folder (turret guns).
+    """
     index: ThingDefIndex | None = index_weapon_thingdefs(core) if core is not None else None
+
+    def graphic_for(def_name: str) -> ProjectileGraphic | None:
+        found = None
+        if core is not None:
+            found = weapon_projectile_graphic(core, def_name, index=index)
+        if found is None and extra_index is not None and core is not None:
+            found = weapon_projectile_graphic(core, def_name, index=extra_index)
+        return found
+
     body: list[str] = _emit_ammo_categories()
     for fam in unique_ammo_families(families):
         body.append(_emit_thing_category(fam))
@@ -204,13 +226,14 @@ def emit_ammo_xml(families: list[Family], core: Path | None = None) -> str:
             body.append(_emit_ammo_def(fam, cart))
     for fam in families:
         for member in sorted(fam.members, key=lambda m: m.def_name):
-            graphic = (
-                weapon_projectile_graphic(core, member.def_name, index=index)
-                if core is not None
-                else None
-            )
+            graphic = graphic_for(member.def_name)
             body.append(_emit_ammo_set(fam, member))
             for cart in fam.resolved_cartridges():
                 body.append(_emit_bullet(fam, member, cart, graphic))
+    for fam in bullet_only or []:
+        for member in sorted(fam.members, key=lambda m: m.def_name):
+            body.append(
+                _emit_bullet(fam, member, fam.default_cartridge(), graphic_for(member.def_name))
+            )
     inner = "\n\n".join(body)
     return f'<?xml version="1.0" encoding="utf-8"?>\n<Defs>\n{inner}\n</Defs>'

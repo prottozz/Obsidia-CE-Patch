@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_Turret_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_Big"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_Big"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_Big"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_Big"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.45</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_Turret_Ceiling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_Ceiling"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_Ceiling"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_Ceiling"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_Ceiling"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>5</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_Turret_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_Small"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_Small"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_Small"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_Small"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.43</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CAC_Turret_SmallPowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_SmallPowered"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_SmallPowered"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="CAC_Turret_SmallPowered"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="CAC_Turret_SmallPowered"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.43</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Turret_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_Big"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_Big"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_Big"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_Big"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>5.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Turret_Ceiling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_Ceiling"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_Ceiling"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_Ceiling"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_Ceiling"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.86</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Turret_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_Small"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_Small"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_Small"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_Small"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.43</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OCC_Turret_SmallPowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_SmallPowered"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_SmallPowered"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OCC_Turret_SmallPowered"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OCC_Turret_SmallPowered"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.43</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Turret_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_Big"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_Big"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_Big"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_Big"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>0.05</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Turret_Ceiling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_Ceiling"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_Ceiling"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_Ceiling"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_Ceiling"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Turret_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_Small"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_Small"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_Small"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_Small"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>12</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="ODC_Turret_SmallPowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_SmallPowered"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_SmallPowered"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="ODC_Turret_SmallPowered"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ODC_Turret_SmallPowered"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>12</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Turret_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_Big"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_Big"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_Big"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_Big"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>0.7</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Turret_Ceiling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_Ceiling"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_Ceiling"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_Ceiling"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_Ceiling"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>0.74</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Turret_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_Small"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_Small"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_Small"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_Small"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.86</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Royalty">
+    <xpath>Defs/ThingDef[defName="OEC_Turret_SmallPowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_SmallPowered"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_SmallPowered"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OEC_Turret_SmallPowered"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OEC_Turret_SmallPowered"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.86</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Turret_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_Big"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_Big"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_Big"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_Big"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Turret_Ceiling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_Ceiling"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_Ceiling"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_Ceiling"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_Ceiling"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.98</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Turret_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_Small"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_Small"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_Small"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_Small"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>5.75</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMC_Turret_SmallPowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_SmallPowered"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_SmallPowered"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMC_Turret_SmallPowered"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMC_Turret_SmallPowered"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>5.75</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Turret_Big"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_Big"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_Big"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_Big"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_Big"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>0.7</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Turret_Ceiling"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_Ceiling"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_Ceiling"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_Ceiling"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_Ceiling"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.86</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Turret_Small"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_Small"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_Small"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_Small"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_Small"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>5.75</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OMG_Turret_SmallPowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_SmallPowered"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_SmallPowered"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OMG_Turret_SmallPowered"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OMG_Turret_SmallPowered"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>5.75</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Acid"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Acid"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Acid"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Acid"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.4</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Cryo"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Cryo"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Cryo"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Cryo"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.4</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Big_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_EMP"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_EMP"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_EMP"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_EMP"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.4</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Fire"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Fire"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Fire"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Big_Fire"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>1.4</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Acid"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Acid"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Acid"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Acid"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.98</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Cryo"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Cryo"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Cryo"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Cryo"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.98</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_EMP"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_EMP"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_EMP"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_EMP"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.98</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Fire"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Fire"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Fire"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Ceiling_Fire"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>2.98</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Acid"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Acid"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Acid"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Acid"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Cryo"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Cryo"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Cryo"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Cryo"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_EMP"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_EMP"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_EMP"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_EMP"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Fire"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Fire"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Fire"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_SmallPowered_Fire"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Acid"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Acid"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Acid"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Acid"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Cryo"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Cryo"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Cryo"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Cryo"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Small_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_EMP"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_EMP"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_EMP"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_EMP"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Fire"]/comps</xpath>
+        <match Class="PatchOperationTest">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Fire"]/comps</xpath>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Fire"]</xpath>
+          <value>
+            <comps />
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="OTC_Turret_Small_Fire"]/comps</xpath>
+        <value>
+          <li Class="ObsidiaCEAmmoNet.CompProperties_AmmoNetFeed">
+            <pipeNet>OE_AmmoNet</pipeNet>
+            <shotsPerUnit>8.6</shotsPerUnit>
+            <refillBelow>0.75</refillBelow>
+          </li>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+</Patch>
