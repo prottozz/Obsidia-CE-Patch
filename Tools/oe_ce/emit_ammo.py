@@ -218,6 +218,7 @@ def _emit_explosive_bullet(
       <fragments>
         <Fragment_Small>{rnd.fragments}</Fragment_Small>
       </fragments>
+      <fragSpeedFactor>{rnd.frag_speed:g}</fragSpeedFactor>
     </li>
   </comps>"""
     return f"""<ThingDef ParentName="BaseExplosiveBullet">

@@ -56,6 +56,16 @@ def test_cartridge_shaping_and_speed():
     assert min_range(DOOMSDAY) == 7
 
 
+def test_fragments_stay_near_the_blast():
+    from oe_ce.explosive import frag_speed_factor
+
+    # distance ~ 35 * f^2 cells: rocket 3.4 -> ~8.4, bow 2.0 -> ~5, doomsday 6 -> ~15
+    assert frag_speed_factor(3.4) == 0.49
+    assert frag_speed_factor(2.0) == 0.38
+    assert frag_speed_factor(6.0) == 0.65
+    assert explosive_round(ODC_RL, "rocket", "standard").frag_speed == 0.49
+
+
 def _index(tmp_path):
     xml = """<Defs>
   <ThingDef Name="BaseBullet" Abstract="True"><projectile><speed>50</speed></projectile></ThingDef>
@@ -101,6 +111,7 @@ def test_emit_explosive_and_plain_bullets_with_min_range(tmp_path):
     rl = by_name["Bullet_OE_OCC_RocketLauncher_M_standard"]
     assert rl.findtext("comps/li/fragments/Fragment_Small") == "30"
     assert rl.findtext("projectile/speed") == "40"
+    assert rl.findtext("comps/li/fragSpeedFactor") == "0.49"
     plain = by_name["Bullet_OE_OTC_MultiCannon_Fire_fire"]
     assert plain.get("ParentName") == "BaseBulletCE"
     guns = emit_gun_patches([rifle, rocket], tmp_path, blasts)

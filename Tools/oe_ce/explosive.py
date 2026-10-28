@@ -24,7 +24,11 @@ SMALL_BLAST_MULT = 1.4
 BIG_BLAST_MULT = 3.0
 ROCKET_SPEED = 40
 BULLET_SPEED = 151
-MIN_RANGE_RADIUS = 2.0  # CE radius from which guns get minRange / building-destroyer AI
+MIN_RANGE_RADIUS = 2.0
+# CE Fragment_Small flies up to ~35 cells at fragSpeedFactor 1; distance scales with
+# speed^2. Keep fragments within about FRAG_REACH x the blast radius.
+CE_FRAG_MAX_CELLS = 35.0
+FRAG_REACH = 2.5  # CE radius from which guns get minRange / building-destroyer AI
 
 # cartridge -> (radius factor, damage factor) for ballistic families
 CARTRIDGE_SHAPE = {
@@ -61,6 +65,7 @@ class ExplosiveRound:
     radius: float
     fragments: int
     speed: int
+    frag_speed: float = 1.0
 
 
 def _inherited_text(index: ThingDefIndex, el: ET.Element, path: str) -> str | None:
@@ -116,15 +121,22 @@ def fragments(blast: Blast, weapon_type: str) -> int:
     return 30 if weapon_type == "rocket" else 20
 
 
+def frag_speed_factor(radius: float) -> float:
+    """fragSpeedFactor so fragments land within ~FRAG_REACH x radius cells."""
+    return round(min(1.0, math.sqrt(FRAG_REACH * radius / CE_FRAG_MAX_CELLS)), 2)
+
+
 def explosive_round(blast: Blast, weapon_type: str, cartridge: str) -> ExplosiveRound:
     radius_f, damage_f = CARTRIDGE_SHAPE.get(cartridge, (1.0, 1.0))
     damage_def = "EMP" if cartridge == "emp" else blast.damage_def
+    radius = ce_radius(blast, radius_f)
     return ExplosiveRound(
         damage_def=damage_def,
         damage=ce_damage(blast, damage_f),
-        radius=ce_radius(blast, radius_f),
+        radius=radius,
         fragments=fragments(blast, weapon_type) if cartridge != "emp" else 0,
         speed=ROCKET_SPEED if weapon_type == "rocket" else BULLET_SPEED,
+        frag_speed=frag_speed_factor(radius),
     )
 
 
