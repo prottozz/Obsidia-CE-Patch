@@ -1562,6 +1562,21 @@
         </nomatch>
       </li>
     <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="OEShieldBase"]/equipmentType</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]/equipmentType</xpath>
+          <value>
+          <equipmentType>None</equipmentType>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBase"]</xpath>
+          <value>
+          <equipmentType>None</equipmentType>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
         <xpath>Defs/ThingDef[@Name="OEShieldBase"]/apparel/bodyPartGroups</xpath>
         <match Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="OEShieldBase"]/apparel/bodyPartGroups</xpath>
@@ -1621,6 +1636,21 @@
           <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]</xpath>
           <value>
           <thingClass>CombatExtended.Apparel_Shield</thingClass>
+          </value>
+        </nomatch>
+      </li>
+    <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/equipmentType</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]/equipmentType</xpath>
+          <value>
+          <equipmentType>None</equipmentType>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[@Name="OEShieldBaseNQ"]</xpath>
+          <value>
+          <equipmentType>None</equipmentType>
           </value>
         </nomatch>
       </li>

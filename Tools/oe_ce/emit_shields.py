@@ -87,6 +87,10 @@ def _abstract_ops(name: str) -> list[str]:
             "thingClass",
             "      <thingClass>CombatExtended.Apparel_Shield</thingClass>",
         ),
+        # Obsidia's shield bases inherit BaseWeapon (equipmentType Primary). The
+        # handheld patch removes their tools, so they must stop being equipment or
+        # RimWorld reports "is equipment but has no verbs or tools".
+        _replace_or_add_at(base, "equipmentType", "      <equipmentType>None</equipmentType>"),
         _replace_or_add_at(
             base,
             "apparel/bodyPartGroups",
