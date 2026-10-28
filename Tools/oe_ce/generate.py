@@ -37,6 +37,7 @@ from oe_ce.emit_bodies import MECHANOID as BODY_MECHANOID
 from oe_ce.emit_bodies import emit_body_xml
 from oe_ce.emit_races import collect_race_tools, emit_race_xml
 from oe_ce.emit_recipes import emit_recipe_xml
+from oe_ce.explosive import projectile_blast
 from oe_ce.emit_turrets import emit_ammo_net_xml, emit_turret_xml
 from oe_ce.emit_shields import emit_innate_xml, emit_upgrade_xml, emit_worn_handheld_xml
 from oe_ce.body_load import load_body_catalog
@@ -152,6 +153,14 @@ def generate(root: Path) -> None:
 
     out = root / GAME_VERSION
     turret_bursts = {name: gun.burst for name, gun in turret_scan.guns.items()}
+    # Slice 10: guns whose Obsidia projectile explodes get CE explosive bullets.
+    gun_names = [m.def_name for f in cat.families for m in f.members]
+    gun_names += [g.def_name for g in turrets.guns]
+    blasts = {
+        name: blast
+        for name in gun_names
+        if (blast := projectile_blast(turret_scan.index, name)) is not None
+    }
     turret_mag = [
         g.family(turret_bursts.get(g.def_name)) for g in turrets.guns if g.magazine is not None
     ]
@@ -165,6 +174,7 @@ def generate(root: Path) -> None:
             core,
             bullet_only=turret_free,
             extra_index=turret_scan.index,
+            blasts=blasts,
         ),
     )
     _write(
@@ -173,7 +183,7 @@ def generate(root: Path) -> None:
     )
     _write(
         out / "Patches" / "Buildings" / "OE_Turrets.xml",
-        emit_turret_xml(turrets, turret_scan),
+        emit_turret_xml(turrets, turret_scan, blasts),
     )
     _write(
         out / "Mods" / "AmmoNet" / "Patches" / "OE_AmmoNetFeed.xml",
@@ -181,7 +191,7 @@ def generate(root: Path) -> None:
     )
     _write(
         out / "Patches" / "Weapons" / "OE_Ranged.xml",
-        emit_gun_patches(cat.families, core),
+        emit_gun_patches(cat.families, core, blasts),
     )
     _write(
         out / "Patches" / "Weapons" / "OE_Melee.xml",

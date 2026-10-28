@@ -346,6 +346,8 @@
           <warmupTime>1</warmupTime>
           <range>54.4</range>
           <burstShotCount>8</burstShotCount>
+          <minRange>5</minRange>
+          <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>
@@ -462,6 +464,8 @@
           <defaultProjectile>Bullet_OE_ODC_TurretGun_Big_standard</defaultProjectile>
           <warmupTime>1</warmupTime>
           <range>74.8</range>
+          <minRange>7</minRange>
+          <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>
@@ -1079,6 +1083,8 @@
           <warmupTime>1</warmupTime>
           <range>54.4</range>
           <burstShotCount>2</burstShotCount>
+          <minRange>3</minRange>
+          <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>
@@ -1118,6 +1124,8 @@
           <warmupTime>1</warmupTime>
           <range>54.4</range>
           <burstShotCount>2</burstShotCount>
+          <minRange>3</minRange>
+          <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>
@@ -1157,6 +1165,8 @@
           <warmupTime>1</warmupTime>
           <range>54.4</range>
           <burstShotCount>2</burstShotCount>
+          <minRange>3</minRange>
+          <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>
@@ -1196,6 +1206,8 @@
           <warmupTime>1</warmupTime>
           <range>54.4</range>
           <burstShotCount>2</burstShotCount>
+          <minRange>3</minRange>
+          <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>

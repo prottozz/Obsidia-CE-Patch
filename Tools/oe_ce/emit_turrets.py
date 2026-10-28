@@ -9,6 +9,8 @@ from oe_ce.emit_common import (
     thing_xpath,
     wrap_optional_def,
 )
+from oe_ce.emit_guns import explosive_verb_lines
+from oe_ce.explosive import Blast
 from oe_ce.rungs import gun_stats
 from oe_ce.scan_turrets import TurretScan
 from oe_ce.turret_models import TurretCatalog, TurretGun
@@ -59,7 +61,7 @@ def _remove_if_present(xpath: str) -> str:
   </Operation>"""
 
 
-def turret_gun_op(gun: TurretGun, burst: int | None) -> str:
+def turret_gun_op(gun: TurretGun, burst: int | None, blast: Blast | None = None) -> str:
     fam = gun.family(burst)
     member = fam.members[0]
     stats = gun_stats(fam.type, member)
@@ -88,7 +90,7 @@ def turret_gun_op(gun: TurretGun, burst: int | None) -> str:
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>{fam.member_bullet_def(member, fam.default_cartridge())}</defaultProjectile>
       <warmupTime>{format_num(stats["warmup"])}</warmupTime>
-      <range>{format_num(stats["range"])}</range>{burst_line}
+      <range>{format_num(stats["range"])}</range>{burst_line}{explosive_verb_lines(blast)}
       <recoilPattern>Mounted</recoilPattern>
     </Properties>{ammo_block}
     <FireModes>
@@ -117,12 +119,16 @@ def turret_building_ops(def_name: str) -> list[str]:
     ]
 
 
-def emit_turret_xml(cat: TurretCatalog, scan: TurretScan) -> str:
+def emit_turret_xml(
+    cat: TurretCatalog, scan: TurretScan, blasts: dict[str, Blast] | None = None
+) -> str:
+    blasts = blasts or {}
     blocks: list[str] = []
     for gun in sorted(cat.guns, key=lambda g: g.def_name):
         info = scan.guns.get(gun.def_name)
         burst = info.burst if info is not None else None
-        blocks += _wrap([turret_gun_op(gun, burst)], gun.may_require, gun.def_name)
+        op = turret_gun_op(gun, burst, blasts.get(gun.def_name))
+        blocks += _wrap([op], gun.may_require, gun.def_name)
     for turret in sorted(scan.turrets.values(), key=lambda t: t.def_name):
         if turret.gun not in cat.by_name():
             continue

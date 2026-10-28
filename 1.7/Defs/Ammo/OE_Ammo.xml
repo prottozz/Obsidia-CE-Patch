@@ -1567,49 +1567,70 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_RocketLauncher_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>120</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_RocketLauncher_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>108</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_RocketLauncher_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>132</damageAmountBase>
+    <explosionRadius>3.5</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -1622,49 +1643,70 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_RocketLauncher_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>150</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_RocketLauncher_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>135</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_RocketLauncher_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>165</damageAmountBase>
+    <explosionRadius>3.5</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -1810,49 +1852,70 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>60</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>54</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>66</damageAmountBase>
+    <explosionRadius>3.5</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -2022,62 +2085,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Arachna_Rifle_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Arachna_Rifle_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Arachna_Rifle_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Arachna_Rifle_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -2100,62 +2166,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -2178,62 +2247,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>23</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>28</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Rifle_M_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -2489,47 +2561,49 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_MultiCannon_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_MultiCannon_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_MultiCannon_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
@@ -2544,47 +2618,49 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_MultiCannon_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_MultiCannon_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>23</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_MultiCannon_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>28</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
@@ -2756,62 +2832,83 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Trophy_Railgun_I_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>75</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Trophy_Railgun_I_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>68</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Trophy_Railgun_I_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>82</damageAmountBase>
+    <explosionRadius>3.5</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Trophy_Railgun_I_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Trophy_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>75</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -2833,48 +2930,50 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OE_DarkCrusader_RocketLauncher_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/CAC_BulletBig</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>11</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+    <speed>40</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OE_DarkCrusader_RocketLauncher_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/CAC_BulletBig</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
+    <damageDef>OCCBlast</damageDef>
     <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+    <speed>40</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OE_DarkCrusader_RocketLauncher_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/CAC_BulletBig</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>12</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
+    <speed>40</speed>
   </projectile>
 </ThingDef>
 
@@ -3755,49 +3854,71 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OMC_RocketLauncher_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OMC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>90</damageAmountBase>
+    <explosionRadius>2.7</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OMC_RocketLauncher_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OMC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>81</damageAmountBase>
+    <explosionRadius>1.4</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OMC_RocketLauncher_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OMC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>99</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -3810,49 +3931,71 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OMC_RocketLauncher_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OMC_Rocket_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>90</damageAmountBase>
+    <explosionRadius>2.7</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OMC_RocketLauncher_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OMC_Rocket_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>81</damageAmountBase>
+    <explosionRadius>1.4</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OMC_RocketLauncher_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OMC_Rocket_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>99</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -4374,47 +4517,49 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Revolver_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Revolver_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Revolver_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
@@ -4429,47 +4574,49 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Revolver_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Revolver_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>23</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Revolver_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>28</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
@@ -4540,62 +4687,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -4618,62 +4768,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>23</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>28</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Minigun_M_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -5697,62 +5850,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>22</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -5775,62 +5931,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>23</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>28</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_AR_M_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -6918,62 +7077,84 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>60</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>54</damageAmountBase>
+    <explosionRadius>1</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>66</damageAmountBase>
+    <explosionRadius>2.5</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>60</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -6996,62 +7177,84 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_M_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>66</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_M_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>59</damageAmountBase>
+    <explosionRadius>1</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_M_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>73</damageAmountBase>
+    <explosionRadius>2.5</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Bow_M_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Arrow_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>66</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -7131,18 +7334,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_Fire_fire</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>45</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
     <secondaryDamage>
       <li>
         <def>Flame</def>
@@ -7151,6 +7354,13 @@
     </secondaryDamage>
     <ai_IsIncendiary>true</ai_IsIncendiary>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -7315,18 +7525,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_Fire_fire</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_Fire</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>Flame</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -7346,18 +7556,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_M_Fire_fire</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_M_Fire</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>Flame</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -7377,17 +7587,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_Fire_fire</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_Fire</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>Flame</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -7407,17 +7618,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_M_Fire_fire</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_M_Fire</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>Flame</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -7768,18 +7980,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_EMP_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>45</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
     <secondaryDamage>
       <li>
         <def>EMP</def>
@@ -7952,18 +8164,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_EMP_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_EMP</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -7983,18 +8195,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_M_EMP_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_M_EMP</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -8014,17 +8226,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_EMP_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_EMP</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -8044,17 +8257,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_M_EMP_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_M_EMP</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -8403,18 +8617,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_Acid_acid</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>12</damageAmountBase>
-    <armorPenetrationSharp>40</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>45</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
     <secondaryDamage>
       <li>
         <def>OTCAcid</def>
@@ -8422,6 +8636,13 @@
       </li>
     </secondaryDamage>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -8581,18 +8802,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_Acid_acid</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_Acid</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>12</damageAmountBase>
-    <armorPenetrationSharp>40</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCAcid</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -8611,18 +8832,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_M_Acid_acid</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_M_Acid</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>12</damageAmountBase>
-    <armorPenetrationSharp>40</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCAcid</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -8641,17 +8862,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_Acid_acid</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_Acid</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>12</damageAmountBase>
-    <armorPenetrationSharp>40</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCAcid</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -8670,17 +8892,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_M_Acid_acid</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_M_Acid</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>12</damageAmountBase>
-    <armorPenetrationSharp>40</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCAcid</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -9019,18 +9242,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_RocketLauncher_Cryo_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>45</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
+    <speed>40</speed>
     <secondaryDamage>
       <li>
         <def>OTCCryo</def>
@@ -9038,6 +9261,13 @@
       </li>
     </secondaryDamage>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>30</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -9197,18 +9427,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_Cryo_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_Cryo</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCCryo</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -9227,18 +9457,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_GrenadeLauncher_M_Cryo_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_M_Cryo</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(0.8, 0.8)</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCCryo</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -9257,17 +9487,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_Cryo_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_Cryo</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCCryo</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -9286,17 +9517,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_Bow_M_Cryo_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Arrow_M_Cryo</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCCryo</damageDef>
+    <damageAmountBase>20</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -9822,62 +10054,65 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Gun_TacticalTurret_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Gun_TacticalTurret_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>23</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Gun_TacticalTurret_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>28</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_Gun_TacticalTurret_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>25</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -9899,52 +10134,73 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_TurretGun_Big_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>180</damageAmountBase>
+    <explosionRadius>3.4</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_TurretGun_Big_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>162</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_TurretGun_Big_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_Rocket</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>198</damageAmountBase>
+    <explosionRadius>3.5</explosionRadius>
     <speed>151</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>20</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -9957,47 +10213,49 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_TurretGun_Small_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>42</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_TurretGun_Small_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>38</damageAmountBase>
+    <explosionRadius>0.7</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OCC_TurretGun_Small_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OCC_BulletBlast_M</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OCCBlast</damageDef>
+    <damageAmountBase>46</damageAmountBase>
+    <explosionRadius>1.7</explosionRadius>
     <speed>151</speed>
   </projectile>
 </ThingDef>
@@ -10070,52 +10328,73 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_TurretGun_Big_standard</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_NACJAC_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>2.0</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>Bomb</damageDef>
+    <damageAmountBase>150</damageAmountBase>
+    <explosionRadius>6</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>40</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_TurretGun_Big_ap</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_NACJAC_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>2.0</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>10</damageAmountBase>
-    <armorPenetrationSharp>32</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>Bomb</damageDef>
+    <damageAmountBase>135</damageAmountBase>
+    <explosionRadius>3.5</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>40</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_ODC_TurretGun_Big_hp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/ODC_NACJAC_Charge</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>2.0</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>16</damageAmountBase>
-    <armorPenetrationSharp>10</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
-    <speed>151</speed>
+    <damageDef>Bomb</damageDef>
+    <damageAmountBase>165</damageAmountBase>
+    <explosionRadius>6</explosionRadius>
+    <speed>40</speed>
   </projectile>
+  <comps>
+    <li Class="CombatExtended.CompProperties_Fragments">
+      <fragments>
+        <Fragment_Small>40</Fragment_Small>
+      </fragments>
+    </li>
+  </comps>
 </ThingDef>
 
 <CombatExtended.AmmoSetDef>
@@ -10950,18 +11229,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_TurretGun_Big_Acid_acid</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_Acid</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>12</damageAmountBase>
-    <armorPenetrationSharp>40</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCAcid</damageDef>
+    <damageAmountBase>50</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -10980,18 +11259,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_TurretGun_Big_Cryo_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_Cryo</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCCryo</damageDef>
+    <damageAmountBase>50</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -11010,18 +11289,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_TurretGun_Big_EMP_emp</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_EMP</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>8</damageAmountBase>
-    <armorPenetrationSharp>12</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>EMP</damageDef>
+    <damageAmountBase>50</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -11041,18 +11320,18 @@
   </ammoTypes>
 </CombatExtended.AmmoSetDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_OTC_TurretGun_Big_Fire_fire</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/OTC_Grenade_Fire</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>1.5</drawSize>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>Flame</damageDef>
+    <damageAmountBase>50</damageAmountBase>
+    <explosionRadius>2</explosionRadius>
     <speed>151</speed>
     <secondaryDamage>
       <li>
@@ -11197,17 +11476,18 @@
   </projectile>
 </ThingDef>
 
-<ThingDef ParentName="BaseBulletCE">
+<ThingDef ParentName="BaseExplosiveBullet">
   <defName>Bullet_OE_EGO_TurretGun_Small_GrenadeLauncher_cryo</defName>
+  <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
   <graphicData>
     <texPath>Things/Projectile/EGO_Grenade</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <projectile Class="CombatExtended.ProjectilePropertiesCE">
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>13</damageAmountBase>
-    <armorPenetrationSharp>18</armorPenetrationSharp>
-    <armorPenetrationBlunt>26</armorPenetrationBlunt>
+    <damageDef>OTCCryo</damageDef>
+    <damageAmountBase>35</damageAmountBase>
+    <explosionRadius>1.3</explosionRadius>
+    <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     <speed>151</speed>
     <secondaryDamage>
       <li>
