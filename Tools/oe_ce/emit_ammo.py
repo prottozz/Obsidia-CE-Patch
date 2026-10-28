@@ -241,6 +241,7 @@ def emit_ammo_xml(
     bullet_only: list[Family] | None = None,
     extra_index: ThingDefIndex | None = None,
     blasts: dict[str, Blast] | None = None,
+    extra_defs: list[str] | None = None,
 ) -> str:
     """Ammo defs, ammo sets and member bullets.
 
@@ -285,5 +286,6 @@ def emit_ammo_xml(
             body.append(
                 bullet(fam, member, fam.default_cartridge(), graphic_for(member.def_name))
             )
+    body.extend(extra_defs or [])
     inner = "\n\n".join(body)
     return f'<?xml version="1.0" encoding="utf-8"?>\n<Defs>\n{inner}\n</Defs>'

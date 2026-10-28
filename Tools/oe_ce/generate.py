@@ -36,6 +36,7 @@ from oe_ce.emit_bodies import ANIMAL as BODY_ANIMAL
 from oe_ce.emit_bodies import MECHANOID as BODY_MECHANOID
 from oe_ce.emit_bodies import emit_body_xml
 from oe_ce.emit_races import collect_race_tools, emit_race_xml
+from oe_ce.emit_race_verbs import emit_race_verb_xml, race_projectile_defs, scan_race_verbs
 from oe_ce.emit_recipes import emit_recipe_xml
 from oe_ce.explosive import projectile_blast
 from oe_ce.emit_turrets import emit_ammo_net_xml, emit_turret_xml
@@ -130,6 +131,9 @@ def generate(root: Path) -> None:
     errors += apparel_verbs.errors
     turret_scan = scan_turrets(core, royalty, biotech=bio, anomaly=anomaly, odyssey=odyssey)
     errors += validate_turret_catalog(turrets, turret_scan, present_packages=present_packages)
+    race_packages = {m.def_name: s.member_may_require(m) for s, m in races.entries()}
+    race_verbs, race_verb_errors = scan_race_verbs(turret_scan.index, race_packages)
+    errors += race_verb_errors
     drones = scan_drones(odyssey)
     errors += validate_drones(drones)
     core_races = scan_races(core, bio, anomaly, ideology, royalty)
@@ -175,6 +179,7 @@ def generate(root: Path) -> None:
             bullet_only=turret_free,
             extra_index=turret_scan.index,
             blasts=blasts,
+            extra_defs=race_projectile_defs(race_verbs),
         ),
     )
     _write(
@@ -225,6 +230,10 @@ def generate(root: Path) -> None:
     _write(
         out / "Patches" / "Races" / "OE_Mechanoids.xml",
         emit_race_xml(races.sets, MECHANOID, core_races, race_tools),
+    )
+    _write(
+        out / "Patches" / "Races" / "OE_RaceVerbs.xml",
+        emit_race_verb_xml(race_verbs),
     )
     _write(
         out / "Patches" / "Races" / "OE_Drones.xml",

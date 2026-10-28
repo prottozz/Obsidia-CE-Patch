@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OE_Bruul_Acid"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+              <label>acid inc</label>
+              <hasStandardCommand>true</hasStandardCommand>
+              <accuracyTouch>0.9</accuracyTouch>
+              <accuracyShort>1.0</accuracyShort>
+              <accuracyMedium>1.0</accuracyMedium>
+              <accuracyLong>0.8</accuracyLong>
+              <warmupTime>1.0</warmupTime>
+              <minRange>2.0</minRange>
+              <range>23.9</range>
+              <burstShotCount>1</burstShotCount>
+              <soundCast>Pawn_Spelopede_Call</soundCast>
+              <muzzleFlashScale>0</muzzleFlashScale>
+              <commonality>0.8</commonality>
+              <defaultProjectile>Bullet_OE_Bruul_Acid_CE</defaultProjectile>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OE_Bruul_Cryo"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+              <label>cryo inc</label>
+              <hasStandardCommand>true</hasStandardCommand>
+              <accuracyTouch>0.9</accuracyTouch>
+              <accuracyShort>1.0</accuracyShort>
+              <accuracyMedium>1.0</accuracyMedium>
+              <accuracyLong>0.8</accuracyLong>
+              <warmupTime>1.0</warmupTime>
+              <minRange>2.0</minRange>
+              <range>23.9</range>
+              <burstShotCount>1</burstShotCount>
+              <soundCast>Pawn_Spelopede_Call</soundCast>
+              <muzzleFlashScale>0</muzzleFlashScale>
+              <commonality>0.8</commonality>
+              <defaultProjectile>Bullet_OE_Bruul_Cryo_CE</defaultProjectile>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OE_Bruul_EMP"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+              <label>EMP inc</label>
+              <hasStandardCommand>true</hasStandardCommand>
+              <accuracyTouch>0.9</accuracyTouch>
+              <accuracyShort>1.0</accuracyShort>
+              <accuracyMedium>1.0</accuracyMedium>
+              <accuracyLong>0.8</accuracyLong>
+              <warmupTime>1.0</warmupTime>
+              <minRange>2.0</minRange>
+              <range>23.9</range>
+              <burstShotCount>1</burstShotCount>
+              <soundCast>Pawn_Spelopede_Call</soundCast>
+              <muzzleFlashScale>0</muzzleFlashScale>
+              <commonality>0.8</commonality>
+              <defaultProjectile>Bullet_OE_Bruul_EMP_CE</defaultProjectile>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+    <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="OE_Bruul_Fire"]/verbs</xpath>
+        <value>
+          <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+              <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+              <label>fire inc</label>
+              <hasStandardCommand>true</hasStandardCommand>
+              <accuracyTouch>0.9</accuracyTouch>
+              <accuracyShort>1.0</accuracyShort>
+              <accuracyMedium>1.0</accuracyMedium>
+              <accuracyLong>0.8</accuracyLong>
+              <warmupTime>1.0</warmupTime>
+              <minRange>2.0</minRange>
+              <range>23.9</range>
+              <burstShotCount>1</burstShotCount>
+              <soundCast>Pawn_Spelopede_Call</soundCast>
+              <muzzleFlashScale>0</muzzleFlashScale>
+              <commonality>0.8</commonality>
+              <defaultProjectile>Bullet_OE_Bruul_Fire_CE</defaultProjectile>
+            </li>
+          </verbs>
+        </value>
+      </li>
+      </operations>
+    </match>
+    <nomatch Class="PatchOperationTest">
+      <xpath>Defs</xpath>
+    </nomatch>
+  </Operation>
+</Patch>
